@@ -5,14 +5,34 @@ layout: default
 # $ cat about.txt
 {:id="about"}
 
-This is a theme intended to use to [lampiaosec](https://lampiaosec.github.io). So, it's our taste, but because we like free culture, it's free to.
+We are an information security research group. As we learn more and more about
+this field, we intend to share the knowledge acquired during the learning process
+and publish our results, ofcourse never forgetting to help the free software community
+and to fight for a world without agressive/disrespectful mass surveillance.
 
-The categories to post was to support us, but you can change as you need.
+We believe that the world can and should be free. If the hacking is the way to do that,
+then we will hack it :)
+
+GPG Fingerprint: [9ECB E16A 5FD7 832D 11BB  3F49 661D 7781 12CB F8C7](/assets/public.key.txt)
 
 # $ cat contact.txt
 {:id="contact"}
 
-I think that all about this theme is intuitive, but if you want help, please, contact me: [gjuniioor](https://github.com/gjuniioor).
+E-mail:
+
+> lampiaosec[at]riseup[dot]net
+
+Facebook:
+
+> [https://facebook.me/lampiaosec](https://fb.me/lampiaosec)
+
+GitHub:
+
+> [https://github.com/lampiaosec](https://github.com/lampiaosec)
+
+IRC:
+
+> \#lampiaosec at OFTC
 
 # $ cat team.txt
 {:id="team"}

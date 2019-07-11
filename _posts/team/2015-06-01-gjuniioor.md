@@ -1,7 +1,7 @@
 ---
-title: author1
+title: gjuniioor
 github: gjuniioor
 site: https://gjuniioor.github.io
-mail: email@author
+mail: gjuniioor[at]protonmail[dot]com
 categories: team
 ---
