@@ -16,6 +16,21 @@ authors:
   - userx
 published: true
 ---
+---
+layout: post
+title: Vimeo Privacy by Website Domain Bypass
+date: 2016-05-10 12:00:00
+categories: articles
+en: true
+comments: true
+description: Report how to bypass and access a video secret by website domain from Vimeo
+pt: /articles/bypass-privacidade-do-vimeo/
+description_pt: Relato de como bypassar o acesso a vídeo privativo por domínio do site no Vimeo
+keywords: bypass, hacking, vimeo, video, movie, privacy, privado
+authors:
+    - gjuniioor
+    - userx
+---
 
 > **OBS:** Você pode ler esse post em português em [{{ site.baseurl }}{{ page.pt }}]({{ page.pt }})
 >
@@ -27,7 +42,7 @@ published: true
 * toc
 {:toc}
 
-# Intrudoction2
+# Intrudoction
 
 On [#ViradaHacker][virada-hacker] on the first day of April was [descrybed a way][relato-do-bypass] [^0] to watch a private vimeo video. That was a fast and resumed approach about that matter, however, through the page on [facebook do LampiãoSec][facebook-do-lampiao], e-mail and telegram, we have received some requests and incentives to make a more detailed post, to show the theory behind the scenes of the whole process. So, as response to this people and our own will to help the community how ever we can, it took time but here it goes.
 
