@@ -1,8 +1,9 @@
 ---
 layout: default
+published: true
 ---
 
-# $ cat about.txt
+# $ cat2 about.txt
 {:id="about"}
 
 We are an information security research group. As we learn more and more about
