@@ -14,7 +14,6 @@ and to fight for a world without agressive/disrespectful mass surveillance.
 We believe that the world can and should be free. If the hacking is the way to do that,
 then we will hack it :)
 
-GPG Fingerprint: [9ECB E16A 5FD7 832D 11BB  3F49 661D 7781 12CB F8C7](/assets/public.key.txt)
 
 # $ cat contact.txt
 {:id="contact"}
