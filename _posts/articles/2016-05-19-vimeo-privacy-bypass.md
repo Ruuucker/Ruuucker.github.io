@@ -1,24 +1,6 @@
 ---
 layout: post
 title: Vimeo Privacy by Website Domain Bypass
-date: {}
-categories: articles
-en: true
-comments: true
-description: Report how to bypass and access a video secret by website domain from Vimeo
-pt: /articles/bypass-privacidade-do-vimeo/
-description_pt: >-
-  Relato de como bypassar o acesso a vídeo privativo por domínio do site no
-  Vimeo
-keywords: 'bypass, hacking, vimeo, video, movie, privacy, privado'
-authors:
-  - gjuniioor
-  - userx
-published: true
----
----
-layout: post
-title: Vimeo Privacy by Website Domain Bypass
 date: 2016-05-10 12:00:00
 categories: articles
 en: true
