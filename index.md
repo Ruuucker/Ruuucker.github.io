@@ -3,10 +3,10 @@ layout: default
 published: true
 ---
 
-# $ cat2 about.txt
+# $ cat about.txt
 {:id="about"}
 
-We are an information security research group. As we learn more and more about
+We are TUTUTU an information security research group. As we learn more and more about
 this field, we intend to share the knowledge acquired during the learning process
 and publish our results, ofcourse never forgetting to help the free software community
 and to fight for a world without agressive/disrespectful mass surveillance.
