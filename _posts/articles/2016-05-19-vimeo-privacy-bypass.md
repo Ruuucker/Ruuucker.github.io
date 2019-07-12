@@ -42,7 +42,7 @@ authors:
 * toc
 {:toc}
 
-# Intrudoction
+# Intrudoction2
 
 On [#ViradaHacker][virada-hacker] on the first day of April was [descrybed a way][relato-do-bypass] [^0] to watch a private vimeo video. That was a fast and resumed approach about that matter, however, through the page on [facebook do LampiãoSec][facebook-do-lampiao], e-mail and telegram, we have received some requests and incentives to make a more detailed post, to show the theory behind the scenes of the whole process. So, as response to this people and our own will to help the community how ever we can, it took time but here it goes.
 
