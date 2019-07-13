@@ -2,6 +2,7 @@
 layout: default
 published: true
 ---
+<title>Rucker :: Security Researcher</title>
 
 # $ cat about.txt
 {:id="about"}
