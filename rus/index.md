@@ -1,5 +1,10 @@
 <title>Rucker :: Security Researcher</title>
 
+
+{{ page.title }}
+
+
+
 # $ cat about.txt
 {:id="about"}
 
