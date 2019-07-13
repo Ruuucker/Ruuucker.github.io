@@ -2,7 +2,7 @@
 # $ cat about.txt
 {:id="about"}
 
-Привет, я исследователь в области информационной безопасности.
+Привет, я исследователь в области информационной безопасности. <br>
 Тут собрана и структирирована полезная информация для всеобщего пользования и образования.
 
 # $ cat articles.txt
@@ -11,9 +11,8 @@
 <ul>
 {% for post in site.categories.articles %}
 
-{% if post.en %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
-{% endif %}
+
 
 {% endfor %}
 </ul>
