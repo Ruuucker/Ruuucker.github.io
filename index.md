@@ -6,14 +6,10 @@ published: true
 # $ cat about.txt
 {:id="about"}
 
-I am an information security researcher. As we learn more and more about
-this field, we intend to share the knowledge acquired during the learning process
-and publish our results, ofcourse never forgetting to help the free software community
-and to fight for a world without agressive/disrespectful mass surveillance.
+Hi, I am an information security researcher.
+Here is collected and structured useful information for general use and education.
 
-We believe that the world can and should be free. If the hacking is the way to do that,
-then we will hack it :)
-
+Welcome and let's hack all the things :)
 
 # $ cat articles.txt
 {:id="articles"}
