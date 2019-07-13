@@ -41,7 +41,7 @@
 {% endfor %}
 </ul>
 
-# $ cat contact.txt
+# $ cat контакт.txt
 {:id="contact"}
 
 E-mail:
