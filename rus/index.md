@@ -10,9 +10,7 @@
 {:id="articles"}
 
 <ul>
-<li>{{ page.title }}</li>
 {% for post in ['rus/articles/'] %}
-
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 
