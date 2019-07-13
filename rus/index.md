@@ -2,13 +2,9 @@
 # $ cat about.txt
 {:id="about"}
 
-I am an information security researcher. As we learn more and more about
-this field, we intend to share the knowledge acquired during the learning process
-and publish our results, ofcourse never forgetting to help the free software community
-and to fight for a world without agressive/disrespectful mass surveillance.
+Привет, я исследователь в информационной безопасности. Тут собрана и структирирована полезная информация для всеобщего пользования и образования.
 
-We believe that the world can and should be free. If the hacking is the way to do that,
-then we will hack it :)
+Добро пожаловать and let's hack all the things.
 
 
 # $ cat contact.txt
