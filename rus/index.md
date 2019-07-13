@@ -1,3 +1,4 @@
+<title>Rucker :: Security Researcher</title>
 
 # $ cat about.txt
 {:id="about"}
