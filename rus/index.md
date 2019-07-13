@@ -10,8 +10,8 @@
 {:id="articles"}
 
 <ul>
-  
-{% for post in rus/articles/ %}
+{% rus.a rus/articles/ %}
+{% for post in rus.a %}
 
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
