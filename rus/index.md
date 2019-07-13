@@ -1,12 +1,12 @@
 <title>Rucker :: Security Researcher</title>
 
-# $ cat ob_etom_vsem.txt
+# $ cat об_этом_всём.txt
 {:id="about"}
 
 Привет, я исследователь в области информационной безопасности. <br>
 Тут собрана и структирирована полезная информация для всеобщего пользования и образования.
 
-# $ cat stat'i.txt
+# $ cat статьи.txt
 {:id="articles"}
 
 <ul>
@@ -17,7 +17,7 @@
 {% endfor %}
 </ul>
 
-# $ cat chit_tablici.txt
+# $ cat чит-таблицы.txt
 {:id="cheatsheet"}
 
 <ul>
@@ -32,7 +32,7 @@
 {% endfor %}
 </ul>
 
-# $ cat tools.txt
+# $ cat тулзы.txt
 {:id="tools"}
 
 <ul>
