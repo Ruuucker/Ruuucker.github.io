@@ -3,7 +3,11 @@
 	{% include head.html %}
 	<body>
 		{% include header.html %}
-		{% include nav.html %}
+      	{% if page.url contains 'rus'  %}
+		 	{% include nav_rus.html %}
+      	{% else %}
+      		{% include nav.html %}
+		{% endif %}
 		<main>
 			{{ content }}
 		</main>
