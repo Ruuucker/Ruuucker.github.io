@@ -15,6 +15,34 @@ We believe that the world can and should be free. If the hacking is the way to d
 then we will hack it :)
 
 
+# $ cat articles.txt
+{:id="articles"}
+
+<ul>
+{% for post in site.categories.articles %}
+
+{% if post.en %}
+<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+{% endif %}
+
+{% endfor %}
+</ul>
+
+# $ cat cheat_sheets.txt
+{:id="cheatsheet"}
+
+<ul>
+{% for member in site.categories.team reversed %}
+<li id="{{ member.title }}">{{ member.title }}
+<ul>
+<li>{{ member.mail }}</li>
+<li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>
+<li><a href="{{ member.site }}">{{ member.site }}</a></li>
+</ul>
+</li>
+{% endfor %}
+</ul>
+
 # $ cat contact.txt
 {:id="contact"}
 
@@ -34,20 +62,7 @@ IRC:
 
 > \#lampiaosec at OFTC
 
-# $ cat team.txt
-{:id="team"}
 
-<ul>
-{% for member in site.categories.team reversed %}
-<li id="{{ member.title }}">{{ member.title }}
-<ul>
-<li>{{ member.mail }}</li>
-<li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>
-<li><a href="{{ member.site }}">{{ member.site }}</a></li>
-</ul>
-</li>
-{% endfor %}
-</ul>
 
 # $ cat projects.txt
 {:id="projects"}
@@ -81,19 +96,6 @@ IRC:
 
 <ul>
 {% for post in site.categories.posts %}
-
-{% if post.en %}
-<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
-{% endif %}
-
-{% endfor %}
-</ul>
-
-# $ cat articles.txt
-{:id="articles"}
-
-<ul>
-{% for post in site.categories.articles %}
 
 {% if post.en %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
