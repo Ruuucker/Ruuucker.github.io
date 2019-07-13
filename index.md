@@ -15,7 +15,6 @@ Welcome and let's hack all the things :)
 {:id="articles"}
 
 <ul>
-<li>{{ site.categories.articles }}</li>
 {% for post in site.categories.articles %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
