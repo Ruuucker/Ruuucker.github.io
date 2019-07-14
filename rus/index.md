@@ -22,7 +22,7 @@
 
 <ul>
 {% for cheatsheet in site.categories.rus %}
-<li>{{ post.title }}<a href="{{ post.url }}" title="{{ post.description }}">post.title</a></li>
+<li>{{ cheatsheet.title }}<a href="{{ cheatsheet.url }}" title="{{ cheatsheet.description }}">{{ cheatsheet.title }}</a></li>
  
 {% endfor %}
 </ul>
