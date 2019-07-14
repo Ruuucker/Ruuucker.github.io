@@ -1,7 +1,6 @@
 ---
 layout: default
 published: true
-t: Нaчaло
 ---
 <title>Rucker :: Security Researcher</title>
 
@@ -20,7 +19,7 @@ t: Нaчaло
 
 
 <ul id="markdown-toc">
-  <li>{{page.t}}<ul>
+  <li>{{page.theme}}<ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
       <li><a href="#the-issue" id="markdown-toc-the-issue">The Issue</a></li>
     </ul>
@@ -56,7 +55,7 @@ t: Нaчaло
 
 <ul>
 {% for post in site.categories.articles_rus %}
-<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+<li>{{ post.title }} {{page.theme}} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 
 {% endfor %}
