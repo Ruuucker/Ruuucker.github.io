@@ -21,7 +21,7 @@
 {:id="cheatsheet"}
 
 <ul>
-{% for cheatsheet in site.categories.cheatsheet %}
+{% for cheatsheet in site.categories.rus.cheatsheet %}
 <li><a href="{{ cheatsheet.url }}" title="{{ cheatsheet.description }}">{{ cheatsheet.title }}</a></li>
  
 {% endfor %}
