@@ -20,7 +20,7 @@ t: Нaчaло
 
 
 <ul id="markdown-toc">
-  <li>{{site.t}}<ul>
+  <li>{{page.t}}<ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
       <li><a href="#the-issue" id="markdown-toc-the-issue">The Issue</a></li>
     </ul>
