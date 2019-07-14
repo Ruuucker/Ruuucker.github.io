@@ -1,3 +1,8 @@
+---
+layout: default
+categories: [rus]
+---
+
 <title>Rucker :: Security Researcher</title>
 
 # $ cat об_этом_всём.txt
