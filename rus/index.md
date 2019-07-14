@@ -28,7 +28,7 @@ published: true
   <li><a href="#practice" id="markdown-toc-practice">Practice</a>    <ul>
     <li><a href="#first-step-creating-the-server" id="markdown-toc-first-step-creating-the-server">First Step: Creating the server</a></li>
           <li><a href="#second-step-creating-a-video-page" id="markdown-toc-second-step-creating-a-video-page">Second Step: Creating a video page</a></li>
-          <li><a href="#third-informing-the-necessary-referer" id="markdown-toc-third-informing-the-necessary-referer">Third: Informing the necessary referer</a></li>
+          <li><a href="#third-informing-the-necessary-referer" id="markdown-toc-third-informing-the-necessary-referer">Third: Informing the necessary referer</a>
         </ul>
       </li>
     </ul>
@@ -41,7 +41,6 @@ published: true
   </li>
   <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
   <li><a href="#referencies" id="markdown-toc-referencies">Referencies</a></li>
-</ul>
 
 
 
