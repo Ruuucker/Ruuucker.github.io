@@ -14,9 +14,10 @@ published: true
 {:id="articles"}
 
 <ul>
-      <li><a href="#intrudoction" id="markdown-toc-intrudoction">Intrudoction</a>  </li> <ul>
-      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li> </ul>
-
+  <li>{{ post.t }}</a>    <ul>
+      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
+    </ul>
+  </li>
       
 <ul>
 {% for post in site.categories.articles_rus %}
