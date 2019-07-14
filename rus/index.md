@@ -21,7 +21,7 @@
 {:id="cheatsheet"}
 
 <ul>
-{% for member in site.categories.team reversed %}
+{% for cheatsheet in site.categories.rus reversed %}
 <li id="{{ member.title }}">{{ member.title }}
 <ul>
 <li>{{ member.mail }}</li>
