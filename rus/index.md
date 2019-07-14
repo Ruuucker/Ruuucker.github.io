@@ -14,43 +14,6 @@ published: true
 {:id="articles"}
 
 
-
-
-
-
-<ul id="markdown-toc">
-  <li>Опоооо<ul>
-      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
-      <li><a href="#the-issue" id="markdown-toc-the-issue">The Issue</a></li>
-    </ul>
-  </li>
-  <li><a href="#theory" id="markdown-toc-theory">Theory</a></li>
-  <li><a href="#practice" id="markdown-toc-practice">Practice</a>    <ul>
-    <li><a href="#first-step-creating-the-server" id="markdown-toc-first-step-creating-the-server">First Step: Creating the server</a></li>
-          <li><a href="#second-step-creating-a-video-page" id="markdown-toc-second-step-creating-a-video-page">Second Step: Creating a video page</a></li>
-          <li><a href="#third-informing-the-necessary-referer" id="markdown-toc-third-informing-the-necessary-referer">Third: Informing the necessary referer</a>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li><a href="#another-methods" id="markdown-toc-another-methods">Another methods</a>    <ul>
-      <li><a href="#modifying-the-http-request-through-burpsuite" id="markdown-toc-modifying-the-http-request-through-burpsuite">Modifying the HTTP request through BurpSuite</a></li>
-      <li><a href="#make-the-request-through-curl--wget" id="markdown-toc-make-the-request-through-curl--wget">Make the request through cURL &amp; wget</a></li>
-      <li><a href="#building-the-request-with-ncat-from-the-scratch" id="markdown-toc-building-the-request-with-ncat-from-the-scratch">Building the request with ncat from the scratch</a></li>
-    </ul>
-  </li>
-  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
-  <li><a href="#referencies" id="markdown-toc-referencies">Referencies</a></li>
-
-
-
-
-
-
-
-
-
-
 <ul>
 {% for post in site.categories.articles_rus %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
