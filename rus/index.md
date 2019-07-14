@@ -10,7 +10,7 @@
 {:id="articles"}
 
 <ul>
-{% for post in site.categories.rus %}
+{% for post in site.categories.rus.articles %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 
@@ -18,11 +18,11 @@
 </ul>
 
 # $ cat чит-таблицы.txt
-{:id="cheatsheet"}
+{:id="cheatsheets"}
 
 <ul>
-{% for cheatsheet in site.categories.cheatsheet %}
-<li><a href="{{ cheatsheet.url }}" title="{{ cheatsheet.description }}">{{ cheatsheet.title }}</a></li>
+{% for cheatsheets in site.categories.rus.cheatsheets %}
+<li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
  
 {% endfor %}
 </ul>
