@@ -22,7 +22,10 @@ published: true
 > **NOTE:** You can read this post in portuguese in [{{ site.baseurl }}{{ page.pt }}]({{ page.pt }})
 
 # Summary
+{:.no_toc}
 
+* toc
+{:toc}
 
 # Intrudoction
 
