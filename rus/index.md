@@ -4,6 +4,9 @@ published: true
 ---
 <title>Rucker :: Security Researcher</title>
 
+---
+theme: Нaчaло
+---
 # $ cat об_этом_всём.txt
 {:id="about"}
 
@@ -19,7 +22,7 @@ published: true
 
 
 <ul id="markdown-toc">
-  <li><a href="#intrudoction" id="markdown-toc-intrudoction">Intrudoction</a>    <ul>
+  <li>{{site.theme}}</a>    <ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
       <li><a href="#the-issue" id="markdown-toc-the-issue">The Issue</a></li>
     </ul>
