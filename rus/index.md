@@ -1,12 +1,10 @@
 ---
 layout: default
 published: true
+theme: Нaчaло
 ---
 <title>Rucker :: Security Researcher</title>
 
----
-theme: Нaчaло
----
 # $ cat об_этом_всём.txt
 {:id="about"}
 
