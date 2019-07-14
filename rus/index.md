@@ -2,7 +2,7 @@
 
 # $ cat об_этом_всём.txt
 {:id="about"}
-
+{{ site.categories.rus }}
 Привет, я исследователь в области информационной безопасности. <br>
 Тут собрана и структирирована полезная информация для всеобщего пользования и образования.
 
@@ -21,7 +21,7 @@
 {:id="cheatsheet"}
 
 <ul>
-{% for cheatsheet in site.categories.rus.cheatsheet %}
+{% for cheatsheet in site.categories.rus %}
 <li><a href="{{ cheatsheet.url }}" title="{{ cheatsheet.description }}">{{ cheatsheet.title }}</a></li>
  
 {% endfor %}
