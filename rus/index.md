@@ -1,7 +1,3 @@
----
-permalink: /rus/
----
-
 <title>Rucker :: Security Researcher</title>
 
 # $ cat об_этом_всём.txt
@@ -14,7 +10,7 @@ permalink: /rus/
 {:id="articles"}
 
 <ul>
-{% for post in site.categories.permalink %}
+{% for post in site.categories.rus %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 
