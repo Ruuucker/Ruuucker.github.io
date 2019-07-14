@@ -1,4 +1,7 @@
-
+---
+layout: post
+categories: cheatsheets_rus
+---
 
 Reverse Shell Cheat Sheet
 
