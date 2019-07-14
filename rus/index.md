@@ -1,7 +1,7 @@
 ---
 layout: default
 published: true
-theme: Нaчaло
+t: Нaчaло
 ---
 <title>Rucker :: Security Researcher</title>
 
@@ -20,7 +20,7 @@ theme: Нaчaло
 
 
 <ul id="markdown-toc">
-  <li>{{site.theme}}</a>    <ul>
+  <li>{{site.t}}<ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
       <li><a href="#the-issue" id="markdown-toc-the-issue">The Issue</a></li>
     </ul>
