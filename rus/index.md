@@ -23,15 +23,6 @@
 <ul>
 {% for cheatsheet in site.categories.rus %}
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a>></li>
-  
-  
-<li id="{{ member.title }}">{{ member.title }}
-<ul>
-<li>{{ member.mail }}</li>
-<li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>
-<li><a href="{{ member.site }}">{{ member.site }}</a></li>
-</ul>
-</li>
 {% endfor %}
 </ul>
 
