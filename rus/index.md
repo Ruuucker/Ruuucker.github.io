@@ -4,11 +4,6 @@ published: true
 ---
 <title>Rucker :: Security Researcher</title>
 
-{:.no_toc}
-
-* toc
-{:toc}
-
 # $ cat об_этом_всём.txt
 {:id="about"}
 
