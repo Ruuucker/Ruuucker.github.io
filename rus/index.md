@@ -20,7 +20,7 @@ published: true
 {% endfor %}
 </ul>
 
-# $ cat чит-таблицы.txt
+# $ cat чит_таблицы.txt
 {:id="cheatsheets"}
 
 <ul>
