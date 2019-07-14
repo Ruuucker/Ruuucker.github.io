@@ -15,7 +15,7 @@ published: true
 
 
   <li><a href="#theory" id="markdown-toc-theory">Theory</a></li>
-  <li><a href="#practice" id="markdown-toc-practice">Practice</a>    <ul>
+  <li><a href="#practice" id="markdown-toc-first-step-creating-the-server">Practice</a>    <ul>
       <li><a href="#changing-dns" id="markdown-toc-changing-dns">Changing DNS</a>        <ul>
           <li><a href="#first-step-creating-the-server" id="markdown-toc-first-step-creating-the-server">First Step: Creating the server</a></li>
           <li><a href="#second-step-creating-a-video-page" id="markdown-toc-second-step-creating-a-video-page">Second Step: Creating a video page</a></li>
