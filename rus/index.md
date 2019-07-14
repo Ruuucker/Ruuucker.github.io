@@ -18,8 +18,6 @@ published: true
 
 
 
-<h1 class="no_toc" id="summary">Summary</h1>
-
 <ul id="markdown-toc">
   <li><a href="#intrudoction" id="markdown-toc-intrudoction">Intrudoction</a>    <ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
