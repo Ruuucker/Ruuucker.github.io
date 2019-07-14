@@ -1,5 +1,5 @@
 ---
-permalink: /_posts/rus/
+permalink: /rus/
 ---
 
 <title>Rucker :: Security Researcher</title>
