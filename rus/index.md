@@ -19,7 +19,7 @@ published: true
 
 
 <ul id="markdown-toc">
-  <li>{{page.theme}}<ul>
+  <li>Опоооо<ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
       <li><a href="#the-issue" id="markdown-toc-the-issue">The Issue</a></li>
     </ul>
@@ -55,7 +55,7 @@ published: true
 
 <ul>
 {% for post in site.categories.articles_rus %}
-<li>{{ post.title }} {{post.t}} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 
 {% endfor %}
