@@ -12,7 +12,7 @@ published: true
 
 # $ cat статьи.txt
 {:id="articles"}
-<ul>
+<ul id="markdown-toc">
 <li><a href="#intrudoction" id="markdown-toc-intrudoction">Intrudoction</a>   <ul>
       <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li> </ul>
 <ul>
