@@ -55,7 +55,7 @@ published: true
 
 <ul>
 {% for post in site.categories.articles_rus %}
-<li>{{ post.title }} {{post.theme}} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+<li>{{ post.title }} {{post.t}} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 
 {% endfor %}
