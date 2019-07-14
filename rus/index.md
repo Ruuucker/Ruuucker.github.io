@@ -14,14 +14,6 @@ published: true
 {:id="articles"}
 
 <ul>
-  <li>post.t<ul>
-  <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
-    </ul>
-  </li>
-</ul>      
-
-
-<ul>
 {% for post in site.categories.articles_rus %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
