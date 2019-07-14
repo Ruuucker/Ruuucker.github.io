@@ -14,6 +14,18 @@ published: true
 {:id="articles"}
 
 
+  <li><a href="#theory" id="markdown-toc-theory">Theory</a></li>
+  <li><a href="#practice" id="markdown-toc-practice">Practice</a>    <ul>
+      <li><a href="#changing-dns" id="markdown-toc-changing-dns">Changing DNS</a>        <ul>
+          <li><a href="#first-step-creating-the-server" id="markdown-toc-first-step-creating-the-server">First Step: Creating the server</a></li>
+          <li><a href="#second-step-creating-a-video-page" id="markdown-toc-second-step-creating-a-video-page">Second Step: Creating a video page</a></li>
+          <li><a href="#third-informing-the-necessary-referer" id="markdown-toc-third-informing-the-necessary-referer">Third: Informing the necessary referer</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+
 <ul>
 {% for post in site.categories.articles_rus %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
