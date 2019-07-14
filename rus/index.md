@@ -13,8 +13,8 @@ published: true
 # $ cat статьи.txt
 {:id="articles"}
 
-<li><a href="#intrudoction" id="markdown-toc-intrudoction">Intrudoction</a>    <ul>
-      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li>
+<li><a href="#intrudoction" id="markdown-toc-intrudoction">Intrudoction</a> </li>   <ul>
+      <li><a href="#motivation" id="markdown-toc-motivation">Motivation</a></li> </ul>
 
 <ul>
 {% for post in site.categories.articles_rus %}
