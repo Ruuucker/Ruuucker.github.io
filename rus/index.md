@@ -31,7 +31,7 @@
 {:id="tools"}
 
 <ul>
-{% for tool in site.categories.tools %}
+{% for tool in site.categories.tools_rus %}
 <li><a href="{{ tool.link }}">{{ tool.title }}</a> - {{ tool.description }}</li>
 {% endfor %}
 </ul>
