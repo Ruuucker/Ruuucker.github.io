@@ -1,17 +1,20 @@
 ---
 layout: post
 title: Vimeo Privacy by Website Domain Bypass
-date: 2016-05-10 12:00:00
+date: {}
 categories: articles
 en: true
 comments: true
 description: Report how to bypass and access a video secret by website domain from Vimeo
 pt: /articles/bypass-privacidade-do-vimeo/
-description_pt: Relato de como bypassar o acesso a vídeo privativo por domínio do site no Vimeo
-keywords: bypass, hacking, vimeo, video, movie, privacy, privado
+description_pt: >-
+  Relato de como bypassar o acesso a vídeo privativo por domínio do site no
+  Vimeo
+keywords: 'bypass, hacking, vimeo, video, movie, privacy, privado'
 authors:
-    - gjuniioor
-    - userx
+  - gjuniioor
+  - userx
+published: true
 ---
 
 > **OBS:** Você pode ler esse post em português em [{{ site.baseurl }}{{ page.pt }}]({{ page.pt }})
@@ -34,7 +37,10 @@ On [#ViradaHacker][virada-hacker] on the first day of April was [descrybed a way
 To show and to help you understand how the solution was thought is important, both, for those who are stating on this matter, once that this way they start to see how the process was thought and stuff like that, and for the community itself, once that it's one how-to less creating *facebook hackers* around.
 
 ## The Issue
+{:.no_toc}
 
+* toc
+{:toc}
 What would happen is the following: We wanted a friend of ours to see a video hosted on Vimeo but that video was configured to be shown only through a particula site, and this friend hasn't access to it. So, was thought: if vimeo let only one site to show the video content, let's then pretend that my machine is this site. After some tests, everything worked very well and you can see this report, originally, on #ViradaHacker [^0].
 
 # Theory
