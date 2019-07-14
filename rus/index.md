@@ -22,6 +22,9 @@
 
 <ul>
 {% for cheatsheet in site.categories.rus %}
+<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">Reverse Shells</a>></li>
+  
+  
 <li id="{{ member.title }}">{{ member.title }}
 <ul>
 <li>{{ member.mail }}</li>
