@@ -44,4 +44,8 @@ published: true
 
 Telegram:
 
-> [@ru_cker]
+> @ru_cker
+
+GitHub:
+
+> [https://github.com/Ruuucker] (https://github.com/Ruuucker)
