@@ -15,7 +15,7 @@ published: true
 
 <ul>
 {% for post in site.categories.articles_rus %}
-<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }} :: </a></li>
+<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
 {% endfor %}
 </ul>
@@ -41,10 +41,6 @@ published: true
 
 # $ cat контакт.txt
 {:id="contact"}
-
-E-mail:
-
-> [russ22223@gmail.com]
 
 Telegram:
 
