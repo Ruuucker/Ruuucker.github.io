@@ -15,7 +15,7 @@ published: true
 
 <ul>
 {% for post in site.categories.articles_rus %}
-<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }} :: </a></li>
 
 {% endfor %}
 </ul>
@@ -44,16 +44,8 @@ published: true
 
 E-mail:
 
-> lampiaosec[at]riseup[dot]net
+> [russ22223@gmail.com]
 
-Facebook:
+Telegram:
 
-> [https://facebook.me/lampiaosec](https://fb.me/lampiaosec)
-
-GitHub:
-
-> [https://github.com/lampiaosec](https://github.com/lampiaosec)
-
-IRC:
-
-> \#lampiaosec at OFTC
+> [@ru_cker]
