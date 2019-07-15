@@ -45,4 +45,4 @@ Welcome and let's hack all the things :)
 
 Telegram:
 
-> [@ru_cker]piaosec at OFTC
+> @ru_cker
