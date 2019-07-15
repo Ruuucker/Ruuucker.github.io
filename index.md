@@ -16,23 +16,18 @@ Welcome and let's hack all the things :)
 
 <ul>
 {% for post in site.categories.articles %}
-<li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
+<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
 {% endfor %}
 </ul>
 
 # $ cat cheat_sheets.txt
-{:id="cheatsheet"}
+{:id="cheatsheets"}
 
 <ul>
-{% for member in site.categories.team reversed %}
-<li id="{{ member.title }}">{{ member.title }}
-<ul>
-<li>{{ member.mail }}</li>
-<li><a href="https://github.com/{{ member.github }}">https://github.com/{{ member.github }}</a></li>
-<li><a href="{{ member.site }}">{{ member.site }}</a></li>
-</ul>
-</li>
+{% for cheatsheets in site.categories.cheatsheets %}
+<li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
+ 
 {% endfor %}
 </ul>
 
@@ -48,18 +43,6 @@ Welcome and let's hack all the things :)
 # $ cat contact.txt
 {:id="contact"}
 
-E-mail:
+Telegram:
 
-> lampiaosec[at]riseup[dot]net
-
-Facebook:
-
-> [https://facebook.me/lampiaosec](https://fb.me/lampiaosec)
-
-GitHub:
-
-> [https://github.com/lampiaosec](https://github.com/lampiaosec)
-
-IRC:
-
-> \#lampiaosec at OFTC
+> [@ru_cker]piaosec at OFTC
