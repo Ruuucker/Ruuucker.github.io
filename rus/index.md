@@ -15,6 +15,10 @@ published: true
 
 <ul>
 {% for post in site.categories.articles_rus %}
+{{ post.thematica }} 
+ {% for post in site.tags.hot %}
+  {{ post.title }}
+ {% endfor %}
 <li>{{ post.title }} :: <a href="{{ post.url }}" title="{{ post.description }}">en</a> :: <a href="{{ post.pt }}" title="{{ post.description_pt }}">pt_br</a></li>
 
 {% endfor %}
