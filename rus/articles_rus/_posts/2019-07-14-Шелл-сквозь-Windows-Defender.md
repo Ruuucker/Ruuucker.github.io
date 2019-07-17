@@ -74,7 +74,7 @@ run
 
 И получаем коммандную оболочку:
 
-({{ site.baseurl }}/rus/assets/img/posts_rus/python_shell.jpg){:class="img"}
+![Python_shell]({{ site.baseurl }}/rus/assets/img/posts_rus/python_shell.jpg){:class="img"}
 
 # Заключение
 {:id="end"}
