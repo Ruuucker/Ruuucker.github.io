@@ -101,7 +101,7 @@ run
 
 И получаем коммандную оболочку:
 
-({{ site.baseurl }}/assets/img/posts_rus/python_shell.png){:class="img"}
+({{ site.baseurl }}/assets/img/posts_rus/python_shell.jpg){:class="img"}
 
 # Заключение
 {:id="end"}
