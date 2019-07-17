@@ -1,7 +1,11 @@
 ---
 layout: post
 categories: articles_rus
-tags: [python, rev_shell, meterpreter]
+tags:
+  - python
+  - rev_shell
+  - meterpreter
+published: true
 ---
 
 # Оглавление
@@ -26,15 +30,23 @@ tags: [python, rev_shell, meterpreter]
 
 Для начала установим py2exe под 3.4 версию так как всё что выше не поддерживается.
 
+
+
 ~~~
 pip install py2exe
 ~~~
 
-или если вы как и я любите обновляться
+
+
+Или, если вы как и я любите обновляться
+
+
 
 ~~~
 py -3.4 –m pip install py2exe
 ~~~
+
+
 
 Далее создаём .py код:
 ~~~
