@@ -1,13 +1,6 @@
 ---
 layout: post
-thematica: первый
 categories: articles_rus
-tags:
-  - hot
-published: true
----
----
-layout: posts
 tags: [python, rev_shell, meterpreter]
 ---
 
