@@ -68,10 +68,10 @@ run
 
 И получаем коммандную оболочку:
 
-![Python_shell]({{ site.baseurl }}/rus/assets/img/posts_rus/python_shell.jpg){:class="imghalf"}
+![Python_shell]({{ site.baseurl }}/assets/img/posts_rus/python_shell.jpg){:class="imghalf"}
 
 # Заключение
 {:id="end"}
 
 Простой и эффективный способ борьбы с Windows Defender если не хочется терять удобный и привычный функционал meterpreter в угоду более нативным решениям, как например ssh или telnet. 
-<br>
+<br><br>
