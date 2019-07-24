@@ -1,6 +1,6 @@
 ---
 layout: post
-date: {}
+date: null
 categories: articles
 published: true
 ---
