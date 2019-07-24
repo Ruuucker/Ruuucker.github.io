@@ -141,7 +141,7 @@ USB tethering settings on Android will be reverted automatically when you unplug
 
 # Simplified instructions (Mac OSX):
 
-   Mac: Install HorNDIS package.<br>
+  > Mac: Install HorNDIS package.<br>
    Device: Turn on USB tethering under Settings > More Settings > Tethering and portable hotspot > USB tethering<br>
    Plug in USB from device to computer.<br>
    Mac: Connect device under System Preferences > Network > SAMSUNG_Android <br>
