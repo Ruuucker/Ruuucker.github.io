@@ -24,21 +24,6 @@ Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a ju
 
 
 
-
-
-
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| SOFTWARE\Classes\CLSID\<CLSID>\InProcServer32 | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-
-
-
-
-
 | Key           | Name          | Value         | Notes         |
 | :----------   | :-----------: | :-----------: | :-----------  |
 | SOFTWARE\Classes\CLSID  | | | This has not always been created in HKEY_CURRENT_USER |
