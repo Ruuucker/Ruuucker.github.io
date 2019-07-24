@@ -48,9 +48,9 @@ add the CLSID and we get this.
 
 
 
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-3.png){:class="imghalf"}
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-3.png){:class="imgsquire"}
 The CLSID doesn't become hidden if there is nothing to correlate it to. When you nvigate into the folder it appears as a normal folder. However, if you watch Procmon you see this:
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-7.png){:class="imghalf"}
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-7.png){:class="img"}
 
 
 From watching Procmon, you can see that navigating inside the folder causes explorer to look for this CLSID in HKEY_CURRENT_USER. By default, the large majority of CLSIIDs are stored under HKEY_LOCAL_MACHINE, yet CLSIDs under HKEY_CURRENT_USER can stll be used. So, now let's set up our key.
