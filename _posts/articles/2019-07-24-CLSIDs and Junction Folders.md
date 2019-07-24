@@ -82,7 +82,7 @@ So, navigate into %appdata%\Microsoft\Windows\Start Menu and you should see dire
 Run a command like below to change the folder to a junction folder (use windows api if coding).
 
 
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-15.png){:class="img"}
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-15.png){:class="imghalf"}
 
 
 and note that on reboot, we are once again kicked off by verclsid.exe.
@@ -162,4 +162,3 @@ mkdir (CreateDirectory) C:\Users\{User}\Appdata\Roaming\Microsoft\Windows\Start 
 Also make sure you make the registry entries before you create the junction folder to avoid caching issues with initial launch.
   
 The end.
-  
