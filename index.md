@@ -15,10 +15,16 @@ Welcome and let's hack all the things :)
 {:id="articles"}
 
 <ul>
+{% for uefi in site.tags.uefi %}
+   <li><a href="#changing-dns" id="markdown-toc-changing-dns">Changing DNS</a>        <ul>
+          <li><a href="#first-step-creating-the-server" id="markdown-toc-first-step-creating-the-server">First Step: Creating the server</a></li>
+          <li><a href="#second-step-creating-a-video-page" id="markdown-toc-second-step-creating-a-video-page">Second Step: Creating a video page</a></li>
+          <li><a href="#third-informing-the-necessary-referer" id="markdown-toc-third-informing-the-necessary-referer">Third: Informing the necessary referer</a></li>
+     
+<li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
+{% endfor %}  
+
 {% for post in site.categories.articles %}
-  {% for uefi in site.tags.uefi %}
-  <li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
-  {% endfor %}
   
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
