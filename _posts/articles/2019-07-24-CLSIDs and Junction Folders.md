@@ -25,9 +25,60 @@ Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a ju
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-64.png){:class="imgsquire"}
 
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-1.png){:class="imghalf"}
+
 
 Windows is nice enough to hide the CLSID for you.
+
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-1.png){:class="imghalf"}
+
+The junction works!
+<br>
+
+So what. 
+
+Well, what happens when the CLSID isn't of the expected folders? What if it's not a folder at all? That's where it gets a little interesting.
+
+# CLSIDs and COM Objects
+
+So, using CreateGuid I generated a new guid (highly unlikey to have already been used - {24138469-5DDA-479D-A150-3695B9365DC0}).  
+
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-2.png){:class="imgsquire"}
+
+add the CLSID and we get this.
+
+
+
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-3.png){:class="imgsquire"}
+The CLSID doesn't become hidden if there is nothing to correlate it to. When you nvigate into the folder it appears as a normal folder. However, if you watch Procmon you see this:
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-7.png){:class="imghalf"}
+
+
+From watching Procmon, you can see that navigating inside the folder causes explorer to look for this CLSID in HKEY_CURRENT_USER. By default, the large majority of CLSIIDs are stored under HKEY_LOCAL_MACHINE, yet CLSIDs under HKEY_CURRENT_USER can stll be used. So, now let's set up our key.
+<br><br>
+Before:
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-9.png){:class="imghalf"}
+
+Entries Added:
+Default of the {24138469-5DDA-479D-A150-3695B9365DC0} key is the name of the COM object:
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-11.png){:class="imgsquire"}
+
+Values of the InProcServer32 key:
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imgsquire"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 | Key           | Name          | Value         | Notes         |
