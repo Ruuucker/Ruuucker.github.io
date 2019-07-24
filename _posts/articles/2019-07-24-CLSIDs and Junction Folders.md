@@ -55,8 +55,8 @@ The CLSID doesn't become hidden if there is nothing to correlate it to. When you
 
 From watching Procmon, you can see that navigating inside the folder causes explorer to look for this CLSID in HKEY_CURRENT_USER. By default, the large majority of CLSIIDs are stored under HKEY_LOCAL_MACHINE, yet CLSIDs under HKEY_CURRENT_USER can stll be used. So, now let's set up our key.
 <br><br>
-Before:
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-9.png){:class="imghalf"}
+Before:<br>
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-9.png){:class="imgsquire"}
 
 Entries Added:
 Default of the {24138469-5DDA-479D-A150-3695B9365DC0} key is the name of the COM object:
