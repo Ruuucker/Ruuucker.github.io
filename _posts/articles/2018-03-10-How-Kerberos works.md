@@ -61,6 +61,7 @@ Also for this, he needs these data from the kerberos (Tc, s)Ks response to commu
 
 Now that we have a ticket to communicate with the TGS, we can ask him for tickets. We communicate with him in the following way: we (the user) send him: The name of the server with which we want to talk and the ticket (Tk, c) Ks that we received from kerberos.
 All this data is answered by the TGS in almost the same way that kerberos responded at the very beginning, namely:
+
 ~~~
 ((Tk,c)Ks; Kc,s)Kc,tgs
 ~~~
