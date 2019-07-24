@@ -32,7 +32,7 @@ First, install py2exe under version 3.4, since everything above is not supported
 ~~~
 pip install py2exe
 ~~~
-Or, if you like updating like me:
+Or, if you like updating like i do:
 ~~~
 python -3.4 –m pip install py2exe
 ~~~
