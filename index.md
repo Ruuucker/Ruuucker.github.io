@@ -15,13 +15,14 @@ Welcome and let's hack all the things :)
 {:id="articles"}
 
 <ul>
-  <li>UEFI</li>
-
+  <li>EFI</li>
+<ul>
 {% for uefi in site.tags.uefi %}
      
 <li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
 {% endfor %}  
-
+</ul>
+  
 {% for post in site.categories.articles %}
   
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
