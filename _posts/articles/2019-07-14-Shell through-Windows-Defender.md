@@ -21,7 +21,7 @@ So, the situation, it is possible to download a file to a machine that is being 
 ## Python
 {:id="python"}
 
-Here is the answer. Using Python in conjunction with metasploit and msfvenom allows us to get a decent alternative to the classic meterpreter with most of its convenient features. True, some will have to sacrifice, it will not be possible to use such commands as getsystem and it will not be possible to migrate to the process.
+Here is the answer. Using Python in conjunction with metasploit and msfvenom allows us to get a decent alternative to the classic meterpreter with most of its convenient features. However we will have to sacrifice some features, it will not be possible to use such commands as getsystem and it will not be possible to migrate to the process.
 
 
 # Let's start
