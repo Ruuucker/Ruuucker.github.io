@@ -95,7 +95,11 @@ Currently, there are a select set of CLSIDs (yet to be determined what makes the
 <br>
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-16.png)
 {:class="imghalf"}
-
+<br>
+or
+<br>
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-17.png)
+<br>
 
 
 
