@@ -25,6 +25,9 @@ Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a ju
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-64.png){:class="imgsquire"}
 
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-1.png){:class="imghalf"}
+
+Windows is nice enough to hide the CLSID for you.
 
 
 | Key           | Name          | Value         | Notes         |
