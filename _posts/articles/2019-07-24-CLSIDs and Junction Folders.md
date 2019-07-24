@@ -29,17 +29,11 @@ Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a ju
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
+| SOFTWARE\Classes\CLSID\<CLSID>\InProcServer32 | right-aligned | $1600 |
 | col 2 is      | centered      |   $12 |
 | zebra stripes | are neat      |    $1 |
 
 
-
-
-Markdown | Less | Pretty
---- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
 
 
 
