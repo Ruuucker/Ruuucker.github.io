@@ -24,7 +24,7 @@ So, the situation, it is possible to download a file to a machine that is being 
 That's the answer. Using Python in conjunction with metasploit and msfvenom allows us to get a decent alternative to the classic meterpreter with most of its convenient features. True, some will have to sacrifice, it will not be possible to use such commands as getsystem and it will not be possible to migrate to the process.
 
 
-# Lets start
+# Let's start
 
 The general scheme is as follows: we generate the python code using msfvenom, feed it to py2exe, launch the binary on the victim machine and catch the session.
 <br><br>
