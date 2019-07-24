@@ -4,6 +4,7 @@ layout: post
 categories: articles
 tags:
   - uefi
+title: 'EFI Basics, NVRAM Variables'
 ---
 # Summary
 {:.no_toc}
