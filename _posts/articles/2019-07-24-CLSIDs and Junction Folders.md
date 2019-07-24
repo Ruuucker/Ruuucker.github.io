@@ -108,15 +108,19 @@ Let's combine some of these finds and put them to use. For background on librari
 
 So, if we have a link file exploit, we would like to hide it. Or at least bury it. We also know from playing around with CLSIDs and Junction folders that we can force navigation of a junction folder (enough rendering to get it to load a dll if the clsid is in the registry). Another nice thing about libraries is that they can look pretty similar to a directory and they continue rendering even if the explorer view was changed while rendering was still in process. We'll combine some of these things with a technique used by TAO in which a desktop.ini version of the junction folder is used to kick off the rendering of the link file. This brought up a very unique CLSID ({0AFACED1-E828-11D1-9187-B532F1E9575D}) which is the CLSID for a "Shortcut Folder". So what happens when you create the junction, MyFolder.{0AFACED1-E828-11D1-9187-B532F1E9575D}? Well, Microsoft designed Shortcut Folders to store its target in a target.lnk file directly below the junction folder. When the junction folder is navigated, the link file is rendered and execution is gained. The combination means that only the library file is visible in the directory the target navigates to, and all the other folders/file can be system, hidden. Do not use the technique without the library files unless permission is granted. We don't want to appear too close to TAO's technique. 
 
+# Persisting in Explorer Using Junctions and Shell Folders (Walk-Through)
+
+If you don't wish to be persisted by verclsid, you can add a couple extra entries to make sure that it is explorer that loads you instead. To setup this persistence technique you must:
+
+ 
+
+Set the following registry keys in either HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER (keeping in mind 64-bit and 32-bit registries):
 
 
 
 
 
-
-
-
-
+Create:
 
 | Key           | Name          | Value         | Notes         |
 | :---------------------------------- | :-----------  | :-----------  | :-----------  |
@@ -132,5 +136,19 @@ So, if we have a link file exploit, we would like to hide it. Or at least bury i
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  | HideOnDesktop | | REG_SZ, but leave as empty string |
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  | Attributes  | 0xf090013d (4035969341) | REG_DWORD |
   
+Next, create a junction folder in a directory that is navigated on logon. A good location on Windows 8/8.1 is the start menu (especially since there in no classic start menu).
+
+ 
+
+C:\Users\<User>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\<MyFolder>.<CLSID>
+
+ 
+
+Example of Junction Folder creation:
+
+mkdir (CreateDirectory) C:\Users\User #?\Appdata\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Indexing.{26A81239-BD1F-48E3-BED4-EB313CFCB041} where {26A81239-BD1F-48E3-BED4-EB313CFCB041} is the CLSID used in the registry entries. 
+
+Also make sure you make the registry entries before you create the junction folder to avoid caching issues with initial launch.
   
+The end.
   
