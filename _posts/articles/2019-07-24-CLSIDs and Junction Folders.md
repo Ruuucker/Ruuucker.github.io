@@ -20,7 +20,7 @@ A junction folder in Windows is a method in which the user can cause a redirecti
 
 Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a junction to Control Panel (All Tasks).
 
- 	| Syntax | Description |
+| Syntax | Description |
 | ----------- | ----------- |
 | Header | Title |
-| Paragraph | Text | 
+| Paragraph | Text |
