@@ -293,10 +293,10 @@ In order to make the links and build the package, you will need to run the follo
 
 ~~~
 cp -rs /$PATHTOQUARKMATTER/quarkmatter/PocPkg /home/user/src/edk2/  #Create the symbolic links
-cd /home/user/src/edk2												#Navigate to the edk2 directory for build
-. edksetup.sh														#Make sure the environment variables are set properly
-build -p PocPkg/PocPkg.dsc											#Build the package as if the source was actually in the edk2 directory tree
-cd Build/PocPkg/Debug_GCC49/X64										#Navigate to the location of the resulting EFI binaries
+cd /home/user/src/edk2				#Navigate to the edk2 directory for build
+. edksetup.sh						#Make sure the environment variables are set properly
+build -p PocPkg/PocPkg.dsc			#Build the package as if the source was actually in the edk2 directory tree
+cd Build/PocPkg/Debug_GCC49/X64		#Navigate to the location of the resulting EFI binaries
 ~~~
 
 This process can be applied to any other packages that are not in the edk2 directory that you want to build.
