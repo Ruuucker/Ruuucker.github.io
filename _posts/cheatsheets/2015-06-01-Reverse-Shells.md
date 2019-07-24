@@ -1,9 +1,15 @@
 ---
 layout: post
 categories: cheatsheets
+published: true
 ---
+# Summary
+{:.no_toc}
 
-Reverse Shell Cheat Sheet
+* toc
+{:toc}
+
+# General
 
 If you’re lucky enough to find a command execution vulnerability during a penetration test, pretty soon afterwards you’ll probably want an interactive shell.
 
