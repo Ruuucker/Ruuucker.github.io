@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2016-05-10T12:00:00.000Z
+date: {}
 categories: articles
 published: true
 ---
@@ -39,8 +39,9 @@ In this case, this is a request for a ticket for the TGS service and it is the s
 When a user wants to talk to the TGS, he lets kerberos know about it. The user gives only his name and the name of the service, in return receives a ticket encrypted with the client's key for communication between the user and the service. The kerberos service response contains the public key for the user / service that will be used by both parties, and is encrypted with the service key that the user wants to contact, the general ticket for the user / service. Here is the structure:
 
 ~~~
-((Tc,s)Ks; Kc,s)Kc; where Tc,s - is the Ticket shared between Clietn and Server; Kc,s - is the Key shared between Clietn and Server; Ks - server's key; Kc - client's key.
+((Tc,s)Ks; Kc,s)Kc
 ~~~
+Where Tc,s - is the Ticket shared between Clietn and Server; Kc,s - is the Key shared between Clietn and Server; Ks - server's key; Kc - client's key.
 
 ![2]({{ site.baseurl }}/assets/img/posts/2.jpg){:class="imghalf"}
 
