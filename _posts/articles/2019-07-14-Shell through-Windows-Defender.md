@@ -6,6 +6,7 @@ tags:
   - python
   - rev_shell
   - meterpreter
+  - windows
 ---
 
 # Summary
