@@ -63,12 +63,17 @@ Default of the {24138469-5DDA-479D-A150-3695B9365DC0} key is the name of the COM
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-11.png){:class="imgsquire"}
 
 Values of the InProcServer32 key:
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imgsquire"}
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imghalf"}
 
 Now when we navigate inside of our junction folder, we see:
 Values of the InProcServer32 key:
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-13.png){:class="imgsquire"}
+Execution is gained as verclsid.exe calls process attach on our dll. Nice.
 
+# User-level Persistence
+Unfortunately, this is probably a better persistence mechanism than execution vector. Mostly, because it would require both a registry write and navigation into the junction folder. When looking at it as a persistence mechanism, all we have to do is set the registry keys, and create the junction folder in a location that explorer (or some other user process) will navigate into/under on startup. Preferrably we would like explorer to navigate into the junction folder. We could do this with Library Files on Windows 7+ (see Windows Library Files (.library-ms) ). For wider coverage using the same technique, I ended up looking into folders navigated for the "start menu". They get loaded at the start, they already exist, they exist in AppData, and they are most often viewed through the start menu. 
+
+So, navigate into %appdata%\Microsoft\Windows\Start Menu and you should see directories under the start menu, all should get navigated on login. However, you have to be careful when modifying any of these folders as they are often combined with folders in another location for the start menu and it could be alerting if there are two folders named Accessories in the targets start menu. If desired, you can also create a new folder vs using an already existing one. Anyways, so now takes something like Accessories.
 
 
 
