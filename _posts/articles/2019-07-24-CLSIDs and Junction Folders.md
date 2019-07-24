@@ -78,15 +78,12 @@ So, navigate into %appdata%\Microsoft\Windows\Start Menu and you should see dire
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-14.png){:class="imghalf"}
 
-<br>
 
 Run a command like below to change the folder to a junction folder (use windows api if coding).
 
-<br>
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-15.png){:class="img"}
 
-<br>
 
 and note that on reboot, we are once again kicked off by verclsid.exe.
 
@@ -106,9 +103,7 @@ Currently, there are a select set of CLSIDs (yet to be determined what makes the
 {:class="imghalf"}
 
 
-
 or
-
 
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-17.png)
