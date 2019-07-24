@@ -41,7 +41,7 @@ When a user wants to talk to the TGS, he lets kerberos know about it. The user g
 ~~~
 ((Tc,s)Ks; Kc,s)Kc
 ~~~
-Where Tc,s - is the Ticket shared between Clietn and Server; Kc,s - is the Key shared between Clietn and Server; Ks - server's key; Kc - client's key.
+Where Tc,s - is the Ticket shared between Clietn and Server; Kc,s - is the Key shared between Clietn and Server; Ks - the server's key; Kc - the client's key.
 
 ![2]({{ site.baseurl }}/assets/img/posts/2.jpg){:class="imghalf"}
 
