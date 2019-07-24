@@ -1,7 +1,6 @@
 ---
 published: true
 layout: post
-categories: articles
 tags:
   - uefi
 title: Setting Up a Linux Build Environment for EFI
