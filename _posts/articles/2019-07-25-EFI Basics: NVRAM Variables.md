@@ -89,3 +89,105 @@ Apple specific, configuration for El Capitan's SIP.
 A value of 0x10 means that it is enabled, 0x77 means that it is completely disabled.
 ~~~
 
+# Setting NVRAM Variables from OS X
+
+It is possible to set (some) variables from the OS X Terminal if you have root. The command to use is nvram, whose manpage output is below.
+
+~~~
+nvram(8)                                                              nvram(8)
+NAME
+       nvram - manipulate firmware NVRAM variables
+SYNOPSIS
+       nvram  [ -p ] [ -f filename ] [ -d name ] [ -c ] [ name [= value ]] ...
+DESCRIPTION
+       The nvram command allows manipulation of firmware NVRAM variables.   It
+       can be used to get or set a variable.  It can also be used to print all
+       of the variables or set a list of variables from a  file.   Changes  to
+       NVRAM variables are only saved by clean restart or shutdown.
+       In  principle,  name  can  be any string.  In practice, not all strings
+       will be accepted.  New World  machines  can  create  new  variables  as
+       desired.  Some variables require administrator privilege to get or set.
+       The given value must match the data type  required  for  name.   Binary
+       data  can  be  set using the %xx notation, where xx is the hex value of
+       the byte.  The type for new variables is always binary data.
+OPTIONS
+       -d name
+              Deletes the named firmware variable.
+       -f filename
+              Set firmware variables from a text file.  The  file  must  be  a
+              list  of  "name value" statements.  The first space on each line
+              is taken to be the separator between "name" and "value".  If the
+              last  character  of  a  line is \, the value extends to the next
+              line.
+       -x     Use XML format for reading and writing variables.   This  option
+              must  be  used  before the -p or -f options, since arguments are
+              processed in order.
+       -c     Delete all of the firmware variables.
+       -p     Print all of the firmware variables.
+EXAMPLES
+              example% nvram boot-args="-s rd=*hd:10"
+       Set the boot-args variable to "-s rd=*hd:10".  This would specify  sin-
+       gle user mode with the root device in hard drive partition 10.
+
+              example% nvram my-variable="String One%00String Two%00%00"
+       Create  a new variable, my-variable, containing a list of two C-strings
+       that is terminated by a NUL.
+
+              example% nvram -d my-variable
+       Deletes the variable named my-variable.
+                               October 28, 2003                       nvram(8)
+~~~
+
+However, the manpage does not tell you everything you need to know about nvram. Although nvram -p claims to print all of the firmware variables, it does not print any of the variables that belong to the Efi GUID.
+
+Similarly, by default, any NVRAM variable that you set from this tool will have the Apple GUID used by csr-active-config (in the table in the previous section.) However, if you are trying to set values like DriverOrder, they need to have the correct GUID, or they will not be processed by EFI like you want.
+
+Fortunately, you actually can set variables such as DriverOrder using the nvram as long as you specify the GUID. An example of this, which sets Driver order to load Driver5000 (endian-ness is important) and another command to set EnableDriverOrder are below:
+
+~~~
+$ sudo nvram 8BE4DF61-93CA-11D2-AA0D-00E098032B8C:DriverOrder=%00%50
+$ sudo nvram 4D1ED05-38C7-4A6A-9CC6-4BCCA8B38C14:EnableDriverOrder=1
+~~~
+
+# Issues Created by SIP (rootless) in OS X 10.11
+
+With the introduction of System Integrity Protection in OS X 10.11 (El Capitan), Apple has locked down some of the things you can do with the nvram command.
+
+Specifically, you can no longer set any variables that belong to the Efi GUID, like BootOrder. Similarly, you are not allowed to change the NVRAM variable that stores the SIP configuration, csr-active-config.
+
+However, at least as of 10.11.0 (10/2/2015), you can still set the EnableDriverOrder variable.
+
+# Setting NVRAM Variables from an EFI Application/Driver
+
+If you are running from within an EFI context, you can set NVRAM variables directly. Found on page 241 of the UEFI 2.5 spec, the command to set an NVRAM variable is as follows:
+
+~~~
+EFI_RUNTIME_SERVICES->SetVariable(
+CHAR16* VariableName,
+EFI_GUID *VendorGuid,
+UINT32 Attributes,
+UINTN DataSize,
+VOID *Data
+);
+~~~
+
+The VendorGuid field can be set manually (by naming a GUID in your header file, or something along those lines) or by using some of the GUIDs built into the EDK.
+
+For either Windows or Linux, the EFI GUID (used for BootOrder. Driver####, etc) has been included as part of MdePkg, the main build package. As long as your .inf file includes MdePkg/MdePkg.dec (under the [Packages] field), you can reference it as shown below:
+
+~~~
+#include  <Guid/GlobalVariable.h>
+...
+[other code]
+...
+Status = gRT->SetVariable(
+BOOT_ORDER_NAME,
+&gEfiGlobalVariableGuid,	//This is where the GUID is referenced, name defined in GlobalVariable.h from MdePkg.
+EFI_VARIABLE_NON_VOLATILE | EFI_VARIABLE_BOOTSERVICE_ACCESS | EFI_VARIABLE_RUNTIME_ACCESS,
+BOOT_ORDER_LEN,
+&BOOT_ORDER_DATA
+);
+~~~
+
+If you would like other examples of how this is done in practice, you can find them in DarkMallet (stash link, see mallet.c and mallet.h) or in the QuarkMatter proof-of-concept DriverOrder program (stash link).
+
