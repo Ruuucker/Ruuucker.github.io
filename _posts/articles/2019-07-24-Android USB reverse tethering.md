@@ -84,4 +84,32 @@ Open Terminal Emulator on your Android. Type:
     
 Type the following command in Terminal Emulator, the same for all PC operating systems:
 
+	netcfg rndis0 dhcp
+    
+The name for usb interface inside Android may vary. It is usually rndis0 or usb0. Type:
 
+	busybox ifconfig
+    
+to identify the name.
+Use OLD instructions below when automatical dhcp method does not work.
+[OLD]Type these following commands in Terminal Emulator:
+For Linux PC:
+
+~~~
+ifconfig rndis0 10.42.0.2 netmask 255.255.255.0
+route add default gw 10.42.0.1 dev rndis0
+~~~
+
+If route fails, try:
+
+	busybox route add default gw 10.42.0.1 dev rndis0
+    
+For Windows PC, use the same above commands, replace 10.42.0.2 by 192.168.137.2 (192.168.0.2 for Windows XP), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows XP)
+For Mac PC, replace 10.42.0.2 by 192.168.2.2, replace 10.42.0.1 by 192.168.2.1
+Now you can close Terminal Emulator and start the browser for Internet.
+
+Some applications (download in Google Play, GMail, Facebook...) don't recognize Internet connection. You can try this way (WARNING: NOT TESTED):
+- Enable temporarily 3G connection on your Android
+- Type:
+
+	~~~ifconfig rmnet0 0.0.0.0
