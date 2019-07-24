@@ -17,7 +17,7 @@ Kerberos was created to communicate with multiple user machines and multiple ser
 
 ![1]({{ site.baseurl }}/assets/img/posts/1.jpg){:class="imghalf"}
 
-The most important things in this system are the keys that represent an analogue of the password in Kerberos, that is, having stolen his hacker has the opportunity to pretend to be the user or server whose key he stole. This key is a password hash and in the ideal model it (the key) is not known by anyone except the key holder and the KDC. The latter saves all keys with the names of their owners in their own table and understands which key belongs to whom.
+The most important things in this system are the keys that represent an analogue of the password in Kerberos, that is, having stolen his hacker has the opportunity to pretend to be the user or server whose key he stole. This key is a password hash and in the ideal model it (the key) is not known by anyone except the key holder and the KDC (Key Distribution Center). The latter saves all keys with the names of their owners in their own table and understands which key belongs to whom.
 
 # KDC services
 
