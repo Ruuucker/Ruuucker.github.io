@@ -63,11 +63,12 @@ Entries Added:
 Default of the {24138469-5DDA-479D-A150-3695B9365DC0} key is the name of the COM object:
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-11.png){:class="imghalf"}
 
-Values of the InProcServer32 key:
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imghalf"}
+Values of the InProcServer32 key:![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imghalf"}
 
 Now when we navigate inside of our junction folder, we see:
-Values of the InProcServer32 key:![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-13.png){:class="imghalf"}
+Values of the InProcServer32 key:
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-13.png){:class="imghalf"}
+<br>
 Execution is gained as verclsid.exe calls process attach on our dll. Nice.
 
 # User-level Persistence
