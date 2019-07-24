@@ -16,7 +16,7 @@ tags:
 
 # Introduction
 
-So, the situation, it is possible to download a file to a machine that is being tested as part of a Pentest or other legitimate activity in Windows, and it is even possible to execute it. If we are talking about the latest, tenth version of the OS, then we will run into its local defender, Windows Defender, and the likelihood of stumbling upon an antivirus is great. In such a situation, a very convenient and expandable meterpreter will not work, what is the alternative?
+So, the situation, it is possible to download a file to a machine that is being tested as part of a Pentest or other legitimate activity in Windows, and it is even possible to execute it. If we are talking about the latest, tenth version of the OS, then we will run into its Windows Defender, and the likelihood of stumbling upon an antivirus is great. In such a situation, a very convenient and expandable meterpreter will not work, what is the alternative?
 
 ## Python
 {:id="python"}
