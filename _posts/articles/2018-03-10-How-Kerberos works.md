@@ -42,7 +42,7 @@ When a client wants to talk to the TGS, he lets kerberos know about it. The clie
 ~~~
 ((Tc,s)Ks; Kc,s)Kc
 ~~~
-Where Tc,s - is Ticket shared between Clietn and Server; Kc,s - is Key shared between Clietn and Server; Ks - server's key; Kc - client's key.
+Where Tc,s - is Ticket shared between Client and Server; Kc,s - is Key shared between Clietn and Server; Ks - server's key; Kc - client's key.
 
 ![2]({{ site.baseurl }}/assets/img/posts/2.jpg){:class="imghalf"}
 
