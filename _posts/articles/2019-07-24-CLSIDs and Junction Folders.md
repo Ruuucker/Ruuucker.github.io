@@ -60,7 +60,7 @@ Before:
 
 Entries Added:
 Default of the {24138469-5DDA-479D-A150-3695B9365DC0} key is the name of the COM object:
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-11.png){:class="imgshalf"}
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-11.png){:class="imghalf"}
 
 Values of the InProcServer32 key:
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imghalf"}
