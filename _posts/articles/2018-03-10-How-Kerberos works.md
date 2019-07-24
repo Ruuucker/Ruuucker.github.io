@@ -27,7 +27,7 @@ It is also necessary to be careful with the re-use of kerberos names, the fact i
 
 ## Ticket structure
 
-So, the very first ticket for the future use of the TGS service is a common client and server ticket (Tc, s) - its structure:
+So, the very first ticket for the future use of the TGS service is a common client and server ticket (Tc,s) - its structure:
 
 ~~~
 Tc,s(client_name,server_name,ip_addr,timestamp,lifetime,client's_key,server's_key)Ks
@@ -48,18 +48,18 @@ Where Tc,s - is Ticket shared between Client and Server; Kc,s - is Key shared be
 
 ## Ticket Security advantage
 
-The ticket Tc, s is encrypted with the server key so that the only thing that can be done by the person who receives the ticket (and this can be done by anyone before version 5) will give the ticket to the server with which you want to talk. In version 5, kerberos began to accept such requests only with the hash of the timestamp and client key H{timestamp, Kc} due to the possibility of an offline brute force ticket that was sent as a response. Also, in the 5th version, shared encryption keys were no longer used for the sake of a separate user and service, ie instead of one shared key, 2 separate keys began to be contained in the ticket.
+The ticket (Tc,s) is encrypted with the server key so that the only thing that can be done by the person who receives the ticket (and this can be done by anyone before version 5) will give the ticket to the server with which you want to talk. In version 5, kerberos began to accept such requests only with the hash of the timestamp and client key H{timestamp, Kc} due to the possibility of an offline brute force ticket that was sent as a response. Also, in the 5th version, shared encryption keys were no longer used for the sake of a separate user and service, ie instead of one shared key, 2 separate keys began to be contained in the ticket.
 
 TGS ticket for the TGS service with which you can get tickets from the TGS service, temporary, and the hacker will be able to work on behalf of the user only while the ticket is 'alive' and after some time it will no longer be valid, unlike the user key that only changes when changing the user's password, which is not often.
 
 
-Usually, this model is used to access the TGS service so that it can give you more tickets later. And, as I have already mentioned, the cool thing about this is to remove the client key from the memory after a user took a ticket for the TGS service when the machine was initialized, after the ticket to the TGS, we only need the key when we need to create a new ticket for the TGS. And if a hacker steals this ticket, then he can work on behalf of the user only while the ticket is 'alive' and after some time it will no longer be valid, unlike the user's key which changes only when the user password is changed, which is not often. But the user will keep in his memory the shared key of the client and the TGS (Kc, s). The question arises, what is better than leaving Kc? One way to do this is for a hacker to fail to use it outside the connection for which this shared key was created.
+Usually, this model is used to access the TGS service so that it can give you more tickets later. And, as I have already mentioned, the cool thing about this is to remove the client key from the memory after a user took a ticket for the TGS service when the machine was initialized, after the ticket to the TGS, we only need the key when we need to create a new ticket for the TGS. And if a hacker steals this ticket, then he can work on behalf of the user only while the ticket is 'alive' and after some time it will no longer be valid, unlike the user's key which changes only when the user password is changed, which is not often. But the user will keep in his memory the shared key of the client and the TGS (Kc,s). The question arises, what is better than leaving Kc? One way to do this is for a hacker to fail to use it outside the connection for which this shared key was created.
 
-Also for this, he needs these data from the kerberos (Tc, s)Ks response to communicate with the service, in this case with the TGS. If someone just takes a computer and takes it, all he gets is a ticket for the TGS, which is less evil than the password, as it gives access only for a while.
+Also for this, he needs these data from the kerberos (Tc,s)Ks response to communicate with the service, in this case with the TGS. If someone just takes a computer and takes it, all he gets is a ticket for the TGS, which is less evil than the password, as it gives access only for a while.
 
 # Work with TGS service
 
-Now that we have a ticket to communicate with the TGS, we can ask him for tickets. We communicate with him in the following way: we (the user) send him: The name of the server with which we want to talk and the ticket (Tk, c) Ks that we received from kerberos.
+Now that we have a ticket to communicate with the TGS, we can ask him for tickets. We communicate with him in the following way: we (the user) send him: The name of the server with which we want to talk and the ticket (Tk,c)Ks that we received from kerberos.
 All this data is answered by the TGS in almost the same way that kerberos responded at the very beginning, namely:
 
 ~~~
@@ -72,7 +72,7 @@ The only difference here is that now the entire response is encrypted with a sha
 
 # Security nuances
 
-Now imagine a situation: we, as a client, want to access the server via ssh with the client name 'Bob', and we are not in the kerberos system, then we send our password directly to the server. And what does the server do? He goes to the KDC server and asks for a ticket for the user 'Bob' who sends the server and encrypts the password with Bob.
+Now imagine a situation: we, as a client, want to access the server via ssh with the client name 'Bob', and we are not in the kerberos system, then we send our password directly to the server. And what does the server do? He goes to the KDC server and asks for a ticket for the user 'Bob' and the KDC sends to the server ticker encrypted with Bob's password.
 The vulnerability is that we can play the role of the KDC and send a response for the ssh machine that reaches it earlier than the response from a real kerberos server. In other words, we can log in with any existing username, send any password to ssh, send a response supposedly from the KDC which will be encrypted with the password that we sent to ssh and the ssh server will allow us to log in.
 The protection against this is as follows: the ssh server, before requesting a ticket for us, asks the TGS ticket to talk to the same ssh server, that is, with itself. And if the ssh server can correctly decode the respons, then it knows that the KDC is a legitimate server, because it knows its key.
 
