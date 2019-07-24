@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+categories: articles
+tags:
+  - usb
 ---
 # Summary
 {:.no_toc}
