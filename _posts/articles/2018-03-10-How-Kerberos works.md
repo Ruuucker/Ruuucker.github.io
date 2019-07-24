@@ -37,7 +37,7 @@ Where Ks - is the key of the server with which the ticket is encrypted.
 
 In this case, this is a request for a ticket for the TGS service and it is the server in this design.
 
-When a user wants to talk to the TGS, he lets kerberos know about it. The user gives only his name and the name of the service, in return receives a ticket encrypted with the client's key for communication between the user and the service. The kerberos service response contains the public key for the user / service that will be used by both parties, and is encrypted with the service key that the user wants to contact, the general ticket for the user / service. Here is the structure:
+When a client wants to talk to the TGS, he lets kerberos know about it. The client gives only his name and the name of the service, in return receives a ticket encrypted with the client's key for communication between the user and the service. The kerberos service response contains the public key for the user / service that will be used by both parties, and is encrypted with the service key that the user wants to contact, the general ticket for the user / service. Here is the structure:
 
 ~~~
 ((Tc,s)Ks; Kc,s)Kc
