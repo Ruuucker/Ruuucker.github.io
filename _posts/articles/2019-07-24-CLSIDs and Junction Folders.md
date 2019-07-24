@@ -49,6 +49,7 @@ add the CLSID and we get this.
 
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-3.png){:class="imgsquire"}
+<br>
 The CLSID doesn't become hidden if there is nothing to correlate it to. When you nvigate into the folder it appears as a normal folder. However, if you watch Procmon you see this:
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-7.png){:class="img"}
 
