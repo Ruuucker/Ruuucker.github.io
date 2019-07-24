@@ -2,6 +2,7 @@
 published: true
 layout: post
 categories: articles
+title: EFI Basics: NVRAM Variables
 tags:
   - uefi
 ---
