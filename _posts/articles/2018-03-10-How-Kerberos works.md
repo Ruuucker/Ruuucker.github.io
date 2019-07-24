@@ -84,4 +84,4 @@ There is also the problem that a hacker can save change password packets that th
 
 # Conclusion
 
-Here are the general principles of Kerberos, in fact, everything is not so difficult and in the overall picture is very safe, but such things as replay attacks or fake KDC responses remind that the devil is in the details.
+Here are the general principles of Kerberos, in fact, everything is not so difficult and in the overall picture is very safe, but such things as replay attacks or fake KDC responses remind that the devil is in a details.
