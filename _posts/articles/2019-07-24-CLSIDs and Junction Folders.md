@@ -37,3 +37,6 @@ Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a ju
 |SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder |	  	  	 
 |SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder |	HideOnDesktop |   |	REG_SZ, but leave as empty string|
 |SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder |Attributes | 0xf090013d (4035969341) | REG_DWORD |
+  
+  
+  
