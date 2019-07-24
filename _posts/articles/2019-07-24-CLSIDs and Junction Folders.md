@@ -18,7 +18,6 @@ A junction folder in Windows is a method in which the user can cause a redirecti
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-6.png){:class="imghalf"}
 
-![image2014-10-1.png]({{site.baseurl}}/_posts/articles/image2014-10-1.png)
 
 Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a junction to Control Panel (All Tasks).
 
