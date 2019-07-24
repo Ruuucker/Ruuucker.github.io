@@ -73,7 +73,7 @@ The only difference here is that now the entire response is encrypted with a sha
 # Security nuances
 
 Now imagine a situation: we, as a client, want to access the server via ssh with the client name 'Bob', and we are not in the kerberos system, then we send our password directly to the server. And what does the server do? He goes to the KDC server and asks for a ticket for the user 'Bob' and the KDC sends to the server ticker encrypted with Bob's password.
-The vulnerability is that we can play the role of the KDC and send a response for the ssh machine that reaches it earlier than the response from a real kerberos server. In other words, we can log in with any existing username, send any password to ssh, send a response supposedly from the KDC which will be encrypted with the password that we sent to ssh and the ssh server will allow us to log in.
+The vulnerability is that we can play the role of the KDC and send the response for the ssh machine that reaches it earlier than the response from a real kerberos server. In other words, we can log in with any existing username, send any password to ssh, send a response supposedly from the KDC which will be encrypted with the password that we sent to ssh and the ssh server will allow us to log in.
 The protection against this is as follows: the ssh server, before requesting a ticket for us, asks the TGS ticket to talk to the same ssh server, that is, with itself. And if the ssh server can correctly decode the respons, then it knows that the KDC is a legitimate server, because it knows its key.
 
 ## kpasswd
