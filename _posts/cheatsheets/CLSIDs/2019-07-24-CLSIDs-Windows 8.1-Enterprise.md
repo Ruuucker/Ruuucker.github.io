@@ -1,6 +1,6 @@
 ---
 published: false
-title: CLSIDs-Windows 8.1-Enterprise
+title: CLSIDs Windows 8.1 Enterprise
 layout: post
 categories: cheatsheets
 tags:
@@ -22,4 +22,3 @@ tags:
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  |	  	  	 
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  | HideOnDesktop | | REG_SZ, but leave as empty string |
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  | Attributes  | 0xf090013d (4035969341) | REG_DWORD |
-
