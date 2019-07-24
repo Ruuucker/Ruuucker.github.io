@@ -15,7 +15,7 @@ published: true
 
 Kerberos was created to communicate with multiple user machines and multiple servers without needing to trust the network through which they communicate. The system is very successful and is the basis of Microsoft's Active Directory. The general scheme is that we have one kerberos server that can issue Tickets and with their help all authentication of all network objects is performed and these tickets replace passwords in Kerberos system. This is cool because with a stolen tickets hacker especially can not do anything, but with a password can a lot of things and therefore it is much safer. 
 
-![1]({{ site.baseurl }}/assets/img/posts/1.jpg){:class="img"}
+![1]({{ site.baseurl }}/assets/img/posts/1.jpg){:class="imghalf"}
 
 The most important things in this system are the keys that represent an analogue of the password in Kerberos, that is, having stolen his hacker has the opportunity to pretend to be the user or server whose key he stole. This key is a password hash and in the ideal model it (the key) is not known by anyone except the key holder and the KDC. The latter saves all keys with the names of their owners in their own table and understands which key belongs to whom.
 
@@ -42,7 +42,7 @@ When a user wants to talk to the TGS, he lets kerberos know about it. The user g
 ((Tc,s)Ks; Kc,s)Kc; where Tc,s - is the Ticket shared between Clietn and Server; Kc,s - is the Key shared between Clietn and Server; Ks - server's key; Kc - client's key.
 ~~~
 
-![2]({{ site.baseurl }}/assets/img/posts/2.jpg){:class="img"}
+![2]({{ site.baseurl }}/assets/img/posts/2.jpg){:class="imghalf"}
 
 ## Ticket Security advantage
 
@@ -63,7 +63,7 @@ All this data is answered by the TGS in almost the same way that kerberos respon
 ((Tk,c)Ks; Kc,s)Kc,tgs
 ~~~
 
-![3]({{ site.baseurl }}/assets/img/posts/3.jpg){:class="img"}
+![3]({{ site.baseurl }}/assets/img/posts/3.jpg){:class="imghalf"}
 
 The only difference here is that now the entire response is encrypted with a shared key between the client and the TGS, since we no longer use the client key. Once again, back to the fact that in version 5, when establishing a connection, 2 keys are used, one for messages from the client to the server, the other from the server to the client. This approach protects against reuse attacks (replay) in which some server response can be used as a client request, while the key is common to them.
 
