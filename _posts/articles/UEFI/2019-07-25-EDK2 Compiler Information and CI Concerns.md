@@ -1,7 +1,6 @@
 ---
 published: true
 layout: post
-categories: articles
 tags:
   - uefi
 title: EDK2 Compiler Information and CI Concerns
