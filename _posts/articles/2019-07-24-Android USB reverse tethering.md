@@ -48,7 +48,9 @@ If you are ready, let's start!
 - Terminal Emulator on your Android. If you don't want to type commands on your touchscreen with Terminal Emulator, you can use your PC keyboard to enter commands with "adb shell". adb is a part of Android SDK which is available for download from Google. To use adb, you need to enable "USB debugging" on your Android.
 - Optional, BusyBox on your Android.
 
-Step 1: Connect your Android to PC by USB cable and enable "USB tethering". You are still allowed to enable this option even when your 3g/wifi on your Android is off.
+## Step 1: 
+
+Connect your Android to PC by USB cable and enable "USB tethering". You are still allowed to enable this option even when your 3g/wifi on your Android is off.
 
 - If you are using Linux (Ubuntu), you don't need to install anything. NetworkManager applet will try to establish a connection on the new detected wired network device.
 
@@ -76,7 +78,7 @@ iptables -t nat -F
 iptables -t nat -A POSTROUTING -j MASQUERADE
 ~~~
 
-Step 2:
+## Step 2:
 
 - If you are using Linux, click on NetworkManager applet at the top right of your screen, select "Edit Connections...". In tab "Wired", choose the new established connection (be careful, not Ethernet LAN connection) and click "Edit..." In tab "IPv4 Settings", choose "Shared to other computers" as Method. Click "Save". NetworkManager will reestablish the connection and assign to your PC an IP address on this USB network connection, default: 10.42.0.1. Leave Internet connections (wired or wireless) untouched.
 
@@ -134,3 +136,16 @@ before ifconfig rmnet0 ... above.
 This will make applications see your Internet connection via USB as 3G!
 
 USB tethering settings on Android will be reverted automatically when you unplug USB cable. To revert back settings on PC, uncheck "Allow other network users to connect through..." on Windows, "Internet sharing" on Mac, change from "Shared to other computers" back to "Automatically (DHCP)", or simply delete USB connection from NetworkManager on Linux.
+
+# Simplified instructions (Mac OSX):
+
+   Mac: Install HorNDIS package. As of 16 Dec 2014, the most up-to-date HoRNDIS package is HoRNDIS-rel7.pkg
+   Device: Turn on USB tethering under Settings > More Settings > Tethering and portable hotspot > USB tethering
+   Plug in USB from device to computer.
+   Mac: Connect device under System Preferences > Network > SAMSUNG_Android #
+   Mac: Add Internet Sharing under System Preferences > Sharing > Service > Internet Sharing
+   Device: Root your device
+   Device: "netcfg rndis0 dhcp"
+   Device: "netcfg" to see the ip address of rndis0
+   Mac: "ifconfig" to see the ip address of your computer; use this ip address as mc_creator's url input
+
