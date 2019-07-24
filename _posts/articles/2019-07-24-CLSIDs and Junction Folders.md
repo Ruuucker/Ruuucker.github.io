@@ -21,7 +21,7 @@ A junction folder in Windows is a method in which the user can cause a redirecti
 Name the folder My Control Panel.{ED7BA470-8E54-465E-825C-99712043E01C} for a junction to Control Panel (All Tasks).
 
 
-| Key | Name | Value | Notes |
+| Key 	|	 Name |	 Value |	 Notes |
 | ----------- | ----------- | ----------- | ----------- |
 | SOFTWARE\Classes\CLSID | | | This has not always been created in HKEY_CURRENT_USER |
 | SOFTWARE\Classes\CLSID\<CLSID> | | | Create your own CLSID, not one that is already being used on the system |
