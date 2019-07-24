@@ -67,8 +67,7 @@ Values of the InProcServer32 key:
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png){:class="imghalf"}
 
 Now when we navigate inside of our junction folder, we see:
-Values of the InProcServer32 key:
-![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-13.png){:class="imghalf"}
+Values of the InProcServer32 key:![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-13.png){:class="imghalf"}
 Execution is gained as verclsid.exe calls process attach on our dll. Nice.
 
 # User-level Persistence
