@@ -90,7 +90,6 @@ Run a command like below to change the folder to a junction folder (use windows 
 
 and note that on reboot, we are once again kicked off by verclsid.exe.
 
-<br>
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-22.png)
 {:class="imghalf"}
