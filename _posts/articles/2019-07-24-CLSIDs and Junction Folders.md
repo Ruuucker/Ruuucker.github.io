@@ -146,7 +146,9 @@ Create:
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  |	  	  	 
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  | HideOnDesktop | | REG_SZ, but leave as empty string |
 | SOFTWARE\Classes\CLSID\<CLSID>\ShellFolder  | Attributes  | 0xf090013d (4035969341) | REG_DWORD |
-  
+
+
+<br><br>
 Next, create a junction folder in a directory that is navigated on logon. A good location on Windows 8/8.1 is the start menu (especially since there in no classic start menu).
 
  
