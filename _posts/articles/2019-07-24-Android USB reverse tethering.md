@@ -50,13 +50,11 @@ Step 1: Connect your Android to PC by USB cable and enable "USB tethering". You 
 - If you are using Linux without GUI or NetworkManager, run these commands as root (or use sudo):
 
 ~~~
-	ifconfig usb0 10.42.0.1 netmask 255.255.255.0
+ifconfig usb0 10.42.0.1 netmask 255.255.255.0
 ~~~
 
 (suppose that you don't have any other USB network adapter, otherwise, your Android may be usb1, usb2...)
 
-
-`echo 1 > /proc/sys/net/ipv4/ip_forward`
 
 	echo 1 > /proc/sys/net/ipv4/ip_forward
     
