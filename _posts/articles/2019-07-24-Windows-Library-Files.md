@@ -22,7 +22,7 @@ This example only has one location, but the specification says we can have as ma
 <br>
 ![1]({{ site.baseurl }}/assets/img/posts/Windows-Library-Files/image2012.png){:class="imghalf"}
 <br>
-and the templateInfo element.
+								And the templateInfo element.
 <br>
 ![1]({{ site.baseurl }}/assets/img/posts/Windows-Library-Files/image2013.png){:class="imghalf"}
 <br>
