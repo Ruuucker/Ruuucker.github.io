@@ -55,7 +55,7 @@ TGS ticket for the TGS service with which you can get tickets from the TGS servi
 
 Usually, this model is used to access the TGS service so that it can give you more tickets later. And, as I have already mentioned, the cool thing about this is to remove the client key from the memory after a user took a ticket for the TGS service when the machine was initialized, after the ticket to the TGS, we only need the key when we need to create a new ticket for the TGS. And if a hacker steals this ticket, then he can work on behalf of the user only while the ticket is 'alive' and after some time it will no longer be valid, unlike the user's key which changes only when the user password is changed, which is not often. But the user will keep in his memory the shared key of the client and the TGS (Kc, s). The question arises, what is better than leaving Kc? One way to do this is for a hacker to fail to use it outside the connection for which this shared key was created.
 
-Also for this, he needs these data from the kerberos (Tc, s) Ks response to communicate with the service, in this case with the TGS. If someone just takes a computer and takes it, all he gets is a ticket for the TGS, which is less evil than the password, as it gives access only for a while.
+Also for this, he needs these data from the kerberos (Tc, s)Ks response to communicate with the service, in this case with the TGS. If someone just takes a computer and takes it, all he gets is a ticket for the TGS, which is less evil than the password, as it gives access only for a while.
 
 # Work with TGS service
 
