@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: CLSIDs Windows 8.1 Enterprise
 layout: post
 categories: cheatsheets
