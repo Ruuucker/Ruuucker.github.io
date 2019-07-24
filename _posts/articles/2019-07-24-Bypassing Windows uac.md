@@ -46,7 +46,28 @@ There are a couple of ways we can write to a secure location.
    >Using the IFileOperation COM Object
     Using Windows Update Standalone Installer (wusa.exe)
 
-IFileOperation COM Object
+# IFileOperation COM Object
 The IFileOperation COM object has a method that we can use to copy files to our secure location as the operation will auto-elevate and able to do a privilege copy. To exploit we can in inject our malicious DLL in a medium integrity process to carry out the operation. Since the COM object is set to auto-elevate the injected process does not need to be marked for auto-elevation in its manifest.
 
 On windows 7 injected processes that have copied successfully are
+
+~~~
+C:\Windows\explorer.exe
+C:\Windows\System32\wuauclt.exe
+C:\Windows\System32\taskhost.exe
+~~~
+
+During tests taskhost.exe only happens to work once after boot and wuauclt.exe doesn’t always work which leaves explorer.exe is only the reliable process to use.
+
+On Windows 8 injected processes that have copied successfully are
+
+~~~
+C:\Windows\explorer.exe
+C:\Windows\System32\wuauclt.exe
+C:\Windows\System32\RuntimeBroker.exe
+~~~
+
+
+Again explorer.exe is only the reliable process to use I found during my tests and the only one that worked on Windows 8.1
+
+The main part of the code below has been taken from MSDN with just the some minor changes. The SetOperationFlags values used was taken from the UAC bypass code published [here](https://download.pureftpd.org/pub/misc/UAC.cpp ).
