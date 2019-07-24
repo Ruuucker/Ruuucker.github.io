@@ -100,21 +100,21 @@ and note that on reboot, we are once again kicked off by verclsid.exe.
 This is not yet a flushed out technique and is currently in proof-of-concept stage.
 
 Currently, there are a select set of CLSIDs (yet to be determined what makes them different - current assumption is that there are additional registry entries needed), that can be accesssed through cmds Windows->run. The syntax looks something like:
-<br>
+
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-16.png)
 {:class="imghalf"}
 
-<br>
+
 
 or
 
-<br>
+
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-17.png)
 {:class="imghalf"}
 
-<br>
+
 
 These examples open up the "My Documents" folder in windows explorer. However, if the right entries are made, these could help us reuse exe persistence techniques for dlls.
 
