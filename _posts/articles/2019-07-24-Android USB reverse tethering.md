@@ -126,7 +126,7 @@ Some applications (download in Google Play, GMail, Facebook...) don't recognize 
 - Type:
 
 ~~~
-	ifconfig rmnet0 0.0.0.0
+ifconfig rmnet0 0.0.0.0
 ~~~
 
 The name for 3G interface inside Android may vary: ppp0, rmnet0... Type:
