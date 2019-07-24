@@ -107,6 +107,7 @@ Currently, there are a select set of CLSIDs (yet to be determined what makes the
 or
 <br>
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-17.png)
+{:class="imghalf"}
 <br>
 These examples open up the "My Documents" folder in windows explorer. However, if the right entries are made, these could help us reuse exe persistence techniques for dlls.
 
