@@ -141,13 +141,13 @@ USB tethering settings on Android will be reverted automatically when you unplug
 
 # Simplified instructions (Mac OSX):
 
-   Mac: Install HorNDIS package.
-   Device: Turn on USB tethering under Settings > More Settings > Tethering and portable hotspot > USB tethering
-   Plug in USB from device to computer.
-   Mac: Connect device under System Preferences > Network > SAMSUNG_Android #
-   Mac: Add Internet Sharing under System Preferences > Sharing > Service > Internet Sharing
-   Device: Root your device
-   Device: "netcfg rndis0 dhcp"
-   Device: "netcfg" to see the ip address of rndis0
+   Mac: Install HorNDIS package.<br>
+   Device: Turn on USB tethering under Settings > More Settings > Tethering and portable hotspot > USB tethering<br>
+   Plug in USB from device to computer.<br>
+   Mac: Connect device under System Preferences > Network > SAMSUNG_Android <br>
+   Mac: Add Internet Sharing under System Preferences > Sharing > Service > Internet Sharing<br>
+   Device: Root your device<br>
+   Device: "netcfg rndis0 dhcp"<br>
+   Device: "netcfg" to see the ip address of rndis0<br>
    Mac: "ifconfig" to see the ip address of your computer; use this ip address as mc_creator's url input
 
