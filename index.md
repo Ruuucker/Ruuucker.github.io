@@ -16,7 +16,9 @@ Welcome and let's hack all the things :)
 
 <ul>
 {% for post in site.categories.articles %}
-  {% for post site.tags.uefi %}
+  {% for uefi site.tags.uefi %}
+  <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+  
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
 {% endfor %}
