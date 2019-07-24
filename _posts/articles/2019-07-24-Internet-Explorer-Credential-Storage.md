@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 categories: articles
 tags:
@@ -116,4 +116,3 @@ Some sample HTML which will cause IE to use the Autocomplete Form storage is sho
   </body>
 </html>
 ~~~
-
