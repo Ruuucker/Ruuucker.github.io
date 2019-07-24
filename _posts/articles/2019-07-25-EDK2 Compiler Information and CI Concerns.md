@@ -4,6 +4,7 @@ layout: post
 categories: articles
 tags:
   - uefi
+title: EDK2 Compiler Information and CI Concerns
 ---
 # Summary
 {:.no_toc}
