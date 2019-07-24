@@ -125,8 +125,10 @@ Some applications (download in Google Play, GMail, Facebook...) don't recognize 
 - Enable temporarily 3G connection on your Android
 - Type:
 
+~~~
 	ifconfig rmnet0 0.0.0.0
-    
+~~~
+
 The name for 3G interface inside Android may vary: ppp0, rmnet0... Type:
 
 	busybox ifconfig
