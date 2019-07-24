@@ -1,5 +1,9 @@
 ---
 published: true
+layout: post
+categories: articles
+tags:
+  - uefi
 ---
 # Summary
 {:.no_toc}
