@@ -19,9 +19,13 @@ Library files were introduce in Windows 7 and are a way of viewing the contents 
 
 This example only has one location, but the specification says we can have as many as we want, All the libraries Microsoft provides have specific owners with serialized locations. Meaning you can't move it from machine to machine or even user for user. However, all the elements that tie it to a certain machine/user/location, are optional. Thanks, Obama. The parts we're interested in are the SearchConenectionDescription.
 
+<br>
 ![1]({{ site.baseurl }}/assets/img/posts/Windows-Library-Files/image2012.png){:class="imghalf"}
+<br>
 and the templateInfo element.
+<br>
 ![1]({{ site.baseurl }}/assets/img/posts/Windows-Library-Files/image2013.png){:class="imghalf"}
+<br>
 
 The SearchConnectionDescription allows you to choose what paths should be included when conglomerting the files in the library view. In this section we'll just cover the local capabilities of the library files. So, this is useful in many cases. In aiding execution, you can modify the url element of the search connector description path. Pointing the path to a non-existent sub-folder of a junction folder will cause the rendering of the junction folder. This is useful in triggering execution on a link file. This also causes exececution of COM objects (see the article CLSIDs and Junction Folders).
 
