@@ -32,6 +32,7 @@ So, the very first ticket for the future use of the TGS service is a common clie
 ~~~
 Tc,s(client_name,server_name,ip_addr,timestamp,lifetime,client's_key,server's_key)Ks
 ~~~
+
 Where Ks - is the key of the server with which the ticket is encrypted.
 
 In this case, this is a request for a ticket for the TGS service and it is the server in this design.
