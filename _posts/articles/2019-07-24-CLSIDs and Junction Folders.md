@@ -76,8 +76,25 @@ Unfortunately, this is probably a better persistence mechanism than execution ve
 
 So, navigate into %appdata%\Microsoft\Windows\Start Menu and you should see directories under the start menu, all should get navigated on login. However, you have to be careful when modifying any of these folders as they are often combined with folders in another location for the start menu and it could be alerting if there are two folders named Accessories in the targets start menu. If desired, you can also create a new folder vs using an already existing one. Anyways, so now takes something like Accessories.
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-14.png){:class="imghalf"}
+<br>
+Run a command like below to change the folder to a junction folder (use windows api if coding).
+<br>
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-15.png){:class="img"}
+<br>
+and note that on reboot, we are once again kicked off by verclsid.exe.
+<br>
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-22.png)
+{:class="imghalf"}
 
 
+# Persisting a Dll like an Exe - Windows Run
+
+This is not yet a flushed out technique and is currently in proof-of-concept stage.
+
+Currently, there are a select set of CLSIDs (yet to be determined what makes them different - current assumption is that there are additional registry entries needed), that can be accesssed through cmds Windows->run. The syntax looks something like:
+<br>
+![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-16.png)
+{:class="imghalf"}
 
 
 
