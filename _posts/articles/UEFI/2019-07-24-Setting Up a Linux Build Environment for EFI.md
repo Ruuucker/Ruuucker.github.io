@@ -27,7 +27,7 @@ At this point, you should have all of the dependencies for the UDK that are not 
 
 # Installing the UDK
 
-The first step in setting up your development environment is to install the UDK, in this case, the TianoCore EDK II [http://www.tianocore.org/edk2]. This is the open source environment for UEFI and PI development.
+The first step in setting up your development environment is to install the UDK, in this case, the TianoCore EDK II [http://www.tianocore.org/edk2](http://www.tianocore.org/edk2). This is the open source environment for UEFI and PI development.
 
 Start by downloading all of the source files for the project. These are located on Stash, under the OpenSource/edk2 project. A link to that project is here.
 
