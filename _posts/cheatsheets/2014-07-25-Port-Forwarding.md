@@ -9,7 +9,7 @@ categories: cheatsheets
 * toc
 {:toc}
 
-# SSH PortForwarding
+# SSH Port Forwarding
 
 ## Configure Simple SSH Port-Forwarding
 
