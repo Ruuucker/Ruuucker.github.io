@@ -7,7 +7,7 @@ published: true
 # $ cat about.txt
 {:id="about"}
 
-Hi, Im Rucker and I do some security. Here is collected and structured useful information for common use and education.
+Hi, Im Rucker and I do some info security. Here is collected and structured useful information for common use and education.
 
 Welcome and let's hack all the things :)
 
