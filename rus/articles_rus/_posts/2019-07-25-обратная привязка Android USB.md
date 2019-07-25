@@ -1,10 +1,11 @@
 ---
-title: Обратное троссирование Android USB
+title: Обратная привязка Android USB
 layout: post
 categories: articles
 tags:
   - articles_rus
   - usb
+published: true
 ---
 
 
@@ -152,4 +153,3 @@ USB tethering settings on Android will be reverted automatically when you unplug
    Device: "netcfg rndis0 dhcp"<br>
    Device: "netcfg" to see the ip address of rndis0<br>
    Mac: "ifconfig" to see the ip address of your computer; use this ip address as mc_creator's url input
-
