@@ -1,3 +1,13 @@
+---
+title: Обратное подключение-как-модем Android USB
+layout: post
+categories: articles
+tags:
+  - articles_rus
+  - usb
+---
+
+
 # Summary
 {:.no_toc}
 
