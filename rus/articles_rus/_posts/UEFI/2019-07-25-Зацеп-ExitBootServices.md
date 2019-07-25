@@ -1,3 +1,11 @@
+---
+title: Зацеп ExitBootServices
+layout: post
+tags:
+  - uefi_rus
+published: true
+---
+
 # Оглавление
 {:.no_toc}
 
