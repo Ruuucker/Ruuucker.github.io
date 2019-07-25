@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 title: WinDbg Cheat Sheet
 layout: post
 categories: cheatsheets
