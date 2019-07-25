@@ -22,7 +22,7 @@ Welcome and let's hack all the things :)
 <li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
 {% endfor %}  
 </ul>
- <br>
+<br>
 {% for post in site.categories.articles %}
   
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
