@@ -208,4 +208,3 @@ BOOT_ORDER_LEN,
 );
 ~~~
 
-If you would like other examples of how this is done in practice, you can find them in DarkMallet (stash link, see mallet.c and mallet.h) or in the QuarkMatter proof-of-concept DriverOrder program (stash link).
