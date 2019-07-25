@@ -1,7 +1,7 @@
 ---
 published: true
 link: 'https://github.com/Bo0oM/ParamPamPam'
-description: fuzzing
+description: Web Fuzzing
 categories: tools
 title: ParamPamPam
 ---
