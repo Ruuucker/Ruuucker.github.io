@@ -29,20 +29,16 @@ At this point, you should have all of the dependencies for the UDK that are not 
 
 The first step in setting up your development environment is to install the UDK, in this case, the TianoCore EDK II : [https://github.com/tianocore/tianocore.github.io/wiki/EDK-II](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II). This is the open source environment for UEFI and PI development.
 
-Start by downloading all of the source files for the project. These are located on Stash, under the OpenSource/edk2 project. A link to that project is here.
-
 ~~~
 mkdir ~/src
 cd ~/src
-git clone http://USERNAME@stash.devlan.net/scm/quarkmatter/edk2.git
+git clone https://github.com/tianocore/edk2
 cd edk2
 make -C Basetools/
 export EDK_TOOLS_PATH=$HOME/src/edk2/BaseTools
 mkdir Conf
 . edksetup.sh BaseTools 
 ~~~
-
-Note: if you cloned the QuarkMatter version of edk2 instead of the OpenSource version, you may have gotten a "cannot create dirrectory 'Conf': File exists" error. That is fine; I added the Conf files with their changes to that directory for QuarkMatter-specific builds.
 
 If this succeeded, your output should be similar to the output below:
 
