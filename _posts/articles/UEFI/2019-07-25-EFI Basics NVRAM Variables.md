@@ -60,6 +60,9 @@ attempt to boot from each of the Boot#### devices in the order that they are
 listed in this variable. Once a boot option is successfully loaded, the system
 
 does not continue to try to load any subsequent boot options.
+
+
+
 8BE4DF61-93CA-11D2-AA0D-00E098032B8C (Efi) 	Boot#### 	
 
 One particular device that can be booted. #### is a four-digit hex number.
@@ -67,6 +70,9 @@ One particular device that can be booted. #### is a four-digit hex number.
 This variable is of the type EFI_LOAD_OPTION, found in section 3.1.3 of the
 
 UEFI 2.5 spec.
+
+
+
 8BE4DF61-93CA-11D2-AA0D-00E098032B8C (Efi) 	DriverOrder 	
 
 An in-order array of 16-bit integers of drivers to be loaded. Similar to BootOrder,
@@ -74,13 +80,19 @@ An in-order array of 16-bit integers of drivers to be loaded. Similar to BootOrd
 this variable lists the drivers that are to be loaded on boot in order. However,
 
 unlike BootOrder, all drivers will be loaded, not just the first successful driver.
- 8BE4DF61-93CA-11D2-AA0D-00E098032B8C (Efi) 	Driver#### 	
+
+
+
+8BE4DF61-93CA-11D2-AA0D-00E098032B8C (Efi) 	Driver#### 	
 
 A driver that is to be loaded on boot, if selected in DriverOrder.
 
 #### is a four-digit hex number. This variable is of the type EFI_LOAD_OPTION,
 
 found in section 3.1.3 of the UEFI 2.5 spec.
+
+
+
 4D1ED05-38C7-4A6A-9CC6-4BCCA8B38C14 	EnableDriverOrder 	
 
 Apple specific, causes loader to use the DriverOrder and Driver#### variables.
