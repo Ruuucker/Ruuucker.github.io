@@ -192,7 +192,7 @@ VOID *Data
 
 The VendorGuid field can be set manually (by naming a GUID in your header file, or something along those lines) or by using some of the GUIDs built into the EDK.
 
-For either Windows or Linux, the EFI GUID (used for BootOrder. Driver####, etc) has been included as part of MdePkg, the main build package. As long as your .inf file includes MdePkg/MdePkg.dec (under the [Packages] field), you can reference it as shown below:
+For either Windows or Linux, the EFI GUID (used for BootOrder. Driver####, etc) has been included as part of MdePkg, the main build package. As long as your .inf file includes MdePkg/MdePkg.dec (under the Packages field), you can reference it as shown below:
 
 ~~~
 #include  <Guid/GlobalVariable.h>
