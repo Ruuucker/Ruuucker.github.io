@@ -7,17 +7,15 @@ tags:
   - usb
 published: true
 ---
-
-
-# Summary
+# Оглавление
 {:.no_toc}
 
 * toc
 {:toc}
 
-# Introduction
+# Введение
 
-This guide is intended to help you share Internet connection from your PC to your Android smartphone/tablet via USB cable. This technique is called USB reverse tethering. It is different from USB tethering in which you share Internet from your Android to your PC. There are many reasons why you need this technique working:
+Это руководство предназначено для того чтобы помочь вам обмениваться данными о подключении к Интернету с компьютера на смартфон/планшет Android с помощью USB-кабеля. Эта техника называется USB-тросом. Он отличается от USB-модема, в котором вы используете Интернет с вашего Android на ПК. Есть много причин, почему вам нужна эта техника:
 
 - You don't have mobile/wifi network and your PC doesn't have any wifi adapter
 - You can't do tethering over wifi, for example, your company doesn't let you make any hotspot at work
