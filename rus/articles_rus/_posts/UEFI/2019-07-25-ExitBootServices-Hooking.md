@@ -12,7 +12,7 @@ published: true
 * toc
 {:toc}
 
-# Так значит, хочешь хукнуть ExitBootServices?
+# Так значит, хочешь перехватить ExitBootServices?
 
 Если ты здесь, это потому что ты хочешь узнать больше о ExitBootServices и, вероятно, хочешь подключить его чтобы вы могли что-то делать с ОС. Вот некоторая базовая информация если тебе нужно освежить память о EFI.
  
@@ -22,7 +22,7 @@ published: true
 
 Когда ExitBootServices вызывается загрузчиком ОС, прошивка передает управление системой загрузчику. Вся память службы загрузки освобождается, все службы загрузки завершаются и загрузчик ОС может передать управление системой к ОС. На данный момент доступны только сервисы времени выполнения предоставляемые прошивкой.
 
-# Хукаем ExitBootServices
+# Перехватываем ExitBootServices
 
 Когда вызывается ExitBootServices, DXE фаза подходит к концу. Прошивка сделала все что нужно от UEFI для настройки системы под ОС, а сама ОС уже загружена в память. Мы можем проявить творческий подход к тому, что можно сделать с ядром которое просто находится в памяти, и ничем не защищено.
 
@@ -38,13 +38,14 @@ published: true
 Чтобы убедиться, что ваш вызов ExitBootServices проходит правильно, вам нужно сначала вызвать GetMemoryMap. По иронии судьбы, вызов GetMemoryMap потребует от вас выделения памяти для самой карты, что в свою очередь изменит карту памяти.
 
 
-You can deal with this issue by looping your calls – allocating space for the map, then calling GetMemoryMap again. Eventually, you will have allocated enough space for the (again updated) map before you make the GetMemoryMap call, and you'll get the up-to-date map.
+Можно решить эту проблему зацикливая свои вызовы - выделяя место для карты, а затем снова вызывая GetMemoryMap. В конце концов, будет выделено достаточно места для (снова обновленной) карты, и после этого сделать вызов GetMemoryMap и получить обновленную карту.
 
-Once you have the map, you can simply call the original ExitBootServices function and be on your merry way.
+Получив карту, можно просто вызвать оригинальную функцию ExitBootServices и отправиться в путь.
 
-# Example Code
+# Пример кода
 
-Below is the code you'll need to do basic ExitBootServices hooking. Actually compiling this into an EFI executable isn't covered in this tutorial, but you will need to run this from a UEFI driver. In this example, your driver's entry point is HookDriverMain.
+Ниже приведен код, который понадобится для базового перехвата ExitBootServices. На самом деле компиляция этого в исполняемый файл EFI не рассматривается в этом руководстве, но тебе нужно будет запустить его из драйвера UEFI. В этом примере точкой входа вашего драйвера является HookDriverMain.
+
 
 ~~~
 extern EFI_BOOT_SERVICES *gBS;
