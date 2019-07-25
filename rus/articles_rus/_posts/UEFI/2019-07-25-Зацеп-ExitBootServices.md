@@ -7,7 +7,6 @@
 # Так значит, хочешь зацепить ExitBootServices?
 
 Если ты здесь, это потому что ты хочешь узнать больше о ExitBootServices и, вероятно, хочешь подключить его чтобы вы могли что-то делать с ОС. Вот некоторая базовая информация если тебе нужно освежить память о EFI.
-
  
 
 On boot, the code located on the firmware has control of the system. It is what determines what happens during a boot. Typically, the UEFI application run from the firmware is an OS Loader. The loader's main purpose is to initialize everything that the OS needs to run, load the kernel into memory, and pass control to the kernel itself. However, the loader is just another UEFI Application: it can only use the memory it has been allocated by the firmware and can only access the UEFI services and protocols that the firmware provides. All the way through to the end of the DXE phase of a UEFI boot, the firmware is in charge. However, eventually, all of the UEFI boot services need to end, and the OS needs to take control. This is accomplished using the UEFI boot service ExitBootServices.
