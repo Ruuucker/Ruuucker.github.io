@@ -66,4 +66,3 @@ Furthermore, these strings cannot (so far, with my experimentation) be stripped 
 
 However, you can manually NULL out the bytes that should have stored the path string (or use a python script to do it.) Unlike what I previously believed, if you simply NULL out the buffer where the string would have been stored, the program will execute normally. I would presume that you can put random junk there too and it will work.
 
-I have yet to determine why these strings are included, but for now, be sure that when you are building EFI executables, you are careful with your built names and user name, or make sure to NULL out those strings.
