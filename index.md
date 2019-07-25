@@ -7,7 +7,7 @@ published: true
 # $ cat about.txt
 {:id="about"}
 
-Hi, I do some info security. Here is collected and structured useful information for common use and education.
+Hi, I do some info security and this is my blog. Here is collected and structured useful information for common use and education.
 
 Welcome and let's hack all the things :)
 
