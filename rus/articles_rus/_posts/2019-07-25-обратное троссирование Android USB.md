@@ -18,18 +18,21 @@ published: true
 Это руководство предназначено для того чтобы помочь вам обмениваться подключением к Интернету с компьютера на смартфон/планшет Android с помощью USB-кабеля. Эта техника называется USB-тросом. Это отличается от USB-модема, в котором ты используешь Интернет с своего Android на ПК. Есть много причин, почему вам нужна эта техника:
 
 
-- Ты не и mobile/wifi network and your PC doesn't have any wifi adapter
-- You can't do tethering over wifi, for example, your company doesn't let you make any hotspot at work
-- You don't want to spend money for a mobile plan, and you want a more stable and faster Internet connection than wifi
-- You don't want your PC and your Android to become too hot because of wifi
-- You want your Android charged while in use
+- Нет мобильной/wifi сети и твой ПК не имеет wifi адаптера
+- Не можешь делать троссирование через wifi, например, политика компании не позволяет создавать точки подключения на работе
+- Не хочешь тратить деньги на мобильный план, и хочешь более стабильного и быстрого Интернет соединения чем wifi
+- Не хочешь высоких температур на ПК и Android из-за wifi
+- Нужен задярник во время процесса
 ...
 
 
-You have searched and found some applications/tools/solutions, you followed exactly their instructions but finally you were frustrated because they didn't work, here I come for a new method. 
+Вы искали и нашли некоторые приложения/инструменты/решения, вы точно следовали их инструкциям, но в конце концов вы разочаровались, потому что они не работали, вот я и пришел за новым методом. 
 
 This method works following Internet connection sharing basics. If your Android device is able to do USB tethering, you will be able to do USB reserve tethering with this method!
 Advantages:
+
+Этот метод работает по принципу общего доступа к Интернету. Если ваше Android-устройство способно подключаться к USB-модему, вы сможете использовать резервный USB-модем с помощью этого метода!
+Преимущества:
 
 - No additional software on your PC. Leave no trace on your PC. Imagine when you are at work and you have to install some crappy "toy" application on your PC to estiblish a tunnel connection for this task.
 
