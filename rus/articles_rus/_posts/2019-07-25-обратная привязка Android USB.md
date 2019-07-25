@@ -1,5 +1,5 @@
 ---
-title: Обратное подключение-как-модем Android USB
+title: Обратное троссирование Android USB
 layout: post
 categories: articles
 tags:
