@@ -15,10 +15,10 @@ published: true
 
 # Введение
 
-Это руководство предназначено для того чтобы помочь вам обмениваться данными о подключении к Интернету с компьютера на смартфон/планшет Android с помощью USB-кабеля. Эта техника называется USB-тросом. Он отличается от USB-модема, в котором вы используете Интернет с вашего Android на ПК. Есть много причин, почему вам нужна эта техника:
+Это руководство описывает метод получения Интернет соединения для ПК с помощью смартфон/планшет Android и USB-кабеля. Эта техника называется обратной USB привязкой. Она отличается от USB-модема, с помощью которого ты обычно проводишь Интернет с Android на ПК. Есть много причин, почему вам нужна эта техника:
 
-- You don't have mobile/wifi network and your PC doesn't have any wifi adapter
-- You can't do tethering over wifi, for example, your company doesn't let you make any hotspot at work
+- Нет мобильной/Wi-Fi сети, и на компьютере нет адаптера Wi-Fi
+- Нельзя использовать Wi-Fi модем, например, ваша компания не позволяет создавать  на работе
 - You don't want to spend money for a mobile plan, and you want a more stable and faster Internet connection than wifi
 - You don't want your PC and your Android to become too hot because of wifi
 - You want your Android charged while in use
