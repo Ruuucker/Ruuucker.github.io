@@ -17,7 +17,6 @@ This page will discuss locations of compiler flags within the TianoCore EDK2 (UD
 
 If you have not built your environment, you can find the page that discusses how to do that (for Linux) here: [Setting Up a Linux Build Environment for EFI]({{ site.baseurl }}/articles/Setting-Up-a-Linux-Build-Environment-for-EFI/ "Setting Up a Linux Build Environment for EFI").
 
-This page documents everything noteworthy that we have found so far. It will be updated as we find other interesting things.
 
 # Compiler Flags
 
