@@ -1,3 +1,10 @@
+---
+title: Информация компилятора EDK2 и проблемы CI
+layout: post
+tags:
+  - uefi_rus
+---
+
 # Summary
 {:.no_toc}
 
