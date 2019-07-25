@@ -3,6 +3,7 @@ published: true
 layout: post
 tags:
   - uefi
+title: ExitBootServices Hooking
 ---
 # Summary
 {:.no_toc}
