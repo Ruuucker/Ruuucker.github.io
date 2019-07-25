@@ -128,7 +128,7 @@ EDK II's basic build structure is centered around packages, which are used to co
 
 The UEFI Driver Wizard is a tool created by Tianocore (the same people that published EDK II) designed to make it easier to create new EFI drivers and packages. It automates some of the basic tasks that you would need to complete in order to create a new package.
 
-It source can be found on the open internet at https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard, and a brief description can be found at https://github.com/tianocore/tianocore.github.io/wiki/UEFI-Driver-Wizard.
+It source can be found on the open internet at [https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard](https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard), and a brief description can be found at [https://github.com/tianocore/tianocore.github.io/wiki/UEFI-Driver-Wizard](https://github.com/tianocore/tianocore.github.io/wiki/UEFI-Driver-Wizard).
 
 Setting up the driver wizard is very simple: use Subversion to check out the code, create a directory in your Ubuntu machine for it to all go into, and copy it there. Then, navigate to that directory and run the launch.py script, which will launch the GUI.
 
