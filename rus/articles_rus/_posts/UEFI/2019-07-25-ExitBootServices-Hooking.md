@@ -22,9 +22,10 @@ published: true
 
 Когда ExitBootServices вызывается загрузчиком ОС, прошивка передает управление системой загрузчику. Вся память службы загрузки освобождается, все службы загрузки завершаются и загрузчик ОС может передать управление системой к ОС. На данный момент доступны только сервисы времени выполнения предоставляемые прошивкой.
 
-# Actually Hooking ExitBootServices
+# Хукаем ExitBootServices
 
 When ExitBootServices is called, the DXE phase is about to end. The firmware has done all that it needs to do from UEFI to set up the system for the OS, and the OS itself has already been loaded into memory. You can be creative with what you could do to the kernel that is just sitting there in memory, not protected by anything.
+Когда вызывается ExitBootServices, DXE фаза подходит к концу. Прошивка сделала все что нужно от UEFI для настройки системы под ОС, а сама ОС уже загружена в память. Мы можем проявить творческий подход к тому, что можно сделать с ядром которое просто находится в памяти, и ничем не защищено.
 
 Because the ExitBootServices service can be found by getting its pointer from the global EFI_BOOT_SERVICES table, hooking the ExitBootServices call is trivial. From within a UEFI driver, you store the original pointer and then replace the table's pointer with one to your hook function. From there, you let your driver run and wait for ExitBootServices to be called by the OS loader, and your hook code will run just before the OS loader gets control. When you're running in UEFI, that EFI_BOOT_SERVICES table isn't protected by anything, so you can just write directly to it.
 
