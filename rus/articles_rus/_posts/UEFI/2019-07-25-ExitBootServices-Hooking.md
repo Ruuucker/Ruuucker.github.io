@@ -24,10 +24,10 @@ published: true
 
 # Хукаем ExitBootServices
 
-When ExitBootServices is called, the DXE phase is about to end. The firmware has done all that it needs to do from UEFI to set up the system for the OS, and the OS itself has already been loaded into memory. You can be creative with what you could do to the kernel that is just sitting there in memory, not protected by anything.
 Когда вызывается ExitBootServices, DXE фаза подходит к концу. Прошивка сделала все что нужно от UEFI для настройки системы под ОС, а сама ОС уже загружена в память. Мы можем проявить творческий подход к тому, что можно сделать с ядром которое просто находится в памяти, и ничем не защищено.
 
-Because the ExitBootServices service can be found by getting its pointer from the global EFI_BOOT_SERVICES table, hooking the ExitBootServices call is trivial. From within a UEFI driver, you store the original pointer and then replace the table's pointer with one to your hook function. From there, you let your driver run and wait for ExitBootServices to be called by the OS loader, and your hook code will run just before the OS loader gets control. When you're running in UEFI, that EFI_BOOT_SERVICES table isn't protected by anything, so you can just write directly to it.
+
+Поскольку сервис ExitBootServices можно найти получив его указатель из глобальной таблицы EFI_BOOT_SERVICES, перехват вызова ExitBootServices тривиален. Внутри драйвера UEFI вы сохраняете исходный указатель, а затем заменяете указатель таблицы на один из наших хук-функции. Оттуда можно позволять нашему драйверу работать, и ждать пока загрузчик ОС вызовет ExitBootServices, и ваш код перехвата будет запущен непосредственно перед тем как загрузчик ОС получит контроль. Когда вы работаете в UEFI, эта таблица EFI_BOOT_SERVICES ничем не защищена, поэтому вы можете просто писать прямо в нее.
 
 At this point, you can do whatever you want. UEFI boot services are still running (because they will be terminated when the real ExitBootServices is called), and the OS is sitting there. However, if you mess with memory (especially if you allocate new buffers), you will need to do some cleanup before you can return successfully to the original ExitBootServices.
 
