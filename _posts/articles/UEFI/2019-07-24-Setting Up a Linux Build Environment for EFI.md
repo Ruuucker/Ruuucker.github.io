@@ -13,11 +13,7 @@ title: Setting Up a Linux Build Environment for EFI
 
 # Specific Ubuntu Configuration Details
 
-The first step in setting up the development environment is making sure that you have a working Ubuntu machine. You can use an actual Ubuntu DEVLAN machine or an Ubuntu VM on your DEVLAN machine.
-
 This page will not go into detail about how to install Ubuntu or create an Ubuntu VM, but will focus on the few ways you'll configure the Ubuntu machine before you can install and set up the UDK.
-
-First, you need to modify your sources.list file so apt-get can use the DEVLAN repos, located at repo.devlan.net. Linux Package Repository Mirrors setup discusses a few ways to do that.
 
 Once you have set up Ubuntu to run properly, run the following commands to update and upgrade your packages and download the ones needed for the UDK.
 
@@ -31,7 +27,7 @@ At this point, you should have all of the dependencies for the UDK that are not 
 
 # Installing the UDK
 
-The first step in setting up your development environment is to install the UDK, in this case, the TianoCore EDK II (http://www.tianocore.org/edk2). This is the open source environment for UEFI and PI development.
+The first step in setting up your development environment is to install the UDK, in this case, the TianoCore EDK II [http://www.tianocore.org/edk2]. This is the open source environment for UEFI and PI development.
 
 Start by downloading all of the source files for the project. These are located on Stash, under the OpenSource/edk2 project. A link to that project is here.
 
