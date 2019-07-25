@@ -120,13 +120,11 @@ At this point, presuming that the build did not give you any errors, you have su
 
 This subsection will walk you through creating a basic "HelloWorld" style EFI program and how to use EDK2 to build it.
 
-## Creating Your EFI Package
-
-### EFI Package and Its Components
+## EFI Package and Its Components
 
 EDK II's basic build structure is centered around packages, which are used to contain multiple modules (which are eventually built into EFI executables.)
 
-### Using the UEFI Driver Wizard to Create a New Package
+## Using the UEFI Driver Wizard to Create a New Package
 
 The UEFI Driver Wizard is a tool created by Tianocore (the same people that published EDK II) designed to make it easier to create new EFI drivers and packages. It automates some of the basic tasks that you would need to complete in order to create a new package.
 
