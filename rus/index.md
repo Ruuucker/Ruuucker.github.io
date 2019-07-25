@@ -22,8 +22,8 @@ published: true
 </ul>
 <br>
 
-{% for post in site.categories.articles_rus %}
-<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+{% for post_rus in site.categories.articles_rus %}
+<li><a href="{{ post_rus.url }}" title="{{ post_rus.description }}">{{ post_rus.title }}</a></li>
 
 {% endfor %}
 </ul>
