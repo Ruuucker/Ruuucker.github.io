@@ -1,5 +1,5 @@
 ---
-title: Зацеп ExitBootServices
+title: ExitBootServices Hooking
 layout: post
 tags:
   - uefi_rus
