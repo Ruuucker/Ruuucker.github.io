@@ -20,7 +20,8 @@ published: true
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
 </ul>
-  
+<br>
+
 {% for post in site.categories.articles_rus %}
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
