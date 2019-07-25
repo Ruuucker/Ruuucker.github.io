@@ -2,6 +2,7 @@
 layout: post
 categories: articles_rus
 tags:
+  - articles_rus
   - python
   - rev_shell
   - meterpreter
