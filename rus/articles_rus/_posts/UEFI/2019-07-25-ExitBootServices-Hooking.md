@@ -29,11 +29,14 @@ published: true
 
 Поскольку сервис ExitBootServices можно найти получив его указатель из глобальной таблицы EFI_BOOT_SERVICES, перехват вызова ExitBootServices тривиален. Внутри драйвера UEFI вы сохраняете исходный указатель, а затем заменяете указатель таблицы на один из наших хук-функции. Оттуда можно позволять нашему драйверу работать, и ждать пока загрузчик ОС вызовет ExitBootServices, и ваш код перехвата будет запущен непосредственно перед тем как загрузчик ОС получит контроль. Когда вы работаете в UEFI, эта таблица EFI_BOOT_SERVICES ничем не защищена, поэтому вы можете просто писать прямо в нее.
 
-At this point, you can do whatever you want. UEFI boot services are still running (because they will be terminated when the real ExitBootServices is called), and the OS is sitting there. However, if you mess with memory (especially if you allocate new buffers), you will need to do some cleanup before you can return successfully to the original ExitBootServices.
+На данный момент вы можете делать все, что вы хотите. Сервисы загрузки UEFI все еще работают (потому что они будут прерваны когда произойдет вызов реальных ExitBootServices) и ОС находится там. Однако, если вы возитесь с памятью (особенно если вы выделяете новые буферы), вам нужно будет выполнить некоторую очистку, прежде чем вы сможете успешно вернуться к исходным ExitBootServices.
 
-The second parameter to ExitBootServices is a UINTN MapKey. This value identifies the current memory map of the system, and is changed every time something in the memory map changes. In order for ExitBootServices to do its job properly, it MUST have the current memory map. If it does not, it will do weird things, like cause the OS to not be able to identify the startup disk or not be able to load altogether.
 
-In order to make sure your ExitBootServices call goes correctly, you will need to call GetMemoryMap first. Ironically, calling GetMemoryMap will require you to allocate memory for the map itself, which, in turn, will change the memory map.
+Второй параметр ExitBootServices - это UINTN MapKey. Это значение идентифицирует текущую карту памяти системы и изменяется каждый раз, когда что-то на карте памяти изменяется. Чтобы ExitBootServices правильно выполнял свою работу, он ДОЛЖЕН иметь текущую карту памяти. Если этого не произойдет, это приведет к странным вещам, например, приведет к тому что ОС не сможет определить загрузочный диск или вообще не сможет загрузиться.
+
+
+Чтобы убедиться, что ваш вызов ExitBootServices проходит правильно, вам нужно сначала вызвать GetMemoryMap. По иронии судьбы, вызов GetMemoryMap потребует от вас выделения памяти для самой карты, что в свою очередь изменит карту памяти.
+
 
 You can deal with this issue by looping your calls – allocating space for the map, then calling GetMemoryMap again. Eventually, you will have allocated enough space for the (again updated) map before you make the GetMemoryMap call, and you'll get the up-to-date map.
 
