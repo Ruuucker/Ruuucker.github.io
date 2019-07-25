@@ -25,7 +25,7 @@ published: true
 ...
 
 
-You have searched and found some applications/tools/solutions, you followed exactly their instructions but finally you were frustrated because they didn't work, here I come for a new method. 
+Ты искал и нашел некоторые приложения/инструменты/решения, точно следовал их инструкциям, но в конце концов разочаровался, потому что они не работали, вот я и пришел с новым методом.
 
 This method works following Internet connection sharing basics. If your Android device is able to do USB tethering, you will be able to do USB reserve tethering with this method!
 Advantages:
