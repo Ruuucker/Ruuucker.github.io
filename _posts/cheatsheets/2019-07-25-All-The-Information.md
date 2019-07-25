@@ -4,7 +4,7 @@ layout: post
 categories: cheatsheets
 ---
 ## Before Google something, try to find it here:
-<br><br>
+<br>
 
 
 ### [Awesome Pentest Cheat Sheets](https://github.com/coreb1t/awesome-pentest-cheat-sheets "Awesome Pentest Cheat Sheets")
@@ -20,4 +20,4 @@ categories: cheatsheets
 
 ### [Awesome Hacking](https://github.com/Hack-with-Github/Awesome-Hacking "Awesome Hacking")
 
-#### [Awesome Hacking Resources](https://github.com/vitalysim/Awesome-Hacking-Resources "Awesome Hacking Resources")
+### [Awesome Hacking Resources](https://github.com/vitalysim/Awesome-Hacking-Resources "Awesome Hacking Resources")
