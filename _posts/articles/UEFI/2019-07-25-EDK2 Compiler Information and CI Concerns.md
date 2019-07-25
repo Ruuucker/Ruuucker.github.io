@@ -65,4 +65,3 @@ One of the first things you may notice is that absolute file paths are included 
 Furthermore, these strings cannot (so far, with my experimentation) be stripped out of the binary using compiler flags. If you change the GCC compiler flags from -g to -s, the strings remain. If you change the objcopy flags to include --strip-all, the binary will hang when you run it.
 
 However, you can manually NULL out the bytes that should have stored the path string (or use a python script to do it.) Unlike what I previously believed, if you simply NULL out the buffer where the string would have been stored, the program will execute normally. I would presume that you can put random junk there too and it will work.
-
