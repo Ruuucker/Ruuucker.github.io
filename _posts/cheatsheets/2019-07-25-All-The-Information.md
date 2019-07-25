@@ -1,5 +1,7 @@
 ---
 published: true
+layout: post
+categories: cheatsheets
 ---
 # Before Google something, try to find it here
 
