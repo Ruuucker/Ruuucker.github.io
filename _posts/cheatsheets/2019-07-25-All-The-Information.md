@@ -5,14 +5,8 @@ categories: cheatsheets
 ---
 # Before Google something, try to find it here
 
-# Summary
-{:.no_toc}
 
-* toc
-{:toc}
-
-
-# [What is a CLSID Registry Key]({{ site.baseurl }}/articles/What-is-a-CLSID-Registry-Key/ "What is a CLSID Registry Key")
+## [Awesome Pentest Cheat Sheets](https://github.com/coreb1t/awesome-pentest-cheat-sheets "Awesome Pentest Cheat Sheets")
 
 
 
