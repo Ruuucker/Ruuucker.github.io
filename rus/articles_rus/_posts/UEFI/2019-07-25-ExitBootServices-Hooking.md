@@ -12,12 +12,13 @@ published: true
 * toc
 {:toc}
 
-# Так значит, хочешь зацепить ExitBootServices?
+# Так значит, хочешь хукнуть ExitBootServices?
 
 Если ты здесь, это потому что ты хочешь узнать больше о ExitBootServices и, вероятно, хочешь подключить его чтобы вы могли что-то делать с ОС. Вот некоторая базовая информация если тебе нужно освежить память о EFI.
  
+ 
 
-On boot, the code located on the firmware has control of the system. It is what determines what happens during a boot. Typically, the UEFI application run from the firmware is an OS Loader. The loader's main purpose is to initialize everything that the OS needs to run, load the kernel into memory, and pass control to the kernel itself. However, the loader is just another UEFI Application: it can only use the memory it has been allocated by the firmware and can only access the UEFI services and protocols that the firmware provides. All the way through to the end of the DXE phase of a UEFI boot, the firmware is in charge. However, eventually, all of the UEFI boot services need to end, and the OS needs to take control. This is accomplished using the UEFI boot service ExitBootServices.
+При загрузке код расположенный на прошивке контролирует систему. Это то что определяет происходящее во время загрузки. Как правило, приложение UEFI запускаемое из прошивки является загрузчиком ОС. Основная цель загрузчика - инициализировать все что нужно операционной системе, загрузить ядро в память и передать управление самому ядру. Однако загрузчик - это просто еще одно приложение UEFI: он может использовать только память выделенную прошивкой и может получать доступ только к службам и протоколам UEFI которые предоставляет прошивка. За всю стадию UEFI загрузки, вплоть до DXE фазы, отвечает прошивка. Однако в конце концов все службы загрузки UEFI должны быть завершены, а ОС должна получить контроль. Это выполняется с помощью загрузочного сервиса UEFI ExitBootServices.
 
 When ExitBootServices is called by the OS loader, the firmware gives control of the system to the loader. All of the boot service memory is reclaimed, the boot services are all terminated, and the OS loader can hand over control of the system to the OS. At this point, only the runtime services provided by the firmware are still accessible.
 
