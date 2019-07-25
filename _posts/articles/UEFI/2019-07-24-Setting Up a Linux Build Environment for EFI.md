@@ -118,8 +118,6 @@ At this point, presuming that the build did not give you any errors, you have su
 
 # Creating and Building a Basic EFI Package
 
-This section is dependent on having a working EDK II build environment. If you have not done that already, please go back to the section above and build your environment.
-
 This subsection will walk you through creating a basic "HelloWorld" style EFI program and how to use EDK2 to build it.
 
 ## Creating Your EFI Package
