@@ -13,6 +13,14 @@ published: true
 {:id="articles"}
 
 <ul>
+  <li>EFI</li>
+<ul>
+{% for uefi_rus in site.tags.uefi_rus %}
+     
+<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+{% endfor %}  
+</ul>
+  
 {% for post in site.categories.articles_rus %}
 <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
