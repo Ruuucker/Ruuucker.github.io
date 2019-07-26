@@ -1,5 +1,5 @@
 ---
-title: Обратная привязка Android USB
+title: Обратный модем Android USB
 layout: post
 categories: articles
 tags:
@@ -15,7 +15,7 @@ published: true
 
 # Введение
 
-Это руководство описывает метод получения Интернет соединения для ПК с помощью смартфона/планшета Android и USB-кабеля. Эта техника называется обратной USB привязкой. Она отличается от USB-модема, с помощью которого ты обычно проводишь Интернет с Android на ПК. Есть много причин, почему эта техника нужна:
+Это руководство описывает метод получения Интернет соединения от ПК к смартфону/планшету на Android с помощью USB-кабеля. Эта техника называется обратным USB модемом. Она отличается от USB-модема, с помощью которого ты обычно проводишь Интернет с Android на ПК. Есть много причин, почему эта техника нужна:
 
 - Нет мобильной/Wi-Fi сети или на компьютере нет адаптера Wi-Fi
 - Нельзя использовать Wi-Fi модем, например, ваша компания не позволяет создавать на работе точки подключения
@@ -44,7 +44,8 @@ published: true
 
 # Зависимости:
 
-- Рутированный Android девайс с возможностью "USB модема". Проверь настройки Android - Беспроводные & Сеть - Модем & точка доступа. Many stock ROMs disable this capability. You must enable it somehow (root your Android and use an application to enable or replace the stock ROM). CyanogenMod ROMs always have this capability. The important thing to remember is when you connect your Android and enable "USB tethering", it appears as a USB network adapter, not a mass storage or media device.
+- Рутированный Android девайс с возможностью "USB модема". Проверь настройки Android - Беспроводные & Сеть - Модем & точка доступа. Многие стандартные ROM (Пямять только для чтения) отключают эту возможность. Это нужно как то включить (рутировать твой Android и использовать приложение для включения возможности записи или перемещения ROM). ROM от CyanogenMod всегда имеет эту возможность.
+Важно помнить, что когда ты подключаешь свой Android и включаешь "USB-модем", он выглядит как сетевой USB-адаптер, а не запоминающее устройство или мультимедийное устройство.
 
 - PC with a working Internet connection.
 - USB cable to connect your Android to your PC.
