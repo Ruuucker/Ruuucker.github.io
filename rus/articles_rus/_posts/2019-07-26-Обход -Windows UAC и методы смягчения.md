@@ -299,11 +299,11 @@ Microsoft предоставила нам 10 политик UAC с которы�
 Контроль учетных записей (UAC): поведение запроса на повышение прав для администраторов в режиме одобрения администратором (Admin Approval Mode), 2-й запрос согласия на защищенный десктоп
 
 
-# Conclusion
-This bypass only works when all of the requirements are available to abuse. Remove one requirement and the bypass will fail. Office documents are opened in medium integrity so these are ideal targets to abuse the UAC bypass. Since these bypasses are so effortlessly achieved the only real course of action would be to set UAC to “Always notify” or remove local admin rights for the user. In the end using agents like Microsoft EMET or MalwareBytes Anti-Exploit would be the best mitigating action to take from initially being exploited in the first place.
+# Заключение
+Этот обход работает только в случае когда удовлетворятся все требования для их эксплоинга. Не достаёт одного требования и обход не удастся. Офисные документы открываются в средней целостности, поэтому они являются идеальными целями для обхода UAC. Поскольку эти обходы осуществляются без особых усилий, единственным реальным способом противо-действий было бы установить для UAC «Всегда уведомлять» или удалить права локального администратора для пользователя. В конце концов, использование таких агентов как Microsoft EMET или MalwareBytes Anti-Exploit, было бы наилучшим решением для смягчения урона на ранних стадиях проведения атаки.
 
 
-# References
+# Ссылки
 http://technet.microsoft.com/en-us/magazine/2009.07.uac.aspx
 http://technet.microsoft.com/en-us/magazine/2007.06.uac.aspx
 http://windows.microsoft.com/en-gb/windows/what-is-user-account-control#1TC=windows-7
