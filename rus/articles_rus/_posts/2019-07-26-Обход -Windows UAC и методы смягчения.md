@@ -137,15 +137,15 @@ if (SUCCEEDED(hr))
 ~~~
 
 # Windows Update Standalone Installer
-Another method to use to copy to our secure location is using Windows Update Standalone Installer (wusa.exe). Wusa.exe when executed runs as a high integrity process as its set to auto-elevate in its manifest. For auto-elevation the Windows executable must be signed, located in a secure directory such as C:\Windows\System32 and must specify the autoElevate property in their manifest.
+Другой способ копирования в наше безопасное место, это использовать Windows Update Standalone Installer (wusa.exe). Wusa.exe запускается как процесс высокой целостности тк. настроен на авто-подъём прав в своем манифесте. Для автоматического повышения прав, исполняемый Windows файл должен быть подписан, находится в безопасном каталоге, таком как C:\\Windows\\System32, и должен с правильно прописанным свойством autoElevate в своем манифесте.
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/wusaautoelevate.png){:class="imghalf"}
 
-We use wusa.exe to extract a CAB file (cabinet archive file) to our secure location
+Мы используем wusa.exe для распаковки CAB файл (cabinet archive file или файл кабинетного архива) в наше безопасное место
 
 	wusa c:\users\user1\desktop\poc.tmp /extract:c:\windows\system32\sysprep
     
-# Exploiting DLL hijacking vulnerability
+# Эксплуатация уязвимости DLL hijacking
 When exploiting a DLL hijacking vulnerability the executable we are going to run again has to be signed; located in a secure directory and must specify the autoElevate property in its manifest in order load as a high integrity process.
 
 
