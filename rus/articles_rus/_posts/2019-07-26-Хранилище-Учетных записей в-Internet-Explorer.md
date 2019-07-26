@@ -1,3 +1,12 @@
+---
+layout: post
+categories: articles_rus
+tags:
+  - articles_rus
+  - kerberos
+published: true
+---
+
 # Summary
 {:.no_toc}
 
