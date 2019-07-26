@@ -95,9 +95,9 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 
 - Если ты используешь Linux без графического интерфейса или NetworkManager, ты уже выполнил все настройки ПК на шаге 1.
 
-Your PC setup is now done!
+Настройка твоего ПК завершена !
 
-Step 3:
+## Шаг 3:
 Open Terminal Emulator on your Android. Type:
 
 	su
