@@ -27,12 +27,14 @@ published: true
 
 Точные подробности реализации для хранения и извлечения, конечно, будут различаться в зависимости от версии Internet Explorer, и возможно версии операционной системы.
 
-# Autocomplete Password Data
+# Автозаполнение пароля
 
-Internet Explorer will store and retrieve what it believes to be login-style data in a manner that is convenient for a user.  Research, along with empirical testing shows that this data is commonly stored as paired strings such as that for a username/password combination.  IE applies some heuristics in order to decide whether to treat certain form data as autocomplete-worthy and whether to treat said data as password/login information(1).  The way in which IE processes login data has undergone some changes over the years.  The information that follows is best broken into the following sections:
+Internet Explorer будет хранить и извлекать удобным для пользователя способом то, что он считает данными для входа. Исследования, наряду с эмпирическим тестированием, показывают, что эти данные обычно хранятся в виде парных строк, как комбинации имени пользователя и пароля. IE применяет некоторую эвристику чтобы решить, следует ли обрабатывать определенные данные формы как пригодные для автозаполнения и обрабатывать ли их как пароль/информацию для входа в систему.
 
-   Internet Explorer versions 7-9
-   Internet Explorer versions 10+
+IE applies some heuristics in order to decide whether to treat certain form data as autocomplete-worthy and whether to treat said data as password/login information(1).  The way in which IE processes login data has undergone some changes over the years.  The information that follows is best broken into the following sections:
+
+   Internet Explorer версий 7-9
+   Internet Explorer версий 10+
 
 ## IE7-9
 
