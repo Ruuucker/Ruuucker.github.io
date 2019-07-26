@@ -6,16 +6,17 @@ tags:
   - kerberos
 published: true
 ---
-
-# Summary
+# Оглавление
 {:.no_toc}
 
 * toc
 {:toc}
 
-# Overview
+# Описание
 
-Research has shown that Internet Explorer can store (and recall) various pieces of information in a manner that can be convenient for a user.  These pieces of information can be loosely broken into a few different categories:
+Исследования показали, что Internet Explorer может сохранять (и использовать) 
+различные кусочки информации таким образом который может быть подходящим для пользователя. Эти фрагменты информации можно разбить на несколько категорий:
+various pieces of information in a manner that can be convenient for a user.  These pieces of information can be loosely broken into a few different categories:
 
   HTTP Authentication credentials (e.g., those creds used when a server makes use of say, the HTTP Basic Authentication scheme)
     FTP credentials
@@ -25,16 +26,15 @@ Research has shown that Internet Explorer can store (and recall) various pieces 
 
 The exact implementation details for storage and retrieval will, of course, vary based on the category of information, version of Internet Explorer, and potentially, the version of the operating system.  As information is discovered about these mechanisms, it is encouraged that the information be recorded here for the benefit of others.
 
-# Discussion
 
-## Autocomplete Password Data
+# Autocomplete Password Data
 
 Internet Explorer will store and retrieve what it believes to be login-style data in a manner that is convenient for a user.  Research, along with empirical testing shows that this data is commonly stored as paired strings such as that for a username/password combination.  IE applies some heuristics in order to decide whether to treat certain form data as autocomplete-worthy and whether to treat said data as password/login information(1).  The way in which IE processes login data has undergone some changes over the years.  The information that follows is best broken into the following sections:
 
    Internet Explorer versions 7-9
    Internet Explorer versions 10+
 
-### IE7-9
+## IE7-9
 
 IE will store Autocomplete Password data and Autocomplete Form data in a similar manner s(3), (4), (5), (6), (10), (11).  Autocomplete Password data will be stored in the registry under the following key:
 
@@ -84,13 +84,13 @@ Structure names given are those which are found in the aforementioned internal c
    Matched strings (e.g., from a username/password) combo will have matched FILETIME values as expressed in the strings' corresponding STRINGENTRYs
    There are no separators in the string data, just one NULL terminated string after another.
 
-### IE10+
+## IE10+
 
 Research indicates that the means used to process login data can now vary based on the underlying operating system.  As noted(2), starting with IE10, if IE is installed on Windows 8, the login data is no longer stored in the registry, but in the Credential Manager.  Experimental evidence indicates that IE11 will still store login data in the registry (as in IE versions 7-9), if installed and running on a Windows 7 box.  Thus, your mileage may vary based on the combination of browser version and underlying operating system.
 
 More information is to be added in this section.  Until then, feel free to browse some of the references such as, (6) and (10).
 
-## Autocomplete Form Data
+# Autocomplete Form Data
 
 Information to be added.  Autocomplete Form data is accessed in a manner very similar to that of Autocomplete Password data.  The registry key used to store form data is:
 
@@ -118,4 +118,3 @@ Some sample HTML which will cause IE to use the Autocomplete Form storage is sho
   </body>
 </html>
 ~~~
-
