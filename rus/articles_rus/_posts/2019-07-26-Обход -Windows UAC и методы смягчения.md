@@ -75,8 +75,6 @@ C:\Windows\System32\RuntimeBroker.exe
 
 Основная часть кода ниже взята из MSDN с некоторыми незначительными изменениями. Используемые значения SetOperationFlags были взяты из опубликованного кода обхода UAC [здесь](https://download.pureftpd.org/pub/misc/UAC.cpp).
  
-The main part of the code below has been taken from MSDN with just the some minor changes. The SetOperationFlags values used was taken from the UAC bypass code published [here](https://download.pureftpd.org/pub/misc/UAC.cpp).
-
 ~~~
 #include <stdio.h>
 #include <Shobjidl.h>
