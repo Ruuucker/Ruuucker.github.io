@@ -98,22 +98,24 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 Настройка твоего ПК завершена !
 
 ## Шаг 3:
-Open Terminal Emulator on your Android. Type:
+Открой эмулятор терминала на твоем Android. Введи:
 
 	su
     
-Type the following command in Terminal Emulator, the same for all PC operating systems:
+Введи эти комманды в эмелятор терминала, одинаково для всех ПК ОС:
 
 	netcfg rndis0 dhcp
     
-The name for usb interface inside Android may vary. It is usually rndis0 or usb0. Type:
+Название интерфейса USB внутри Android может отличаться. Обычно это rndis0 или usb0. Введи:
 
 	busybox ifconfig
     
-to identify the name.
-Use OLD instructions below when automatical dhcp method does not work.
-[OLD]Type these following commands in Terminal Emulator:
-For Linux PC:
+для определения имени.
+
+Используй инструкции ниже когда автоматический метод dhcp не работает.
+Введите следующие команды в эмуляторе терминала Android:
+
+Для ПК с Linux:
 
 ~~~
 ifconfig rndis0 10.42.0.2 netmask 255.255.255.0
