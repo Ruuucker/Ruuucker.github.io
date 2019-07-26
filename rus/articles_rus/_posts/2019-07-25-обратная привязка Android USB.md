@@ -54,21 +54,24 @@ published: true
 
 ## Шаг 1: 
 
-Connect your Android to PC by USB cable and enable "USB tethering". You are still allowed to enable this option even when your 3g/wifi on your Android is off.
+- Подключи Android к ПК через USB-кабель и включи "USB-модем". Ты по-прежнему можешь включить эту опцию, даже если 3G/Wi-Fi на твоём Android выключен.
 
-- If you are using Linux (Ubuntu), you don't need to install anything. NetworkManager applet will try to establish a connection on the new detected wired network device.
+- Если используется Linux (Ubuntu), то не нужно ничего устанавливать. Апплет NetworkManager попытается установить соединение на новом обнаруженном устройстве проводной сети.
 
-- If you are using Windows, Windows will automatically search Windows Update and install driver for you. You can skip Windows Update search and install manually an already included driver from Microsoft. In Install Driver window, click Browse My Computer, then Let me pick..., select Network Adapters, uncheck Show Compatible Hardware, look at "Microsoft Corporation" at the left column, and choose Remote NDIS Compatible Device from the right column. You can install or update a driver from Device Manager in Windows.
+- Если Windows, то ОС автоматически выполнит поиск Windows Update и установит драйвер для тебя. Ты можешь пропустить поиск Windows Update и установить вручную уже включенный драйвер от Microsoft.
 
-- If you are using Mac, install driver HoRNDIS. You will be notified about a new network interface. Click "Network Preferences" in the dialog to add it to known interfaces list. Then "Apply".
+- В окне «Установка драйвера» нажми «Обзор моего компьютера», затем «Позвольте мне выбрать ...», выбери «Сетевые адаптеры», сними флажок «Показать совместимое оборудование», посмотри на «Microsoft Corporation» в левом столбце и выбери «Удаленное устройство совместимое с NDIS» в правом столбце. Ты можешь установить или обновить драйвер из диспетчера устройств в Windows.
 
-- If you are using Linux without GUI or NetworkManager, run these commands as root (or use sudo):
+
+- Если используется Mac, установи драйвер HoRNDIS. Ты будешь уведомлен о новом сетевом интерфейсе. Нажми «Настройки сети» в диалоговом окне чтобы добавить его в список известных интерфейсов. Затем «Применить»
+
+- Если используется Linux без GUI или NetworkManager, запусти эти команды как root (или используй sudo):
 
 ~~~
 ifconfig usb0 10.42.0.1 netmask 255.255.255.0
 ~~~
 
-(suppose that you don't have any other USB network adapter, otherwise, your Android may be usb1, usb2...)
+(Предполагается что нет другого сетевого адаптера USB, в противном случае, твой Android может быть usb1, usb2...)
 
 
 	echo 1 > /proc/sys/net/ipv4/ip_forward
