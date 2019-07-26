@@ -65,7 +65,7 @@ published: true
 
 - Если используется Mac, установи драйвер HoRNDIS. Ты будешь уведомлен о новом сетевом интерфейсе. Нажми «Настройки сети» в диалоговом окне чтобы добавить его в список известных интерфейсов. Затем «Применить»
 
-- Если используется Linux без GUI или NetworkManager, запусти эти команды как root (или используй sudo):
+- Если используется Linux без графического интерфейса или NetworkManager, запусти эти команды как root (или используй sudo):
 
 ~~~
 ifconfig usb0 10.42.0.1 netmask 255.255.255.0
@@ -87,13 +87,13 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 
 ## Шаг 2:
 
-- If you are using Linux, click on NetworkManager applet at the top right of your screen, select "Edit Connections...". In tab "Wired", choose the new established connection (be careful, not Ethernet LAN connection) and click "Edit..." In tab "IPv4 Settings", choose "Shared to other computers" as Method. Click "Save". NetworkManager will reestablish the connection and assign to your PC an IP address on this USB network connection, default: 10.42.0.1. Leave Internet connections (wired or wireless) untouched.
+- Если ты используешь Linux, нажми на апплет NetworkManager в правом верхнем углу экрана и выберите «Редактировать соединения...». На вкладке «Проводной» выбери новое установленное соединение (будь осторожен, не LAN Ethernet соединение) и нажми «Изменить...». На вкладке «Настройки IPv4» выбери «Доступ к другим компьютерам» в качестве метода. Нажми «Сохранить». NetworkManager восстановит соединение и назначит твоему ПК IP-адрес в этом сетевом соединении USB, по умолчанию: 10.42.0.1. Оставь подключение к Интернету (проводное или беспроводное) без изменений.
 
-- If you are using Windows, open "Network Connections" in Control Panel. It is somewhat different from setup in Linux. Right click on an Internet connection that you have. I assume that you are using a desktop which doesn't have any wifi adapter, so right click on LAN Ethernet connection with Internet, and select "Properties". In tab "Sharing" (or "Advanced" for Windows XP), click "Allow other network users to connect through...", then select the USB connection in dropdown list below. Click OK. Windows will automatically setup your USB network connection and assign to it an IP address, default for Windows 7: 192.168.137.1, default for Windows XP: 192.168.0.1. You can see your Internet connection is now "Shared" and your USB connection is now "Unidentified network".
+- Если ты используешь Windows, открой «Сетевые подключения» на панели управления. Это несколько отличается от настройки в Linux. Щелкни правой кнопкой мыши на твоё подключение к Интернету. Я предполагаю, что ты используешь десктоп без адаптера Wi-Fi, поэтому щелкни правой кнопкой мыши по LAN-соединению Ethernet с Интернетом и выбери «Свойства». На вкладке «Общий доступ» (или «Дополнительно» для Windows XP) нажми «Разрешить другим пользователям сети подключаться через...», затем выбери USB-соединение в раскрывающемся списке ниже и нажми ОК. Windows автоматически настроит сетевое USB-соединение и назначит ему IP-адрес, по умолчанию для Windows 7: 192.168.137.1, для Windows 10: 192.168.0.1. Ты можете видеть, что твоё интернет-соединение теперь «Общее», а USB-соединение теперь «Неопознанная сеть».
 
-- If you are using Mac, open System Preferences - Network. If you installed HoRNDIS, you will see a new network interface corresponding to your USB connection. With "Using DHCP" as Configure Ipv4, it may be already connected. Go back to System Preferences, click "Sharing". Select "Internet Sharing". Choose the Internet connection (Ethernet or Airport...) in "Share your connection from", and choose USB connection interface in "To computers using". Mac will assign to your USB connection interface an IP address, default: 192.168.2.1.
+- Если ты используешь Mac, откройте Системные настройки - Сеть. Если ты установил HoRNDIS, то увидишь новый сетевой интерфейс соответствующий твоему USB-соединению. При включенном «Использование DHCP» в качестве конфигурации Ipv4, он может быть уже подключен. Вернись в Системные настройки, нажми «Общий доступ». Выбери «Общий Интернет». Выбери подключение к Интернету (Ethernet или Airport...) в разделе «Поделиться своим подключением из» и выбери интерфейс USB-подключения в разделе «К компьютерам, использующим». Mac назначит твоему USB-интерфейсу IP-адрес, по умолчанию: 192.168.2.1.
 
-- If you are using Linux without GUI or NetworkManager, you have done all PC setup in step 1.
+- Если ты используешь Linux без графического интерфейса или NetworkManager, ты уже выполнил все настройки ПК на шаге 1.
 
 Your PC setup is now done!
 
