@@ -126,36 +126,39 @@ route add default gw 10.42.0.1 dev rndis0
 
 	busybox route add default gw 10.42.0.1 dev rndis0
     
-Для ПК с Windows, используй те же самые команды приведенные выше, но замени 10.42.0.2 на 192.168.137.2 (192.168.0.2 для Windows 10), 10.42.0.1 на 192.168.137.1 (192.168.0.1 для Windows 10)
-For Mac PC, replace 10.42.0.2 by 192.168.2.2, replace 10.42.0.1 by 192.168.2.1
-Now you can close Terminal Emulator and start the browser for Internet.
+Для ПК с Windows, используй те же самые команды приведенные выше, но замени 10.42.0.2 на 192.168.137.2 (192.168.0.2 для Windows 10), и 10.42.0.1 на 192.168.137.1 (192.168.0.1 для Windows 10)
 
-Some applications (download in Google Play, GMail, Facebook...) don't recognize Internet connection. You can try this way (WARNING: NOT TESTED):
-- Enable temporarily 3G connection on your Android
-- Type:
+Для ПК с Mac, замени 10.42.0.2 на 192.168.2.2, и 10.42.0.1 на 192.168.2.1
+Сейчас ты уже можешь закрыть эмелятор терминала и начать смотреть фотки котят в Интернете.
+
+Некоторые приложения (скачаные в Google Play, GMail, Facebook...) не распознают подключение к Интернету. Можно попробовать следующий способ (ВНИМАНИЕ: НЕ ПРОВЕРЕНО):
+- Включить временное соединение 3G на вашем Android
+- Введи:
 
 ~~~
 ifconfig rmnet0 0.0.0.0
 ~~~
 
-The name for 3G interface inside Android may vary: ppp0, rmnet0... Type:
+Имя твоего 3G интерфейса внутри Android может быть другим: ppp0, rmnet0... Введи:
 
 	busybox ifconfig
     
-to identify the name.
-before ifconfig rmnet0 ... above.
-This will make applications see your Internet connection via USB as 3G!
+для определения имени.
 
-USB tethering settings on Android will be reverted automatically when you unplug USB cable. To revert back settings on PC, uncheck "Allow other network users to connect through..." on Windows, "Internet sharing" on Mac, change from "Shared to other computers" back to "Automatically (DHCP)", or simply delete USB connection from NetworkManager on Linux.
+перед `ifconfig rmnet0 ...` выше.
+Это заставит приложения видеть ваше интернет-соединение через USB как 3G!
 
-# Simplified instructions (Mac OSX):
+Настройки USB-модема на Android будут автоматически изменены при отключении USB-кабеля. Чтобы вернуть обратно настройки на ПК, сними флажок «Разрешить другим пользователям сети подключаться через...» в Windows, «Общий доступ к Интернету» на Mac, измени «Общий доступ к другим компьютерам» обратно на «Автоматически (DHCP)» или просто удалите USB-соединение из NetworkManager в Linux.
 
-  > Mac: Install HorNDIS package.<br>
-   Device: Turn on USB tethering under Settings > More Settings > Tethering and portable hotspot > USB tethering<br>
-   Plug in USB from device to computer.<br>
-   Mac: Connect device under System Preferences > Network > SAMSUNG_Android <br>
-   Mac: Add Internet Sharing under System Preferences > Sharing > Service > Internet Sharing<br>
-   Device: Root your device<br>
-   Device: "netcfg rndis0 dhcp"<br>
-   Device: "netcfg" to see the ip address of rndis0<br>
-   Mac: "ifconfig" to see the ip address of your computer; use this ip address as mc_creator's url input
+
+# Упрощенные инструкции (Mac OSX):
+
+  > Mac: Установи HorNDIS пакет.<br>
+   Android: Включи USB модем в Настройки > Больше настроек > Модем и точка доступа > USB модем<br>
+   Подключи USB от Android к ПК.<br>
+   Mac: Подключи Android в Системные Настройки > Сеть > SAMSUNG_Android <br>
+   Mac: Добавь общий доступ к Интернету в Системные настройки > Общий доступ > Служба > Общий доступ в Интернет<br>
+   Android: Рутируй свой Android <br>
+   Android: "netcfg rndis0 dhcp"<br>
+   Android: "netcfg" для того чтобы узнать адрес rndis0<br>
+   Mac: "ifconfig" чтобы посмотреть IP-адрес ПК; используй этот адрес в качестве ввода URL для mc_creator
