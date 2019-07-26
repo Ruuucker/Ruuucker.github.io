@@ -245,16 +245,17 @@ Microsoft предоставила нам 10 политик UAC с которы�
 "ValidateAdminCodeSignatures"=dword:00000000
 ~~~
 
-When the slider is moved upto “Always notify me” it changes this value
+Когда ползунок перемещается вверх до «Всегда уведомлять меня», он меняет это значение.
 ~~~
 "ConsentPromptBehaviorAdmin"=dword:00000002
 ~~~
 
-When the slider is moved down to “Notify me only when apps try to make changes to my computer (do not dim desktop settings)” it changes this value
+Когда ползунок перемещается вниз до «Уведомлять меня только когда приложения пытаются внести изменения в мой компьютер (не изменяя настройки рабочего стола)», он меняет это значение.
 
 	"PromptOnSecureDesktop"=dword:00000000
-    
-And when the slider is moved to “Never notify” the values changed are
+
+Ну и когда ползунок перемещается в «Никогда не уведомлять», измененные значения это
+
 
 ~~~
 "ConsentPromptBehaviorAdmin"=dword:00000000
