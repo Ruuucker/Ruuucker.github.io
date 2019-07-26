@@ -50,9 +50,10 @@ UAC работает регулируя уровень разрешений на
     Использование автономного установщика Центра обновления Windows (Windows Update Standalone Installer/wusa.exe)
 
 # IFileOperation COM Object
-The IFileOperation COM object has a method that we can use to copy files to our secure location as the operation will auto-elevate and able to do a privilege copy. To exploit we can in inject our malicious DLL in a medium integrity process to carry out the operation. Since the COM object is set to auto-elevate the injected process does not need to be marked for auto-elevation in its manifest.
 
-On windows 7 injected processes that have copied successfully are
+COM Object в IFileOperation имеет метод, который мы можем использовать для копирования файлов в наше безопасное место, так как операция автоматически поднимется в правах и сможет сделать копию привилегий. Для использования мы можем внедрить нашу вредоносную DLL в процесс средней целостности для выполнения операции. Поскольку для COM-объекта установлено автоматическое повышение уровня, внедренный процесс не нужно отмечать для автоматического повышения в своем манифесте.
+
+В Windows 7 внедрены процессы которые успешно скопированы это:
 
 ~~~
 C:\Windows\explorer.exe
