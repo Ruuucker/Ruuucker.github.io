@@ -185,7 +185,7 @@ C:\Windows\System32\vds.exe
 C:\Windows\System32\UReFS.DLL
 ~~~
 
-Finally on Windows 8.1 there are also three executables that could be exploited and associated DLLs listed below
+Наконец, в Windows 8.1 есть также три исполняемых файла которые можно эксплуатировать и связанные с ними библиотеки DLL перечисленны ниже:
 
 ~~~
 C:\windows\System32\sysprep\sysprep.exe
