@@ -74,7 +74,7 @@ C:\Windows\System32\RuntimeBroker.exe
 И снова только explorer.exe надежный процесс, и единственный который работал в Windows 8.1
 
 Основная часть кода ниже взята из MSDN с некоторыми незначительными изменениями. Используемые значения SetOperationFlags были взяты из опубликованного кода обхода UAC [здесь](https://download.pureftpd.org/pub/misc/UAC.cpp).
- 
+
 ~~~
 #include <stdio.h>
 #include <Shobjidl.h>
