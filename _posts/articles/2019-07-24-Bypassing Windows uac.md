@@ -285,7 +285,7 @@ If however a user logged onto a machine using the local admin account (administr
 If for whatever reason logging on using the local admin account is a necessity then best set this UAC policy to enabled.
 
 User Account Control: Admin Approval Mode for the built-in Administrator account
-“FilterAdministratorToken”=dword:00000001
+	“FilterAdministratorToken”=dword:00000001
 
 Another option would be to look into renaming or deleting the executables Mcx2Prov.exe, sysprep.exe, cliconfg.exe and pwcreator.exe if definitely not required on the system so the second stage to exploit DLL hijacking fails.
 
