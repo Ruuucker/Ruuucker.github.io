@@ -24,8 +24,6 @@ This guide is intended to help you share Internet connection from your PC to you
 ...
 
 
-You have searched and found some applications/tools/solutions, you followed exactly their instructions but finally you were frustrated because they didn't work, here I come for a new method. 
-
 This method works following Internet connection sharing basics. If your Android device is able to do USB tethering, you will be able to do USB reserve tethering with this method!
 Advantages:
 
@@ -90,7 +88,7 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 
 Your PC setup is now done!
 
-Step 3:
+## Step 3:
 Open Terminal Emulator on your Android. Type:
 
 	su
@@ -150,4 +148,3 @@ USB tethering settings on Android will be reverted automatically when you unplug
    Device: "netcfg rndis0 dhcp"<br>
    Device: "netcfg" to see the ip address of rndis0<br>
    Mac: "ifconfig" to see the ip address of your computer; use this ip address as mc_creator's url input
-
