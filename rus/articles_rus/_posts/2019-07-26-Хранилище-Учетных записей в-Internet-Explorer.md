@@ -25,8 +25,7 @@ published: true
 		Данные пароля
 ~~~
 
-The exact implementation details for storage and retrieval will, of course, vary based on the category of information, version of Internet Explorer, and potentially, the version of the operating system.  As information is discovered about these mechanisms, it is encouraged that the information be recorded here for the benefit of others.
-
+Точные подробности реализации для хранения и извлечения, конечно, будут различаться в зависимости от версии Internet Explorer, и возможно версии операционной системы.
 
 # Autocomplete Password Data
 
