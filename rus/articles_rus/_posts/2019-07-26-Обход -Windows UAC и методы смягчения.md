@@ -53,7 +53,7 @@ UAC работает регулируя уровень разрешений на
 
 COM Object в IFileOperation имеет метод, который мы можем использовать для копирования файлов в наше безопасное место, так как операция автоматически поднимется в правах и сможет сделать копию привилегий. Для использования мы можем внедрить нашу вредоносную DLL в процесс средней целостности для выполнения операции. Поскольку для COM-объекта установлено автоматическое повышение уровня, внедренный процесс не нужно отмечать для автоматического повышения в своем манифесте.
 
-В Windows 7 внедрены процессы которые успешно скопированы это:
+В Windows 7 внедрены процессы которые успешно скопированы, это:
 
 ~~~
 C:\Windows\explorer.exe
@@ -61,9 +61,9 @@ C:\Windows\System32\wuauclt.exe
 C:\Windows\System32\taskhost.exe
 ~~~
 
-During tests taskhost.exe only happens to work once after boot and wuauclt.exe doesn’t always work which leaves explorer.exe is only the reliable process to use.
+Во время тестов taskhost.exe срабатывает только один раз после загрузки, и wuauclt.exe не всегда работает, что оставляет explorer.exe только надежным процессом.
 
-On Windows 8 injected processes that have copied successfully are
+On Windows 8 внедрены процессы которые успешно скопированы, это:
 
 ~~~
 C:\Windows\explorer.exe
@@ -71,10 +71,11 @@ C:\Windows\System32\wuauclt.exe
 C:\Windows\System32\RuntimeBroker.exe
 ~~~
 
+И снова только explorer.exe надежный процесс, и единственный который работал в Windows 8.1
 
-Again explorer.exe is only the reliable process to use I found during my tests and the only one that worked on Windows 8.1
-
-The main part of the code below has been taken from MSDN with just the some minor changes. The SetOperationFlags values used was taken from the UAC bypass code published [here](https://download.pureftpd.org/pub/misc/UAC.cpp ).
+Основная часть кода ниже взята из MSDN с некоторыми незначительными изменениями. Используемые значения SetOperationFlags были взяты из опубликованного кода обхода UAC [здесь](https://download.pureftpd.org/pub/misc/UAC.cpp).
+ 
+The main part of the code below has been taken from MSDN with just the some minor changes. The SetOperationFlags values used was taken from the UAC bypass code published [here](https://download.pureftpd.org/pub/misc/UAC.cpp).
 
 ~~~
 #include <stdio.h>
