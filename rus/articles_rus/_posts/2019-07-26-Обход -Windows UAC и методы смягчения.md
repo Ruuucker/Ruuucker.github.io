@@ -1,3 +1,13 @@
+---
+title: Обход Windows User Account Control (UAC) и пути смягчения
+layout: post
+categories: articles
+tags:
+  - articles_rus
+  - windows
+published: true
+---
+
 # Summary
 {:.no_toc}
 
