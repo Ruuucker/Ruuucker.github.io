@@ -1,5 +1,5 @@
 ---
-title: Обход Windows User Account Control (UAC) и методы смягчения
+title: Обход Windows контроля учетных записей (UAC) и методы смягчения
 layout: post
 categories: articles
 tags:
@@ -8,16 +8,18 @@ tags:
 published: true
 ---
 
-# Summary
+# Оглавление
 {:.no_toc}
 
 * toc
 {:toc}
 
 
-# Introduction
+# Введение
 
-Securing machines from abuse and compromise in a corporate environment has always been an ongoing process. Providing admin rights to users has always been abused as users have ended up installing unapproved software, change configurations, etc. Not giving local admin rights and they claim they can’t do their work. If malware happens to compromise the machine with full admin rights then you are most likely looking at reimaging the machine.
+Защита компьютеров от злоупотреблений в корпоративной среде всегда была непрерывным процессом. Предоставление прав администратора пользователям всегда злоупотреблялось и пользователи устанавливали неутвержденное программное обеспечение, изменяли конфигурации и тд. Не предоставляй права локального администратора и они утверждают, что не могут выполнять свою работу. Если малварь скомпрометировала машину с полными правами администратора, то вы, скорее всего, попытаетесь переоборудовать ее.
+
+Контроль учетных записей (UAC) дает нам возможность работать со стандартными правами пользователя вместо полных прав администратора. Таким образом, даже если ваша стандартная учетная запись находится в группе локальных администраторов, ущерб ограничен, то есть установка служб, драйверов, запись в безопасные места и т. Д. Запрещены. Для выполнения этих действий пользователям потребуется взаимодействовать с рабочим столом, например, щелкнув правой кнопкой мыши и запустив их с правами администратора, или примите запрос на повышение прав UAC. UAC был представлен начиная с Windows Vista и содержит ряд технологий, включая виртуализацию файловой системы и реестра, учетную запись защищенного администратора (PA), запросы на повышение прав UAC и уровни целостности Windows.
 
 User Account Control (UAC) gives us the ability to run in standard user rights instead of full administrator rights. So even if your standard user account is in the local admin group damage is limited, i.e. installing services, drivers, writing to secure locations, etc. are denied. To carry out these actions users would need to interact with the desktop such us right click and run as administrator or accept the UAC elevation prompt. UAC was introduced from Windows Vista onwards and contains a number of technologies that include file system and registry virtualization, the Protected Administrator (PA) account, UAC elevation prompts and Windows Integrity levels.
 
