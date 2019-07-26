@@ -229,7 +229,7 @@ Microsoft предоставила нам 10 политик UAC с которы�
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/secpol.png){:class="imghalf"}
 
-Looking in the registry these are the default values of UAC
+Вот так выглядят в реестре значения UAC по умолчанию
 
 ~~~
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
