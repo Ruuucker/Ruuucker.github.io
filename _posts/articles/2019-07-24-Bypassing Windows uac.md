@@ -218,7 +218,6 @@ The best way to mitigate this bypass is just by not giving users local admin rig
 The actual bypass only works when set to the middle two UAC settings which will let it auto-elevate. To see your settings you need to go to Control Panel – User Accounts – Change User Account Control settings.
 
 >Notify me only when apps try to make changes to my computer (default)
-Notify me only when apps try to make changes to my computer (do not dim desktop settings)
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/uacsettings.png){:class="imghalf"}
 
