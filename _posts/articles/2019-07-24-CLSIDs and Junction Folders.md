@@ -124,9 +124,7 @@ So, if we have a link file exploit, we would like to hide it. We also know from 
 If you don't wish to be persisted by verclsid, you can add a couple extra entries to make sure that it is explorer that loads you instead. To setup this persistence technique you must:
 
  
-
 Set the following registry keys in either HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER (keeping in mind 64-bit and 32-bit registries):
-
 
 
 
