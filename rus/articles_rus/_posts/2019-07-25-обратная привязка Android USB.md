@@ -122,11 +122,11 @@ ifconfig rndis0 10.42.0.2 netmask 255.255.255.0
 route add default gw 10.42.0.1 dev rndis0
 ~~~
 
-If route fails, try:
+Если роутинг не проходит, попробуй:
 
 	busybox route add default gw 10.42.0.1 dev rndis0
     
-For Windows PC, use the same above commands, replace 10.42.0.2 by 192.168.137.2 (192.168.0.2 for Windows XP), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows XP)
+Для ПК с Windows, используй те же самые команды приведенные выше, но замени 10.42.0.2 на 192.168.137.2 (192.168.0.2 для Windows 10), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows XP)
 For Mac PC, replace 10.42.0.2 by 192.168.2.2, replace 10.42.0.1 by 192.168.2.1
 Now you can close Terminal Emulator and start the browser for Internet.
 
