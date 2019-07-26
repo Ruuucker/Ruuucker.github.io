@@ -44,7 +44,7 @@ published: true
 
 # Зависимости:
 
-- Рутированный Android девайс с возможностью "USB модема". Проверь настройки Android - Беспроводные & Сеть - Tethering & portable hotspot. Many stock ROMs disable this capability. You must enable it somehow (root your Android and use an application to enable or replace the stock ROM). CyanogenMod ROMs always have this capability. The important thing to remember is when you connect your Android and enable "USB tethering", it appears as a USB network adapter, not a mass storage or media device.
+- Рутированный Android девайс с возможностью "USB модема". Проверь настройки Android - Беспроводные & Сеть - Модем & точка доступа. Many stock ROMs disable this capability. You must enable it somehow (root your Android and use an application to enable or replace the stock ROM). CyanogenMod ROMs always have this capability. The important thing to remember is when you connect your Android and enable "USB tethering", it appears as a USB network adapter, not a mass storage or media device.
 
 - PC with a working Internet connection.
 - USB cable to connect your Android to your PC.
