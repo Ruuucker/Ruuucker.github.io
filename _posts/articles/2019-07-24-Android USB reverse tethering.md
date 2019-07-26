@@ -132,7 +132,7 @@ The name for 3G interface inside Android may vary: ppp0, rmnet0... Type:
 	busybox ifconfig
     
 to identify the name.
-before ifconfig rmnet0 ... above.
+before `ifconfig rmnet0 ...` above.
 This will make applications see your Internet connection via USB as 3G!
 
 USB tethering settings on Android will be reverted automatically when you unplug USB cable. To revert back settings on PC, uncheck "Allow other network users to connect through..." on Windows, "Internet sharing" on Mac, change from "Shared to other computers" back to "Automatically (DHCP)", or simply delete USB connection from NetworkManager on Linux.
