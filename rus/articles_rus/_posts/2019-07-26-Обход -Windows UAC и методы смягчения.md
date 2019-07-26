@@ -37,17 +37,17 @@ UAC работает регулируя уровень разрешений на
 
 Для того чтобы наш обход был успешным, мы должны начать с:
 
-   >A medium integrity process
-    A standard user in an administrators group
-    Windows executable must be signed by Microsoft code signing certificate
-    Windows executable must be located in a secure directory
-    Windows executable also must specify the auto Elevate property in their manifest
+   >Процесс средней целостности
+    Стандартный пользователь в группе администраторов
+    Исполняемый файл Windows который должен быть подписан сертификатом подписи кода Microsoft
+    Исполняемый файл Windows должен находиться в безопасном каталоге
+    Исполняемый файл Windows также должен указывать свойство автоматического поднятия прав (Elevate) в своем манифесте.
 
-# Writing to a secure location
-There are a couple of ways we can write to a secure location.
+# Запись в безопасное место
+Есть несколько способов, которыми мы можем записать в безопасное место.
 
-   >Using the IFileOperation COM Object
-    Using Windows Update Standalone Installer (wusa.exe)
+   >Использовать IFileOperation COM Object
+    Использование автономного установщика Центра обновления Windows (Windows Update Standalone Installer/wusa.exe)
 
 # IFileOperation COM Object
 The IFileOperation COM object has a method that we can use to copy files to our secure location as the operation will auto-elevate and able to do a privilege copy. To exploit we can in inject our malicious DLL in a medium integrity process to carry out the operation. Since the COM object is set to auto-elevate the injected process does not need to be marked for auto-elevation in its manifest.
