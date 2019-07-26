@@ -76,7 +76,7 @@ ifconfig usb0 10.42.0.1 netmask 255.255.255.0
 
 	echo 1 > /proc/sys/net/ipv4/ip_forward
     
-Command for sudo will be:
+Команда для sudo будет:
 
 ~~~
 sudo 'echo 1 > /proc/sys/net/ipv4/ip_forward'
@@ -85,7 +85,7 @@ iptables -t nat -F
 iptables -t nat -A POSTROUTING -j MASQUERADE
 ~~~
 
-## Step 2:
+## Шаг 2:
 
 - If you are using Linux, click on NetworkManager applet at the top right of your screen, select "Edit Connections...". In tab "Wired", choose the new established connection (be careful, not Ethernet LAN connection) and click "Edit..." In tab "IPv4 Settings", choose "Shared to other computers" as Method. Click "Save". NetworkManager will reestablish the connection and assign to your PC an IP address on this USB network connection, default: 10.42.0.1. Leave Internet connections (wired or wireless) untouched.
 
