@@ -40,7 +40,7 @@ Well, what happens when the CLSID isn't of the expected folders? What if it's no
 
 # CLSIDs and COM Objects
 
-So, using CreateGuid I generated a new guid (highly unlikey to have already been used - {24138469-5DDA-479D-A150-3695B9365DC0}).  
+So, using CreateGuid I generated a new GUID {24138469-5DDA-479D-A150-3695B9365DC0}.  
 
 ![1]({{ site.baseurl }}/assets/img/posts/CLSIDs and Junction Folders/image2014-10-2.png){:class="imgsquire"}
 
