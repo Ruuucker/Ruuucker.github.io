@@ -294,9 +294,10 @@ Microsoft предоставила нам 10 политик UAC с которы�
 
 Другой вариант - это переименование или удаление исполняемых файлов Mcx2Prov.exe, sysprep.exe, cliconfg.exe и pwcreator.exe, если это не требуется в системе, чтобы второй этап эксплуатации DLL  hijacking провалился.
 
-Finally if users do require local admin privileges then worth setting their machine UAC policy to Always notify and they live with the constant notifications.
+Наконец, если пользователям требуются права локального администратора тогда стоит установить политику UAC своего компьютера на «Всегда уведомлять» и позволить им жить с постоянными уведомлениями.
 
-User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode (2-Prompt for consent on the secure desktop)
+Контроль учетных записей (UAC): поведение запроса на повышение прав для администраторов в режиме одобрения администратором (Admin Approval Mode), 2-й запрос согласия на защищенный десктоп
+
 
 # Conclusion
 This bypass only works when all of the requirements are available to abuse. Remove one requirement and the bypass will fail. Office documents are opened in medium integrity so these are ideal targets to abuse the UAC bypass. Since these bypasses are so effortlessly achieved the only real course of action would be to set UAC to “Always notify” or remove local admin rights for the user. In the end using agents like Microsoft EMET or MalwareBytes Anti-Exploit would be the best mitigating action to take from initially being exploited in the first place.
