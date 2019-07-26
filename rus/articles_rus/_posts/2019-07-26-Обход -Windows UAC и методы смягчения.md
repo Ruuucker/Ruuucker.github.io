@@ -19,24 +19,23 @@ published: true
 
 Защита компьютеров от злоупотреблений в корпоративной среде всегда была непрерывным процессом. Предоставление прав администратора пользователям всегда злоупотреблялось и пользователи устанавливали неутвержденное программное обеспечение, изменяли конфигурации и тд. Не предоставляй права локального администратора и они утверждают, что не могут выполнять свою работу. Если малварь скомпрометировала машину с полными правами администратора, то вы, скорее всего, попытаетесь переоборудовать ее.
 
-Контроль учетных записей (UAC) дает нам возможность работать со стандартными правами пользователя вместо полных прав администратора. Таким образом, даже если ваша стандартная учетная запись находится в группе локальных администраторов, ущерб ограничен, то есть установка служб, драйверов, запись в безопасные места и т. Д. Запрещены. Для выполнения этих действий пользователям потребуется взаимодействовать с рабочим столом, например, щелкнув правой кнопкой мыши и запустив их с правами администратора, или примите запрос на повышение прав UAC. UAC был представлен начиная с Windows Vista и содержит ряд технологий, включая виртуализацию файловой системы и реестра, учетную запись защищенного администратора (PA), запросы на повышение прав UAC и уровни целостности Windows.
+Контроль учетных записей (UAC) дает нам возможность работать со стандартными правами пользователя вместо полных прав администратора. Таким образом, даже если ваша стандартная учетная запись находится в группе локальных администраторов, ущерб ограничен. То есть установка служб, драйверов, запись в безопасные места и тд запрещены. Для выполнения этих действий пользователям потребуется взаимодействовать с рабочим столом, например, щелкнув правой кнопкой мыши и запустив их с правами администратора, или принять запрос на повышение прав от UAC. UAC был представлен начиная с Windows Vista и содержит ряд технологий включая виртуализацию файловой системы и реестра, учетную запись защищенного администратора (PA или Protected Administrator), запросы на повышение прав UAC и уровни целостности Windows.
 
-User Account Control (UAC) gives us the ability to run in standard user rights instead of full administrator rights. So even if your standard user account is in the local admin group damage is limited, i.e. installing services, drivers, writing to secure locations, etc. are denied. To carry out these actions users would need to interact with the desktop such us right click and run as administrator or accept the UAC elevation prompt. UAC was introduced from Windows Vista onwards and contains a number of technologies that include file system and registry virtualization, the Protected Administrator (PA) account, UAC elevation prompts and Windows Integrity levels.
+UAC работает регулируя уровень разрешений нашей учетной записи, поэтому действия программ выполняются из под обычного пользователя, даже если у нас есть права локального администратора на компьютере. Когда будут внесены изменения требующие разрешения на уровне администратора, UAC уведомит нас. Если у нас есть права локального администратора, мы можем нажать «Да», чтобы продолжить, в противном случае нам будет предложено ввести пароль администратора. Однако это будет зависеть от того, какие политики были определены в вашей среде.
 
-UAC works by adjusting the permission level of our user account, so programs actions are carried out as a standard user even if we have local admin rights on the computer. When changes are going to be made that require administrator-level permission UAC notifies us. If we have local admin rights then we can click yes to continue otherwise we would be prompted to enter an administrator password. These would however depend on what policies have been defined in your environment.
-
-This blog post shows how easily UAC elevation prompts could be bypassed and what actions could be taken to mitigate this threat.
+В этой статье показано, как легко можно обойти запросы на повышение прав UAC и какие действия можно предпринять для уменьшения этой угрозы.
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/regedituac.png){:class="imghalf"}
 
-# Bypassing UAC
+# Обход UAC
 
-Exploiting UAC is a trivial process. There are two stages needed to be taken to achieve bypass to elevate from standard user rights to administrator user rights. These steps have widely been published so it’s nothing new though stage 2 documents some more DLL hijacking vulnerabilities.
+Эксплуатация UAC является тривиальным процессом. Есть два этапа которые необходимо пройти для достижения обхода, чтобы подняться от стандартных прав пользователя до прав администратора. Эти шаги широко опубликованы, так что в этом нет ничего нового, хотя на этапе 2 документированы еще некоторые уязвимости связанные с захватом (hijacking) DLL.
 
-   >Writing to a secure location
-    Exploiting DLL hijacking vulnerability
 
-In order for our bypass to be successful to start off with we need
+   >Запить в безопасное место
+    Эксплуатация DLL hijacking уязвимости
+
+Для того чтобы наш обход был успешным, мы должны начать с:
 
    >A medium integrity process
     A standard user in an administrators group
