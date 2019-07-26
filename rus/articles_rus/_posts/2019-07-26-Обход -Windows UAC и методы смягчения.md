@@ -286,10 +286,11 @@ Microsoft предоставила нам 10 политик UAC с которы�
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/compmanuac.png){:class="imghalf"}
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/iew8high.png){:class="imghalf"}
 
-If for whatever reason logging on using the local admin account is a necessity then best set this UAC policy to enabled.
+Если по какой-либо причине необходимо войти в систему с использованием учетной записи локального администратора, лучше всего включить эту политику UAC.
 
-User Account Control: Admin Approval Mode for the built-in Administrator account
-“FilterAdministratorToken”=dword:00000001
+Контроль учетных записей (UAC): режим одобрения администратором (Admin Approval Mode) для встроенной учетной записи администратора
+
+	“FilterAdministratorToken”=dword:00000001
 
 Another option would be to look into renaming or deleting the executables Mcx2Prov.exe, sysprep.exe, cliconfg.exe and pwcreator.exe if definitely not required on the system so the second stage to exploit DLL hijacking fails.
 
