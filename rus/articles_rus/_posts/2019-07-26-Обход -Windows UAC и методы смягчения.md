@@ -204,11 +204,11 @@ C:\Program Files\Common Files\microsoft shared\ink\USERENV.dll
 C:\Program Files\Common Files\microsoft shared\ink\OLEACC.dll
 ~~~
 
-Calling pwcreator.exe (Create a Windows To Go workspace) executable calls vds.exe (Virtual Disk Service) which then loads our DLL and gives us System integrity running in SYSTEM account.
+Вызов исполняемого файла pwcreator.exe (создание рабочей области Windows To Go) вызывает vds.exe (служба виртуальных дисков), которая затем загружает нашу DLL и даёт нам целостность системы работает из под SYSTEM аккаунта.
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/proexpvds.png){:class="imghalf"}
 
-Calling these executables sysprep.exe, cliconfg.exe and pwcreater.exe does produce a GUI window but should be able to easily make it run in the background and then terminated after being exploited. This is something I haven’t looked into so I’ll leave upto you.
+Вызов этих исполняемых файлов sysprep.exe, cliconfg.exe и pwcreater.exe приводит к появлению окна с графическим интерфейсом, но так же должен легко запуститься в фоновом режиме, а затем завершиться после эксплуатации. Это то что я не изучал слишком глубоко, поэтому тут я вас оставлю в неведении.
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/sysprep.png){:class="imghalf"}
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/cliconfg.png){:class="imghalf"}
