@@ -12,9 +12,9 @@ tags:
 {:toc}
 
 
-# BadUSB
+# Bad USB
 
-BadUSB was a talk at blackhat about how USBs can be reprogrammed to become malware. The focus is on overwriting the original firmware of the USB device controller with customized firmware. The USB device controller acts as the interface between the host and the USB device. Customizing the firmware on the USB device controller offers numerous opportunities. By controlling the USB device controller, the user (person programming the firmware) can choose how he/she wants the device to interact with the host. Parts of the USB device can be hidden, for instance, if it is a mass storage device or emulating a mass storage device, parts of the storage can be hidden from the host. If done correctly, the host should not be able to tell what the device really is. You could spoof the firmware so that if the host asks for it, the host is given the firmware the device wants you to think it has on it, rather than the firmware that is actually on it.
+Bad USB was a talk at blackhat about how USBs can be reprogrammed to become malware. The focus is on overwriting the original firmware of the USB device controller with customized firmware. The USB device controller acts as the interface between the host and the USB device. Customizing the firmware on the USB device controller offers numerous opportunities. By controlling the USB device controller, the user (person programming the firmware) can choose how he/she wants the device to interact with the host. Parts of the USB device can be hidden, for instance, if it is a mass storage device or emulating a mass storage device, parts of the storage can be hidden from the host. If done correctly, the host should not be able to tell what the device really is. You could spoof the firmware so that if the host asks for it, the host is given the firmware the device wants you to think it has on it, rather than the firmware that is actually on it.
 
 It was also mention that badUSB can infect other USB devices and overwrite those devices' firmware as well. This part I am hazy on. I don't understand how exactly the original device can overwrite the USB device controller firmware of a separate USB device. This capability could greatly extend the scope of badUSB. It could be used as gap-jumping malware that infects the peripherial USB devices on a computer making it difficult to detect and get rid of.
 
@@ -22,7 +22,7 @@ Something worth looking into is utilizing the hidden partitions of a mass storag
 
  
 
-# USBRubberDucky
+# USB Rubber Ducky
 
 USBRubberDucky is a keyboard emulator. It sends keystrokes to the host as if the device was a keyboard that someone was typing on. The device has the same capabilities as a keyboard which is both good and bad. If a keyboard cannot do something, then the USBRubberDucky cannot do it either. It does allow for the key typing process to be automated making it faster and more accurate than someone typing. The downside is that it is automated, so it cannot react like a human could if something went wrong or something unexpected occurred. A point to highlight is that by acting as a keyboard, the computer trusts the USB device once it is connected, allowing the device to bypass virus scanners. This can enable you to type out an executable and then run it.
 
