@@ -19,26 +19,27 @@ published: true
 
 - Нет мобильной/Wi-Fi сети или на компьютере нет адаптера Wi-Fi
 - Нельзя использовать Wi-Fi модем, например, ваша компания не позволяет создавать на работе точки подключения
-- Нет желания тратить деньги на мобильный тариф и хочется более стабильное и быстрое соединение, чем Wi-Fi
-- Не хочешь чтобы компьютер или Android слишком сильно нагрелись из-за Wi-Fi
-- Хочешь, чтобы Android заряжался во время использования
+- Нет желания тратить деньги на мобильный тариф и хочется более стабильное и быстрое соединение чем Wi-Fi
+- Не хочешь чтобы Android слишком сильно нагревался из-за Wi-Fi
+- Хочешь чтобы Android заряжался во время использования
 ...
 
 
-Ты искал и нашел некоторые приложения/инструменты/решения, точно следовал их инструкциям, но в конце концов разочаровался, потому что они не работали, вот я и пришел с новым методом.
+Этот метод работает по принципу общего доступа в Интернет. Если ваше Android-устройство способно подключаться к ПК с помощью USB в качестве модема, тогда будет работать и обратная USB привязка
+Преимущества:
 
-This method works following Internet connection sharing basics. If your Android device is able to do USB tethering, you will be able to do USB reserve tethering with this method!
-Advantages:
+- Не требуется дополнительное ПО на ПК. Не остается следов на ПК. Представьте когда во время работы нужно установить на компьютер какое-то дрянное приложение чтобы установить туннельное соединение для этой задачи.
 
-- No additional software on your PC. Leave no trace on your PC. Imagine when you are at work and you have to install some crappy "toy" application on your PC to estiblish a tunnel connection for this task.
+- Работает с Windows, Linux и Mac OS X
 
-- Works with Windows, Linux and Mac OS X
+- Ты знаешь что делаешь. Кто знает что "легкие-в-использовании" делают если им не удалось помочь в в этой задаче?
 
-- You know what you do. Who knows what the "easy-to-use" tools do when they fail to help you?
-Disadvantages:
 
-- You have to type some commands on your Android.
-If you are ready, let's start!
+Недостатки:
+
+- Нужно будет ввести некоторые комманды в Android.
+
+Если готов, давай начнем!
 
 # Requirements:
 
