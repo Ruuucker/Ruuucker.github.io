@@ -115,7 +115,7 @@ If route fails, try:
 
 	busybox route add default gw 10.42.0.1 dev rndis0
     
-For Windows PC, use the same above commands, replace 10.42.0.2 by 192.168.137.2 (192.168.0.2 for Windows XP), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows 10)
+For Windows PC, use the same above commands, replace 10.42.0.2 by 192.168.137.2 (192.168.0.2 for Windows 10), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows 10)
 For Mac PC, replace 10.42.0.2 by 192.168.2.2, replace 10.42.0.1 by 192.168.2.1
 Now you can close Terminal Emulator and start the browser for Internet.
 
