@@ -281,7 +281,7 @@ Microsoft предоставила нам 10 политик UAC с которы�
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/iew8low.png){:class="imghalf"}
 
-If however a user logged onto a machine using the local admin account (administrator or whatever renamed on your corporate build) UAC settings does not apply as all processes run in high integrity. This applies to Windows 7/8 and 8.1 so always make sure users DO NOT logon using local admin account, if local admin rights are required better add their domain account to the local administrators group.
+Однако, если пользователь вошел в систему с учетной записью локального администратора (администратором, или любым другим переименованным в вашей корпоративной сборке властителем), настройки UAC не применяются, поскольку все процессы работают с высокой степенью целостности. Это относится к Windows 7/8 и 8.1, поэтому всегда следите за тем чтобы пользователи НЕ входили в систему с использованием учетной записи локального администратора, если требуются права локального администратора, лучше добавьте свою учетную запись домена в группу локальных администраторов.
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/compmanuac.png){:class="imghalf"}
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/iew8high.png){:class="imghalf"}
