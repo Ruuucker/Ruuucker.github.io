@@ -80,7 +80,7 @@ iptables -t nat -A POSTROUTING -j MASQUERADE
 
 - If you are using Linux, click on NetworkManager applet at the top right of your screen, select "Edit Connections...". In tab "Wired", choose the new established connection (be careful, not Ethernet LAN connection) and click "Edit..." In tab "IPv4 Settings", choose "Shared to other computers" as Method. Click "Save". NetworkManager will reestablish the connection and assign to your PC an IP address on this USB network connection, default: 10.42.0.1. Leave Internet connections (wired or wireless) untouched.
 
-- If you are using Windows, open "Network Connections" in Control Panel. It is somewhat different from setup in Linux. Right click on an Internet connection that you have. I assume that you are using a desktop which doesn't have any wifi adapter, so right click on LAN Ethernet connection with Internet, and select "Properties". In tab "Sharing" (or "Advanced" for Windows XP), click "Allow other network users to connect through...", then select the USB connection in dropdown list below. Click OK. Windows will automatically setup your USB network connection and assign to it an IP address, default for Windows 7: 192.168.137.1, default for Windows XP: 192.168.0.1. You can see your Internet connection is now "Shared" and your USB connection is now "Unidentified network".
+- If you are using Windows, open "Network Connections" in Control Panel. It is somewhat different from setup in Linux. Right click on an Internet connection that you have. I assume that you are using a desktop which doesn't have any wifi adapter, so right click on LAN Ethernet connection with Internet, and select "Properties". In tab "Sharing" (or "Advanced" for Windows XP), click "Allow other network users to connect through...", then select the USB connection in dropdown list below. Click OK. Windows will automatically setup your USB network connection and assign to it an IP address, default for Windows 7: 192.168.137.1, default for Windows 10: 192.168.0.1. You can see your Internet connection is now "Shared" and your USB connection is now "Unidentified network".
 
 - If you are using Mac, open System Preferences - Network. If you installed HoRNDIS, you will see a new network interface corresponding to your USB connection. With "Using DHCP" as Configure Ipv4, it may be already connected. Go back to System Preferences, click "Sharing". Select "Internet Sharing". Choose the Internet connection (Ethernet or Airport...) in "Share your connection from", and choose USB connection interface in "To computers using". Mac will assign to your USB connection interface an IP address, default: 192.168.2.1.
 
@@ -115,7 +115,7 @@ If route fails, try:
 
 	busybox route add default gw 10.42.0.1 dev rndis0
     
-For Windows PC, use the same above commands, replace 10.42.0.2 by 192.168.137.2 (192.168.0.2 for Windows XP), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows XP)
+For Windows PC, use the same above commands, replace 10.42.0.2 by 192.168.137.2 (192.168.0.2 for Windows XP), replace 10.42.0.1 by 192.168.137.1 (192.168.0.1 for Windows 10)
 For Mac PC, replace 10.42.0.2 by 192.168.2.2, replace 10.42.0.1 by 192.168.2.1
 Now you can close Terminal Emulator and start the browser for Internet.
 
