@@ -263,7 +263,8 @@ Microsoft предоставила нам 10 политик UAC с которы�
 "PromptOnSecureDesktop"=dword:00000000
 ~~~
 
-Take note that EnableLUA has been disabled completely. This is an extremely dangerous value to be in and should never be disabled so its strongly recommend to set this settings to be enabled in group policies so it always gets applied if settings are reset/changed by users or by previously removed malware.
+Обратите внимание, что EnableLUA полностью отключен. Это чрезвычайно опасное значение, и его никогда не следует отключать, поэтому настоятельно рекомендуется включить эти параметры в групповых политиках чтобы они всегда применялись, если параметры сбрасываются/изменяются пользователями или ранее удаленными вредоносными программами.
+
 
 # User Account Control: Run all administrators in Admin Approval Mode
 
