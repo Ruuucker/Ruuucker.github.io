@@ -214,13 +214,12 @@ C:\Program Files\Common Files\microsoft shared\ink\OLEACC.dll
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/cliconfg.png){:class="imghalf"}
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/pwcreator.png){:class="imghalf"}
 
-# Mitigation
-The best way to mitigate this bypass is just by not giving users local admin rights to their machines. Majority of user accounts in a corporate environment you should be able to do this reducing the attack surface. This however does not apply home users which would have local admin rights by default.
+# Смягчение
+Лучший способ смягчить этот обход - просто не предоставлять пользователям права локального администратора для своих компьютеров. Большинство учетных записей пользователей в корпоративной среде и вы должны быть в состоянии сделать это, уменьшая поверхность атаки. Это, однако, не распространяется на домашних пользователей, которые по умолчанию имеют права локального администратора.
 
-The actual bypass only works when set to the middle two UAC settings which will let it auto-elevate. To see your settings you need to go to Control Panel – User Accounts – Change User Account Control settings.
+Фактически, обход работает только при двух выставленных средних настройках UAC, которые позволяют автоматически подниматься. Чтобы увидеть настройки вам нужно перейти в Панель управления - Учетные записи пользователей - Изменить настройки контроля учетных записей.
 
->Notify me only when apps try to make changes to my computer (default)
-Notify me only when apps try to make changes to my computer (do not dim desktop settings)
+>Уведомлять меня только когда приложения пытаются внести изменения в мой компьютер (по умолчанию)
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/uacsettings.png){:class="imghalf"}
 
