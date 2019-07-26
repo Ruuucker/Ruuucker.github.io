@@ -221,7 +221,7 @@ The actual bypass only works when set to the middle two UAC settings which will 
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/uacsettings.png){:class="imghalf"}
 
-so we could set to Always notify but this would bring it back to like it was on Windows Vista with constant notifications and not really practical and the user would end up setting it to Never notify which is definitely not a good idea.
+So we could set to Always notify but this would bring it back to like it was on Windows Vista with constant notifications and not really practical and the user would end up setting it to Never notify which is definitely not a good idea.
 
 Microsoft has given us 10 UAC policies to play with so it’s worth spending some time understanding and testing these out before implementing it in your own domain environment. To see what is applied on your local machine type secpol.msc into Start-Run to open the Local Security Policy snap-in and expand the Local Policies-Security Options folder. Run rsop.msc to view group policies applied on machines in a domain environment.
 
