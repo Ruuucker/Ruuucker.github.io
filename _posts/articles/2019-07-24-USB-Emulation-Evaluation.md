@@ -34,7 +34,6 @@ The USBRubberDucky is well crafted both through its software and hardware. The s
 
 The Facedancer21 has source code provided for various USB capabilities. The firmware allows for many different clients to be developed in python. This requires a computer containing the client code to be connected the board, so that the client can be executed from the the host (controlling) computer passing information to the board of what to send to the target computer. Requiring a host computer to tell the board what to do isn't the best way idea of a final product to be used in the field but this could help with Proof of Concept work.
 
-I further developed the keyboard and FTDI client to have more functionality. The keyboard client takes a format file on the host and sends the keystrokes to the target. Moving forward, I would suggest using the USBRubberDucky technology/code for keyboard emulation, because it has been developed much more than the facedancer-keyboard code.
 
 Pros: The facedancer21 has the ability to run many different clients.
 
