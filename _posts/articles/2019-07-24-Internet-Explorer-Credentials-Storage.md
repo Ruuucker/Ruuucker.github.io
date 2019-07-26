@@ -15,7 +15,7 @@ tags:
 
 Research has shown that Internet Explorer can store (and recall) various pieces of information in a manner that can be convenient for a user.  These pieces of information can be loosely broken into a few different categories:
 
-  HTTP Authentication credentials (e.g., those creds used when a server makes use of say, the HTTP Basic Authentication scheme)
+  >HTTP Authentication credentials (e.g., those creds used when a server makes use of say, the HTTP Basic Authentication scheme)
     FTP credentials
     Autocomplete Data, which can be broken down further into two sub categories:
         Form Data
