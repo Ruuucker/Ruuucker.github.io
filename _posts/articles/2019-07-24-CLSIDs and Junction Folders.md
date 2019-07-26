@@ -160,5 +160,3 @@ Example of Junction Folder creation:
 mkdir (CreateDirectory) C:\Users\{User}\Appdata\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Indexing.{26A81239-BD1F-48E3-BED4-EB313CFCB041} where {26A81239-BD1F-48E3-BED4-EB313CFCB041} is the CLSID used in the registry entries. 
 
 Also make sure you make the registry entries before you create the junction folder to avoid caching issues with initial launch.
-  
-The end.
