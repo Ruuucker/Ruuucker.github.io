@@ -146,10 +146,9 @@ if (SUCCEEDED(hr))
 	wusa c:\users\user1\desktop\poc.tmp /extract:c:\windows\system32\sysprep
     
 # Эксплуатация уязвимости DLL hijacking
-When exploiting a DLL hijacking vulnerability the executable we are going to run again has to be signed; located in a secure directory and must specify the autoElevate property in its manifest in order load as a high integrity process.
+При эксплуатации уязвимости перехвата DLL, исполняемый файл который мы собираемся запустить снова должен быть подписан; находится в безопасном каталоге; и должен указывать свойство autoElevate в своем манифесте для загрузки в качестве процесса с высокой степенью целостности.
 
-
-On Windows 7 there are three executables that could be exploited and associated DLLs listed below
+В Windows 7 есть три исполняемых файла которые можно эксплуатировать и связанные библиотеки DLL, перечисленны ниже:
 ~~~
 C:\windows\ehome\Mcx2Prov.exe
 C:\Windows\ehome\CRYPTBASE.dll
