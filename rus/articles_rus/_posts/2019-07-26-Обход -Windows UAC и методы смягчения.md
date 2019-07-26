@@ -292,7 +292,7 @@ Microsoft предоставила нам 10 политик UAC с которы�
 
 	“FilterAdministratorToken”=dword:00000001
 
-Another option would be to look into renaming or deleting the executables Mcx2Prov.exe, sysprep.exe, cliconfg.exe and pwcreator.exe if definitely not required on the system so the second stage to exploit DLL hijacking fails.
+Другой вариант - это переименование или удаление исполняемых файлов Mcx2Prov.exe, sysprep.exe, cliconfg.exe и pwcreator.exe, если это не требуется в системе, чтобы второй этап эксплуатации DLL  hijacking провалился.
 
 Finally if users do require local admin privileges then worth setting their machine UAC policy to Always notify and they live with the constant notifications.
 
