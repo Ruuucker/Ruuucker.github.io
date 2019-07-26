@@ -34,7 +34,6 @@ The USBRubberDucky is well crafted both through its software and hardware. The s
 
 The Facedancer21 has source code provided for various USB capabilities. The firmware allows for many different clients to be developed in python. This requires a computer containing the client code to be connected the board, so that the client can be executed from the the host (controlling) computer passing information to the board of what to send to the target computer. Requiring a host computer to tell the board what to do isn't the best way idea of a final product to be used in the field but this could help with Proof of Concept work.
 
-
 Pros: The facedancer21 has the ability to run many different clients.
 
 Cons: On the current setup, all the clients are in python and are made to interface with the board from the host. That makes it difficult to take the existing python client code and flash it on the board so that the client can be automated on connection to a target (not requiring a host computer to also be connected to the board). Therefore, for automation and not needing a host to be connected, the firmware will need to be changed.
