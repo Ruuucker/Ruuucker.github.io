@@ -163,13 +163,13 @@ C:\windows\System32\cliconfg.exe
 C:\Windows\System32\NTWDBLIB.DLL
 ~~~
 
-On malwr.com a malware submitted on 25th June last year had already been using Mcx2Prov.exe to bypass UAC and day later an exploit had also been [published](https://github.com/hzeroo/Carberp/blob/master/source%20-%20absource/pro/all%20source/BJWJ/source/exploit/UAC_bypass.cpp).
+На malwr.com вредоносная программа выложенная 25 Июня прошлого года, уже использовала Mcx2Prov.exe для обхода UAC, а днем позже эксплойт был [опубликован](https://github.com/hzeroo/Carberp/blob/master/source%20-%20absource/pro/all%20source/BJWJ/source/exploit/UAC_bypass.cpp).
 
 ![1]({{ site.baseurl }}/assets/img/posts/bypass uac/malwruac.png){:class="imghalf"}
 
-The same hash had also been flagged on VirusTotal (38/54) submitted over four months ago.
+Тот же хэш был также отмечен на VirusTotal (38/54), был представлен более четырех месяцев назад.
 
-On Windows 8 there are also three executables that could be exploited and associated DLLs listed below
+В Windows 8 также есть три исполняемых файла которые можно эксплуатировать и связанные с ними библиотеки DLL перечислены ниже:
 
 ~~~
 C:\windows\System32\sysprep\sysprep.exe
