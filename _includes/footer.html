@@ -5,5 +5,12 @@ src="https://cdn.commento.io/js/commento.js"
 data-css-override="https://ruuucker.github.io/assets/css/style.css"
 data-auto-init="true">
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://docs.commento.io/" rel="nofollow">comments.</a></noscript>
+
+<noscript>
+  {% if page.url contains 'rus'  %}
+		 	Пожалуйстй, включите JavaScript для просмотра <a href="https://docs.commento.io/" rel="nofollow">комментариев.</a>
+      	{% else %}
+      		Please enable JavaScript to view the <a href="https://docs.commento.io/" rel="nofollow">comments.</a>
+		{% endif %}
+  </noscript>
 </footer>
