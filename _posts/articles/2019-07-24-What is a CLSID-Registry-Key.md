@@ -26,7 +26,7 @@ However, fake media updates often are used to distribute malicious software and 
 
 # When a Good CLSID Entry Goes Bad
 
-If the CLSID is corrupted, your PC may experience problems related to the program the CLSID is linked to; one common problem is a damage CLSID resulting in software being unable to verify its own version and update itself. As an easy-to-implement solution, uninstalling and reinstalling your software usually remedies this issue.
+If the CLSID is corrupted, your PC may experience problems related to the program the CLSID is linked to. One common problem is a damage CLSID resulting in software being unable to verify its own version and update itself. As an easy-to-implement solution, uninstalling and reinstalling your software usually remedies this issue.
 
 The most common issue related to a Registry CLSID entry is a program's failure to delete its CLSID from the Registry when the rest of the program is uninstalled. Although this is a poor programming practice that clutters up the PC's Registry with meaningless text entries, an unused CLSID entry isn't likely to harm your computer. However, some Registry cleaners and other system maintenance programs specialize in removing this CLSID-based 'junk.' In very extreme circumstances, such as with a computer with low system resources, a Registry with too many unused CLSID entries may cause performance issues.
 
