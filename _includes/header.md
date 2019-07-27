@@ -1,6 +1,6 @@
 <header>
-	
-    rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+	<pre class="ascii name">
+    
           _____                    _____                    _____                    _____                    _____                    _____          
          /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \         
         /::\    \                /::\____\                /::\    \                /::\____\                /::\    \                /::\    \        
@@ -24,5 +24,5 @@
          \|___|                   ~~                       \/____/                  \|___|                   \/____/                  \|___|          
                                                                                                                                                       
 
-
+</pre>
 </header>
