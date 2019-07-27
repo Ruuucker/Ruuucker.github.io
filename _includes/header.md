@@ -1,5 +1,5 @@
 <header>
-	<pre class="ascii name">
+	
     tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
           _____                    _____                    _____                    _____                    _____                    _____          
          /\    \                  /\    \                  /\    \                  /\    \                  /\    \                  /\    \         
@@ -24,5 +24,5 @@
          \|___|                   ~~                       \/____/                  \|___|                   \/____/                  \|___|          
                                                                                                                                                       
 
-</pre>
+
 </header>
