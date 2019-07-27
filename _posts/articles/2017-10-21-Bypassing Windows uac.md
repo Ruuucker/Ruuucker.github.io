@@ -298,7 +298,7 @@ This bypass only works when all of the requirements are available to abuse. Remo
 
 
 # References
-http://technet.microsoft.com/en-us/magazine/2009.07.uac.aspx
+[http://technet.microsoft.com/en-us/magazine/2009.07.uac.aspx]
 http://technet.microsoft.com/en-us/magazine/2007.06.uac.aspx
 http://windows.microsoft.com/en-gb/windows/what-is-user-account-control#1TC=windows-7
 http://windows.microsoft.com/en-gb/windows/what-are-user-account-control-settings#1TC=windows-7
