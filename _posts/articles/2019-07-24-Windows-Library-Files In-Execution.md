@@ -17,7 +17,7 @@ Library files were introduce in Windows 7 and are a way of viewing the contents 
 
 ![1]({{ site.baseurl }}/assets/img/posts/Windows-Library-Files/image2011.png){:class="imghalf"}
 
-This example only has one location, but the specification says we can have as many as we want, All the libraries Microsoft provides have specific owners with serialized locations. Meaning you can't move it from machine to machine or even user for user. However, all the elements that tie it to a certain machine/user/location, are optional. Thanks, Obama. The parts we're interested in are the SearchConenectionDescription.
+This example only has one location, but the specification says we can have as many as we want. All the libraries Microsoft provides have specific owners with serialized locations. Meaning you can't move it from machine to machine or even user for user. However, all the elements that tie it to a certain machine/user/location, are optional. Thanks, Obama. The parts we're interested in are the SearchConenectionDescription.
 
 <br>
 ![1]({{ site.baseurl }}/assets/img/posts/Windows-Library-Files/image2012.png){:class="imghalf"}
