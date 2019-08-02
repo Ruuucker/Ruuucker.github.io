@@ -20,3 +20,5 @@ categories: cheatsheets
 ### [Awesome Hacking](https://github.com/Hack-with-Github/Awesome-Hacking "Awesome Hacking")
 
 ### [Awesome Hacking Resources](https://github.com/vitalysim/Awesome-Hacking-Resources "Awesome Hacking Resources")
+
+### [Awesome Crawler](https://github.com/BruceDone/awesome-crawler "Awesome Crawler")
