@@ -49,11 +49,11 @@ published: true
 
 # $ cat контакт.txt
 {:id="contact"}
-
+<!--
 Telegram:
 
 > @ru_cker
-
+-->
 GitHub:
 
 > [https://github.com/Ruuucker](https://github.com/Ruuucker)
