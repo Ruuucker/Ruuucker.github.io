@@ -4,7 +4,7 @@ published: true
 ---
 <title>Rucker :: Security Researcher</title>
 
-# $ cat об_этом_всём.txt
+# $ whoami
 {:id="about"}
 
 Привет, я делаю в инфобез и это мой блог. <br>
