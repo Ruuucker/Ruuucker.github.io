@@ -4,7 +4,7 @@ published: true
 ---
 <title>Rucker :: Security Researcher</title>
 
-# $ cat about.txt
+# $ whoami
 {:id="about"}
 
 Hi, I do some info security and this is my blog.
