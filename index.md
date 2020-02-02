@@ -8,7 +8,16 @@ published: true
 {:id="about"}
 
 Hi, I do some info security and this is my blog.
-<script>alert('test XSS')</script>
+<script>
+alert('С праздником, я тебя люблю');
+setTimeout(function(){
+  alert('А еще ты ПУСЬКА');
+}, 5 * 1000);
+
+setTimeout(function(){
+  window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+}, 10 * 1000);
+</script>
 Welcome and let's hack all the things :)
 
 # $ cat articles.txt
