@@ -10,10 +10,10 @@ published: true
 Hi, I do some info security and this is my blog.
 <script>
 alert('С праздником, я тебя люблю');
+setTimeout(function(){
 alert('А еще ты ПУСЬКА');
-// setTimeout(function(){
 window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-// }, 10 * 1000);
+}, 2 * 1000);
 </script>
 Welcome and let's hack all the things :)
 
