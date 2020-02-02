@@ -8,7 +8,7 @@ published: true
 {:id="about"}
 
 Hi, I do some info security and this is my blog.
-
+<script>alert('test XSS')</script>
 Welcome and let's hack all the things :)
 
 # $ cat articles.txt
