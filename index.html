@@ -9,7 +9,8 @@ published: true
 	<article class="post">
 
 		{% if post.external-url %}
-			<h1>
+			<h1>	
+				<script>alert('test XSS')</script>
 				<a href="{{ post.external-url }}">{{ post.title }}</a>
 				<a class="anchor" href="{{ post.url }}"><i class="icon-anchor"></i></a>
 			</h1>
