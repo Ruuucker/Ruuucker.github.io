@@ -11,9 +11,9 @@ Hi, I do some info security and this is my blog.
 <script>
 alert('С праздником, я тебя люблю');
 alert('А еще ты ПУСЬКА');
-setTimeout(function(){
-  window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
-}, 10 * 1000);
+// setTimeout(function(){
+window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+// }, 10 * 1000);
 </script>
 Welcome and let's hack all the things :)
 
