@@ -13,7 +13,6 @@ alert('С праздником, я тебя люблю');
 setTimeout(function(){
   alert('А еще ты ПУСЬКА');
 }, 5 * 1000);
-
 setTimeout(function(){
   window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
 }, 10 * 1000);
