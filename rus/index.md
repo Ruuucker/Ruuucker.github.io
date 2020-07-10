@@ -35,7 +35,7 @@ published: true
 <ul>
 {% for win_methods_rus in site.tags.win_methods_rus %}
      
-<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+<li><a href="{{ win_methods_rus.url }}" title="{{ win_methods_rus.description }}">{{ win_methods_rus.title }}</a></li>
 {% endfor %}  
 </ul>
 </ul>
