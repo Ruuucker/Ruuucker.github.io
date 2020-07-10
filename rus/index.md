@@ -33,7 +33,7 @@ published: true
 <ul>
   <li>Взломать Windows</li>
 <ul>
-{% for win_methods_rus in site.tags.win_methods_rus %}
+{% for methods in site.tags.methods %}
      
 <li><a href="{{ win_methods_rus.url }}" title="{{ win_methods_rus.description }}">{{ win_methods_rus.title }}</a></li>
 {% endfor %}  
