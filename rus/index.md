@@ -51,6 +51,7 @@ published: true
 {% endfor %}  
 </ul>
 <br>
+</ul>
 
 <ul>
   <li>Взломать Android</li>
@@ -61,6 +62,7 @@ published: true
 {% endfor %}  
 </ul>
 <br>
+</ul>
 
 <ul>
   <li>Взломать сеть</li>
@@ -71,6 +73,7 @@ published: true
 {% endfor %}  
 </ul>
 <br>
+</ul>
 
 <ul>
   <li>Взломать вообще всё</li>
@@ -81,6 +84,7 @@ published: true
 {% endfor %}  
 </ul>
 <br>
+</ul>
 
 {% endfor %}
 </ul>
