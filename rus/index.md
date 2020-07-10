@@ -28,7 +28,7 @@ published: true
 {% endfor %}
 </ul>
 
-# $ cat чит_таблицы.txt
+# $ cat чит_щит.txt
 {:id="cheatsheets"}
 
 <ul>
@@ -38,7 +38,7 @@ published: true
 {% endfor %}
 </ul>
 
-# $ cat тулзы.txt
+# $ cat арсенал.txt
 {:id="tools"}
 
 <ul>
@@ -47,7 +47,7 @@ published: true
 {% endfor %}
 </ul>
 
-# $ cat контакт.txt
+# $ cat ссылки.txt
 {:id="contact"}
 <!--
 Telegram:
