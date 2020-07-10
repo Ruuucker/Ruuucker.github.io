@@ -40,6 +40,7 @@ published: true
 {% endfor %}  
 </ul>
 <br>
+</ul>
 
 <ul>
   <li>Взломать Linux</li>
