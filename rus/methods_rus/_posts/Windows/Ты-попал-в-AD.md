@@ -1,5 +1,5 @@
 ---
-title: Обход контроля учетных записей (UAC) в Windows и методы смягчения
+title: Ты попал в AD
 layout: post
 tags:
   - methods_rus
