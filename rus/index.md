@@ -85,9 +85,6 @@ published: true
 <br>
 </ul>
 
-{% endfor %}
-</ul>
-
 # $ cat чит_щит.txt
 {:id="cheatsheets"}
 
