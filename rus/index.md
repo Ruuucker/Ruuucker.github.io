@@ -38,8 +38,8 @@ published: true
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
 </ul>
-<br>
 </ul>
+<br>
 
 <ul>
   <li>Взломать Linux</li>
@@ -82,8 +82,8 @@ published: true
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
 </ul>
-<br>
 </ul>
+<br>
 
 # $ cat чит_щит.txt
 {:id="cheatsheets"}
