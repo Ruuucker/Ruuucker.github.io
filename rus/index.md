@@ -35,7 +35,7 @@ published: true
 <ul>
 {% for methods in site.tags.methods %}
      
-<li><a href="{{ win_methods_rus.url }}" title="{{ win_methods_rus.description }}">{{ win_methods_rus.title }}</a></li>
+<li><a href="{{ methods.url }}" title="{{ methods.description }}">{{ methods.title }}</a></li>
 {% endfor %}  
 </ul>
 </ul>
