@@ -28,6 +28,62 @@ published: true
 {% endfor %}
 </ul>
 
+# $ cat методологии.txt
+{:id="articles"}
+
+<ul>
+  <li>Взломать Windows</li>
+<ul>
+{% for uefi_rus in site.tags.uefi_rus %}
+     
+<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+{% endfor %}  
+</ul>
+<br>
+
+<ul>
+  <li>Взломать Linux</li>
+<ul>
+{% for uefi_rus in site.tags.uefi_rus %}
+     
+<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+{% endfor %}  
+</ul>
+<br>
+
+<ul>
+  <li>Взломать Android</li>
+<ul>
+{% for uefi_rus in site.tags.uefi_rus %}
+     
+<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+{% endfor %}  
+</ul>
+<br>
+
+<ul>
+  <li>Взломать сеть</li>
+<ul>
+{% for uefi_rus in site.tags.uefi_rus %}
+     
+<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+{% endfor %}  
+</ul>
+<br>
+
+<ul>
+  <li>Взломать вообще всё</li>
+<ul>
+{% for uefi_rus in site.tags.uefi_rus %}
+     
+<li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
+{% endfor %}  
+</ul>
+<br>
+
+{% endfor %}
+</ul>
+
 # $ cat чит_щит.txt
 {:id="cheatsheets"}
 
