@@ -33,7 +33,7 @@ published: true
 <ul>
   <li>Взломать Windows</li>
 <ul>
-{% for win_hacks_rus in site.tags.win_hacks_rus %}
+{% for win_methods_rus in site.tags.win_methods_rus %}
      
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
