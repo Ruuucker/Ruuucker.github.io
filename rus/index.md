@@ -29,12 +29,12 @@ published: true
 </ul>
 
 # $ cat методологии.txt
-{:id="articles"}
+{:id="methods"}
 
 <ul>
   <li>Взломать Windows</li>
 <ul>
-{% for uefi_rus in site.tags.uefi_rus %}
+{% for win_hacks_rus in site.tags.win_hacks_rus %}
      
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
@@ -45,7 +45,7 @@ published: true
 <ul>
   <li>Взломать Linux</li>
 <ul>
-{% for uefi_rus in site.tags.uefi_rus %}
+{% for linux_hacks_rus in site.tags.linux_hacks_rus %}
      
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
@@ -56,7 +56,7 @@ published: true
 <ul>
   <li>Взломать Android</li>
 <ul>
-{% for uefi_rus in site.tags.uefi_rus %}
+{% for android_hacks_rus in site.tags.android_hacks_rus %}
      
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
@@ -67,7 +67,7 @@ published: true
 <ul>
   <li>Взломать сеть</li>
 <ul>
-{% for uefi_rus in site.tags.uefi_rus %}
+{% for net_hacks_rus in site.tags.net_hacks_rus %}
      
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
@@ -78,7 +78,7 @@ published: true
 <ul>
   <li>Взломать вообще всё</li>
 <ul>
-{% for uefi_rus in site.tags.uefi_rus %}
+{% for hack_all_rus in site.tags.hack_all_rus %}
      
 <li><a href="{{ uefi_rus.url }}" title="{{ uefi_rus.description }}">{{ uefi_rus.title }}</a></li>
 {% endfor %}  
