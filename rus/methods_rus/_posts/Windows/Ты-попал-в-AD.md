@@ -3,7 +3,7 @@ title: Обход контроля учетных записей (UAC) в Window
 layout: post
 tags:
   - methods_rus
-  - windows
+  - win_methods
   - active_directory
 published: true
 ---
