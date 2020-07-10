@@ -25,7 +25,6 @@ published: true
 {% for articles_rus in site.tags.articles_rus %}
 <li><a href="{{ articles_rus.url }}" title="{{ articles_rus.description }}">{{ articles_rus.title }}</a></li>
 
-{% endfor %}
 </ul>
 
 # $ cat методологии.txt
