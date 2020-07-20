@@ -7,8 +7,12 @@ published: true
 # $ whoami
 {:id="about"}
 
+{% if page.url contains 'rus'  %}
+Привет, я делаю в инфобез и это мой блог.
+{% else %}
 Hi, I do some info security and this is my blog.
 Welcome and let's hack all the things :)
+{% endif %}
 
 # $ cat articles.txt
 {:id="articles"}
