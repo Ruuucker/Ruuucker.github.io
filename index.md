@@ -27,15 +27,15 @@ Welcome and let's hack all the things :)
 <br>
 
 {% for post in site.categories.articles %}
-{% if page.url contains 'ru'  %}
-{% if post.tags contains 'ru'  %}
-<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
-{% endif %}
-{% else %}
-{% if post.tags contains 'en'  %}
-<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
-{% endif %}
-{% endif %}
+    {% if page.url contains 'ru'  %}
+        {% if page.tags contains 'ru'  %}
+             <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+        {% endif %}
+    {% else %}
+        {% if page.tags contains 'en'  %}
+            <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+        {% endif %}
+    {% endif %}
 {% endfor %}
 
 </ul>
