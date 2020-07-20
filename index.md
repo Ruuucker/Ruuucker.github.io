@@ -7,10 +7,6 @@ published: true
 # $ whoami
 {:id="about"}
 
-{% if site.url contains "ru" %}
-	Der'mo
-{% endif %}
-
 Hi, I do some info security and this is my blog.
 Welcome and let's hack all the things :)
 
