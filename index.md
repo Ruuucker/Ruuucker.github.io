@@ -28,11 +28,11 @@ Welcome and let's hack all the things :)
 
 {% for post in site.categories.articles %}
     {% if page.url contains 'ru'  %}
-        {% if post.ru %}
+        {% if post.ru == true %}
              <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
         {% endif %}
     {% else %}
-        {% if post.tags contains 'en'  %}
+        {% if post.ru != true %}
             <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
         {% endif %}
     {% endif %}
