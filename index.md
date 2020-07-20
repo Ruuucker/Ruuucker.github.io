@@ -21,16 +21,23 @@ Welcome and let's hack all the things :)
   <li>EFI</li>
 <ul>
 {% for uefi in site.tags.uefi %}
-     
 <li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
 {% endfor %}  
 </ul>
 <br>
-{% for post in site.categories.articles %}
-  
-<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
 
+{% for post in site.categories.articles %}
+{% if page.url contains 'ru'  %}
+{% if post.tags contains 'ru'  %}
+<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+{% endif %}
+{% else %}
+{% if post.tags contains 'en'  %}
+<li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+{% endif %}
+{% endif %}
 {% endfor %}
+
 </ul>
 
 # $ cat cheat_sheets.txt
