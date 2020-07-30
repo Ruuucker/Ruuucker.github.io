@@ -1,10 +1,12 @@
 ---
 title: Bluetooth Hacks
 layout: post
+categories: articles
 tags:
-  - articles_rus
-  - bluetooth
+  - ru
+  - edr
 published: true
+ru: true
 ---
 
 # Оглавление
