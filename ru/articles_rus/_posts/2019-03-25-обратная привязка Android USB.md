@@ -1,10 +1,12 @@
 ---
 title: Обратный модем Android USB
 layout: post
+categories: articles
 tags:
-  - articles_rus
-  - usb
+  - ru
+  - edr
 published: true
+ru: true
 ---
 # Оглавление
 {:.no_toc}
