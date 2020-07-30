@@ -1,12 +1,11 @@
 ---
 layout: post
-categories: articles_rus
+categories: articles
 tags:
-  - articles_rus
-  - python
-  - rev_shell
-  - meterpreter
+  - ru
+  - edr
 published: true
+ru: true
 ---
 
 # Оглавление
