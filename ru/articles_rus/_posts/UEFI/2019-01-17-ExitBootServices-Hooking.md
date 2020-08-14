@@ -2,8 +2,9 @@
 title: Захвачивание ExitBootServices
 layout: post
 tags:
-  - uefi_rus
+  - uefi
 published: true
+ru: true
 ---
 
 # Оглавление
