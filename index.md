@@ -43,6 +43,7 @@ Hi, I do some info security shit and this is my blog.
 {:id="cheatsheets"}
 
 <ul>
+  
 {% for post in site.categories.cheatsheets %}
     {% if page.url contains 'ru'  %}
         {% if post.ru == true %}
@@ -54,6 +55,7 @@ Hi, I do some info security shit and this is my blog.
         {% endif %}
     {% endif %}
 {% endfor %}
+  
 </ul>
 
 # $ cat tools.txt
