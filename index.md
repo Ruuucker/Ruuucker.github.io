@@ -10,8 +10,7 @@ published: true
 {% if page.url contains 'ru'  %}
 Привет, я делаю в инфобез и это мой блог.
 {% else %}
-Hi, I do some info security and this is my blog.
-Welcome and let's hack all the things :)
+Hi, I do some info security shit and this is my blog.
 {% endif %}
 
 # $ cat articles.txt
@@ -44,9 +43,16 @@ Welcome and let's hack all the things :)
 {:id="cheatsheets"}
 
 <ul>
-{% for cheatsheets in site.categories.cheatsheets %}
-<li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
- 
+{% for post in site.categories.cheatsheets %}
+    {% if page.url contains 'ru'  %}
+        {% if post.ru == true %}
+             <li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
+        {% endif %}
+    {% else %}
+        {% if post.ru != true %}
+            <li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
+        {% endif %}
+    {% endif %}
 {% endfor %}
 </ul>
 
