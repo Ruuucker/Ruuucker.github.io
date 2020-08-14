@@ -19,9 +19,19 @@ Hi, I do some info security shit and this is my blog.
 <ul>
   <li>EFI</li>
 <ul>
-{% for uefi in site.tags.uefi %}
-<li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
-{% endfor %}  
+
+{%  for uefi in site.tags.uefi  %}
+    {% if page.url contains 'ru'  %}
+        {% if uefi.ru == true %}
+             <li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
+        {% endif %}
+    {% else %}
+        {% if uefi.ru != true %}
+            <li><a href="{{ uefi.url }}" title="{{ uefi.description }}">{{ uefi.title }}</a></li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+  
 </ul>
 <br>
 
