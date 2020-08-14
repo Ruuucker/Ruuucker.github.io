@@ -44,14 +44,14 @@ Hi, I do some info security shit and this is my blog.
 
 <ul>
   
-{% for post in site.categories.cheatsheets %}
+{% for cheatsheets in site.categories.cheatsheets %}
     {% if page.url contains 'ru'  %}
-        {% if post.ru == true %}
-             <li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
+        {% if cheatsheets.ru == true %}
+              <li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
         {% endif %}
     {% else %}
-        {% if post.ru != true %}
-            <li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
+        {% if cheatsheets.ru != true %}
+              <li><a href="{{ cheatsheets.url }}" title="{{ cheatsheets.description }}">{{ cheatsheets.title }}</a></li>
         {% endif %}
     {% endif %}
 {% endfor %}
