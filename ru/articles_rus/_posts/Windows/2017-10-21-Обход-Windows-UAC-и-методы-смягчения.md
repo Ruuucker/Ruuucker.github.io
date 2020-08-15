@@ -1,9 +1,9 @@
 ---
 title: Обход контроля учетных записей (UAC) в Windows и методы смягчения
-categories: articles
 tags:
   - ru
   - edr
+  - windows
 published: true
 ru: true
 ---

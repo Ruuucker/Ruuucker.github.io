@@ -16,6 +16,10 @@ Hi, I do some info security shit and this is my blog.
 # $ cat articles.txt
 {:id="articles"}
 
+{%  for ru in site.tags.ru  %}
+	<li><a href="{{ ru.url }}" title="{{ ru.description }}">{{ ru.title }}</a></li>
+{% endfor %}
+
 <ul>
   <li>EFI</li>
 <ul>
