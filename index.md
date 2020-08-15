@@ -48,12 +48,12 @@ Hi, I do some info security shit and this is my blog.
 {% endfor %}
 
 </ul>
-
+<!--
 //# $ cat methodolodys.txt
 //{:id="methods"}
 
 //Soon...
-
+-->
 # $ cat cheat_sheets.txt
 {:id="cheatsheets"}
 
