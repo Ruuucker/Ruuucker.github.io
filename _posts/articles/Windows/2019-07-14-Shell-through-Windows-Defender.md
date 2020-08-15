@@ -1,7 +1,6 @@
 ---
 published: true
 layout: post
-categories: articles
 tags:
   - python
   - rev_shell

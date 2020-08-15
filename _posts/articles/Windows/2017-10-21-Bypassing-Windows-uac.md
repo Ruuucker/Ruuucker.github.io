@@ -2,7 +2,6 @@
 published: true
 title: Bypassing Windows User Account Control (UAC) and ways of mitigation
 layout: post
-categories: articles
 tags:
   - en
   - windows

@@ -35,7 +35,6 @@ Hi, I do some info security shit and this is my blog.
 </ul>
 </ul>
 <br>
-
 <ul>
   <li>Windows</li>
 <ul>
@@ -52,6 +51,7 @@ Hi, I do some info security shit and this is my blog.
     {% endif %}
 {% endfor %}
   
+</ul>
 </ul>
 <br>
 

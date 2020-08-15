@@ -1,8 +1,9 @@
 ---
 layout: post
 date: 2018-03-10T12:00:00.000Z
-categories: articles
 published: true
+tags:
+ - windows
 ---
 
 # Summary

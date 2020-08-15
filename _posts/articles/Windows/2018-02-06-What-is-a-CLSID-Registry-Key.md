@@ -1,7 +1,6 @@
 ---
 published: true
 layout: post
-categories: articles
 tags:
   - windows
 title: What is a CLSID Registry Key
