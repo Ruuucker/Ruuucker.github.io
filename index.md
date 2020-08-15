@@ -52,7 +52,6 @@ Hi, I do some info security shit and this is my blog.
 {% endfor %}
   
 </ul>
-</ul>
 <br>
 
 {% for post in site.categories.articles %}
