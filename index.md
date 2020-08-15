@@ -16,10 +16,6 @@ Hi, I do some info security shit and this is my blog.
 # $ cat articles.txt
 {:id="articles"}
 
-{%  for ru in site.tags.ru  %}
-	<li><a href="{{ ru.url }}" title="{{ ru.description }}">{{ ru.title }}</a></li>
-{% endfor %}
-
 <ul>
   <li>EFI</li>
 <ul>
@@ -58,14 +54,14 @@ Hi, I do some info security shit and this is my blog.
 </ul>
 <br>
 
-{% for post in site.categories.articles %}
+{% for common in site.tags.common %}
     {% if page.url contains 'ru'  %}
-        {% if post.ru == true %}
-             <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+        {% if common.ru == true %}
+             <li><a href="{{ common.url }}" title="{{ common.description }}">{{ common.title }}</a></li>
         {% endif %}
     {% else %}
-        {% if post.ru != true %}
-            <li><a href="{{ post.url }}" title="{{ post.description }}">{{ post.title }}</a></li>
+        {% if common.ru != true %}
+            <li><a href="{{ common.url }}" title="{{ common.description }}">{{ common.title }}</a></li>
         {% endif %}
     {% endif %}
 {% endfor %}
