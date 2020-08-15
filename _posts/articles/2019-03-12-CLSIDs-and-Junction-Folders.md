@@ -4,6 +4,7 @@ layout: post
 categories: articles
 tags:
   - windows
+  - common
 title: CLSIDs and Junction Folders
 ---
 # Summary

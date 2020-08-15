@@ -4,6 +4,7 @@ layout: post
 categories: articles
 tags:
   - usb
+  - common
 title: Android USB reverse tethering
 ---
 # Summary

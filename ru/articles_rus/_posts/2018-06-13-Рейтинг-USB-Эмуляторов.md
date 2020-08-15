@@ -5,6 +5,7 @@ categories: articles
 tags:
   - ru
   - edr
+  - common
 published: true
 ru: true
 ---

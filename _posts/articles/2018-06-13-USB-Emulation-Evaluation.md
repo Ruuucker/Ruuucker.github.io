@@ -4,6 +4,7 @@ layout: post
 categories: articles
 tags:
   - usb
+  - common
 ---
 # Summary
 {:.no_toc}
