@@ -1,5 +1,5 @@
 ---
-title: Обход контроля учетных записей (UAC) в Windows и методы смягчения
+title: Обход контроля учетных записей (UAC) в Windows
 categories: articles
 tags:
   - ru
