@@ -4,6 +4,7 @@ categories: articles
 tags:
   - ru
   - edr
+  - windows
 published: true
 ru: true
 ---
