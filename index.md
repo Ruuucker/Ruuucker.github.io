@@ -35,6 +35,25 @@ Hi, I do some info security shit and this is my blog.
 </ul>
 <br>
 
+<ul>
+  <li>Windows</li>
+<ul>
+
+{%  for windows in site.tags.windows  %}
+    {% if page.url contains 'ru'  %}
+        {% if windows.ru == true %}
+             <li><a href="{{ windows.url }}" title="{{ windows.description }}">{{ windows.title }}</a></li>
+        {% endif %}
+    {% else %}
+        {% if windows.ru != true %}
+            <li><a href="{{ windows.url }}" title="{{ windows.description }}">{{ windows.title }}</a></li>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+  
+</ul>
+<br>
+
 {% for post in site.categories.articles %}
     {% if page.url contains 'ru'  %}
         {% if post.ru == true %}
