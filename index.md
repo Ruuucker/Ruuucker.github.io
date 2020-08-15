@@ -89,6 +89,4 @@ Telegram:
 
 > @
 -->
-GitHub:
-
-> [https://github.com/Ruuucker](https://github.com/Ruuucker)
+GitHub: > [https://github.com/Ruuucker](https://github.com/Ruuucker)
