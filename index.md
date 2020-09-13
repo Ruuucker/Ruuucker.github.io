@@ -4,6 +4,8 @@ published: true
 ---
 <title>Rucker :: Security Researcher</title>
 
+<--dfdf-->
+
 # $ whoami
 {:id="about"}
 
