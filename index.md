@@ -4,7 +4,11 @@ published: true
 ---
 <title>Rucker :: Security Researcher</title>
 
-<--dfdf-->
+<!-- I'm soming out the socket -->
+<!-- Nothing you can do can stop it -->
+<!-- I'm on your lap and in your pocket -->
+<!-- How you gonna shoot me down -->
+<!-- When I guide the rocket? -->
 
 # $ whoami
 {:id="about"}
