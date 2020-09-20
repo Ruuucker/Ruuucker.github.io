@@ -1,5 +1,5 @@
 ---
-title: Bluetooth Hacks
+title: Взлом Bluetooth
 layout: post
 categories: articles
 tags:
