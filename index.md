@@ -115,3 +115,4 @@ Telegram:
 > @
 -->
 GitHub: > [https://github.com/Ruuucker](https://github.com/Ruuucker)
+Windows Exploits: > [https://github.com/SecWiki/windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
