@@ -30,21 +30,21 @@ This blog post shows how easily UAC elevation prompts could be bypassed and what
 Exploiting UAC is a trivial process. There are two stages needed to be taken to achieve bypass to elevate from standard user rights to administrator user rights. These steps have widely been published so it’s nothing new though stage 2 documents some more DLL hijacking vulnerabilities.
 
    >Writing to a secure location
-    Exploiting DLL hijacking vulnerability
+   >Exploiting DLL hijacking vulnerability
 
 In order for our bypass to be successful to start off with we need
 
    >A medium integrity process
-    A standard user in an administrators group
-    Windows executable must be signed by Microsoft code signing certificate
-    Windows executable must be located in a secure directory
-    Windows executable also must specify the auto Elevate property in their manifest
+   >A standard user in an administrators group
+   >Windows executable must be signed by Microsoft code signing certificate
+   >Windows executable must be located in a secure directory
+   >Windows executable also must specify the auto Elevate property in their manifest
 
 # Writing to a secure location
 There are a couple of ways we can write to a secure location.
 
    >Using the IFileOperation COM Object
-    Using Windows Update Standalone Installer (wusa.exe)
+   >Using Windows Update Standalone Installer (wusa.exe)
 
 # IFileOperation COM Object
 The IFileOperation COM object has a method that we can use to copy files to our secure location as the operation will auto-elevate and able to do a privilege copy. To exploit we can in inject our malicious DLL in a medium integrity process to carry out the operation. Since the COM object is set to auto-elevate the injected process does not need to be marked for auto-elevation in its manifest.
