@@ -9,6 +9,14 @@ Virst try to categorise huge amount ov invormation that comes to me vrom diveren
 
 Also you could quickly travel via URL change, more vaster than clicks.
 
+{%  for net in site.tags.net  %}
+    {%  for windows in site.tags.windows  %}
+        {%  for ad in site.tags.ad  %}
+            <li><a href="{{ ad.url }}" title="{{ ad.description }}">{{ ad.title }}</a></li>
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+
 Recon
 
 Net
