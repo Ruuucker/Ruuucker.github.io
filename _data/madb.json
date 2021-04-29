@@ -1,14 +1,14 @@
 {
-    recon: {},
-    net: {
-        windows: {
-            ad: {
-              link: "http://google.com/",
-              description: "some shit",
-              title: "test"
+    "recon": {},
+    "net": {
+        "windows": {
+            "ad": {
+              "link": "http://google.com/",
+              "description": "some shit",
+              "title": "test"
             }
         }
     },
-    lpe: {},
-    detection: {}
+    "lpe": {},
+    "detection": {}
 }
