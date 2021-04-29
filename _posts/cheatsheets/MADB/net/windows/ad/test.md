@@ -1,0 +1,7 @@
+#---
+published: true
+layout: post
+categories: madb
+---
+###goog
+http://google.com/index
