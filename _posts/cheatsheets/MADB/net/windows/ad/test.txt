@@ -1,2 +1,0 @@
-goog
-http://google.com/index
