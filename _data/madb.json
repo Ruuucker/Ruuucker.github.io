@@ -3,23 +3,4 @@
     "recon": {
         "title": "shit",
     },
-    "net": {
-        "link": "google",
-        "title": "shit",
-        "windows": {
-            "ad": {
-              "link": "http://google.com/",
-              "description": "some shit",
-              "title": "test"
-            }
-        }
-    },
-    "lpe": {
-        "title": "shit",
-
-    },
-    "detection": {
-        "title": "shit",
-
-    }
 }
