@@ -1,1 +1,8 @@
-{"t": "shit","recon":{"t": "shit"}}
+[
+  {"name": "net", "subcategory": [
+    {"name": "windows", "subcategory": [
+      {"name": "ad", "link": "google.com", "desc": "shit"}
+      ]}
+    ]
+  }
+]
