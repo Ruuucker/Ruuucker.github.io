@@ -1,0 +1,286 @@
+I"J<title>Rucker :: Security Researcher</title>
+
+<!-- I'm soming out the socket -->
+<!-- Nothing you can do can stop it -->
+<!-- I'm on your lap and in your pocket -->
+<!-- How you gonna shoot me down -->
+<!-- When I guide the rocket? -->
+
+<h1 id="about">$ whoami</h1>
+
+<p>Привет, я делаю в инфобез и это мой блог.</p>
+
+<h1 id="articles">$ cat articles.txt</h1>
+
+<ul>
+  <li>EFI</li>
+<ul>
+
+
+    
+        
+             <li><a href="/ru/articles_rus/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-%D1%81%D1%80%D0%B5%D0%B4%D1%8B-Linux-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B1%D0%BE%D1%80%D0%BA%D0%B8-EFI/" title="">Настройка среды Linux для сборки EFI</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/ExitBootServices-Hooking/" title="">Перехват ExitBootServices</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/EFI-%D0%BE%D1%81%D0%BD%D0%BE%D0%B2%D1%8B-NVRAM-%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5/" title="">Основы EFI, NVRAM Переменные</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/EDK2-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%82%D0%BE%D1%80-%D0%B8-CI/" title="">Компиляторы в связке с EDK2 и проблемы CI</a></li>
+        
+    
+
+    
+        
+    
+
+  
+</ul>
+</ul>
+
+<ul>
+  <li>Windows</li>
+<ul>
+
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%9E%D0%B1%D1%85%D0%BE%D0%B4-%D0%BE%D0%B3%D1%80%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%B0-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B2-Windows/" title="">Обход Ограничений Запуска Приложений В Windows</a></li>
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%A8%D0%B5%D0%BB%D0%BB-%D1%81%D0%BA%D0%B2%D0%BE%D0%B7%D1%8C-Windows-Defender/" title="">Шелл Сквозь Windows Defender</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/CLSIDs-%D0%B8-%D0%BF%D0%B0%D0%BF%D0%BA%D0%B8-%D1%81%D0%BE%D0%B5%D0%B4%D0%B8%D0%BD%D0%B5%D0%BD%D0%B8%D0%B9/" title="">CLSIDs и Соединительные Папки</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D1%84%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2-%D1%82%D0%B5%D0%BC-%D0%B2-%D1%8D%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8-Windows/" title="">Использование Файлов Тем В Эксплуатации Windows</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%9A%D0%B0%D0%BA-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82-Kerberos/" title="">Как Работает Kerberos</a></li>
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D1%87%D1%82%D0%BE-%D1%82%D0%B0%D0%BA%D0%BE%D0%B5-%D0%BA%D0%BB%D1%8E%D1%87-%D1%80%D0%B5%D0%B3%D0%B8%D1%81%D1%82%D1%80%D0%B0-clsid/" title="">Что такое ключи регистра CLSID</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%A4%D0%B0%D0%B9%D0%BB%D1%8B-%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA-Windows-%D0%B2-%D0%AD%D0%BA%D1%81%D0%BF%D0%BB%D1%83%D0%B0%D1%82%D0%B0%D1%86%D0%B8%D0%B8/" title="">Файлы Библиотек Windows В Эксплуатации</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%9E%D0%B1%D1%85%D0%BE%D0%B4-Windows-UAC-%D0%B8-%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D1%8B-%D1%81%D0%BC%D1%8F%D0%B3%D1%87%D0%B5%D0%BD%D0%B8%D1%8F/" title="">Обход контроля учетных записей (UAC) в Windows</a></li>
+        
+    
+
+    
+        
+    
+
+  
+</ul>
+<br />
+
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/DNS-%D0%A2%D1%80%D1%8E%D0%BA%D0%B8/" title="">DNS Трюки</a></li>
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/Bluetooth-Hack/" title="">Взлом Bluetooth</a></li>
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%BE%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%B8%D0%B2%D1%8F%D0%B7%D0%BA%D0%B0-Android-USB/" title="">Обратный модем Android USB</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%A0%D0%B5%D0%B9%D1%82%D0%B8%D0%BD%D0%B3-USB-%D0%AD%D0%BC%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%D0%BE%D0%B2/" title="">Оценка Эмуляций USB</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+             <li><a href="/ru/articles_rus/articles/%D0%A5%D0%B0%D0%BA-%D0%B7%D0%B5-EDR/" title="">Взломать EDR</a></li>
+        
+    
+
+
+</ul>
+<!--
+//# $ cat methodolodys.txt
+//{:id="methods"}
+
+//Soon...
+-->
+<h1 id="cheatsheets">$ cat cheat_sheets.txt</h1>
+
+<ul>
+  
+
+    
+        
+    
+
+    
+        
+              <li><a href="/ru/cheatsheets_rus/cheatsheets/%D0%92%D1%81%D1%8F-%D0%98%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D1%8F-%D0%92%D0%BE%D0%BE%D0%B1%D1%89%D0%B5/" title="">Вся Информация Вообще</a></li>
+        
+    
+
+    
+        
+              <li><a href="/ru/cheatsheets_rus/cheatsheets/WinDbg-%D1%87%D0%B8%D1%82/" title="">WinDbg Cheat Sheet</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+              <li><a href="/ru/cheatsheets_rus/cheatsheets/%D0%9F%D0%B5%D1%80%D0%B5%D0%B0%D0%B4%D1%80%D0%B5%D1%81%D0%B0%D1%86%D0%B8%D1%8F-%D0%9F%D0%BE%D1%80%D1%82%D0%BE%D0%B2/" title="">Переадресация Портов</a></li>
+        
+    
+
+    
+        
+              <li><a href="/ru/cheatsheets_rus/cheatsheets/Vim-%D0%9F%D0%BE%D0%BB%D0%B5%D0%B7%D0%BD%D0%BE%D1%81%D1%82%D0%B8/" title="">Vim Полезности</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+              <li><a href="/ru/cheatsheets_rus/cheatsheets/%D0%9E%D0%B1%D1%80%D0%B0%D1%82%D0%BD%D1%8B%D0%B5-%D0%A8%D0%B5%D0%BB%D0%BB%D1%8B/" title="">Обратные Шеллы</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+  
+</ul>
+
+<h1 id="tools">$ cat tools.txt</h1>
+
+<ul>
+
+<li><a href="https://dnsdumpster.com/">DNS Dumpster</a> - OSINT DNS Recon</li>
+
+<li><a href="https://github.com/carlospolop/legion">Legion</a> - Vulners Scanner</li>
+
+<li><a href="https://github.com/sundowndev/PhoneInfoga">PhoneInfoga</a> - OSINT Phone</li>
+
+<li><a href="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite">PEASS</a> - Privilege Escalation</li>
+
+<li><a href="https://github.com/hdm/nextnet">NextNet</a> - LAN Discovery</li>
+
+</ul>
+
+<h1 id="contact">$ cat contact.txt</h1>
+<!--
+Telegram:
+
+> @
+-->
+<p>GitHub: &gt; <a href="https://github.com/Ruuucker">https://github.com/Ruuucker</a>
+Windows Exploits: &gt; <a href="https://github.com/SecWiki/windows-kernel-exploits">https://github.com/SecWiki/windows-kernel-exploits</a></p>
+:ET

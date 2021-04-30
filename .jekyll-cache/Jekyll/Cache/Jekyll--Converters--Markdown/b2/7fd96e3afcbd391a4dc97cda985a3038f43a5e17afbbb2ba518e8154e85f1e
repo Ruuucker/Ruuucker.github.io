@@ -1,0 +1,282 @@
+I"Ò<title>Rucker :: Security Researcher</title>
+
+<!-- I'm soming out the socket -->
+<!-- Nothing you can do can stop it -->
+<!-- I'm on your lap and in your pocket -->
+<!-- How you gonna shoot me down -->
+<!-- When I guide the rocket? -->
+
+<h1 id="about">$ whoami</h1>
+
+<p>Hi, I do some info security shit and this is my blog.</p>
+
+<h1 id="articles">$ cat articles.txt</h1>
+
+<ul>
+  <li>EFI</li>
+<ul>
+
+
+    
+        
+    
+
+    
+        
+            <li><a href="/Setting-Up-a-Linux-Build-Environment-for-EFI/" title="">Setting Up a Linux Build Environment for EFI</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/ExitBootServices-Hooking/" title="">ExitBootServices Hooking</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/EFI-Basics-NVRAM-Variables/" title="">EFI Basics, NVRAM Variables</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/EDK2-Compiler-Information-and-CI-Concerns/" title="">EDK2 Compiler Information and CI Concerns</a></li>
+        
+    
+
+  
+</ul>
+</ul>
+
+<ul>
+  <li>Windows</li>
+<ul>
+
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/Shell-through-Windows-Defender/" title="">Shell Through Windows Defender</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/articles/CLSIDs-and-Junction-Folders/" title="">CLSIDs and Junction Folders</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/Using-Windows-theme-files-in-Exploitation/" title="">Using Windows Theme Files In Exploitation</a></li>
+        
+    
+
+    
+        
+            <li><a href="/How-Kerberos-works/" title="">How Kerberos Works</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/What-is-a-CLSID-Registry-Key/" title="">What is a CLSID Registry Key</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/Windows-Library-Files-In-Execution/" title="">Windows Library Files In Execution</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/Bypassing-Windows-uac/" title="">Bypassing Windows User Account Control (UAC) and ways of mitigation</a></li>
+        
+    
+
+  
+</ul>
+<br />
+
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/articles/Android-USB-reverse-tethering/" title="">Android USB reverse tethering</a></li>
+        
+    
+
+    
+        
+            <li><a href="/articles/CLSIDs-and-Junction-Folders/" title="">CLSIDs and Junction Folders</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+            <li><a href="/articles/USB-Emulation-Evaluation/" title="">Usb Emulation Evaluation</a></li>
+        
+    
+
+    
+        
+    
+
+
+</ul>
+<!--
+//# $ cat methodolodys.txt
+//{:id="methods"}
+
+//Soon...
+-->
+<h1 id="cheatsheets">$ cat cheat_sheets.txt</h1>
+
+<ul>
+  
+
+    
+        
+              <li><a href="/cheatsheets/madb/" title="My-Attack-Database">MADB</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+              <li><a href="/cheatsheets/All-The-Information/" title="">All The Information</a></li>
+        
+    
+
+    
+        
+              <li><a href="/cheatsheets/WinDbg-Cheat-Sheet/" title="">WinDbg Cheat Sheet</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+    
+
+    
+        
+              <li><a href="/cheatsheets/Vim-Tips/" title="">Vim Tips</a></li>
+        
+    
+
+    
+        
+    
+
+    
+        
+              <li><a href="/cheatsheets/Reverse-Shells/" title="">Reverse Shells</a></li>
+        
+    
+
+    
+        
+              <li><a href="/cheatsheets/Port-Forwarding/" title="">Port Forwarding</a></li>
+        
+    
+
+  
+</ul>
+
+<h1 id="tools">$ cat tools.txt</h1>
+
+<ul>
+
+<li><a href="https://dnsdumpster.com/">DNS Dumpster</a> - OSINT DNS Recon</li>
+
+<li><a href="https://github.com/carlospolop/legion">Legion</a> - Vulners Scanner</li>
+
+<li><a href="https://github.com/sundowndev/PhoneInfoga">PhoneInfoga</a> - OSINT Phone</li>
+
+<li><a href="https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite">PEASS</a> - Privilege Escalation</li>
+
+<li><a href="https://github.com/hdm/nextnet">NextNet</a> - LAN Discovery</li>
+
+</ul>
+
+<h1 id="contact">$ cat contact.txt</h1>
+<!--
+Telegram:
+
+> @
+-->
+<p>GitHub: &gt; <a href="https://github.com/Ruuucker">https://github.com/Ruuucker</a>
+Windows Exploits: &gt; <a href="https://github.com/SecWiki/windows-kernel-exploits">https://github.com/SecWiki/windows-kernel-exploits</a></p>
+:ET

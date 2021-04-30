@@ -1,0 +1,56 @@
+I"<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#versionbind" id="markdown-toc-versionbind">VERSION.BIND</a></li>
+  <li><a href="#hostnamebind" id="markdown-toc-hostnamebind">HOSTNAME.BIND</a></li>
+  <li><a href="#внутренний-a-запрос" id="markdown-toc-внутренний-a-запрос">Внутренний A запрос</a></li>
+  <li><a href="#обратный-lookup-на-ptr-записи" id="markdown-toc-обратный-lookup-на-ptr-записи">Обратный Lookup на PTR записи</a></li>
+</ul>
+
+<h1 id="versionbind">VERSION.BIND</h1>
+<p>Узнаем имя и версию DNS сервиса, иногда можно выяснить и информацию об ОС сервера.</p>
+
+<p>При запросе:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig version.bind txt chaos @target-dns
+</code></pre></div></div>
+<p>Нам возвращается что-то вроде:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>;; ANSWER SECTION:
+version.bind.		0	CH	TXT	"9.11.5-P4-5.1+deb10u2-Debian"
+</code></pre></div></div>
+
+<h1 id="hostnamebind">HOSTNAME.BIND</h1>
+<p>Узнаем хостнейм DNS сервера</p>
+
+<p>При запросе:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig hostname.bind txt chaos @target-dns
+</code></pre></div></div>
+<p>Нам возвращается что-то вроде:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>;; ANSWER SECTION:
+hostname.bind.		0	CH	TXT	"ns01.testlab.local"
+</code></pre></div></div>
+
+<h1 id="внутренний-a-запрос">Внутренний A запрос</h1>
+
+<p>Очевидная вещь, можно выслать A запись к определённому DNS серверу на известные домены, таким образом можно выяснить, имеется ли captiv-портал и модифицируется ли запрос.</p>
+
+<p>При запросе:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig www.google.com A @target-dns
+</code></pre></div></div>
+<p>Нам возвращается что-то вроде:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>;; ANSWER SECTION:
+www.google.com.         30      IN      A       172.217.8.164
+</code></pre></div></div>
+
+<h1 id="обратный-lookup-на-ptr-записи">Обратный Lookup на PTR записи</h1>
+
+<p>Дополнительно можно выслать серверу его собственный домен и при некоторой удаче и наличии PTR записи, он вернёт нам свой внутренний хостнейм который запрятался в конфигах.</p>
+
+<p>При запросе:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dig 254.0.168.192.in-addr.arpa PTR @target-dns
+</code></pre></div></div>
+<p>Нам возвращается что-то вроде:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>;; ANSWER SECTION:
+254.0.168.192.in-addr.arpa.   20384   IN      PTR     firewall.lab.
+</code></pre></div></div>
+
+:ET
