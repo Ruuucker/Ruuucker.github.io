@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		CLSIDs и Соединительные Папки ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>CLSIDs и Соединительные Папки</h1>
+</header>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#соединительные-папки" id="markdown-toc-соединительные-папки">Соединительные папки</a></li>
+  <li><a href="#clsids-и-com-объекты" id="markdown-toc-clsids-и-com-объекты">CLSIDs и COM Объекты</a></li>
+  <li><a href="#закрепление-на-уровне-пользователя" id="markdown-toc-закрепление-на-уровне-пользователя">Закрепление на уровне пользователя</a></li>
+  <li><a href="#сохранение-dll-как-exe---windows-run" id="markdown-toc-сохранение-dll-как-exe---windows-run">Сохранение Dll как Exe - Windows Run</a></li>
+  <li><a href="#папки-быстрого-доступа--соеденительные-папки--библиотеки--файлы-ссылок--эксплуатация" id="markdown-toc-папки-быстрого-доступа--соеденительные-папки--библиотеки--файлы-ссылок--эксплуатация">Папки быстрого доступа + Соеденительные папки + Библиотеки + Файлы ссылок = Эксплуатация</a></li>
+  <li><a href="#закрепление-в-проводнике-с-использованием-соединительных-папок-и-шелла-пошаговое-руководство" id="markdown-toc-закрепление-в-проводнике-с-использованием-соединительных-папок-и-шелла-пошаговое-руководство">Закрепление в проводнике с использованием соединительных папок и шелла (пошаговое руководство</a></li>
+</ul>
+
+<h1 id="соединительные-папки">Соединительные папки</h1>
+
+<p>Соединительная папка в Windows - это метод, при котором пользователь может вызвать перенаправление в другую папку, обычно в другую известную папку. Соединительная папка считается жесткой ссылкой. Существует несколько способов создания соединительных папок. Модификация реестра может повлечь за собой создание такой папки. Другой способ - это запись desktop.ini внутри папки. Третий, и, вероятно, самый полезный для нас, это метод который является только соглашением об именах. Метод заключается в том, чтобы просто создать папку как таковую. MyFolder.{CLSID папки, с которой вы хотите “соединиться”}. После того как вы назвали папку таким образом, двойной щелчок по ней приведет вас к известной папке, представленной CLSID. Microsoft дает вам много примеров работы такого подхода. Таким образом, вы можете легко создать папку которая “соединяется” с “Панелью управления (все задачи)” и называть ее “Моя панель управления”. Вы также можете применять эту технику к изображениями, документам, Internet Explorer, Мой Компьютер. Все эти специальные папки были назначены уникальные CLSID. Смотреть в CLSID установленные по умолчанию в Windows. Ниже приведен пример папки подключения к “Панели управления (все задачи)”. Кроме того, если вы не знакомы с CLSID, см. <a href="/rus/articles_rus/что-такое-ключ-регистра-clsid/">Что такое ключ реестра CLSID</a></p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-6.png" alt="1" class="imgsquire" /></p>
+
+<p>Имя папки “My Control Panel”.{ED7BA470-8E54-465E-825C-99712043E01C} для перехода к панели управления.</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-68.png" alt="1" class="imgsquire" /></p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-64.png" alt="1" class="imgsquire" /></p>
+
+<p>Windows достаточно удобно скроет CLSID для вас.</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-1.png" alt="1" class="imghalf" /></p>
+
+<p>Соединение работает!
+<br /></p>
+
+<p>И что?</p>
+
+<p>Что происходит, когда CLSID не соответствует ожидаемым папкам? Что если это вообще не папка? Вот где это становится немного интересным.</p>
+
+<h1 id="clsids-и-com-объекты">CLSIDs и COM Объекты</h1>
+
+<p>Используя CreateGuid я сгенерировал новый GUID {24138469-5DDA-479D-A150-3695B9365DC0}.</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-2.png" alt="1" class="imgsquire" /></p>
+
+<p>добавьте CLSID, и мы получим это.</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-3.png" alt="1" class="imgsquire" />
+<br />
+CLSID не становится скрытым, если не с чем его соотнести. Когда вы перемещаетесь в папку, она выглядит как обычная папка. Однако, если вы посмотрите Procmon, вы увидите это:</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-7.png" alt="1" class="img" /></p>
+
+<p>Из информации Procmon вы можете видеть, что навигация внутри папки заставляет проводник искать этот CLSID в HKEY_CURRENT_USER. По умолчанию подавляющее большинство CLSID хранятся в HKEY_LOCAL_MACHINE, но CLSID в HKEY_CURRENT_USER могут все еще использоваться. Итак, теперь давайте настроим наш ключ.</p>
+
+<p><br /><br />
+До:<br />
+<img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-9.png" alt="1" class="imgsquire" /></p>
+
+<p>Добавленны записи:
+По умолчанию, {24138469-5DDA-479D-A150-3695B9365DC0} - это ключ имени COM объекта:<br />
+<img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-11.png" alt="1" class="imghalf" /></p>
+
+<p>Значения ключа InProcServer32:<br />
+<img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-12.png" alt="1" class="imghalf" /></p>
+
+<p>Теперь, когда мы перемещаемся в нашей соединительной папке, мы видим:
+Значения ключа InProcServer32:
+<img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-13.png" alt="1" class="imghalf" />
+<br /><br />
+Выполнение происходит, когда verclsid.exe вызывает присоединение процесса на нашей DLL. Найс.</p>
+
+<h1 id="закрепление-на-уровне-пользователя">Закрепление на уровне пользователя</h1>
+<p>К сожалению, похоже что это больше механизм закрепления в системе, чем вектор выполнения кода. Главным образом, потому что это потребовало бы и записи реестра и навигации в соединенительной папке. Рассматривая его как механизм закрепления, все что нам нужно сделать это установить ключи реестра и создать папку соединения в месте, в которое (или в дочернюю папку) проводник (или другой пользовательский процесс) будет перемещаться при запуске. Желательно, чтобы проводник перемещался в соеденительную папку. Мы так же могли бы сделать это с помощью библиотечных файлов в Windows 7+ (смотреть <a href="/rus/articles_rus/Файлы-Библиотек-Windows-в-Эксплуатации/">Файлы Библиотек Windows в Эксплуатации</a>). Для более широкого охвата, используя ту же технику, я в конечном итоге заглянул в папки в которых находилось меню “Пуск”. Они загружаются в начале, уже существуют в AppData и их чаще всего просматривают через меню “Пуск”.</p>
+
+<p>Итак, перейдите в <code class="language-plaintext highlighter-rouge">%appdata%\\Microsoft\\Windows\\Start Menu</code> и вы должны увидеть каталоги под меню “Пуск”. Тем не менее вы должны быть осторожны при изменении любой из этих папок, так как они часто комбинируются с папками в другом месте для меню “Пуск”, и это может быть предупреждением если в меню «Пуск» цели есть две папки с одним и тем же именем. При желании вы также можете создать новую папку вместо уже существующей. В общем, возьмем что-то вроде папки “Accessories”.</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-14.png" alt="1" class="imghalf" /></p>
+
+<p>Запустим команду как показано ниже чтобы изменить папку на соединенительную папку (используйте Windows API, если кодите).</p>
+
+<p><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-15.png" alt="1" class="imghalf" /></p>
+
+<p>И обратите внимание, что при перезагрузке снова запускается verclsid.exe.</p>
+
+<p class="imghalf"><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-22.png" alt="1" /></p>
+
+<h1 id="сохранение-dll-как-exe---windows-run">Сохранение Dll как Exe - Windows Run</h1>
+
+<p>Это еще не отработанный метод, и в настоящее время он находится на стадии проверки концепции.</p>
+
+<p>В настоящее время существует набор выбора CLSID (еще предстоит определить, чем именно они отличаются - пока что думю, что необходимы дополнительные записи в реестре), к которым можно получить доступ через cmd или Windows -&gt; run. Синтаксис выглядит примерно так:</p>
+
+<p class="imghalf"><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-16.png" alt="1" /></p>
+
+<p>или</p>
+
+<p class="imghalf"><img src="/assets/img/posts/CLSIDs and Junction Folders/image2014-10-17.png" alt="1" /></p>
+
+<p>Эти примеры открывают папку «Мои документы» в проводнике Windows. Однако, если сделаны правильные записи это может помочь нам повторно использовать техники закрепления exe для dll.</p>
+
+<h1 id="папки-быстрого-доступа--соеденительные-папки--библиотеки--файлы-ссылок--эксплуатация">Папки быстрого доступа + Соеденительные папки + Библиотеки + Файлы ссылок = Эксплуатация</h1>
+
+<p>Давайте объеденим и испольхуем эти находки. Для некоторой теории по библиотекам можно глянуть <a href="/articles/Windows-Library-Files-In-Execution/">Windows Library Files In Execution</a>.</p>
+
+<p>В общем, если у нас есть эксплоит файла ссылок, мы бы хотели его скрыть. Мы также знаем из экпериментов с CLSID и соединительными папками, что мы можем принудительно изменить навигацию соединительной папки (достаточно обработки файла чтобы заставить её загрузить DLL, если CLSID находится в реестре). Еще одна приятная вещь библиотеках заключается в том, что они могут выглядеть очень похоже на каталог и продолжать обработку, даже если внешний вид проводника был изменён во время рендеринга. Мы объединим некоторые из этих вещей с техникой, в которой desktop.ini версия соединительной папки используется для запуска рендеринга файла ссылок. Это приводит нас к уникальному CLSID ({0AFACED1-E828-11D1-9187-B532F1E9575D}), который является CLSID для “папки быстрого доступа”. Так что же происходит, когда вы соединительную папку MyFolder.{0AFACED1-E828-11D1-9187-B532F1E9575D}? Итак, Microsoft разработала Shortcut Folders (Папки быстрого доступа), цели которой храняться в файле target.lnk, прямо под соединительной папкой. При перемещении по соединительной папке файл ссылки обрабатывается и срабатывает выполнение. Комбинация векторов означает, что в каталоге в который перемещается цель виден только файл библиотеки, а все остальные папки/файлы могут быть скрытыми.</p>
+
+<h1 id="закрепление-в-проводнике-с-использованием-соединительных-папок-и-шелла-пошаговое-руководство">Закрепление в проводнике с использованием соединительных папок и шелла (пошаговое руководство</h1>
+
+<p>Если вы не хотите закрепления с помощью verclsid, вы можете добавить пару дополнительных записей для уверенности что вас загружает Проводник. Чтобы настроить эту технику закрепления, вы должны:</p>
+
+<p>Установите следующие ключи реестра в HKEY_LOCAL_MACHINE или HKEY_CURRENT_USER (с учетом 64-битных и 32-битных реестров):</p>
+
+<p>Создать:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Ключ</th>
+      <th style="text-align: left">Имя</th>
+      <th style="text-align: left">Значение</th>
+      <th style="text-align: left">Заметка</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Оно не всегда создается в HKEY_CURRENT_USER</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Создай свою CLSID, ф не ту что уже используется в системе</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;</td>
+      <td style="text-align: left">(Дефолтное)</td>
+      <td style="text-align: left">Имя класса</td>
+      <td style="text-align: left">Это опционально. У многих классов есть имена</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\InProcServer32</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\InProcServer32</td>
+      <td style="text-align: left">(Дефолтное)</td>
+      <td style="text-align: left"><em>{Путь до DLL}</em></td>
+      <td style="text-align: left">Это путь до DLL. DLL должна соответствовать архитектуре ОС.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\InProcServer32</td>
+      <td style="text-align: left">Threading Model</td>
+      <td style="text-align: left">Apartment</td>
+      <td style="text-align: left">REG_SZ</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\InProcServer32</td>
+      <td style="text-align: left">LoadWithoutCOM</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">REG_SZ, но оставь как пустую строку</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\ShellFolder</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\ShellFolder</td>
+      <td style="text-align: left">HideOnDesktop</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">REG_SZ, но оставь как пустую строку</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SOFTWARE\Classes\CLSID&lt;CLSID&gt;\ShellFolder</td>
+      <td style="text-align: left">Attributes</td>
+      <td style="text-align: left">0xf090013d (4035969341)</td>
+      <td style="text-align: left">REG_DWORD</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><br /><br />
+Затем, создайте соединительную папку в каталоге в который осуществляется переход при входе в систему. Хорошее место в Windows 8/8.1 - это меню “Пуск” (тем более что классического меню “Пуск” больше нет).</p>
+
+<p>C:\Users{User}\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories{МояПапка}.{CLSID}</p>
+
+<p>Примеры создания соединительной папки:</p>
+
+<p>mkdir (CreateDirectory) C:\Users{User}\Appdata\Roaming\Microsoft\Windows\Start Menu\Programs\Accessories\Indexing.{26A81239-BD1F-48E3-BED4-EB313CFCB041} где {26A81239-BD1F-48E3-BED4-EB313CFCB041} это CLSID которое используется в записях реестра.</p>
+
+<p>Также убедитесь, что вы делаете записи реестра <strong>перед</strong> созданием соединительной папки, чтобы избежать проблем с кэшированием при первом запуске.</p>
+
+
+		</main>
+	</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Взломать EDR ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>Взломать EDR</h1>
+</header>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#минимальная-теория" id="markdown-toc-минимальная-теория">Минимальная теория</a></li>
+  <li><a href="#рекон" id="markdown-toc-рекон">Рекон</a></li>
+  <li><a href="#разбираемся-с-потоком-телеметрии" id="markdown-toc-разбираемся-с-потоком-телеметрии">Разбираемся с потоком телеметрии</a></li>
+  <li><a href="#что-делать-с-ограничениями" id="markdown-toc-что-делать-с-ограничениями">Что делать с ограничениями?</a>    <ul>
+      <li><a href="#просто-обойти" id="markdown-toc-просто-обойти">Просто обойти</a></li>
+      <li><a href="#снять" id="markdown-toc-снять">Снять</a></li>
+      <li><a href="#написать-собственные-функции" id="markdown-toc-написать-собственные-функции">Написать собственные функции</a></li>
+    </ul>
+  </li>
+  <li><a href="#ссылки" id="markdown-toc-ссылки">Ссылки</a></li>
+</ul>
+
+<h1 id="минимальная-теория">Минимальная теория</h1>
+<p>EDR - Endpoint Detection and Response.
+Имеет серверную часть обычно для управления и сбора логов событий с машин на которых установлен агент. И агента который устанавливается на конечные машины.
+Если серверная часть не сильно отличается от общеизвестных вещей которые мы привыкли видеть в других технологиях, то на агенте стоит остановиться поподробнее.
+Как и некоторые AV системы, EDR агенты могут управлять действиями пользователя с помощью WinAPI хуков, что это такое можно описать в отдельной статье, так что просто опишу их как ловушки которые срабатывают в момент вызовов API для OS Windows с помошью которых можно перехватывать вызов определенной функции и перенаправлять на другой код который более выгоден тому, кто поставил хук или ловушку, более подробно по WinAPI на <a href="https://ru.wikipedia.org/wiki/Windows_API">Вики</a> или <a href="https://habr.com/ru/post/352096/">Хабре</a>. И про сами Хуки на том же <a href="https://habr.com/ru/company/icl_services/blog/324718/">Хабре</a> или <a href="https://xakep.ru/2018/01/26/winapi-hooks/">Хакере</a>.</p>
+
+<p>Итак, EDR агенты ставят эти хуки в определенные функции тем самым внедряя свой код проверки, можно ли вызывать эту функцию, и если нет то возвращают ошибку в противном случае просто пропускают функцию на выполнение.</p>
+
+<p>Пример, мы хотим запустит злой файл. Для запуска злого файла нам нужен новый процесс который создается с помощью WinAPI функции NtCreateUserProcess. EDR агент поставил на эту функцию ловушку или хук и каждый раз когда мы запускаем что-то с помощью NtCreateUserProcess мы попадаемся в эту ловушку. В ловушке EDR агент проверяет какой процесс мы хоти создать и если он злой, то запретит это сделать а если легимитивный то разрешит, таким образом контролируя действия пользователя или программы.</p>
+
+<h1 id="рекон">Рекон</h1>
+<p>Первым делом определяем есть ли на точке EDR, в этом помогает:</p>
+
+<p>1) Листинг процессов, тут всё понятно</p>
+
+<p>2) Брать цифровую подпись драйверов ядра и сравнение оных с известными сигнатурами вендоров, вот тулза для таких <a href="https://gist.github.com/jthuraisamy/4c4c751df09f83d3620013f5d370d3b9">вещей</a></p>
+
+<p>Так же при приземлении на точке нужно не только понять что за EDR тут запущена, но и как она сконфигурирована, для этого нужно искать конфиг путь к которому обычно есть в документации к этому продукту, так же нужно оттуда почерпнуть как разшифровать его, если он зашифрован.</p>
+
+<h1 id="разбираемся-с-потоком-телеметрии">Разбираемся с потоком телеметрии</h1>
+
+<p>Общие вопросы на которые стоит ответить прежде чем предпринимать действия.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1) Кэшируется ли телеметрия на диск или в память?
+2) Если это на диске, это может быть БД, файл временного кэша или «безфайловый»?
+3) Если в памяти, насколько возможно извлечь из неё всё и написать фиктивный сервер?
+4) Предлагает ли продукт диагностический механизм для запроса телеметрии?
+5) Нужно ли расшифровывать или деобфусировать буферы перед десериализацией?
+6) Как они сериализуются (например, ProtoBuf, JSON, Bond, custom)?
+7) Доступны ли схемы для типов событий? Если нет, можно ли их восстановить?
+8) Могу ли я убить каким-либо образом процесс передачи телеметрии?
+</code></pre></div></div>
+<p>Обычно бывают 2 сценария</p>
+
+<p>1) Телеметрия записывается где-то в долгой памяти ПК либо кешируется и сервер забирает данные в интервале, либо хранится в оперативке
+  В этом случае можно попробовать получить доступ к этим данным, возможно их метоположение будет в документации и возможно они будут защифрованны, а еще сама EDR может тригернуться на попытку получить доступ к данным не из положенного процесса, так что это опасный путь с минами.
+  После получения этих данных их предстоит распарсить, либо это будут <a href="https://developers.google.com/protocol-buffers">ProtoBuf</a> с <a href="https://github.com/mildsunrise/protobuf-inspector">тулзой</a> или JSON.
+  Так же схемы восстановления данных могут быть найдены <a href="https://github.com/carbonblack/cbapi/blob/master/server_apis/proto/sensor_events.proto">онлайн</a>, либо сделать вот <a href="http://jackson-t.ca/protobuf-recovery.html">так</a> (я не понял как) , либо в документашке либо вот в проекте <a href="https://github.com/hunters-forge/OSSEM/tree/master/data_dictionaries/windows">OSSEM</a>. Но чет тут я теряюсь и не могу кристально чисто ответить на многие вопросы.
+  После сохранения файла за ним приходит сервер и после ответа 200 файл удаляется. Но его дескриптор всё еще доступен и может быть <a href="https://github.com/marin-m/pbtk">вытащен</a> если это протобаф.</p>
+
+<p>2) Телеметрия идет непрерывным потоком на сервер с помощью Веб сокетов.
+Если можно изменить хоть что нибудь через конфиг касающегося сокетов, стоит попробовать. В зависимости от этого можно либо пробовать отключить шифр\сменить удаленный сервер\что нибудь похожее либо пробовать ставить прокси, смотреть на трафик и скорее всего забивать, потому что там TSL. Тут очень много зависит от конфига, потому что в теории мы можем поставить на точку заглушку для сервера, но вот настоящий клиент не угомонится если мы не направим его праведный гнев в другое русло.</p>
+
+<h1 id="что-делать-с-ограничениями">Что делать с ограничениями?</h1>
+
+<h2 id="просто-обойти">Просто обойти</h2>
+<p>Во первых нужно определить, что именно блокируется. Если есть возможность поставить что-то вроде API Monitor то очень полезно будет определить какие именно вызовы попадают под черный список и плясать от этого, находя аналогичный эффект в других вызовах. Как например запуск кода можно реализовать не только методом NtCreateUserProcess, но и классическими приёмами Process Injection. Либо же пользоваться родными бинарниками системы для достижения своих целей, как например использование msbuild или mshta которые могут исполнять код. Полный список полезных бинарников представлен здесь для <a href="https://lolbas-project.github.io/">Windows</a> и здесь для <a href="https://gtfobins.github.io/">Linux</a>.</p>
+
+<h2 id="снять">Снять</h2>
+<p>Если хуки установленны в DLL с помощью EDR которая запускается в юзермоде как и мы, почему у неё должно быть больше прав чем у нас? Мы можем взять и очистить все функции тем самым снимем ограничения на наше пользование, например этим <a href="https://github.com/CylanceVulnResearch/ReflectiveDLLRefresher">рефрешером</a>.
+Но может быть и так что EDR запускается как драйвер с правами системы (скорее всего так и будет) и поэтому подобные трюки не пройдут.</p>
+
+<h2 id="написать-собственные-функции">Написать собственные функции</h2>
+<p>А почему бы и нет? Берем и пишем на асме низкоуровненые аналоги NtOpenProcess, используем их в собственном коде и дампим lsass в обход каких-либо ограничений, вот пример [https://github.com/outflanknl/Dumpert].
+То же самое можно проделать с помощью любой функции, но тут скрываются трудности.
+Во первых, подобные прямые системные вызовы (сис колы) разняться от версии к версии (сейчас я говорю исключительно про Windows). Так как документированные WinAPI являются надстройкой над недокументированными прямыми сис колами, будет сложно определить как именно и в какой версии нужно реализовывать ту или иную функцию, документации ведь нет!</p>
+
+<p>К счастью, существует 2 ресурса призванные к этом помочь:
+1) Список сис колов которые используются в WinAPI функциях <a href="https://j00ru.vexillium.org/syscalls/nt/64/">бах</a>
+2) Готовая кросс версионная библиотека для Windows <a href="https://github.com/jthuraisamy/SysWhispers">SysWhispers</a></p>
+
+<h1 id="ссылки">Ссылки</h1>
+<p>Или свалка информации для дальнейшего чтения и углубления к эту тему, материала ОЧЕНЬ много и у каждой статьи в конце есть ЕЩЕ по 5 статей которые тоже имеют по 5 статей в ссылках, поэтому читать можно долго и обстоятельно.</p>
+
+<p><a href="https://blogs.blackberry.com/en/2017/02/universal-unhooking-blinding-security-software">Очищение EDR хуков</a></p>
+
+<p><a href="http://jackson-t.ca/">Общее описание EDR систем вместе с телеметрией, сервером и прочими вещами, часть информации уже описана в данной статье но там такого больше</a></p>
+
+<p><a href="https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/">Описание защитных механизмов EDR и почему сисколы работают, от автора Dumpert</a></p>
+
+<p>Мониторинг WinAPI вызовов и иньекций кода в юзерленде, не совсем по теме но тоже интересно. <a href="https://0x00sec.org/t/userland-api-monitoring-and-code-injection-detection/5565">хъ</a></p>
+
+<p><a href="https://www.mdsec.co.uk/2019/03/silencing-cylance-a-case-study-in-modern-edrs/">Практические примеры обхода Cylance</a></p>
+
+<p><a href="https://forensicitguy.github.io/posts/linux-edr-evasion-with-ld-preload/">Попытка запустить</a> meterpreter в обход EDR</p>
+
+
+		</main>
+	</body>
+</html>

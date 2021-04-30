@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Настройка среды Linux для сборки EFI ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>Настройка среды Linux для сборки EFI</h1>
+</header>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#специфичные-детали-конфигурации-для-ubuntu" id="markdown-toc-специфичные-детали-конфигурации-для-ubuntu">Специфичные детали конфигурации для Ubuntu</a></li>
+  <li><a href="#установка-udk" id="markdown-toc-установка-udk">Установка UDK</a></li>
+  <li><a href="#создание-и-сборка-базового-пакета-efi" id="markdown-toc-создание-и-сборка-базового-пакета-efi">Создание и сборка базового пакета EFI</a>    <ul>
+      <li><a href="#пакет-efi-и-его-компоненты" id="markdown-toc-пакет-efi-и-его-компоненты">Пакет EFI и его компоненты</a></li>
+      <li><a href="#использование-мастера-драйверов-uefi-для-создания-нового-пакета" id="markdown-toc-использование-мастера-драйверов-uefi-для-создания-нового-пакета">Использование мастера драйверов UEFI для создания нового пакета</a></li>
+      <li><a href="#твой-исходник-helloefic-и-твоя-информация-о-сборке-helloefiinf" id="markdown-toc-твой-исходник-helloefic-и-твоя-информация-о-сборке-helloefiinf">Твой исходник: HelloEfi.c и твоя информация о сборке: HelloEfi.inf</a></li>
+      <li><a href="#dsc-build-description-file-или-файл-описания-сборки" id="markdown-toc-dsc-build-description-file-или-файл-описания-сборки">DSC: Build Description File или Файл Описания Сборки</a></li>
+      <li><a href="#сборка-пакета-и-обнаружение-исполняемого-файла" id="markdown-toc-сборка-пакета-и-обнаружение-исполняемого-файла">Сборка пакета и обнаружение исполняемого файла</a></li>
+    </ul>
+  </li>
+  <li><a href="#создание-efi-из-pocpkg-директории-внутри-quarkmatter-репозитория" id="markdown-toc-создание-efi-из-pocpkg-директории-внутри-quarkmatter-репозитория">Создание EFI из PocPkg директории внутри QuarkMatter репозитория</a></li>
+</ul>
+
+<h1 id="специфичные-детали-конфигурации-для-ubuntu">Специфичные детали конфигурации для Ubuntu</h1>
+
+<p>На этой странице не будет подробно рассказано, как установить Ubuntu или создать виртуальную машину, мы сосредоточимся на нескольких способах настройки Ubuntu, прежде чем можно будет установить и настроить UDK.</p>
+
+<p>После того, как ты настроил ОС для правильной работы, выполни следующие команды, чтобы обновить  пакеты и загрузить те, которые необходимы для UDK.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential uuid-dev iasl nasm git
+</code></pre></div></div>
+
+<p>На этом этапе у тебя должны быть все зависимости для UDK, которые не включены в сам пакет, и ты готов установить её.</p>
+
+<h1 id="установка-udk">Установка UDK</h1>
+
+<p>Первым шагом в настройке среды разработки является установка UDK, в данном случае TianoCore EDK II : <a href="https://github.com/tianocore/tianocore.github.io/wiki/EDK-II">https://github.com/tianocore/tianocore.github.io/wiki/EDK-II</a>. Это среда с открытым исходным кодом для разработки UEFI и PI.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir ~/src
+cd ~/src
+git clone https://github.com/tianocore/edk2
+cd edk2
+make -C Basetools/
+export EDK_TOOLS_PATH=$HOME/src/edk2/BaseTools
+mkdir Conf
+. edksetup.sh BaseTools 
+</code></pre></div></div>
+
+<p>Если всё удалось, вывод должен быть похож на следующий:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash$. edksetup.sh BaseTools
+WORKSPACE: /home/user/src/edk2
+EDK_TOOLS_PATH: /home/user/src/edk2/BaseTools
+Copying $EDK_TOOLS_PATH/Conf/build_rule.template
+	to $WORKSPACE/Conf/Build_rule.txt
+Copying $EDK_TOOLS_PATH/Conf/tools_def.template
+	to $WORKSPACE/Conf/tools_def.txt
+Copying $EDK_TOOLS_PATH/Conf/target.template
+	to $WORKSPACE/Conf/target.txt
+</code></pre></div></div>
+
+<p>На этом этапе были создали компоненты BaseTools и настроена среда оболочки сборки. Следующим шагом является настройка установки для использования правильного компилятора GCC. Сначала определи свою версию GCC, используя команду ниже.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash$ gcc --version
+gcc (Ubuntu4.9.2-10ubuntu13) 4.9.2
+Copyright (C) 2014 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE
+</code></pre></div></div>
+
+<p>Согласно вышеприведенному выводу, машина использует версию GCC 4.9.2. В целях конфигурации это будет упоминаться как «GCC49».</p>
+
+<p>Затем, открой Conf/target.txt файл и найди следущие строки:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ACTIVE_PLATFORM		=Nt32Pkg/Nt32Pkg.dsc
+TOOL_CHAIN_TAG		=MYTOOLS
+TARGET_ARCH       =IA32
+</code></pre></div></div>
+
+<p>И измени их на следующее:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ACTIVE_PLATFORM		=MdeModulePkg/MdeModulePkg.dsc
+TOOL_CHAIN_TAG		=GCC49
+TARGET_ARCH       =IA32 X64
+</code></pre></div></div>
+
+<p>Примечание: если на твоём компьютере с Ubuntu установлена другая версия GCC, используй свой номер вместо GCC49.</p>
+
+<p>Теперь нужно построить проект. Команда и некоторые ее результаты приведены ниже. 
+Примечание: дай себе несколько минут отдыха, так как команда займет немного времени.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash$cd ~/src/edk2
+bash$build
+Build environment: Linux-3.19.0-15-generic-x86_64-with-Ubuntu-15.04-vivid
+Build start time: 14:18:08, Aug.11 2015
+WORKSPACE        = /home/user/src/edk2
+ECP_SOURCE       = /home/user/src/edk2/EdkCompatibilityPkg
+EDK_SOURCE       = /home/user/src/edk2/EdkCompatibilityPkg
+EFI_SOURCE       = /home/user/src/edk2/EdkCompatibilityPkg
+EDK_TOOLS_PATH   = /home/user/src/edk2/BaseTools
+Architecture(s)  = IA32 X64
+Build target     = DEBUG
+Toolchain        = GCC49
+Active Platform          = /home/user/src/edk2/MdeModulePkg/MdeModulePkg.dsc
+Processing meta-data ....
+
+
+&lt;LOTS OF MAKEFILE AND OTHER BUILD OUTPUT HERE&gt;
+
+
+- Done -
+Build end time: 13:51:03, Aug.11 2015
+Build total time: 00:06:34
+bash$
+</code></pre></div></div>
+
+<p>Еще одно замечание: если вы получили ошибку «No command ‘build’ found», перезапустите скрипт edksetup.sh. Команда для этого: ‘. Edksetup.sh’ Обязательно используйте ‘.’ в начале команды, или она не будет работать.</p>
+
+<p>На данный момент, предполагая, что сборка не выдает никаких ошибок, ты успешно создал среду сборки для EDK II. Следующим шагом является понимание того, как создать базовый исполняемый файл EFI, что будет описано в следующем разделе.</p>
+
+<h1 id="создание-и-сборка-базового-пакета-efi">Создание и сборка базового пакета EFI</h1>
+
+<p>В этом подразделе ты узнаешь, как создать базовую EFI-программу в стиле «HelloWorld», и как использовать EDK2 для ее создания.</p>
+
+<h2 id="пакет-efi-и-его-компоненты">Пакет EFI и его компоненты</h2>
+
+<p>Основная структура сборки EDK II сосредоточена вокруг пакетов, которые используются для хранения нескольких модулей (которые в конечном итоге встроены в исполняемые файлы EFI).</p>
+
+<h2 id="использование-мастера-драйверов-uefi-для-создания-нового-пакета">Использование мастера драйверов UEFI для создания нового пакета</h2>
+
+<p>Мастер драйверов UEFI - это инструмент, созданный Tianocore (теми же людьми, которые опубликовали EDK II), предназначенный для облегчения создания новых драйверов и пакетов EFI. Он автоматизирует некоторые из основных задач, которые вам необходимо выполнить, чтобы создать новый пакет.</p>
+
+<p>Исходники можно найти вот тут <a href="https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard">https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard</a>, а краткое описание можно нати вот тут <a href="https://github.com/tianocore/tianocore.github.io/wiki/UEFI-Driver-Wizard">https://github.com/tianocore/tianocore.github.io/wiki/UEFI-Driver-Wizard</a>.</p>
+
+<p>Настроить мастер установки драйверов очень просто: используй Subversion для проверки кода, создай каталог на компьютере с Ubuntu для всего этого, и скопируй “мастера” туда. Затем перейди в этот каталог и запусти скрипт launch.py, который запустит графический интерфейс.</p>
+
+<p>Предполагая, что ты хранишь код мастера драйверов в папке src, которую ты создал выше, и что твой код изначально находился в ~/Downloads/UefiDriverWizard, команды для выполнения всего этого следующие:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp -r ~/Downloads/UefiDriverWizard ~/src/
+cd ~/src/UefiDriverWizard
+python launch.py
+</code></pre></div></div>
+
+<p>Отсюда запускается графический интерфейс. Первый шаг - перейти в меню мастера драйверов UEFI и выбрать «Открыть рабочее пространство». Это позволит мастеру использовать ранее настроенную рабочую область, а именно «~/src/edk2». Выбери эту папку и нажми «Открыть».</p>
+
+<p>Теперь мастер настроен на использование рабочего пространства. Следующим шагом является создание нового пакета, используя File-&gt; New Package. Это откроет диалоговое окно, которое позволит определить имя, GUID пакета, версию пакета и GUID платформы для твоего пакета.</p>
+
+<p>Ниже приведен скриншот с опциями, которые я использовал. Примечание: ваши GUID могут отличаться от моих. Это нормально, поскольку GUID по своей природе генерируются случайным образом, и это пошаговое руководство не будет ссылаться на GUID по его фактическому номеру.</p>
+
+<p><img src="/assets/img/posts/Screen Shot 2015-08-14.png" alt="1" class="imghalf" /></p>
+
+<p>После того как ты ввел путь к пакету, имя и версию (последняя часть пути и имя должны быть идентичны), нажми «Готово».</p>
+
+<p>Это сгенерирует файл объявления пакета (HelloEfi.dec) и файл описания сборки (HelloEfi.dsc.) Мы вернемся к файлу dsc, как только мы будем готовы собрать исполняемый файл в конце.</p>
+
+<p>Сейчас мы переходим к созданию файла Hello World на C добавим его в пакет.</p>
+
+<h2 id="твой-исходник-helloefic-и-твоя-информация-о-сборке-helloefiinf">Твой исходник: HelloEfi.c и твоя информация о сборке: HelloEfi.inf</h2>
+
+<p>Первым шагом в создании исходного файла является настройка структуры каталогов пакета. Несмотря на то, что мастер многое сделал для тебя, для настройки пакета по-прежнему необходимо выполнить некоторые действия, аналогичные тем которые предоставляются в составе EDK II.</p>
+
+<p>Следующие команды будут устанавливать каталоги по мере необходимости. Команды предполагают что имя и путь вашего пакета идентичны приведенным на скриншотах ранее, если нет просто замени их на свои.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/src/edk2/HelloEfi
+mkdir Library
+mkdir Library/HelloEfi
+cd Library/HelloEfi
+</code></pre></div></div>
+
+<p>Как только ты окажешься в каталоге Library/HelloEfi, пришло время создать наш C-файл, HelloEfi.c</p>
+
+<p>Не стесняйся возиться с этим файлом, если ты хочешь попробовать более сложные вещи. В противном случае, источник этого файла ниже:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/** @file
+    This is a basic Hello World EFI program
+**/
+#include &lt;Uefi.h&gt;
+#include &lt;Library/UefiApplicationEntryPoint.h&gt;
+#include &lt;Library/UefiLib.h&gt;
+EFI_STATUS
+EFIAPI
+UefiMain (
+  IN EFI_HANDLE            ImageHandle,
+  IN EFI_SYSTEM_TABLE     *SystemTable
+)   
+{
+    Print(L"Hello EFI! \n");
+    return EFI_SUCCESS;
+}
+</code></pre></div></div>
+
+<p>Этот код имеет 3 #includes. Однако файлы заголовков на которые они ссылаются не включены в пакет HelloEfi. Вместо этого они являются частью MdePkg, основного пакета предоставляемого как часть EDK II.</p>
+
+<p>Для того чтобы сконфигурировать ваш пакет HelloEfi для понимания, где находятся эти заголовочные файлы и узнать какие из них включают в себя библиотечные классы, вам нужно будет создать файл информации о сборке (.INF).</p>
+
+<p>Подобно файлу C, этот файл будет расположен в HelloEfi/Library/HelloEfi/ и называется HelloEfi.inf. Его источник ниже:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>##
+#    Inf file for HelloEfi.efi
+##
+
+[Defines]
+    INF_VERSION            =0x00010005
+    BASE_NAME              =HelloEfi
+    FILE_GUID              =ef6a784a-f1ee-4f75-ac0b-ba8f0869a2f2
+    MODULE_TYPE            =UEFI_APPLICATION
+    VERSION_STRING         =0.1
+    ENTRY_POINT            =UefiMain
+
+[Sources]
+    HelloEfi.c
+
+[Packages]
+    MdePkg/MdePkg.dec
+
+[LibraryClasses]
+    UefiApplicationEntryPoint
+    UefiLib
+
+[Guids]
+
+[Ppis]
+
+[Protocols]
+
+[FeaturePcd]
+
+[Pcd]
+</code></pre></div></div>
+
+<p>Теперь у вас есть исходный код C и информация о сборке для этого конкретного исполняемого файла. Следующим шагом является добавление этого INF-файла в файл описания сборки для всего пакета.</p>
+
+<h2 id="dsc-build-description-file-или-файл-описания-сборки">DSC: Build Description File или Файл Описания Сборки</h2>
+
+<p>HelloEfi.dsc, расположенный в ~/src/edk2/HelloEfi/ , это файл описания сборки для всего пакета. Этот файл определяет такую информацию, как наименование и номер версии пакета, а также имена импортируемых библиотечных классов и компонентов для сборки из самого пакета. Мастер UEFI Driver создал большую часть этого файла для вас ранее, поэтому теперь единственное что нужно изменить, это раздел [Components] чтобы добавить ваш новый файл HelloEfi.inf.</p>
+
+<p>Для этого откройте HelloEfi.dsc в любимом текстовом редакторе и прокрути вниз до раздела [Components]. В этом разделе добавьте путь из папки edk2 в файл inf, как показано ниже:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;the LibraryClasses section ends&gt;
+
+[Components]
+  # THE LINE BELOW IS WHAT YOU NEED TO ADD
+  HelloEfi/Library/HelloEfi/HelloEfi.inf
+  # ADD THE LINE ABOVE
+</code></pre></div></div>
+
+<p>В качестве примечания: одна из проблем связанных с мастером драйверов заключается в том, что он настроен на использование символов новой строки DOS/Windows. Это означает, что если вы откроете файл DSC в Vim, вы увидите что файл в формате DOS и Vim будет отображать символ «^M» в конце каждой строки.</p>
+
+<p>Нужно будет это исправить чтобы твой пакет мог быть правильно проанализирован в Unix. Можно вручную удалить каждый из символов «^M» или ввести в Vim следующую команду:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:%s/^M//g
+</code></pre></div></div>
+
+<p>Чтобы получить «^M», вам нужно набрать CTRL + V, а затем CTRL + M. Нажатие «^ M» заставит его искать эти литеральные символы, а не 0xD.</p>
+
+<p>Теперь, когда у тебя есть файл DSC, отформатированный для Unix и указывающий на твой INF-файл, ты готов к сборке!</p>
+
+<h2 id="сборка-пакета-и-обнаружение-исполняемого-файла">Сборка пакета и обнаружение исполняемого файла</h2>
+
+<p>Вернитесь в каталог edk2 и выполни следующие команды, чтобы собрать пакет и перейти к папке в которой находится исполняемый файл EFI.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>. edksetup.sh
+build -p HelloEfi/HelloEfi.dsc
+cd Build/HelloEfi/Debug_GCC49/X64
+&lt;HelloEfi.efi is in this directory!&gt;
+</code></pre></div></div>
+
+<h1 id="создание-efi-из-pocpkg-директории-внутри-quarkmatter-репозитория">Создание EFI из PocPkg директории внутри QuarkMatter репозитория</h1>
+
+<p>Следующим шагом является понимание того, как создать код из репозитория QuarkMatter в UDK. Одним из возможных решений было бы поместить клон репозитория QuarkMatter в подкаталог твоего корневого каталога EDK (~/src/edk2). Однако, чтобы упростить работу с использованием git (вместо того, чтобы заполнять .gitignore всеми другими файлами которые мы создали), мы вместо этого поместим символические ссылки в корневой каталог UDK а затем создадим из них ссылки.</p>
+
+<p>Чтобы сделать ссылки и собрать пакет, нужно будет выполнить следующие команды:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp -rs /$PATHTOQUARKMATTER/quarkmatter/PocPkg /home/user/src/edk2/  #Создание символических ссылок
+cd /home/user/src/edk2				#Навигация в edk2 директорию для сборки
+. edksetup.sh					#Убеждаемся что переменные окружения правильно выставленны
+build -p PocPkg/PocPkg.dsc			#Создаем пакет так, как если бы исходный код находился в каталоге edk2
+cd Build/PocPkg/Debug_GCC49/X64			#Переход к расположению получаемых двоичных файлов EFI
+</code></pre></div></div>
+
+<p>Этот процесс может быть применен к любым другим пакетам которые не находятся в каталоге edk2, которые ты хочешь собрать.</p>
+
+
+		</main>
+	</body>
+</html>

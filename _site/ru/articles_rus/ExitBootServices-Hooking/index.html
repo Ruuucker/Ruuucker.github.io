@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Перехват ExitBootServices ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>Перехват ExitBootServices</h1>
+</header>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#так-значит-хочешь-перехватить-exitbootservices" id="markdown-toc-так-значит-хочешь-перехватить-exitbootservices">Так значит, хочешь перехватить ExitBootServices?</a></li>
+  <li><a href="#перехватываем-exitbootservices" id="markdown-toc-перехватываем-exitbootservices">Перехватываем ExitBootServices</a></li>
+  <li><a href="#пример-кода" id="markdown-toc-пример-кода">Пример кода</a></li>
+</ul>
+
+<h1 id="так-значит-хочешь-перехватить-exitbootservices">Так значит, хочешь перехватить ExitBootServices?</h1>
+
+<p>Если ты здесь, это потому что ты хочешь узнать больше о ExitBootServices и, вероятно, хочешь использовать это чтобы что-то делать с ОС. Вот некоторая базовая информация если тебе нужно освежить память о EFI.</p>
+
+<p>При загрузке, код расположенный на прошивке контролирует систему. Это то что определяет происходящее во время загрузки. Как правило, приложение UEFI запускаемое из прошивки является загрузчиком ОС. Основная цель загрузчика - инициализировать все что нужно операционной системе, загрузить ядро в память и передать управление самому ядру. Однако загрузчик - это просто еще одно приложение UEFI: он может использовать только память выделенную прошивкой и может получать доступ только к службам и протоколам UEFI которые предоставляет прошивка. За всю стадию UEFI загрузки, вплоть до DXE фазы, отвечает прошивка. Однако в конце концов все службы загрузки UEFI должны быть завершены, а ОС должна получить контроль. Это выполняется с помощью загрузочного сервиса UEFI ExitBootServices.</p>
+
+<p>Когда ExitBootServices вызывается загрузчиком ОС, прошивка передает управление системому загрузчику. Вся память службы загрузки освобождается, все службы загрузки завершаются и загрузчик ОС может передать управление машиной к ОС. На данный момент доступны только сервисы времени выполнения предоставляемые прошивкой.</p>
+
+<h1 id="перехватываем-exitbootservices">Перехватываем ExitBootServices</h1>
+
+<p>Когда вызывается ExitBootServices, DXE фаза подходит к концу. Прошивка сделала все что нужно от UEFI для настройки системы под ОС, а сама ОС уже загружена в память. Мы можем проявить творческий подход к тому, что можно сделать с ядром которое просто находится в памяти, и ничем не защищено.</p>
+
+<p>Поскольку сервис ExitBootServices можно найти получив его указатель из глобальной таблицы EFI_BOOT_SERVICES, перехват вызова ExitBootServices тривиален. Внутри драйвера UEFI вы сохраняете исходный указатель, а затем заменяете указатель таблицы на один из наших функции-перехватчиков. Оттуда можно позволять нашему драйверу работать, и ждать пока загрузчик ОС вызовет ExitBootServices, и ваш код перехвата будет запущен непосредственно перед тем как загрузчик ОС получит контроль. Когда вы работаете в UEFI, эта таблица EFI_BOOT_SERVICES ничем не защищена, поэтому вы можете просто писать прямо в нее.</p>
+
+<p>На данный момент можно делать все что угодно. Сервисы загрузки UEFI все еще работают (потому что они будут прерваны когда произойдет вызов реальных ExitBootServices) и ОС находится в памяти. Однако, если вы возитесь с памятью (особенно если вы выделяете новые буферы), то тебе нужно будет выполнить некоторую очистку, прежде чем ты сможешь успешно вернуться к исходным ExitBootServices.</p>
+
+<p>Второй параметр ExitBootServices - это UINTN MapKey. Это значение идентифицирует текущую карту памяти системы и изменяется каждый раз когда что-то на карте памяти изменяется. Чтобы ExitBootServices правильно выполнял свою работу, он ДОЛЖЕН иметь текущую карту памяти. Если этого не произойдет, это приведет к странным вещам, например, к тому что ОС не сможет определить загрузочный диск или вообще не сможет загрузиться.</p>
+
+<p>Чтобы убедиться, что ваш вызов ExitBootServices проходит правильно, нужно сначала вызвать GetMemoryMap. По иронии судьбы, вызов GetMemoryMap потребует от вас выделения памяти для самой карты, что в свою очередь изменит карту памяти.</p>
+
+<p>Можно решить эту проблему зацикливая свои вызовы - выделяя место для карты, а затем снова вызывая GetMemoryMap. В конце концов, будет выделено достаточно места для (снова обновленной) карты, и после этого сделать вызов GetMemoryMap и получить обновленную карту.</p>
+
+<p>Получив карту, можно просто вызвать оригинальную функцию ExitBootServices и отправиться в путь.</p>
+
+<h1 id="пример-кода">Пример кода</h1>
+
+<p>Ниже приведен код, который понадобится для базового перехвата ExitBootServices. На самом деле компиляция этого в исполняемый файл EFI не рассматривается в этом руководстве, но тебе нужно будет запустить его из драйвера UEFI. В этом примере точкой входа драйвера является HookDriverMain.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>extern EFI_BOOT_SERVICES *gBS;
+EFI_EXIT_BOOT_SERVICES     gOrigExitBootServices;
+
+
+
+EFI_STATUS
+EFIAPI
+ExitBootServicesHook(IN EFI_HANDLE ImageHandle, IN UINTN MapKey){
+
+	/* &lt;hook related fun&gt; */
+	/* Do fun hook-related stuff here */
+	/* &lt;/hook-related fun&gt; */
+
+	/* Fix the pointer in the boot services table */
+	/* If you don't do this, sometimes your hook method will be called repeatedly, which you don't want */
+    gBS-&gt;ExitBootServices = gOrigExitBootServices;
+
+    /* Get the memory map */
+    UINTN MemoryMapSize;
+    EFI_MEMORY_DESCRIPTOR *MemoryMap;
+    UINTN LocalMapKey;
+    UINTN DescriptorSize;
+    UINT32 DescriptorVersion;
+    MemoryMap = NULL;
+    MemoryMapSize = 0;
+    
+	
+    do {  
+        Status = gBS-&gt;GetMemoryMap(&amp;MemoryMapSize, MemoryMap, &amp;LocalMapKey, &amp;DescriptorSize,&amp;DescriptorVersion);
+        if (Status == EFI_BUFFER_TOO_SMALL){
+            MemoryMap = AllocatePool(MemoryMapSize + 1);
+            Status = gBS-&gt;GetMemoryMap(&amp;MemoryMapSize, MemoryMap, &amp;LocalMapKey, &amp;DescriptorSize,&amp;DescriptorVersion);      
+        } else {
+            /* Status is likely success - let the while() statement check success */
+        }
+        DbgPrint(L"This time through the memory map loop, status = %r\n",Status);
+    
+    } while (Status != EFI_SUCCESS);
+
+    return gOrigExitBootServices(ImageHandle,LocalMapKey);
+
+}
+EFI_STATUS
+EFIAPI
+HookDriverMain(IN EFI_HANDLE ImageHandle, IN EFI_SYSTEM_TABLE *SystemTable){
+
+    /* Store off the original pointer and replace it with your own */
+    gOrigExitBootServices = gBS-&gt;ExitBootServices;
+    gBS-&gt;ExitBootServices = ExitBootServicesHook;
+
+	/* It's hooked! Return EFI_SUCCESS so your driver stays in memory */
+    return EFI_SUCCESS;
+}
+</code></pre></div></div>
+
+
+		</main>
+	</body>
+</html>

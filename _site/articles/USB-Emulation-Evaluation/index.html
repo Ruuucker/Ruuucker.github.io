@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Usb Emulation Evaluation ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+      		<nav>
+	<ul>
+	<li><a href="/#">Home</a></li>
+      	<li><a href="/#articles">Articles</a></li>
+	<!-- <li><a href="/#methods">Methodolodys</a></li> --!>
+		<li><a href="/#cheatsheets">Cheat Sheets</a></li>
+      	<li><a href="/#tools">Tools</a></li>
+      	<li><a href="/#contact">Contact</a></li>
+	<li><a href="/ru/">Rus</a></li>
+	</ul>
+</nav>
+
+		
+		<main>
+			<br>
+<header>
+	<h1>Usb Emulation Evaluation</h1>
+</header>
+
+<h1 class="no_toc" id="summary">Summary</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#bad-usb" id="markdown-toc-bad-usb">Bad USB</a></li>
+  <li><a href="#usb-rubber-ducky" id="markdown-toc-usb-rubber-ducky">USB Rubber Ducky</a></li>
+  <li><a href="#goodfet--facedancer" id="markdown-toc-goodfet--facedancer">Goodfet / Facedancer</a></li>
+  <li><a href="#conclusion" id="markdown-toc-conclusion">Conclusion</a></li>
+</ul>
+
+<h1 id="bad-usb">Bad USB</h1>
+
+<p>Bad USB was a talk at blackhat about how USBs can be reprogrammed to become malware. The focus is on overwriting the original firmware of the USB device controller with customized firmware. The USB device controller acts as the interface between the host and the USB device. Customizing the firmware on the USB device controller offers numerous opportunities. By controlling the USB device controller, the user (person programming the firmware) can choose how he/she wants the device to interact with the host. Parts of the USB device can be hidden, for instance, if it is a mass storage device or emulating a mass storage device, parts of the storage can be hidden from the host. If done correctly, the host should not be able to tell what the device really is. You could spoof the firmware so that if the host asks for it, the host is given the firmware the device wants you to think it has on it, rather than the firmware that is actually on it.</p>
+
+<p>It was also mention that badUSB can infect other USB devices and overwrite those devices’ firmware as well. This part I am hazy on. I don’t understand how exactly the original device can overwrite the USB device controller firmware of a separate USB device. This capability could greatly extend the scope of badUSB. It could be used as gap-jumping malware that infects the peripherial USB devices on a computer making it difficult to detect and get rid of.</p>
+
+<p>Something worth looking into is utilizing the hidden partitions of a mass storage device combined with the USBRubberDucky capabilities to be able to both input and output to a host. Hiding various features from the host is very beneficial for the device, and keyboard emulation can be used for controlling a computer under the radar.</p>
+
+<h1 id="usb-rubber-ducky">USB Rubber Ducky</h1>
+
+<p>USB Rubber Ducky is a keyboard emulator. It sends keystrokes to the host as if the device was a keyboard that someone was typing on. The device has the same capabilities as a keyboard which is both good and bad. If a keyboard cannot do something, then the USB Rubber Ducky cannot do it either. It does allow for the key typing process to be automated making it faster and more accurate than someone typing. The downside is that it is automated, so it cannot react like a human could if something went wrong or something unexpected occurred. A point to highlight is that by acting as a keyboard, the computer trusts the USB device once it is connected, allowing the device to bypass virus scanners. This can enable you to type out an executable and then run it.</p>
+
+<p>The USBRubberDucky is well crafted both through its software and hardware. The software has a nice interface for users and comes with a good amount of documentation/examples online. The hardware comes with an SD card that can be removed, making it easy to add new payloads that will be automated upon connection to a target computer/device. There is also a button that reruns the device so that it could reexecute (retype in the case of keyboard emulation) the payload.</p>
+
+<h1 id="goodfet--facedancer">Goodfet / Facedancer</h1>
+
+<p>The Facedancer21 has source code provided for various USB capabilities. The firmware allows for many different clients to be developed in python. This requires a computer containing the client code to be connected the board, so that the client can be executed from the the host (controlling) computer passing information to the board of what to send to the target computer. Requiring a host computer to tell the board what to do isn’t the best way idea of a final product to be used in the field but this could help with Proof of Concept work.</p>
+
+<p>Pros: The facedancer21 has the ability to run many different clients.</p>
+
+<p>Cons: On the current setup, all the clients are in python and are made to interface with the board from the host. That makes it difficult to take the existing python client code and flash it on the board so that the client can be automated on connection to a target (not requiring a host computer to also be connected to the board). Therefore, for automation and not needing a host to be connected, the firmware will need to be changed.</p>
+
+<p>Possibly look into being able to flash the firmware with totally different code so that the board can run one client by itself. Check how power is supplied to the board. The host USB connection supplies power to the board, and the target USB connection may or may not supply power to the board. Understanding how the board gets flashed with the firmware would be very helpful (knowing how to flash multiple files and being able to tweak the flashing process).</p>
+
+<p>See the Facedancer21 UserGuide for more information.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>From what I have seen and read, I see a good amount of potential from the BadUSB concept/technology. I think the ideal plan is to know exactly what we want our device to do first and build a board that is customized for its purposes. In reference to keyboard emulation alone, I think USBRubberDucky has a very good setup in regard to their board and software, as I have previously mentioned. A more general plan is to have a USB device much like a USB thumb drive that we can easily change the USB device controller firmware. Unlike the USBRubberDucky with its SD, the Facedancer21 does not have an offchip storage component. Having a storage component on the device would be preferred so that it could appear to be a normal USB thumb drive if it needs to.</p>
+
+
+		</main>
+	</body>
+</html>

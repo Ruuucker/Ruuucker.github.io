@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Переадресация Портов ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>Переадресация Портов</h1>
+</header>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#ssh-переадресация-портов" id="markdown-toc-ssh-переадресация-портов">SSH Переадресация Портов</a>    <ul>
+      <li><a href="#конфигурация-простого-ssh-port-forwarding" id="markdown-toc-конфигурация-простого-ssh-port-forwarding">Конфигурация простого SSH Port-Forwarding</a>        <ul>
+          <li><a href="#1-включить-ip-переажресация" id="markdown-toc-1-включить-ip-переажресация">1. Включить IP Переажресация</a></li>
+          <li><a href="#2-направить-траффик-на-порт-1111-к-ip-1111-на-порт-22" id="markdown-toc-2-направить-траффик-на-порт-1111-к-ip-1111-на-порт-22">2. Направить траффик на порт 1111 к IP 1.1.1.1 на порт 22</a></li>
+          <li><a href="#3-спросить-iptables-о-маскараде-masquerade" id="markdown-toc-3-спросить-iptables-о-маскараде-masquerade">3. Спросить iptables о маскараде (Masquerade)</a></li>
+          <li><a href="#4-тест" id="markdown-toc-4-тест">4. Тест</a></li>
+          <li><a href="#5-сохранить-правила-iptables" id="markdown-toc-5-сохранить-правила-iptables">5. Сохранить правила iptables</a></li>
+          <li><a href="#6-автоматически-выставлять-правила-iptables-при-старте-машины" id="markdown-toc-6-автоматически-выставлять-правила-iptables-при-старте-машины">6. Автоматически выставлять правила iptables при старте машины</a></li>
+        </ul>
+      </li>
+      <li><a href="#лист-prerouting-правил" id="markdown-toc-лист-prerouting-правил">Лист PREROUTING правил</a></li>
+      <li><a href="#удалить-nat-правила" id="markdown-toc-удалить-nat-правила">Удалить NAT правила</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="ssh-переадресация-портов">SSH Переадресация Портов</h1>
+
+<h2 id="конфигурация-простого-ssh-port-forwarding">Конфигурация простого SSH Port-Forwarding</h2>
+
+<p>Запусти эти команды на сервере который будет выполнять переадресацию портов.</p>
+
+<h3 id="1-включить-ip-переажресация">1. Включить IP Переажресация</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sysctl net.ipv4.ip_forward=1
+</code></pre></div></div>
+
+<h3 id="2-направить-траффик-на-порт-1111-к-ip-1111-на-порт-22">2. Направить траффик на порт 1111 к IP 1.1.1.1 на порт 22</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo iptables -t nat -A PREROUTING -p tcp --dport 1111 -j DNAT --to-destination 1.1.1.1:22
+</code></pre></div></div>
+
+<p>dport = входящий порт который будет перенаправлять трафик</p>
+
+<p>to-destination = серверный IP и порт на который будет перенаправляться траффик</p>
+
+<h3 id="3-спросить-iptables-о-маскараде-masquerade">3. Спросить iptables о маскараде (Masquerade)</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+</code></pre></div></div>
+
+<h3 id="4-тест">4. Тест</h3>
+
+<p>С PC клиента, SSH до сервера, который выполняет переадресацию.  Если IP сервера переадресации 2.2.2.2, тогда ssh к 2.2.2.2:1111. Ты должен быть подключен к 1.1.1.1 через SSH (порт 22).</p>
+
+<h3 id="5-сохранить-правила-iptables">5. Сохранить правила iptables</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c "iptables-save &gt; /etc/iptables.rules"
+</code></pre></div></div>
+
+<h3 id="6-автоматически-выставлять-правила-iptables-при-старте-машины">6. Автоматически выставлять правила iptables при старте машины</h3>
+
+<p>a. Отредактируй интерфейс к которому применяются правила в /etc/network/interfaces</p>
+
+<p>В конце строк о сети для этого интерфейса, добавьте строку:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pre-up iptables-restore &lt; /etc/iptables.rules
+</code></pre></div></div>
+
+<p>b. Редактируй /etc/sysctl.conf и добавь линию net.ipv4.ip_forward = 1.</p>
+
+<p>Если хочешь сохранить информацию от счетчиков байтов и пакетов, используй команду:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c "iptables-save -c &gt; /etc/iptables.rules"
+</code></pre></div></div>
+
+<h2 id="лист-prerouting-правил">Лист PREROUTING правил</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo iptables -t nat {--line-numbers} -L
+</code></pre></div></div>
+
+<h2 id="удалить-nat-правила">Удалить NAT правила</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo iptables -t nat -D PREROUTING [line #]
+</code></pre></div></div>
+
+<p>Заметка: опция “-t nat” не нужна когда ты хочешь удалить POSTROUTING, INPUT или OUTPUT правила.</p>
+
+
+		</main>
+	</body>
+</html>

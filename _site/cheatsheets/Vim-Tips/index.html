@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Vim Tips ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+      		<nav>
+	<ul>
+	<li><a href="/#">Home</a></li>
+      	<li><a href="/#articles">Articles</a></li>
+	<!-- <li><a href="/#methods">Methodolodys</a></li> --!>
+		<li><a href="/#cheatsheets">Cheat Sheets</a></li>
+      	<li><a href="/#tools">Tools</a></li>
+      	<li><a href="/#contact">Contact</a></li>
+	<li><a href="/ru/">Rus</a></li>
+	</ul>
+</nav>
+
+		
+		<main>
+			<br>
+<header>
+	<h1>Vim Tips</h1>
+</header>
+
+<h1 class="no_toc" id="summary">Summary</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#switch-to-a-quick-hex-mode-linux" id="markdown-toc-switch-to-a-quick-hex-mode-linux">Switch to a quick Hex mode (Linux)</a></li>
+  <li><a href="#add-to-your-vim-configuration" id="markdown-toc-add-to-your-vim-configuration">Add to your Vim configuration:</a></li>
+  <li><a href="#vivim-graphical-cheat-sheet" id="markdown-toc-vivim-graphical-cheat-sheet">Vi/Vim graphical cheat sheet</a></li>
+</ul>
+
+<h1 id="switch-to-a-quick-hex-mode-linux">Switch to a quick Hex mode (Linux)</h1>
+
+<p>Editing a binary file ends up looking something like this in Vim :</p>
+
+<p><code class="language-plaintext highlighter-rouge">^B-^@^@^E^X^@^@�^@^M^@^[[38;5;4m^@^@^C^\^?^U^D��^@^Q^S^Z^Y^R^O^W^V^@^@^@^@0^@l^A^@^@^@^@^B-^@^@^E</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">^@^@^@�^@^M^@^[~J^@^@^C^\^?^U^D��^@^Q^S^Z^Y^R^O^W^V^@^@^@^@^B-^@^@^E^X^@^@�^@^M^@^[~J\^?^U^D��^@</code></p>
+
+<p><br /><br />
+Type the following to run the buffer through the <code class="language-plaintext highlighter-rouge">xxd</code> hex dump command on Linux:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:%!xxd
+</code></pre></div></div>
+
+<p>The buffer will change to the following:</p>
+
+<p><code class="language-plaintext highlighter-rouge">0000000: 022d 0000 0518 0000 bd00 0d00 1bca 0000 .-..............</code><br />
+<code class="language-plaintext highlighter-rouge">0000010: 031c 7f15 04ff ff00 1113 1a19 120f 1716 ................</code><br />
+<code class="language-plaintext highlighter-rouge">0000020: 0000 0000 3000 6c01 0000 0000 022d 0000 ....0.l......-..</code><br />
+<code class="language-plaintext highlighter-rouge">0000030: 0500 0000 bd00 0d00 1b8a 0000 031c 7f15 ................</code><br /></p>
+
+<p>This is not a true hex editor!  Only changes in the hex columns will carry through a restore!</p>
+
+<p>Restore the original with the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>:%!xxd -r
+</code></pre></div></div>
+
+<p><br /></p>
+<h1 id="add-to-your-vim-configuration">Add to your Vim configuration:</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>" :w!! 
+" write the file when you accidentally opened it without the right (root) privileges
+cmap w!! w !sudo tee % &gt; /dev/null
+</code></pre></div></div>
+
+<h1 id="vivim-graphical-cheat-sheet">Vi/Vim graphical cheat sheet</h1>
+
+<p><img src="/assets/img/posts/vi-vim-cheat-sheet.gif" alt="1" class="img" /></p>
+
+
+		</main>
+	</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Обратный модем Android USB ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+		 	<nav>
+	<ul>
+		<li><a href="/ru/#">Главная</a></li>
+      		<li><a href="/ru/#articles">Статьи</a></li>
+		<!-- <li><a href="/ru/#methods">Методологии</a></li> --!>
+		<li><a href="/ru/#cheatsheets">Чит щит</a></li>
+     	 	<li><a href="/ru/#tools">Тулзы</a></li>
+    	  	<li><a href="/ru/#contact">Ссылки</a></li>
+  	    <li><a href="/../">Eng</a></li>
+	</ul>
+</nav>
+
+      	
+		<main>
+			<br>
+<header>
+	<h1>Обратный модем Android USB</h1>
+</header>
+
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#введение" id="markdown-toc-введение">Введение</a></li>
+  <li><a href="#зависимости" id="markdown-toc-зависимости">Зависимости:</a>    <ul>
+      <li><a href="#шаг-1" id="markdown-toc-шаг-1">Шаг 1:</a></li>
+      <li><a href="#шаг-2" id="markdown-toc-шаг-2">Шаг 2:</a></li>
+      <li><a href="#шаг-3" id="markdown-toc-шаг-3">Шаг 3:</a></li>
+    </ul>
+  </li>
+  <li><a href="#упрощенные-инструкции-mac-osx" id="markdown-toc-упрощенные-инструкции-mac-osx">Упрощенные инструкции (Mac OSX):</a></li>
+</ul>
+
+<h1 id="введение">Введение</h1>
+
+<p>Это руководство описывает метод получения Интернет соединения от ПК к смартфону/планшету на Android с помощью USB-кабеля. Эта техника называется обратным USB модемом. Она отличается от USB-модема, с помощью которого ты обычно проводишь Интернет с Android на ПК. Есть много причин, почему эта техника нужна:</p>
+
+<ul>
+  <li>Нет мобильной/Wi-Fi сети или на компьютере нет адаптера Wi-Fi</li>
+  <li>Нельзя использовать Wi-Fi точку доступа для этих целей, например, компания не позволяет создавать на работе точки подключения.</li>
+  <li>Нет желания тратить деньги на мобильный тариф и хочется более стабильное и быстрое соединение чем Wi-Fi</li>
+  <li>Не хочешь чтобы Android слишком сильно нагревался из-за Wi-Fi</li>
+  <li>Хочешь чтобы Android заряжался во время использования
+…</li>
+</ul>
+
+<p>Этот метод работает по принципу разделения доступа в Интернет. Если твоё Android-устройство способно подключаться к ПК с помощью USB в качестве модема, тогда будет работать и обратный USB модем.</p>
+
+<p>Преимущества:</p>
+
+<ul>
+  <li>
+    <p>Не требуется дополнительное ПО на ПК и не остается следов. Представьте когда во время работы нужно установить на компьютер какое-то дрянное приложение чтобы установить соединение для этой задачи.</p>
+  </li>
+  <li>
+    <p>Работает с Windows, Linux и Mac OS X</p>
+  </li>
+  <li>
+    <p>Ты знаешь что делаешь. Кто знает что “легкие-в-использовании” приложения делают если им не удалось помочь с этой задачей?</p>
+  </li>
+</ul>
+
+<p>Недостатки:</p>
+
+<ul>
+  <li>Нужно будет ввести некоторые комманды в Android.</li>
+</ul>
+
+<p>Если готов, давай начнем!</p>
+
+<h1 id="зависимости">Зависимости:</h1>
+
+<ul>
+  <li>
+    <p>Рутированный Android девайс с возможностью “USB модема”. Проверь настройки Android - Беспроводные &amp; Сеть - Модем &amp; Точка доступа. Многие стандартные ROM (Read only Memory/Пямять только для чтения) отключают эту возможность. Это нужно как то включить (рутировать твой Android и использовать приложение для включения возможности записи или перемещения ROM). ROM от CyanogenMod всегда имеет эту возможность.
+Важно помнить, что когда ты подключаешь свой Android и включаешь “USB-модем”, он выглядит как сетевой USB-адаптер, а не запоминающее устройство или мультимедийное устройство.</p>
+  </li>
+  <li>ПК с работающим интернет соединением.</li>
+  <li>USB кабель для подключения Android к ПК.</li>
+  <li>Эмулятор терминала на твоем Android. Если ты не хочешь вводить команды на сенсорном экране с помощью эмулятора терминала, ты можешь использовать клавиатуру ПК для ввода команд с помощью “adb shell”. adb - это часть Android SDK которая доступна для скачивания из Google. Для использования adb, тебе нужно включить “USB дебагинг” на твоём Android.</li>
+  <li>Опционально, BusyBox на твоём Android.</li>
+</ul>
+
+<h2 id="шаг-1">Шаг 1:</h2>
+
+<ul>
+  <li>
+    <p>Подключи Android к ПК через USB-кабель и включи “USB-модем”. Ты по-прежнему можешь включить эту опцию, даже если 3G/Wi-Fi на твоём Android выключен.</p>
+  </li>
+  <li>
+    <p>Если используется Linux (Ubuntu), то не нужно ничего устанавливать. Апплет NetworkManager попытается установить соединение на новом обнаруженном устройстве проводной сети.</p>
+  </li>
+  <li>
+    <p>Если Windows, то ОС автоматически выполнит поиск Windows Update и установит драйвер для тебя. Ты можешь пропустить поиск Windows Update и установить вручную уже включенный драйвер от Microsoft.</p>
+  </li>
+  <li>
+    <p>В окне «Установка драйвера» нажми «Обзор моего компьютера», затем «Позвольте мне выбрать …», выбери «Сетевые адаптеры», сними флажок «Показать совместимое оборудование», посмотри на «Microsoft Corporation» в левом столбце и выбери «Удаленное устройство совместимое с NDIS» в правом столбце. Ты можешь установить или обновить драйвер из диспетчера устройств в Windows.</p>
+  </li>
+  <li>
+    <p>Если используется Mac, установи драйвер HoRNDIS. Ты будешь уведомлен о новом сетевом интерфейсе. Нажми «Настройки сети» в диалоговом окне чтобы добавить его в список известных интерфейсов. Затем «Применить»</p>
+  </li>
+  <li>
+    <p>Если используется Linux без графического интерфейса или NetworkManager, запусти эти команды как root (или используй sudo):</p>
+  </li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig usb0 10.42.0.1 netmask 255.255.255.0
+</code></pre></div></div>
+
+<p>(Предполагается что нет другого сетевого адаптера USB, в противном случае, твой Android может быть usb1, usb2…)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+</code></pre></div></div>
+
+<p>Команда для sudo будет:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo 'echo 1 &gt; /proc/sys/net/ipv4/ip_forward'
+
+iptables -t nat -F
+iptables -t nat -A POSTROUTING -j MASQUERADE
+</code></pre></div></div>
+
+<h2 id="шаг-2">Шаг 2:</h2>
+
+<ul>
+  <li>
+    <p>Если ты используешь Linux, нажми на апплет NetworkManager в правом верхнем углу экрана и выберите «Редактировать соединения…». На вкладке «Проводной» выбери новое установленное соединение (будь осторожен, не LAN Ethernet соединение) и нажми «Изменить…». На вкладке «Настройки IPv4» выбери «Доступ к другим компьютерам» в качестве метода. Нажми «Сохранить». NetworkManager восстановит соединение и назначит твоему ПК IP-адрес в этом сетевом соединении USB, по умолчанию: 10.42.0.1. Оставь подключение к Интернету (проводное или беспроводное) без изменений.</p>
+  </li>
+  <li>
+    <p>Если ты используешь Windows, открой «Сетевые подключения» на панели управления. Это несколько отличается от настройки в Linux. Щелкни правой кнопкой мыши на твоё подключение к Интернету. Я предполагаю, что ты используешь десктоп без адаптера Wi-Fi, поэтому щелкни правой кнопкой мыши по LAN-соединению Ethernet с Интернетом и выбери «Свойства». На вкладке «Общий доступ» (или «Дополнительно» для Windows XP) нажми «Разрешить другим пользователям сети подключаться через…», затем выбери USB-соединение в раскрывающемся списке ниже и нажми ОК. Windows автоматически настроит сетевое USB-соединение и назначит ему IP-адрес, по умолчанию для Windows 7: 192.168.137.1, для Windows 10: 192.168.0.1. Ты можете видеть, что твоё интернет-соединение теперь «Общее», а USB-соединение теперь «Неопознанная сеть».</p>
+  </li>
+  <li>
+    <p>Если ты используешь Mac, откройте Системные настройки - Сеть. Если ты установил HoRNDIS, то увидишь новый сетевой интерфейс соответствующий твоему USB-соединению. При включенном «Использование DHCP» в качестве конфигурации Ipv4, он может быть уже подключен. Вернись в Системные настройки, нажми «Общий доступ». Выбери «Общий Интернет». Выбери подключение к Интернету (Ethernet или Airport…) в разделе «Поделиться своим подключением из» и выбери интерфейс USB-подключения в разделе «К компьютерам, использующим». Mac назначит твоему USB-интерфейсу IP-адрес, по умолчанию: 192.168.2.1.</p>
+  </li>
+  <li>
+    <p>Если ты используешь Linux без графического интерфейса или NetworkManager, ты уже выполнил все настройки ПК на шаге 1.</p>
+  </li>
+</ul>
+
+<p>Настройка твоего ПК завершена !</p>
+
+<h2 id="шаг-3">Шаг 3:</h2>
+<p>Открой эмулятор терминала на твоем Android. Введи:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>su
+</code></pre></div></div>
+
+<p>Введи эти комманды в эмелятор терминала, одинаково для всех ПК ОС:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>netcfg rndis0 dhcp
+</code></pre></div></div>
+
+<p>Название интерфейса USB внутри Android может отличаться. Обычно это rndis0 или usb0. Введи:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>busybox ifconfig
+</code></pre></div></div>
+
+<p>для определения имени.</p>
+
+<p>Используй инструкции ниже когда автоматический метод dhcp не работает.
+Введите следующие команды в эмуляторе терминала Android:</p>
+
+<p>Для ПК с Linux:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig rndis0 10.42.0.2 netmask 255.255.255.0
+route add default gw 10.42.0.1 dev rndis0
+</code></pre></div></div>
+
+<p>Если роутинг не проходит, попробуй:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>busybox route add default gw 10.42.0.1 dev rndis0
+</code></pre></div></div>
+
+<p>Для ПК с Windows, используй те же самые команды приведенные выше, но замени 10.42.0.2 на 192.168.137.2 (192.168.0.2 для Windows 10), и 10.42.0.1 на 192.168.137.1 (192.168.0.1 для Windows 10)</p>
+
+<p>Для ПК с Mac, замени 10.42.0.2 на 192.168.2.2, и 10.42.0.1 на 192.168.2.1
+Сейчас ты уже можешь закрыть эмелятор терминала и начать смотреть фотки котят в Интернете.</p>
+
+<p>Некоторые приложения (скачаные в Google Play, GMail, Facebook…) не распознают подключение к Интернету. Можно попробовать следующий способ (ВНИМАНИЕ: НЕ ПРОВЕРЕНО):</p>
+<ul>
+  <li>Включить временное соединение 3G на вашем Android</li>
+  <li>Введи:</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ifconfig rmnet0 0.0.0.0
+</code></pre></div></div>
+
+<p>Имя твоего 3G интерфейса внутри Android может быть другим: ppp0, rmnet0… Введи:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>busybox ifconfig
+</code></pre></div></div>
+
+<p>для определения имени.</p>
+
+<p>перед <code class="language-plaintext highlighter-rouge">ifconfig rmnet0 ...</code> выше.
+Это заставит приложения видеть ваше интернет-соединение через USB как 3G!</p>
+
+<p>Настройки USB-модема на Android будут автоматически изменены при отключении USB-кабеля. Чтобы вернуть обратно настройки на ПК, сними флажок «Разрешить другим пользователям сети подключаться через…» в Windows, «Общий доступ к Интернету» на Mac, измени «Общий доступ к другим компьютерам» обратно на «Автоматически (DHCP)» или просто удалите USB-соединение из NetworkManager в Linux.</p>
+
+<h1 id="упрощенные-инструкции-mac-osx">Упрощенные инструкции (Mac OSX):</h1>
+
+<blockquote>
+  <p>Mac: Установи HorNDIS пакет.<br />
+   Android: Включи USB модем в Настройки &gt; Больше настроек &gt; Модем и точка доступа &gt; USB модем<br />
+   Подключи USB от Android к ПК.<br />
+   Mac: Подключи Android в Системные Настройки &gt; Сеть &gt; SAMSUNG_Android <br />
+   Mac: Добавь общий доступ к Интернету в Системные настройки &gt; Общий доступ &gt; Служба &gt; Общий доступ в Интернет<br />
+   Android: Рутируй свой Android <br />
+   Android: “netcfg rndis0 dhcp”<br />
+   Android: “netcfg” для того чтобы узнать адрес rndis0<br />
+   Mac: “ifconfig” чтобы посмотреть IP-адрес ПК; используй этот адрес в качестве ввода URL для mc_creator</p>
+</blockquote>
+
+
+		</main>
+	</body>
+</html>

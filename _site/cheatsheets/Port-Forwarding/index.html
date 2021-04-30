@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Basic information about this page -->
+<meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="/assets/img/fav.ico">
+<title>
+	
+		Port Forwarding ::
+	
+	Rucker :: Security Researcher
+</title>
+
+<!-- Meta tag looking for mobile devices -->
+<meta name="viewport" content="initial-scale=1.5">
+<meta name="theme-color" content="#232323">
+
+<!-- Good information about this page -->
+<meta name="description" content="Security Researcher">
+<meta name="keywords" content="Security, Hacking">
+<meta name="author" content="Rucker">
+
+<!-- Style and scripts files -->
+<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+
+<!-- Extra information about this page -->
+<link rel="license" type="text/plain" src="/assets/LICENSE">
+
+<!-- Facebook, Linkedin, Reddit and many others Open Graph -->
+<meta property="og:site_name" content="Rucker" />
+<meta property="og:title" content="Rucker :: Security Researcher" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Security Researcher" />
+<meta property="og:url" content="https://ruuucker.github.io" />
+<meta property="og:image:type" content="image/png" /> <!-- less than 5mB -->
+<meta property="og:image:width" content="600" />
+<meta property="og:image:height" content="315" />
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:locale" content="en" />
+<meta property="og:locale:alternate" content="ru_RU" />
+<meta property="fb:page_id" content="688484114615664" />
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Rucker :: Security Researcher" />
+<meta name="twitter:description" content="Security Researcher" />
+<meta name="twitter:url" content="https://ruuucker.github.io" />
+<meta name="twitter:image" content="/assets/img/cover.svg" />
+<meta name="twitter:author" content="" />
+
+<!-- Linkedin OGP cards -->
+<meta property="og:image" content="/assets/img/cover.svg" />
+<meta property="og:image:width" content="180" />
+<meta property="og:image:height" content="110" />
+
+<!-- Google+ OGP cards -->
+<meta itemprop="name" content="Rucker :: Security Researcher" />
+<meta itemprop="author" content="" />
+<meta itemprop="description" content="Security Researcher" />
+<meta itemprop="image" content="/assets/img/cover.svg" />
+
+
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+
+	<body>
+		<header>
+	<pre class="ascii name">
+      ___           ___           ___           ___           ___           ___     
+     /\  \         /\__\         /\  \         /\__\         /\  \         /\  \    
+    /::\  \       /:/  /        /::\  \       /:/  /        /::\  \       /::\  \   
+   /:/\:\  \     /:/  /        /:/\:\  \     /:/__/        /:/\:\  \     /:/\:\  \  
+  /::\~\:\  \   /:/  /  ___   /:/  \:\  \   /::\__\____   /::\~\:\  \   /::\~\:\  \ 
+ /:/\:\ \:\__\ /:/__/  /\__\ /:/__/ \:\__\ /:/\:::::\__\ /:/\:\ \:\__\ /:/\:\ \:\__\
+ \/_|::\/:/  / \:\  \ /:/  / \:\  \  \/__/ \/_|:|~~|~    \:\~\:\ \/__/ \/_|::\/:/  /
+    |:|::/  /   \:\  /:/  /   \:\  \          |:|  |      \:\ \:\__\      |:|::/  / 
+    |:|\/__/     \:\/:/  /     \:\  \         |:|  |       \:\ \/__/      |:|\/__/  
+    |:|  |        \::/  /       \:\__\        |:|  |        \:\__\        |:|  |    
+     \|__|         \/__/         \/__/         \|__|         \/__/         \|__|    
+       
+</pre>
+</header>
+
+      	
+      		<nav>
+	<ul>
+	<li><a href="/#">Home</a></li>
+      	<li><a href="/#articles">Articles</a></li>
+	<!-- <li><a href="/#methods">Methodolodys</a></li> --!>
+		<li><a href="/#cheatsheets">Cheat Sheets</a></li>
+      	<li><a href="/#tools">Tools</a></li>
+      	<li><a href="/#contact">Contact</a></li>
+	<li><a href="/ru/">Rus</a></li>
+	</ul>
+</nav>
+
+		
+		<main>
+			<br>
+<header>
+	<h1>Port Forwarding</h1>
+</header>
+
+<h1 class="no_toc" id="summary">Summary</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#ssh-port-forwarding" id="markdown-toc-ssh-port-forwarding">SSH Port Forwarding</a>    <ul>
+      <li><a href="#configure-simple-ssh-port-forwarding" id="markdown-toc-configure-simple-ssh-port-forwarding">Configure Simple SSH Port-Forwarding</a>        <ul>
+          <li><a href="#1-enable-ip-forwarding" id="markdown-toc-1-enable-ip-forwarding">1. Enable IP Forwarding</a></li>
+          <li><a href="#2-forward-traffic-on-port-1111-to-ip-1111-on-port-22" id="markdown-toc-2-forward-traffic-on-port-1111-to-ip-1111-on-port-22">2. Forward traffic on port 1111 to IP 1.1.1.1 on port 22</a></li>
+          <li><a href="#3-ask-iptables-to-masquerade" id="markdown-toc-3-ask-iptables-to-masquerade">3. Ask iptables to Masquerade</a></li>
+          <li><a href="#4-test" id="markdown-toc-4-test">4. Test</a></li>
+          <li><a href="#5-save-iptables-rules" id="markdown-toc-5-save-iptables-rules">5. Save iptables rules</a></li>
+          <li><a href="#6-automatically-apply-iptables-rules-at-startup" id="markdown-toc-6-automatically-apply-iptables-rules-at-startup">6. Automatically apply iptables rules at startup</a></li>
+        </ul>
+      </li>
+      <li><a href="#list-prerouting-rules" id="markdown-toc-list-prerouting-rules">List PREROUTING Rules</a></li>
+      <li><a href="#delete-nat-rule" id="markdown-toc-delete-nat-rule">Delete NAT Rule</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="ssh-port-forwarding">SSH Port Forwarding</h1>
+
+<h2 id="configure-simple-ssh-port-forwarding">Configure Simple SSH Port-Forwarding</h2>
+
+<p>Run these commands on the server that will be performing the port forwarding.</p>
+
+<h3 id="1-enable-ip-forwarding">1. Enable IP Forwarding</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sysctl net.ipv4.ip_forward=1
+</code></pre></div></div>
+
+<h3 id="2-forward-traffic-on-port-1111-to-ip-1111-on-port-22">2. Forward traffic on port 1111 to IP 1.1.1.1 on port 22</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo iptables -t nat -A PREROUTING -p tcp --dport 1111 -j DNAT --to-destination 1.1.1.1:22
+</code></pre></div></div>
+
+<p>dport = incoming port that will forward the traffic</p>
+
+<p>to-destination = server IP address and port that you are forwarding to</p>
+
+<h3 id="3-ask-iptables-to-masquerade">3. Ask iptables to Masquerade</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo iptables -t nat -A POSTROUTING -j MASQUERADE
+</code></pre></div></div>
+
+<h3 id="4-test">4. Test</h3>
+
+<p>From the client PC, SSH to the server that is doing the port forwarding.  If the server doing the port forwarding is 2.2.2.2, then ssh to 2.2.2.2:1111.  You should be connected to 1.1.1.1 via SSH (port 22).</p>
+
+<h3 id="5-save-iptables-rules">5. Save iptables rules</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c "iptables-save &gt; /etc/iptables.rules"
+</code></pre></div></div>
+
+<h3 id="6-automatically-apply-iptables-rules-at-startup">6. Automatically apply iptables rules at startup</h3>
+
+<p>a. Edit the interface the rules apply to by editing /etc/network/interfaces</p>
+
+<p>At the end of the network related lines for that interface, add the line:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pre-up iptables-restore &lt; /etc/iptables.rules
+</code></pre></div></div>
+
+<p>b. Edit /etc/sysctl.conf by adding the line net.ipv4.ip_forward = 1.</p>
+
+<p>If you want to keep information from byte and packet counters, use the command:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo sh -c "iptables-save -c &gt; /etc/iptables.rules"
+</code></pre></div></div>
+
+<h2 id="list-prerouting-rules">List PREROUTING Rules</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo iptables -t nat {--line-numbers} -L
+</code></pre></div></div>
+
+<h2 id="delete-nat-rule">Delete NAT Rule</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo iptables -t nat -D PREROUTING [line #]
+</code></pre></div></div>
+
+<p>Note: The option “-t nat” are not needed when you want to delete POSTROUTING, INPUT, or OUTPUT rules.</p>
+
+
+		</main>
+	</body>
+</html>
