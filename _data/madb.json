@@ -1,63 +1,32 @@
 [
   {
-    "name": "net",
-    "subcategory": [
-      {
-        "name": "windows",
-        "subcategory": [
-          {
-            "name": "ad",
-            "subcategory": [
-              {
-                "title": "tudu",
-                "link": "https://google.com",
-                "description": "shit"
-              },
-              {
-                "title": "Google",
-                "link": "https://google.com",
-                "description": "test"
-              }
-            ]
-          }
-        ]
-      }
-    ]
+    "name": "exploit",
+    "subcategory": []
   },
   {
     "name": "recon",
+    "subcategory": []
+  },
+  {
+    "name": "detection",
+    "subcategory": []
+  },
+  {
+    "name": "web",
+    "subcategory": []
+  },
+  {
+    "name": "local",
     "subcategory": [
       {
-        "name": "windows",
+        "name": "os",
         "subcategory": [
           {
-            "name": "ad",
-            "subcategory": [
-              {
-                "title": "tudu",
-                "link": "google.com"
-              },
-              {
-                "title": "tudu",
-                "link": "google.com",
-                "description": "shit"
-              }
-            ]
+            "title": "vxunderground · GitHub",
+            "link": "https://github.com/vxunderground"
           }
         ]
       }
     ]
-  },
-  {
-    "title": "Google"
-  },
-  {
-    "title": "Google"
-  },
-  {
-    "title": "Google"
-  },
-  {
-    "title": "Google"
   }
 ]
