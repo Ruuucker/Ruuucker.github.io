@@ -1,6 +1,26 @@
 [
   {
     "name": "exploit",
+    "subcategory": [
+      {
+        "name": "windows",
+        "subcategory": [
+          {
+            "name": "powershell",
+            "subcategory": [
+              {
+                "name": "all-in-one",
+                "subcategory": [
+                  {
+                    "link": "https://github.com/samratashok/nishang"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "recon",
