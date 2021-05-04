@@ -21,6 +21,15 @@
             ]
           }
         ]
+      },
+      {
+        "name": "phising",
+        "subcategory": [
+          {
+            "title": "Phishing with fake meeting invite",
+            "link": "https://www.exandroid.dev/2021/04/24/phishing-with-fake-meeting-invite/"
+          }
+        ]
       }
     ]
   },
