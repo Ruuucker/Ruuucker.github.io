@@ -12,7 +12,9 @@
                 "name": "all-in-one",
                 "subcategory": [
                   {
-                    "link": "https://github.com/samratashok/nishang"
+                    "title": "Nishang",
+                    "link": "https://github.com/samratashok/nishang",
+                    "description": "All in one tool for everything in powershell"
                   }
                 ]
               }
@@ -24,7 +26,22 @@
   },
   {
     "name": "recon",
-    "subcategory": []
+    "subcategory": [
+      {
+        "name": "net",
+        "subcategory": [
+          {
+            "name": "dns",
+            "subcategory": [
+              {
+                "title": "DNS Reconnaissance – DNSRecon",
+                "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
+              }
+            ]
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "detection",
