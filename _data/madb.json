@@ -40,6 +40,15 @@
             ]
           }
         ]
+      },
+      {
+        "name": "osint",
+        "subcategory": [
+          {
+            "title": "The Recon-ng Framework",
+            "link": "https://github.com/lanmaster53/recon-ng"
+          }
+        ]
       }
     ]
   },
