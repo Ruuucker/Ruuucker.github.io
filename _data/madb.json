@@ -54,7 +54,18 @@
   },
   {
     "name": "detection",
-    "subcategory": []
+    "subcategory": [
+      {
+        "name": "windows",
+        "subcategory": [
+          {
+            "title": "Windows",
+            "link": "https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/",
+            "description": "These is actually more than just windows in this blog"
+          }
+        ]
+      }
+    ]
   },
   {
     "name": "web",
