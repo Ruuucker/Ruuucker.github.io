@@ -103,6 +103,16 @@
                 "description": "Everyfind you need when u live off the land"
               }
             ]
+          },
+          {
+            "name": "linux",
+            "subcategory": [
+              {
+                "title": "GTFOBins",
+                "link": "https://gtfobins.github.io/",
+                "description": "LPE and usefull stuff"
+              }
+            ]
           }
         ]
       },
