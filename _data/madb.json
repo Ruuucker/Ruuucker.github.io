@@ -101,6 +101,11 @@
                 "title": "LOLBAS",
                 "link": "https://lolbas-project.github.io/",
                 "description": "Everyfind you need when u live off the land"
+              },
+              {
+                "title": "GitHub",
+                "link": "https://github.com/PowerShellMafia/PowerSploit",
+                "description": "Windows PostExp"
               }
             ]
           },
