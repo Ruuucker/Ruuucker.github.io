@@ -47,6 +47,11 @@
                 "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
               }
             ]
+          },
+          {
+            "title": "Download from https://github.com/adrecon/ADRecon",
+            "link": "https://github.com/sense-of-security/ADRecon",
+            "description": "AD Recon"
           }
         ]
       },
