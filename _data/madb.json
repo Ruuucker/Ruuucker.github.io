@@ -210,6 +210,10 @@
           {
             "title": "Responder/MultiRelay",
             "link": "https://github.com/lgandx/Responder"
+          },
+          {
+            "title": "HoneyCreds",
+            "link": "https://github.com/ben0xa/honeycreds"
           }
         ]
       },
