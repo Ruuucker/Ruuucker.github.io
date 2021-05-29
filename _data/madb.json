@@ -83,6 +83,10 @@
               {
                 "title": "sysmon-config | A Sysmon configuration file for everybody to fork",
                 "link": "https://github.com/SwiftOnSecurity/sysmon-config/"
+              },
+              {
+                "title": "sysmon-modular | A Sysmon configuration repository for everybody to customise",
+                "link": "https://github.com/olafhartong/sysmon-modular"
               }
             ]
           }
