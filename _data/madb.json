@@ -34,6 +34,10 @@
                 "description": "Bypassing Win Defender"
               }
             ]
+          },
+          {
+            "title": "What is Impacket?",
+            "link": "https://github.com/SecureAuthCorp/impacket"
           }
         ]
       },
