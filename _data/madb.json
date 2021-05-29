@@ -127,6 +127,11 @@
         "title": "Web-Application-Pentest-Checklist",
         "link": "https://github.com/iamthefrogy/Web-Application-Pentest-Checklist",
         "description": "Checklist from Frogy"
+      },
+      {
+        "title": "A skidalicious cheat sheet of webapp exploitation techniques",
+        "link": "https://blog.oxagast.org/posts/skidalicious-webapp-exploit-cheat-sheet/",
+        "description": "Web Checklist"
       }
     ]
   },
