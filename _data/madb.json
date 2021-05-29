@@ -91,6 +91,9 @@
               {
                 "title": "Sysmon - DFIR",
                 "link": "https://github.com/MHaggis/sysmon-dfir"
+              },
+              {
+                "link": "https://www.malwarearchaeology.com/cheat-sheets"
               }
             ]
           }
