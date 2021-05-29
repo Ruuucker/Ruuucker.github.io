@@ -83,7 +83,13 @@
   },
   {
     "name": "web",
-    "subcategory": []
+    "subcategory": [
+      {
+        "title": "Web-Application-Pentest-Checklist",
+        "link": "https://github.com/iamthefrogy/Web-Application-Pentest-Checklist",
+        "description": "Checklist from Frogy"
+      }
+    ]
   },
   {
     "name": "local",
