@@ -95,6 +95,11 @@
             "link": "https://github.com/snovvcrash/DivideAndScan"
           }
         ]
+      },
+      {
+        "title": "Recon Tools",
+        "link": "https://github.com/nahberry/Recon-Tools",
+        "description": "Recon everything"
       }
     ]
   },
