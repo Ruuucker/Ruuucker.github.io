@@ -213,6 +213,11 @@
             "title": "offensiveph",
             "link": "https://github.com/RedSection/OffensivePH",
             "description": "User-Mode Bypass via driver install"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hfiref0x/UACME",
+            "description": "Bypass UAC"
           }
         ]
       }
