@@ -306,6 +306,15 @@
         "title": "GitHub",
         "link": "https://github.com/unode/firefox_decrypt",
         "description": "Passwords from FireFox"
+      },
+      {
+        "name": "c2",
+        "subcategory": [
+          {
+            "title": "BlackMamba",
+            "link": "https://github.com/loseys/BlackMamba"
+          }
+        ]
       }
     ]
   }
