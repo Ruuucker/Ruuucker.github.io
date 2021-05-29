@@ -222,6 +222,10 @@
             "title": "GitHub",
             "link": "https://github.com/hfiref0x/UACME",
             "description": "Bypass UAC"
+          },
+          {
+            "title": "Description",
+            "link": "https://github.com/NytroRST/NetRipper"
           }
         ]
       },
