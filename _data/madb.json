@@ -96,6 +96,10 @@
                 "link": "https://www.malwarearchaeology.com/cheat-sheets"
               }
             ]
+          },
+          {
+            "title": "Detecting Dll Unhooking",
+            "link": "https://makosecblog.com/malware-dev/detecting-dll-unhooking/"
           }
         ]
       }
