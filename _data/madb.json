@@ -19,6 +19,16 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "payload",
+            "subcategory": [
+              {
+                "title": "charlotte",
+                "link": "https://github.com/9emin1/charlotte",
+                "description": "Undetected shellcode, could use with meterpreter"
+              }
+            ]
           }
         ]
       },
