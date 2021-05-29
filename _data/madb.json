@@ -76,6 +76,15 @@
             "title": "Windows",
             "link": "https://labs.f-secure.com/blog/attack-detection-fundamentals-2021-windows-lab-1/",
             "description": "These is actually more than just windows in this blog"
+          },
+          {
+            "name": "sysmon",
+            "subcategory": [
+              {
+                "title": "sysmon-config | A Sysmon configuration file for everybody to fork",
+                "link": "https://github.com/SwiftOnSecurity/sysmon-config/"
+              }
+            ]
           }
         ]
       }
