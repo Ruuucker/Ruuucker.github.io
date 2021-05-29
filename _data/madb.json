@@ -38,6 +38,10 @@
           {
             "title": "What is Impacket?",
             "link": "https://github.com/SecureAuthCorp/impacket"
+          },
+          {
+            "title": "Remote Potato – From Domain User to Enterprise Admin",
+            "link": "https://pentestlab.blog/2021/05/04/remote-potato-from-domain-user-to-enterprise-admin/"
           }
         ]
       },
