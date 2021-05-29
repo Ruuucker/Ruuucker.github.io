@@ -138,6 +138,10 @@
             "link": "https://makosecblog.com/malware-dev/detecting-dll-unhooking/"
           }
         ]
+      },
+      {
+        "title": "Vindicate",
+        "link": "https://github.com/Rushyo/VindicateTool"
       }
     ]
   },
