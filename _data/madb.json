@@ -284,6 +284,11 @@
             "title": "DoUCMe",
             "link": "https://github.com/ben0xa/doucme",
             "description": "Invisible user"
+          },
+          {
+            "title": "Spraykatz",
+            "link": "https://github.com/aas-n/spraykatz",
+            "description": "Retrieve credentials on Windows"
           }
         ]
       },
