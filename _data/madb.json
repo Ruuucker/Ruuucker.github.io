@@ -126,6 +126,10 @@
               },
               {
                 "link": "https://www.malwarearchaeology.com/cheat-sheets"
+              },
+              {
+                "title": "TrustedSec Sysmon Community Guide",
+                "link": "https://github.com/trustedsec/SysmonCommunityGuide"
               }
             ]
           },
