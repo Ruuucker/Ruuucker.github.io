@@ -87,6 +87,10 @@
               {
                 "title": "sysmon-modular | A Sysmon configuration repository for everybody to customise",
                 "link": "https://github.com/olafhartong/sysmon-modular"
+              },
+              {
+                "title": "Sysmon - DFIR",
+                "link": "https://github.com/MHaggis/sysmon-dfir"
               }
             ]
           }
