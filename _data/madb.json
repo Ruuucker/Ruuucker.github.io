@@ -182,5 +182,20 @@
         ]
       }
     ]
+  },
+  {
+    "name": "post",
+    "subcategory": [
+      {
+        "name": "windows",
+        "subcategory": [
+          {
+            "title": "offensiveph",
+            "link": "https://github.com/RedSection/OffensivePH",
+            "description": "User-Mode Bypass via driver install"
+          }
+        ]
+      }
+    ]
   }
 ]
