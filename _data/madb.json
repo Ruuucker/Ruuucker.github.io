@@ -224,6 +224,11 @@
             "description": "Bypass UAC"
           }
         ]
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/unode/firefox_decrypt",
+        "description": "Passwords from FireFox"
       }
     ]
   }
