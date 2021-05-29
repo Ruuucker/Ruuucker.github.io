@@ -212,6 +212,21 @@
             "link": "https://github.com/lgandx/Responder"
           }
         ]
+      },
+      {
+        "name": "windows",
+        "subcategory": [
+          {
+            "name": "edr",
+            "subcategory": [
+              {
+                "title": "GitHub",
+                "link": "https://github.com/Mr-Un1k0d3r/EDRs",
+                "description": "Info about EDRs"
+              }
+            ]
+          }
+        ]
       }
     ]
   },
