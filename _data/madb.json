@@ -150,6 +150,16 @@
           {
             "title": "Detecting Dll Unhooking",
             "link": "https://makosecblog.com/malware-dev/detecting-dll-unhooking/"
+          },
+          {
+            "name": "post",
+            "subcategory": [
+              {
+                "title": "SharpSniper",
+                "link": "https://github.com/HunnicCyber/SharpSniper",
+                "description": "Get IP from creds"
+              }
+            ]
           }
         ]
       },
