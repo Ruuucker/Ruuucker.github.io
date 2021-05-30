@@ -15,6 +15,10 @@
                     "title": "Nishang",
                     "link": "https://github.com/samratashok/nishang",
                     "description": "All in one tool for everything in powershell"
+                  },
+                  {
+                    "title": "Weaponry",
+                    "link": "https://github.com/jeffjbowie/Weaponry"
                   }
                 ]
               }
