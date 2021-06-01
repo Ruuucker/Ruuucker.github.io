@@ -21,6 +21,11 @@
                     "link": "https://github.com/jeffjbowie/Weaponry"
                   }
                 ]
+              },
+              {
+                "title": "Misc-PowerShell",
+                "link": "https://github.com/jnqpblc/Misc-PowerShell",
+                "description": "Nice tools"
               }
             ]
           },
