@@ -149,6 +149,16 @@
         "title": "GitHub",
         "link": "https://github.com/pantyusha/nesca",
         "description": "Scan Internet"
+      },
+      {
+        "name": "ad",
+        "subcategory": [
+          {
+            "title": "GitHub",
+            "link": "https://github.com/Dionach/NtdsAudit",
+            "description": "Show statistic about accounts and passwords"
+          }
+        ]
       }
     ]
   },
