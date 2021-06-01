@@ -89,6 +89,11 @@
             "title": "Download from https://github.com/adrecon/ADRecon",
             "link": "https://github.com/sense-of-security/ADRecon",
             "description": "AD Recon"
+          },
+          {
+            "title": "🤔 What is this?",
+            "link": "https://github.com/RustScan/RustScan",
+            "description": "Nmap but better"
           }
         ]
       },
