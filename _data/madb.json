@@ -71,6 +71,16 @@
                 "description": "Pass Spray against all Domain users"
               }
             ]
+          },
+          {
+            "name": "ad",
+            "subcategory": [
+              {
+                "title": "0 to 0.9",
+                "link": "https://zer1t0.gitlab.io/posts/attacking_ad/",
+                "description": "EVERYTHING you need to pwn AD"
+              }
+            ]
           }
         ]
       },
