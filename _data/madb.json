@@ -114,6 +114,11 @@
         "title": "Recon Tools",
         "link": "https://github.com/nahberry/Recon-Tools",
         "description": "Recon everything"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/pantyusha/nesca",
+        "description": "Scan Internet"
       }
     ]
   },
