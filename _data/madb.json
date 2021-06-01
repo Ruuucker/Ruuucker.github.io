@@ -67,6 +67,16 @@
             "link": "https://www.exandroid.dev/2021/04/24/phishing-with-fake-meeting-invite/"
           }
         ]
+      },
+      {
+        "name": "list",
+        "subcategory": [
+          {
+            "title": "PoC in GitHub",
+            "link": "https://github.com/nomi-sec/PoC-in-GitHub",
+            "description": "Exploits"
+          }
+        ]
       }
     ]
   },
