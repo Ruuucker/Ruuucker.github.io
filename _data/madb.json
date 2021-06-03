@@ -129,6 +129,16 @@
             "title": "🤔 What is this?",
             "link": "https://github.com/RustScan/RustScan",
             "description": "Nmap but better"
+          },
+          {
+            "name": "windows",
+            "subcategory": [
+              {
+                "title": "nextnet",
+                "link": "https://github.com/hdm/nextnet",
+                "description": "Scan window's 137 udp to get interfaces and hostname"
+              }
+            ]
           }
         ]
       },
