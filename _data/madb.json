@@ -256,6 +256,16 @@
       {
         "title": "Vindicate",
         "link": "https://github.com/Rushyo/VindicateTool"
+      },
+      {
+        "name": "other",
+        "subcategory": [
+          {
+            "title": "CyberBattleSim",
+            "link": "https://github.com/microsoft/CyberBattleSim",
+            "description": "Self-learning defender, interesting stuff"
+          }
+        ]
       }
     ]
   },
