@@ -299,6 +299,21 @@
                 "title": "GitHub",
                 "link": "https://github.com/PowerShellMafia/PowerSploit",
                 "description": "Windows PostExp"
+              },
+              {
+                "name": "lpe",
+                "subcategory": [
+                  {
+                    "name": "potatos",
+                    "subcategory": [
+                      {
+                        "title": "RoguePotato",
+                        "link": "https://github.com/antonioCoco/RoguePotato",
+                        "description": "Another Potato"
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
