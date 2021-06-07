@@ -428,6 +428,11 @@
             "title": "Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS",
             "link": "https://github.com/eladshamir/Internal-Monologue",
             "description": "Get hashes without lsass.exe"
+          },
+          {
+            "title": "forkatz",
+            "link": "https://github.com/Barbarisch/forkatz",
+            "description": "Creds dump with SeTrustedCredmanAccessPrivilege"
           }
         ]
       },
