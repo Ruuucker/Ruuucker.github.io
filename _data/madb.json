@@ -81,6 +81,11 @@
                 "description": "EVERYTHING you need to pwn AD"
               }
             ]
+          },
+          {
+            "title": "CheeseTools",
+            "link": "https://github.com/klezVirus/CheeseTools",
+            "description": "Lateral Movement"
           }
         ]
       },
