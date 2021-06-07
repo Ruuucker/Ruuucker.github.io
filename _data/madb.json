@@ -433,6 +433,11 @@
             "title": "forkatz",
             "link": "https://github.com/Barbarisch/forkatz",
             "description": "Creds dump with SeTrustedCredmanAccessPrivilege"
+          },
+          {
+            "title": "community experiment. Dont use this for now unless it is for testing or submitting a PR.",
+            "link": "https://github.com/jfmaes/SharpRDPDump",
+            "description": "RDP creds dump"
           }
         ]
       },
