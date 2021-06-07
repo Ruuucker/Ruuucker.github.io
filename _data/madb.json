@@ -36,6 +36,11 @@
                 "title": "GitHub",
                 "link": "https://github.com/PowerShellMafia/PowerSploit",
                 "description": "PowerSploit"
+              },
+              {
+                "title": "SharpView",
+                "link": "https://github.com/tevora-threat/SharpView",
+                "description": "PowerView but Sharp"
               }
             ]
           },
