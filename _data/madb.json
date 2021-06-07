@@ -364,6 +364,11 @@
           {
             "title": "HoneyCreds",
             "link": "https://github.com/ben0xa/honeycreds"
+          },
+          {
+            "title": "DomainBorrowing",
+            "link": "https://github.com/Dliv3/DomainBorrowing",
+            "description": "DomainBorrowing"
           }
         ]
       },
