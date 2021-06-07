@@ -26,6 +26,11 @@
                 "title": "Misc-PowerShell",
                 "link": "https://github.com/jnqpblc/Misc-PowerShell",
                 "description": "Nice tools"
+              },
+              {
+                "title": "PowerShell MachineAccountQuota and DNS exploit tools",
+                "link": "https://github.com/Kevin-Robertson/Powermad",
+                "description": "Machine Account and DNS exploit"
               }
             ]
           },
