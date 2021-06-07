@@ -117,6 +117,11 @@
         "title": "GitHub",
         "link": "https://github.com/1d8/sedoppkit",
         "description": "Fun tools with several modules included SMS sending"
+      },
+      {
+        "title": "Lucifer",
+        "link": "https://github.com/Skiller9090/Lucifer",
+        "description": "Multi-tool"
       }
     ]
   },
