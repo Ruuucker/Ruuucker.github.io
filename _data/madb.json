@@ -132,6 +132,16 @@
         "title": "Lucifer",
         "link": "https://github.com/Skiller9090/Lucifer",
         "description": "Multi-tool"
+      },
+      {
+        "name": "scanners",
+        "subcategory": [
+          {
+            "title": "LEGION - Automatic Enumeration Tool",
+            "link": "https://github.com/carlospolop/legion",
+            "description": "HackTricks automate vuln scanner"
+          }
+        ]
       }
     ]
   },
