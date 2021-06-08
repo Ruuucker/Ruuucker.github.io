@@ -217,6 +217,11 @@
             "title": "GitHub",
             "link": "https://github.com/Dionach/NtdsAudit",
             "description": "Show statistic about accounts and passwords"
+          },
+          {
+            "title": "About BloodHound",
+            "link": "https://github.com/BloodHoundAD/BloodHound",
+            "description": "BloodHound"
           }
         ]
       }
