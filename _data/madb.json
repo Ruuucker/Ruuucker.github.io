@@ -521,5 +521,15 @@
         ]
       }
     ]
+  },
+  {
+    "name": "wifi",
+    "subcategory": [
+      {
+        "title": "zizzania",
+        "link": "https://github.com/cyrus-and/zizzania",
+        "description": "Great tool for capturing handshakes and de-auth attacks"
+      }
+    ]
   }
 ]
