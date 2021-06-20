@@ -301,6 +301,16 @@
             "description": "Self-learning defender, interesting stuff"
           }
         ]
+      },
+      {
+        "name": "report",
+        "subcategory": [
+          {
+            "title": "PwnDoc",
+            "link": "https://github.com/pwndoc/pwndoc",
+            "description": "Note and Report tool"
+          }
+        ]
       }
     ]
   },
