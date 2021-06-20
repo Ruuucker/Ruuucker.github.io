@@ -224,6 +224,11 @@
             "description": "BloodHound"
           }
         ]
+      },
+      {
+        "title": "🤔 What is this?",
+        "link": "https://github.com/bee-san/pyWhat",
+        "description": "Indentify everything, exe\\bin files, hashes, pcap dumps, strings - very useful"
       }
     ]
   },
