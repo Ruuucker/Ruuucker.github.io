@@ -142,6 +142,11 @@
             "description": "HackTricks automate vuln scanner"
           }
         ]
+      },
+      {
+        "title": "LEGION - Automatic Enumeration Tool",
+        "link": "https://github.com/carlospolop/legion.git",
+        "description": "Auto port based scanner to find vulners from hacktricks"
       }
     ]
   },
