@@ -309,6 +309,11 @@
             "title": "PwnDoc",
             "link": "https://github.com/pwndoc/pwndoc",
             "description": "Note and Report tool"
+          },
+          {
+            "title": "Serpico",
+            "link": "https://github.com/SerpicoProject/Serpico",
+            "description": "Note and Report tool"
           }
         ]
       }
