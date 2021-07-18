@@ -338,9 +338,6 @@
   {
     "name": "local",
     "subcategory": [
-      {
-        "name": "os",
-        "subcategory": [
           {
             "title": "vxunderground",
             "link": "https://github.com/vxunderground"
@@ -403,9 +400,7 @@
                 "description": "LPE and usefull stuff"
               }
             ]
-          }
-        ]
-      },
+          },
       {
         "name": "net",
         "subcategory": [
