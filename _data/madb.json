@@ -297,6 +297,11 @@
             "title": "CyberBattleSim",
             "link": "https://github.com/microsoft/CyberBattleSim",
             "description": "Self-learning defender, interesting stuff"
+          },
+          {
+            "title": "1. Capsulecorp Pentest",
+            "link": "https://github.com/R3dy/capsulecorp-pentest",
+            "description": "set up test lab"
           }
         ]
       },
