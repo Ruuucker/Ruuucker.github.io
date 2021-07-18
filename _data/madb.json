@@ -324,6 +324,11 @@
       {
         "title": "Chameleon",
         "link": "https://github.com/klezVirus/chameleon"
+      },
+      {
+        "title": "Invoke-Obfuscation v1.8",
+        "link": "https://github.com/danielbohannon/Invoke-Obfuscation",
+        "description": "Powershell objuscation"
       }
     ]
   },
