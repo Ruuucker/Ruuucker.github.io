@@ -581,6 +581,10 @@
             "description": "DomainBorrowing"
           }
         ]
+      },
+      {
+        "link": "https://github.com/aaaddress1/my-Little-Ransomware",
+        "description": "easy ransomware module based on csharp"
       }
     ]
   },
