@@ -405,6 +405,11 @@
             "title": "mimikittenz",
             "link": "https://github.com/orlyjamie/mimikittenz",
             "description": "Get info from memory"
+          },
+          {
+            "title": "Invoke-Vnc - a powershell VNC injector",
+            "link": "https://github.com/klsecservices/Invoke-Vnc",
+            "description": "powershell VNC in memory inject"
           }
         ]
       },
