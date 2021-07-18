@@ -186,6 +186,11 @@
           {
             "title": "HOOKSHOT",
             "link": "https://github.com/andrew-vii/hookshot"
+          },
+          {
+            "title": "HOOKSHOT",
+            "link": "https://github.com/andrew-vii/hookshot",
+            "description": "Automate cwarl site for emails and accounts"
           }
         ]
       },
