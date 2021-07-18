@@ -542,6 +542,11 @@
             "title": "Blackbone",
             "link": "https://github.com/DarthTon/Blackbone",
             "description": "Memory Hijack lib"
+          },
+          {
+            "title": "Mapping-Injection",
+            "link": "https://github.com/antonioCoco/Mapping-Injection",
+            "description": "another windows process injection"
           }
         ]
       },
