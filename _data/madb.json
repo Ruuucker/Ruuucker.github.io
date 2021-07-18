@@ -562,6 +562,11 @@
             "title": "Mapping-Injection",
             "link": "https://github.com/antonioCoco/Mapping-Injection",
             "description": "another windows process injection"
+          },
+          {
+            "title": "BypassUAC",
+            "link": "https://github.com/diegslva/BypassUAC",
+            "description": "UAC bypass"
           }
         ]
       },
