@@ -254,6 +254,11 @@
             "title": "Invoke-ACLpwn",
             "link": "https://github.com/fox-it/Invoke-ACLPwn",
             "description": "ACL attack in AD"
+          },
+          {
+            "title": "Active Directory Integrated DNS dump tool",
+            "link": "https://github.com/dirkjanm/adidnsdump",
+            "description": "Dump AD dns records"
           }
         ]
       },
