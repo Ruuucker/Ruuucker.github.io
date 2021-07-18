@@ -141,6 +141,10 @@
       {
         "title": "Infrastructure",
         "link": "https://github.com/purabparihar/Infrastructure-Pentesting-Checklist/blob/main/Infrastructure_Penetration_Testing_Checklist.pdf"
+      },
+      {
+        "title": "What is ired.team?",
+        "link": "https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques"
       }
     ]
   },
