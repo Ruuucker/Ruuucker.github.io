@@ -196,11 +196,6 @@
         "description": "Recon everything"
       },
       {
-        "title": "GitHub",
-        "link": "https://github.com/pantyusha/nesca",
-        "description": "Scan Internet"
-      },
-      {
         "name": "ad",
         "subcategory": [
           {
@@ -232,7 +227,12 @@
             "title": "LEGION - Automatic Enumeration Tool",
             "link": "https://github.com/carlospolop/legion.git",
             "description": "Auto port based scanner to find vulners from hacktricks"
-          }
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/pantyusha/nesca",
+            "description": "Scan Internet"
+          },
         ]
       }
     ]
