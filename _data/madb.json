@@ -83,6 +83,10 @@
                 "title": "0 to 0.9",
                 "link": "https://zer1t0.gitlab.io/posts/attacking_ad/",
                 "description": "EVERYTHING you need to pwn AD"
+              },
+              {
+                "title": "Abusing Kerberos Resource-Based Constrained Delegation",
+                "link": "https://github.com/tothi/rbcd-attack"
               }
             ]
           },
