@@ -387,6 +387,11 @@
         "title": "Introduction",
         "link": "https://github.com/AnErrupTion/LoGiC.NET",
         "description": ".net obfuscator"
+      },
+      {
+        "title": "Phant0m | Windows Event Log Killer",
+        "link": "https://github.com/hlldz/Phant0m",
+        "description": "Windows Event Log Killer"
       }
     ]
   },
