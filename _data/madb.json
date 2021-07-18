@@ -499,6 +499,10 @@
                 "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
                 "link": "https://github.com/carlospolop/PEASS-ng",
                 "description": "LinPEAS"
+              },
+              {
+                "title": "emp3r0r",
+                "link": "https://github.com/jm33-m0/emp3r0r"
               }
             ]
           },
