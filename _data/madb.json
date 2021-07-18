@@ -680,6 +680,11 @@
             "title": "GitHub",
             "link": "https://github.com/HiwinCN/HTran",
             "description": "Proxy bouncer for c2 traffic"
+          },
+          {
+            "title": "Koadic",
+            "link": "https://github.com/zerosum0x0/koadic",
+            "description": "Living Off The Land c2"
           }
         ]
       }
