@@ -531,6 +531,11 @@
           {
             "link": "https://github.com/TsudaKageyu/minhook",
             "description": "API hooking library"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hfiref0x/VMDE",
+            "description": "Virtual Machine Detection"
           }
         ]
       },
