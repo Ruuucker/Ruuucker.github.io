@@ -111,6 +111,11 @@
                 "title": "SpoolSample -> NetNTLMv1 -> NTLM -> Silver Ticket",
                 "link": "https://github.com/NotMedic/NetNTLMtoSilverTicket",
                 "description": "NetNTLM to Silver Ticket"
+              },
+              {
+                "title": "DeathStar",
+                "link": "https://github.com/byt3bl33d3r/DeathStar",
+                "description": "automate gain of domain admin and uses powersploit"
               }
             ]
           },
