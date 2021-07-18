@@ -101,6 +101,11 @@
                 "title": "Introduction",
                 "link": "https://github.com/sensepost/ruler",
                 "description": "Exchange pwn tool"
+              },
+              {
+                "title": "About BloodHound",
+                "link": "https://github.com/BloodHoundAD/BloodHound",
+                "description": "BloodHound"
               }
             ]
           },
