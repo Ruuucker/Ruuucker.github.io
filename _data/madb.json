@@ -522,6 +522,10 @@
             "title": "The LaZagne Project !!!",
             "link": "https://github.com/AlessandroZ/LaZagne",
             "description": "Creds dump"
+          },
+          {
+            "link": "https://github.com/TsudaKageyu/minhook",
+            "description": "API hooking library"
           }
         ]
       },
