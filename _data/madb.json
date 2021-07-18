@@ -541,6 +541,11 @@
             "title": "GitHub",
             "link": "https://github.com/outflanknl/Dumpert",
             "description": "Dump lsass with direct WinAPI calls bypassing EDR and API hooking"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/stephenfewer/ReflectiveDLLInjection",
+            "description": "Reflect DLL injection"
           }
         ]
       },
