@@ -685,6 +685,11 @@
             "title": "Koadic",
             "link": "https://github.com/zerosum0x0/koadic",
             "description": "Living Off The Land c2"
+          },
+          {
+            "title": "Quasar",
+            "link": "https://github.com/quasar/Quasar",
+            "description": "Remote Admin tool"
           }
         ]
       }
