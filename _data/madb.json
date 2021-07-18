@@ -513,6 +513,10 @@
           {
             "title": "GitHub",
             "link": "https://github.com/twelvesec/passcat"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/PowerShellMafia/PowerSploit"
           }
         ]
       },
