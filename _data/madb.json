@@ -701,6 +701,11 @@
             "title": "community experiment. Dont use this for now unless it is for testing or submitting a PR.",
             "link": "https://github.com/jfmaes/SharpRDPDump",
             "description": "RDP creds dump"
+          },
+          {
+            "title": "SharpSploit",
+            "link": "https://github.com/cobbr/SharpSploit",
+            "description": "SharpSploit"
           }
         ]
       },
