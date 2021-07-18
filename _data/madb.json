@@ -420,6 +420,11 @@
                 "description": "LinPEAS"
               }
             ]
+          },
+          {
+            "title": "MimiPenguin 2.0",
+            "link": "https://github.com/huntergregal/mimipenguin",
+            "description": "Get creds from current user session"
           }
         ]
       },
