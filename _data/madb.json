@@ -235,6 +235,11 @@
             "description": "Docket, Kubernetes and other contenters scanner"
           }
         ]
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/odedshimon/BruteShark",
+        "description": "writes network diagrams and extract NTLM\\Kerberos tickets from pcap"
       }
     ]
   },
