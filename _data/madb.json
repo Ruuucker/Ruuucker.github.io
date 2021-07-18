@@ -420,6 +420,11 @@
             "title": "Invoke-Vnc - a powershell VNC injector",
             "link": "https://github.com/klsecservices/Invoke-Vnc",
             "description": "powershell VNC in memory inject"
+          },
+          {
+            "title": "RID Hijacking: Maintaining Access on Windows Machines",
+            "link": "https://github.com/r4wd3r/RID-Hijacking",
+            "description": "RID persistance"
           }
         ]
       },
