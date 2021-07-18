@@ -50,6 +50,11 @@
               {
                 "title": "GitHub",
                 "link": "https://github.com/xorrior/RandomPS-Scripts"
+              },
+              {
+                "title": "Invoke-TheHash",
+                "link": "https://github.com/Kevin-Robertson/Invoke-TheHash",
+                "description": "Pass the Hash from powershell"
               }
             ]
           },
@@ -182,10 +187,6 @@
                 "description": "Scan window's 137 udp to get interfaces and hostname"
               }
             ]
-          },
-          {
-            "title": "HOOKSHOT",
-            "link": "https://github.com/andrew-vii/hookshot"
           },
           {
             "title": "HOOKSHOT",
