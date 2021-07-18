@@ -510,6 +510,11 @@
               {
                 "title": "WinPwn",
                 "link": "https://github.com/S3cur3Th1sSh1t/WinPwn"
+              },
+              {
+                "title": "GitHub",
+                "link": "https://github.com/rootm0s/WinPwnage",
+                "description": "UAC bypass, Elevate, Persistence methods "
               }
             ]
           },
