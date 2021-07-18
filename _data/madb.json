@@ -316,6 +316,10 @@
         "title": "How to bypass Defender in a few easy steps",
         "link": "https://arty-hlr.com/blog/2021/05/06/how-to-bypass-defender/",
         "description": "Bypassing Win Defender"
+      },
+      {
+        "title": "Chameleon",
+        "link": "https://github.com/klezVirus/chameleon"
       }
     ]
   },
