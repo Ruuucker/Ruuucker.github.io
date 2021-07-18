@@ -45,21 +45,6 @@
             ]
           },
           {
-            "name": "payload",
-            "subcategory": [
-              {
-                "title": "charlotte",
-                "link": "https://github.com/9emin1/charlotte",
-                "description": "Undetected shellcode, could use with meterpreter"
-              },
-              {
-                "title": "How to bypass Defender in a few easy steps",
-                "link": "https://arty-hlr.com/blog/2021/05/06/how-to-bypass-defender/",
-                "description": "Bypassing Win Defender"
-              }
-            ]
-          },
-          {
             "title": "What is Impacket?",
             "link": "https://github.com/SecureAuthCorp/impacket"
           },
@@ -78,14 +63,9 @@
             "description": "LNK user-action payload"
           },
           {
-            "name": "net",
-            "subcategory": [
-              {
                 "title": "SharpSpray",
                 "link": "https://github.com/jnqpblc/SharpSpray",
                 "description": "Pass Spray against all Domain users"
-              }
-            ]
           },
           {
             "name": "ad",
@@ -318,6 +298,21 @@
           }
         ]
       }
+    ]
+  },
+  {
+    "name": "evasion",
+    "subcategory": [
+                    {
+                "title": "charlotte",
+                "link": "https://github.com/9emin1/charlotte",
+                "description": "Undetected shellcode, could use with meterpreter"
+              },
+              {
+                "title": "How to bypass Defender in a few easy steps",
+                "link": "https://arty-hlr.com/blog/2021/05/06/how-to-bypass-defender/",
+                "description": "Bypassing Win Defender"
+              }
     ]
   },
   {
