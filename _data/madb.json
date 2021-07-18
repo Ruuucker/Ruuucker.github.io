@@ -402,6 +402,16 @@
             "title": "GTFOBins",
             "link": "https://gtfobins.github.io/",
             "description": "LPE and usefull stuff"
+          },
+          {
+            "name": "lpe",
+            "subcategory": [
+              {
+                "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
+                "link": "https://github.com/carlospolop/PEASS-ng",
+                "description": "LinPEAS"
+              }
+            ]
           }
         ]
       },
