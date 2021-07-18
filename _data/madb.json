@@ -434,6 +434,11 @@
             "title": "RID Hijacking: Maintaining Access on Windows Machines",
             "link": "https://github.com/r4wd3r/RID-Hijacking",
             "description": "RID persistance"
+          },
+          {
+            "title": "Injector",
+            "link": "https://github.com/0xDivyanshu/Injector",
+            "description": "process injection tech things"
           }
         ]
       },
@@ -509,7 +514,7 @@
             "description": "Bypass UAC"
           },
           {
-            "title": "Description",
+            "title": "NetRipper",
             "link": "https://github.com/NytroRST/NetRipper"
           },
           {
