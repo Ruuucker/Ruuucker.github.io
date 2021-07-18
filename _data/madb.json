@@ -471,6 +471,10 @@
                 "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
                 "link": "https://github.com/carlospolop/PEASS-ng",
                 "description": "WinPEAS"
+              },
+              {
+                "title": "WinPwn",
+                "link": "https://github.com/S3cur3Th1sSh1t/WinPwn"
               }
             ]
           },
