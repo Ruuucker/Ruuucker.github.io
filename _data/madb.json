@@ -458,6 +458,9 @@
             "title": "Invoker",
             "link": "https://github.com/ivan-sincek/invoker",
             "description": "Red Team injection and process and other things tool"
+          },
+          {
+            "link": "https://github.com/S3cur3Th1sSh1t/SharpImpersonation"
           }
         ]
       },
