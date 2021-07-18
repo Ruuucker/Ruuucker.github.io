@@ -41,6 +41,11 @@
                 "title": "SharpView",
                 "link": "https://github.com/tevora-threat/SharpView",
                 "description": "PowerView but Sharp"
+              },
+              {
+                "title": "SessionGopher",
+                "link": "https://github.com/Arvanaghi/SessionGopher",
+                "description": "Powershell script extracts saved session remote or localy"
               }
             ]
           },
