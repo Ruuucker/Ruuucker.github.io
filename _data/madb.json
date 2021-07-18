@@ -115,7 +115,7 @@
               {
                 "title": "DeathStar",
                 "link": "https://github.com/byt3bl33d3r/DeathStar",
-                "description": "automate gain of domain admin and uses powersploit"
+                "description": "automate gain of domain admin and uses Empire"
               }
             ]
           },
@@ -127,6 +127,11 @@
           {
             "title": "Sharp-Suite",
             "link": "https://github.com/FuzzySecurity/Sharp-Suite"
+          },
+          {
+            "title": "CrackMapExec",
+            "link": "https://github.com/byt3bl33d3r/CrackMapExec/",
+            "description": "crackmapexec"
           }
         ]
       },
