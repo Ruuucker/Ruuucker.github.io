@@ -229,6 +229,10 @@
             "title": "GitHub",
             "link": "https://github.com/pantyusha/nesca",
             "description": "Scan Internet"
+          },
+          {
+            "link": "https://github.com/R3dy/capsulecorp-pentest",
+            "description": "Docket, Kubernetes and other contenters scanner"
           }
         ]
       }
