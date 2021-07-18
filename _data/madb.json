@@ -604,10 +604,16 @@
             "title": "GitHub",
             "link": "https://github.com/bettercap/bettercap",
             "description": "bettercap spoofing"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/fox-it/mitm6",
+            "description": "IPv6 spoofing"
           }
         ]
       },
       {
+        "title": "my-Little-Ransomware",
         "link": "https://github.com/aaaddress1/my-Little-Ransomware",
         "description": "easy ransomware module based on csharp"
       }
