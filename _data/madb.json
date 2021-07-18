@@ -139,16 +139,6 @@
     "name": "recon",
     "subcategory": [
       {
-        "name": "scanners",
-        "subcategory": [
-          {
-            "title": "LEGION - Automatic Enumeration Tool",
-            "link": "https://github.com/carlospolop/legion",
-            "description": "HackTricks automate vuln scanner"
-          }
-        ],
-
-
         "name": "net",
         "subcategory": [
           {
@@ -234,6 +224,16 @@
         "title": "🤔 What is this?",
         "link": "https://github.com/bee-san/pyWhat",
         "description": "Indentify everything, exe\\bin files, hashes, pcap dumps, strings - very useful"
+      },
+      {
+        "name": "scanners",
+        "subcategory": [
+          {
+            "title": "LEGION - Automatic Enumeration Tool",
+            "link": "https://github.com/carlospolop/legion.git",
+            "description": "Auto port based scanner to find vulners from hacktricks"
+          }
+        ]
       }
     ]
   },
