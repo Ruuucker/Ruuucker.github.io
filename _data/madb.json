@@ -87,6 +87,10 @@
               {
                 "title": "Abusing Kerberos Resource-Based Constrained Delegation",
                 "link": "https://github.com/tothi/rbcd-attack"
+              },
+              {
+                "title": "GoFetch",
+                "link": "https://github.com/GoFetchAD/GoFetch"
               }
             ]
           },
