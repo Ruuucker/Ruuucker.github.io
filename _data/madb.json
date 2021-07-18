@@ -264,6 +264,7 @@
                 "link": "https://github.com/MHaggis/sysmon-dfir"
               },
               {
+                "title": "Sysmon - malwarearchaeology",
                 "link": "https://www.malwarearchaeology.com/cheat-sheets"
               },
               {
@@ -331,15 +332,6 @@
         "title": "A skidalicious cheat sheet of webapp exploitation techniques",
         "link": "https://blog.oxagast.org/posts/skidalicious-webapp-exploit-cheat-sheet/",
         "description": "Web Checklist"
-      },
-      {
-        "name": "recon",
-        "subcategory": [
-          {
-            "title": "versionshaker",
-            "link": "https://github.com/Orange-Cyberdefense/versionshaker"
-          }
-        ]
       }
     ]
   },
