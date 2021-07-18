@@ -489,19 +489,9 @@
             ]
           },
           {
-            "title": "mimikittenz",
-            "link": "https://github.com/orlyjamie/mimikittenz",
-            "description": "Get info from memory"
-          },
-          {
             "title": "Invoke-Vnc - a powershell VNC injector",
             "link": "https://github.com/klsecservices/Invoke-Vnc",
             "description": "powershell VNC in memory inject"
-          },
-          {
-            "title": "RID Hijacking: Maintaining Access on Windows Machines",
-            "link": "https://github.com/r4wd3r/RID-Hijacking",
-            "description": "RID persistance"
           },
           {
             "title": "Injector",
@@ -519,25 +509,6 @@
             "description": "A User Impersonation tool - via Token or Shellcode injection"
           },
           {
-            "title": "passcat",
-            "link": "https://github.com/twelvesec/passcat",
-            "description": "Password dump tool from local machine"
-          },
-          {
-            "title": "The LaZagne Project !!!",
-            "link": "https://github.com/AlessandroZ/LaZagne",
-            "description": "Creds dump"
-          },
-          {
-            "link": "https://github.com/TsudaKageyu/minhook",
-            "description": "API hooking library"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/hfiref0x/VMDE",
-            "description": "Virtual Machine Detection"
-          },
-          {
             "title": "GitHub",
             "link": "https://github.com/outflanknl/Dumpert",
             "description": "Dump lsass with direct WinAPI calls bypassing EDR and API hooking"
@@ -546,6 +517,11 @@
             "title": "GitHub",
             "link": "https://github.com/stephenfewer/ReflectiveDLLInjection",
             "description": "Reflect DLL injection"
+          },
+          {
+            "title": "MemoryModule",
+            "link": "https://github.com/fancycode/MemoryModule",
+            "description": "Memory DLL loading"
           }
         ]
       },
@@ -618,6 +594,25 @@
       {
         "name": "windows",
         "subcategory": [
+          {
+            "link": "https://github.com/TsudaKageyu/minhook",
+            "description": "API hooking library"
+          },
+          {
+            "title": "mimikittenz",
+            "link": "https://github.com/orlyjamie/mimikittenz",
+            "description": "Get info from memory"
+          },
+          {
+            "title": "RID Hijacking: Maintaining Access on Windows Machines",
+            "link": "https://github.com/r4wd3r/RID-Hijacking",
+            "description": "RID persistance"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hfiref0x/VMDE",
+            "description": "Virtual Machine Detection"
+          },
           {
             "title": "offensiveph",
             "link": "https://github.com/RedSection/OffensivePH",
