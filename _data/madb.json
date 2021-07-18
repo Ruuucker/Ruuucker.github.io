@@ -400,6 +400,11 @@
                 "description": "WinPEAS"
               }
             ]
+          },
+          {
+            "title": "mimikittenz",
+            "link": "https://github.com/orlyjamie/mimikittenz",
+            "description": "Get info from memory"
           }
         ]
       },
