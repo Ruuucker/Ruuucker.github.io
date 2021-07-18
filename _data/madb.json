@@ -536,6 +536,11 @@
             "title": "GitHub",
             "link": "https://github.com/hfiref0x/VMDE",
             "description": "Virtual Machine Detection"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/outflanknl/Dumpert",
+            "description": "Dump lsass with direct WinAPI calls bypassing EDR and API hooking"
           }
         ]
       },
