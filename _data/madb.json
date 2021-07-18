@@ -296,6 +296,11 @@
         "title": "BruteShark",
         "link": "https://github.com/odedshimon/BruteShark",
         "description": "writes network diagrams and extract NTLM\\Kerberos tickets from pcap"
+      },
+      {
+        "title": "Recog: A Recognition Framework",
+        "link": "https://github.com/rapid7/recog/",
+        "description": "Recon everything"
       }
     ]
   },
