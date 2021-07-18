@@ -63,9 +63,9 @@
             "description": "LNK user-action payload"
           },
           {
-                "title": "SharpSpray",
-                "link": "https://github.com/jnqpblc/SharpSpray",
-                "description": "Pass Spray against all Domain users"
+            "title": "SharpSpray",
+            "link": "https://github.com/jnqpblc/SharpSpray",
+            "description": "Pass Spray against all Domain users"
           },
           {
             "name": "ad",
@@ -158,6 +158,10 @@
           {
             "title": "The Recon-ng Framework",
             "link": "https://github.com/lanmaster53/recon-ng"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/sundowndev/PhoneInfoga"
           }
         ]
       },
@@ -212,7 +216,7 @@
             "title": "GitHub",
             "link": "https://github.com/pantyusha/nesca",
             "description": "Scan Internet"
-          },
+          }
         ]
       }
     ]
@@ -303,16 +307,16 @@
   {
     "name": "evasion",
     "subcategory": [
-                    {
-                "title": "charlotte",
-                "link": "https://github.com/9emin1/charlotte",
-                "description": "Undetected shellcode, could use with meterpreter"
-              },
-              {
-                "title": "How to bypass Defender in a few easy steps",
-                "link": "https://arty-hlr.com/blog/2021/05/06/how-to-bypass-defender/",
-                "description": "Bypassing Win Defender"
-              }
+      {
+        "title": "charlotte",
+        "link": "https://github.com/9emin1/charlotte",
+        "description": "Undetected shellcode, could use with meterpreter"
+      },
+      {
+        "title": "How to bypass Defender in a few easy steps",
+        "link": "https://arty-hlr.com/blog/2021/05/06/how-to-bypass-defender/",
+        "description": "Bypassing Win Defender"
+      }
     ]
   },
   {
@@ -333,69 +337,69 @@
   {
     "name": "local",
     "subcategory": [
+      {
+        "title": "vxunderground",
+        "link": "https://github.com/vxunderground"
+      },
+      {
+        "title": "tmp.0ut",
+        "link": "https://tmpout.sh/1/"
+      },
+      {
+        "name": "windows",
+        "subcategory": [
           {
-            "title": "vxunderground",
-            "link": "https://github.com/vxunderground"
+            "title": "LOLBAS",
+            "link": "https://lolbas-project.github.io/",
+            "description": "Everyfind you need when u live off the land"
           },
           {
-            "title": "tmp.0ut",
-            "link": "https://tmpout.sh/1/"
+            "title": "GitHub",
+            "link": "https://github.com/PowerShellMafia/PowerSploit",
+            "description": "Windows PostExp"
           },
           {
-            "name": "windows",
+            "title": "powercat",
+            "link": "https://github.com/besimorhino/powercat",
+            "description": "NetCat for windows"
+          },
+          {
+            "name": "edr",
             "subcategory": [
-              {
-                "title": "LOLBAS",
-                "link": "https://lolbas-project.github.io/",
-                "description": "Everyfind you need when u live off the land"
-              },
-              {
-                "title": "GitHub",
-                "link": "https://github.com/PowerShellMafia/PowerSploit",
-                "description": "Windows PostExp"
-              },
-              {
-                "title": "powercat",
-                "link": "https://github.com/besimorhino/powercat",
-                "description": "NetCat for windows"
-              },
-              {
-              "name": "edr",
-              "subcategory": [
               {
                 "title": "GitHub",
                 "link": "https://github.com/Mr-Un1k0d3r/EDRs",
                 "description": "Info about EDRs"
               }
-              ]
-              },
+            ]
+          },
+          {
+            "name": "lpe",
+            "subcategory": [
               {
-                "name": "lpe",
+                "name": "potatos",
                 "subcategory": [
                   {
-                    "name": "potatos",
-                    "subcategory": [
-                      {
-                        "title": "RoguePotato",
-                        "link": "https://github.com/antonioCoco/RoguePotato",
-                        "description": "Another Potato"
-                      }
-                    ]
+                    "title": "RoguePotato",
+                    "link": "https://github.com/antonioCoco/RoguePotato",
+                    "description": "Another Potato"
                   }
                 ]
               }
             ]
-          },
+          }
+        ]
+      },
+      {
+        "name": "linux",
+        "subcategory": [
           {
-            "name": "linux",
-            "subcategory": [
-              {
-                "title": "GTFOBins",
-                "link": "https://gtfobins.github.io/",
-                "description": "LPE and usefull stuff"
-              }
-            ]
-          },
+            "title": "GTFOBins",
+            "link": "https://gtfobins.github.io/",
+            "description": "LPE and usefull stuff"
+          }
+        ]
+      },
       {
         "name": "net",
         "subcategory": [
@@ -423,7 +427,7 @@
             "description": "DomainBorrowing"
           }
         ]
-      },
+      }
     ]
   },
   {
