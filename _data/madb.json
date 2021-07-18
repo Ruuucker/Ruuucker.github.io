@@ -555,6 +555,11 @@
           {
             "title": "BlackMamba",
             "link": "https://github.com/loseys/BlackMamba"
+          },
+          {
+            "title": "Koadic",
+            "link": "https://github.com/zerosum0x0/koadic",
+            "description": "koadic"
           }
         ]
       }
