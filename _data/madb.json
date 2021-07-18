@@ -182,6 +182,10 @@
                 "description": "Scan window's 137 udp to get interfaces and hostname"
               }
             ]
+          },
+          {
+            "title": "HOOKSHOT",
+            "link": "https://github.com/andrew-vii/hookshot"
           }
         ]
       },
