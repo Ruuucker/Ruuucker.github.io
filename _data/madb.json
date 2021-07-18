@@ -522,6 +522,11 @@
             "title": "MemoryModule",
             "link": "https://github.com/fancycode/MemoryModule",
             "description": "Memory DLL loading"
+          },
+          {
+            "title": "Blackbone",
+            "link": "https://github.com/DarthTon/Blackbone",
+            "description": "Memory Hijack lib"
           }
         ]
       },
