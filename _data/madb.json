@@ -338,6 +338,11 @@
         "title": "Invoke-Obfuscation v1.8",
         "link": "https://github.com/danielbohannon/Invoke-Obfuscation",
         "description": "Powershell objuscation"
+      },
+      {
+        "title": "Introduction",
+        "link": "https://github.com/AnErrupTion/LoGiC.NET",
+        "description": ".net obfuscator"
       }
     ]
   },
