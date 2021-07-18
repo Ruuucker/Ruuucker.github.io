@@ -48,7 +48,7 @@
                 "description": "Powershell script extracts saved session remote or localy"
               },
               {
-                "title": "GitHub",
+                "title": "RandomPS-Scripts",
                 "link": "https://github.com/xorrior/RandomPS-Scripts"
               },
               {
@@ -99,7 +99,8 @@
               },
               {
                 "title": "Introduction",
-                "link": "https://github.com/sensepost/ruler"
+                "link": "https://github.com/sensepost/ruler",
+                "description": "Exchange pwn tool"
               }
             ]
           },
@@ -207,7 +208,7 @@
             "link": "https://github.com/lanmaster53/recon-ng"
           },
           {
-            "title": "GitHub",
+            "title": "PhoneInfoga",
             "link": "https://github.com/sundowndev/PhoneInfoga"
           }
         ]
@@ -216,7 +217,7 @@
         "name": "all-in-one",
         "subcategory": [
           {
-            "title": "GitHub",
+            "title": "DivideAndScan",
             "link": "https://github.com/snovvcrash/DivideAndScan"
           }
         ]
@@ -230,7 +231,7 @@
         "name": "ad",
         "subcategory": [
           {
-            "title": "GitHub",
+            "title": "NtdsAudit",
             "link": "https://github.com/Dionach/NtdsAudit",
             "description": "Show statistic about accounts and passwords"
           },
@@ -260,11 +261,12 @@
             "description": "Auto port based scanner to find vulners from hacktricks"
           },
           {
-            "title": "GitHub",
+            "title": "nesca",
             "link": "https://github.com/pantyusha/nesca",
             "description": "Scan Internet"
           },
           {
+            "title": "capsulecorp-pentest",
             "link": "https://github.com/R3dy/capsulecorp-pentest",
             "description": "Docket, Kubernetes and other contenters scanner"
           },
@@ -276,7 +278,7 @@
         ]
       },
       {
-        "title": "GitHub",
+        "title": "BruteShark",
         "link": "https://github.com/odedshimon/BruteShark",
         "description": "writes network diagrams and extract NTLM\\Kerberos tickets from pcap"
       }
@@ -439,11 +441,6 @@
             "description": "Everyfind you need when u live off the land"
           },
           {
-            "title": "GitHub",
-            "link": "https://github.com/PowerShellMafia/PowerSploit",
-            "description": "Windows PostExp"
-          },
-          {
             "title": "powercat",
             "link": "https://github.com/besimorhino/powercat",
             "description": "NetCat for windows"
@@ -452,7 +449,7 @@
             "name": "edr",
             "subcategory": [
               {
-                "title": "GitHub",
+                "title": "EDRs",
                 "link": "https://github.com/Mr-Un1k0d3r/EDRs",
                 "description": "Info about EDRs"
               }
@@ -470,6 +467,7 @@
                     "description": "Another Potato"
                   },
                   {
+                    "title": "JuicyPotato",
                     "link": "https://github.com/ohpe/juicy-potato"
                   }
                 ]
@@ -511,15 +509,19 @@
             "description": "Red Team injection and process and other things tool"
           },
           {
-            "link": "https://github.com/S3cur3Th1sSh1t/SharpImpersonation"
+            "title": "SharpImpersonation",
+            "link": "https://github.com/S3cur3Th1sSh1t/SharpImpersonation",
+            "description": "A User Impersonation tool - via Token or Shellcode injection"
           },
           {
-            "title": "GitHub",
-            "link": "https://github.com/twelvesec/passcat"
+            "title": "passcat",
+            "link": "https://github.com/twelvesec/passcat",
+            "description": "Password dump tool from local machine"
           },
           {
-            "title": "GitHub",
-            "link": "https://github.com/PowerShellMafia/PowerSploit"
+            "title": "The LaZagne Project !!!",
+            "link": "https://github.com/AlessandroZ/LaZagne",
+            "description": "Creds dump"
           }
         ]
       },
