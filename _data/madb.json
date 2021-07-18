@@ -363,6 +363,21 @@
                 "description": "Windows PostExp"
               },
               {
+                "title": "powercat",
+                "link": "https://github.com/besimorhino/powercat",
+                "description": "NetCat for windows"
+              },
+              {
+              "name": "edr",
+              "subcategory": [
+              {
+                "title": "GitHub",
+                "link": "https://github.com/Mr-Un1k0d3r/EDRs",
+                "description": "Info about EDRs"
+              }
+              ]
+              },
+              {
                 "name": "lpe",
                 "subcategory": [
                   {
@@ -405,16 +420,6 @@
             ]
           },
           {
-            "name": "windows",
-            "subcategory": [
-              {
-                "title": "powercat",
-                "link": "https://github.com/besimorhino/powercat",
-                "description": "NetCat for windows"
-              }
-            ]
-          },
-          {
             "title": "Responder/MultiRelay",
             "link": "https://github.com/lgandx/Responder"
           },
@@ -429,21 +434,6 @@
           }
         ]
       },
-      {
-        "name": "windows",
-        "subcategory": [
-          {
-            "name": "edr",
-            "subcategory": [
-              {
-                "title": "GitHub",
-                "link": "https://github.com/Mr-Un1k0d3r/EDRs",
-                "description": "Info about EDRs"
-              }
-            ]
-          }
-        ]
-      }
     ]
   },
   {
