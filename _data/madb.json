@@ -652,6 +652,11 @@
             "title": "Koadic",
             "link": "https://github.com/zerosum0x0/koadic",
             "description": "koadic"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/HiwinCN/HTran",
+            "description": "Proxy bouncer for c2 traffic"
           }
         ]
       }
