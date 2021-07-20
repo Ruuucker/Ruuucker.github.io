@@ -132,6 +132,11 @@
             "title": "CrackMapExec",
             "link": "https://github.com/byt3bl33d3r/CrackMapExec/",
             "description": "crackmapexec"
+          },
+          {
+            "title": "PetitPotam",
+            "link": "https://github.com/topotam/PetitPotam",
+            "description": "Lateral Movement Interesting Techic PoC"
           }
         ]
       },
