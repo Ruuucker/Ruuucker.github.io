@@ -142,6 +142,11 @@
             "title": "Beaconator",
             "link": "https://github.com/capt-meelo/Beaconator",
             "description": "Cobalt Strike generator"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/med0x2e/NET-Assembly-Inject-Remote",
+            "description": "Process Inject .NET"
           }
         ]
       },
