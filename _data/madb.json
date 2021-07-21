@@ -582,6 +582,11 @@
             "title": "BypassUAC",
             "link": "https://github.com/diegslva/BypassUAC",
             "description": "UAC bypass"
+          },
+          {
+            "title": "Empire",
+            "link": "https://github.com/BC-SECURITY/Empire",
+            "description": "Post Exp Framework, agents on pure powershell"
           }
         ]
       },
