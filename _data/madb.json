@@ -820,6 +820,11 @@
             "title": "Quasar",
             "link": "https://github.com/quasar/Quasar",
             "description": "Remote Admin tool"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/SpiderLabs/DoHC2",
+            "description": "DNS over HTTPS c2"
           }
         ]
       }
