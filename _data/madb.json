@@ -597,6 +597,11 @@
             "title": "DueDLLigence",
             "link": "https://github.com/fireeye/DueDLLigence",
             "description": "DLL side loading"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/TheWover/donut",
+            "description": "ShellCode generation"
           }
         ]
       },
