@@ -602,6 +602,11 @@
             "title": "GitHub",
             "link": "https://github.com/TheWover/donut",
             "description": "ShellCode generation"
+          },
+          {
+            "title": "RuralBishop",
+            "link": "https://github.com/rasta-mouse/RuralBishop",
+            "description": "ShellCode generation"
           }
         ]
       },
