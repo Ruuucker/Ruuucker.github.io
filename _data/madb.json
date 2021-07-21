@@ -592,6 +592,11 @@
             "title": "SafetyKatz",
             "link": "https://github.com/GhostPack/SafetyKatz",
             "description": "A bit modified mimikatz"
+          },
+          {
+            "title": "DueDLLigence",
+            "link": "https://github.com/fireeye/DueDLLigence",
+            "description": "DLL side loading"
           }
         ]
       },
