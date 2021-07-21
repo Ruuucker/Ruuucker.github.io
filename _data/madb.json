@@ -137,6 +137,11 @@
             "title": "PetitPotam",
             "link": "https://github.com/topotam/PetitPotam",
             "description": "Lateral Movement Interesting Techic PoC"
+          },
+          {
+            "title": "Beaconator",
+            "link": "https://github.com/capt-meelo/Beaconator",
+            "description": "Cobalt Strike generator"
           }
         ]
       },
