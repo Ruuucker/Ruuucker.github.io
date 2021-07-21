@@ -587,6 +587,11 @@
             "title": "Empire",
             "link": "https://github.com/BC-SECURITY/Empire",
             "description": "Post Exp Framework, agents on pure powershell"
+          },
+          {
+            "title": "SafetyKatz",
+            "link": "https://github.com/GhostPack/SafetyKatz",
+            "description": "A bit modified mimikatz"
           }
         ]
       },
