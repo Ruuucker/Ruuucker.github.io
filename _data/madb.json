@@ -443,6 +443,11 @@
         "title": "Phant0m | Windows Event Log Killer",
         "link": "https://github.com/hlldz/Phant0m",
         "description": "Windows Event Log Killer"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/med0x2e/NoAmci",
+        "description": "AMSI bypass"
       }
     ]
   },
