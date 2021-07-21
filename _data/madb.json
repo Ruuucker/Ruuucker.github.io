@@ -525,6 +525,11 @@
                 "title": "GitHub",
                 "link": "https://github.com/rootm0s/WinPwnage",
                 "description": "UAC bypass, Elevate, Persistence methods "
+              },
+              {
+                "title": "HiveNightmare",
+                "link": "https://github.com/GossiTheDog/HiveNightmare",
+                "description": "LPE via incorrect SAM reading permission"
               }
             ]
           },
