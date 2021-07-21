@@ -617,6 +617,11 @@
             "title": "RuralBishop",
             "link": "https://github.com/rasta-mouse/RuralBishop",
             "description": "ShellCode generation"
+          },
+          {
+            "title": "Seatbelt",
+            "link": "https://github.com/GhostPack/Seatbelt",
+            "description": "C# sec checks"
           }
         ]
       },
