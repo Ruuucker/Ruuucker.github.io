@@ -262,6 +262,11 @@
             "title": "webanalyze",
             "link": "https://github.com/rverton/webanalyze",
             "description": "Go port of Wappalyzer"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script",
+            "description": "Web content discover script"
           }
         ]
       },
