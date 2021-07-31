@@ -553,6 +553,11 @@
         "title": "SSRF Cheat Sheet & Bypass Techniques",
         "link": "https://highon.coffee/blog/ssrf-cheat-sheet/",
         "description": "SSRF cheat sheet bypass"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/aadix420/Midori",
+        "description": "2FA bypass"
       }
     ]
   },
