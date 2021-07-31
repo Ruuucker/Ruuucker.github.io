@@ -786,6 +786,11 @@
             "title": "LsassSilentProcessExit",
             "link": "https://github.com/deepinstinct/LsassSilentProcessExit",
             "description": "Lsass Silent proc dump"
+          },
+          {
+            "title": "SharpHook",
+            "link": "https://github.com/IlanKalendarov/SharpHook",
+            "description": "OffSec api hooking"
           }
         ]
       },
