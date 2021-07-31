@@ -523,6 +523,11 @@
         "title": "GitHub",
         "link": "https://github.com/persianhydra/Xeexe-TopAntivirusEvasion",
         "description": "Top AV Evasion"
+      },
+      {
+        "title": "DripLoader (PoC)",
+        "link": "https://github.com/xinbailu/DripLoader",
+        "description": "ShellCode what bypass EDRs"
       }
     ]
   },
