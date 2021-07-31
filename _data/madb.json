@@ -872,6 +872,10 @@
             "title": "DoHC2",
             "link": "https://github.com/SpiderLabs/DoHC2",
             "description": "DNS over HTTPS c2"
+          },
+          {
+            "title": "Mythic",
+            "link": "https://github.com/its-a-feature/Mythic"
           }
         ]
       }
