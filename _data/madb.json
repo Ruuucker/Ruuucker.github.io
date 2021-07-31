@@ -543,6 +543,11 @@
         "title": "DripLoader (PoC)",
         "link": "https://github.com/xinbailu/DripLoader",
         "description": "ShellCode what bypass EDRs"
+      },
+      {
+        "title": "Process Herpaderping",
+        "link": "https://github.com/jxy-s/herpaderping",
+        "description": "Process Herpaderping"
       }
     ]
   },
