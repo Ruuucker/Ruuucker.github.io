@@ -374,6 +374,11 @@
             "title": "ppfuzz",
             "link": "https://github.com/dwisiswant0/ppfuzz",
             "description": "Prototype Pollution scan"
+          },
+          {
+            "title": "protoscan",
+            "link": "https://github.com/KathanP19/protoscan",
+            "description": "Prototype pollution scanner"
           }
         ]
       },
