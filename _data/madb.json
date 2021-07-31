@@ -247,6 +247,11 @@
             "title": "Description",
             "link": "https://github.com/act1on3/pywappalyzer",
             "description": "Python Port of Wappalyzer"
+          },
+          {
+            "title": "webanalyze",
+            "link": "https://github.com/rverton/webanalyze",
+            "description": "Go port of Wappalyzer"
           }
         ]
       },
