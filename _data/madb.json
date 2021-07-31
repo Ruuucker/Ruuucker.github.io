@@ -463,11 +463,6 @@
         "title": "GitHub",
         "link": "https://github.com/persianhydra/Xeexe-TopAntivirusEvasion",
         "description": "Top AV Evasion"
-      },
-      {
-        "title": "GitHub",
-        "link": "https://github.com/persianhydra/Xeexe-TopAntivirusEvasion",
-        "description": "Top AV Evasion"
       }
     ]
   },
@@ -775,16 +770,17 @@
             "description": "DomainBorrowing"
           },
           {
-            "title": "GitHub",
+            "title": "bettercap",
             "link": "https://github.com/bettercap/bettercap",
             "description": "bettercap spoofing"
           },
           {
-            "title": "GitHub",
+            "title": "mitm6",
             "link": "https://github.com/fox-it/mitm6",
             "description": "IPv6 spoofing"
           },
           {
+            "title": "Inveigh",
             "link": "https://github.com/Kevin-Robertson/Inveigh",
             "description": "csharp responder for spoofing and mitm"
           },
@@ -808,11 +804,6 @@
             "link": "https://github.com/loseys/BlackMamba"
           },
           {
-            "title": "Koadic",
-            "link": "https://github.com/zerosum0x0/koadic",
-            "description": "koadic"
-          },
-          {
             "title": "GitHub",
             "link": "https://github.com/HiwinCN/HTran",
             "description": "Proxy bouncer for c2 traffic"
@@ -828,7 +819,7 @@
             "description": "Remote Admin tool"
           },
           {
-            "title": "GitHub",
+            "title": "DoHC2",
             "link": "https://github.com/SpiderLabs/DoHC2",
             "description": "DNS over HTTPS c2"
           }
