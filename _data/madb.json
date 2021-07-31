@@ -731,6 +731,11 @@
             "title": "GitHub",
             "link": "https://github.com/med0x2e/GadgetToJScript",
             "description": "A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS/VBA scripts"
+          },
+          {
+            "title": "PowerLsassSilentProcessExit",
+            "link": "https://github.com/CompassSecurity/PowerLsassSilentProcessExit",
+            "description": "Powershell Lsass Silent proc dump"
           }
         ]
       },
