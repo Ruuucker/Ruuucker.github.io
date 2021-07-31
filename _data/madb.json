@@ -339,6 +339,11 @@
             "title": "SharpOxidResolver",
             "link": "https://github.com/S3cur3Th1sSh1t/SharpOxidResolver",
             "description": "Nextnet of AD, tells network devices via DCOM"
+          },
+          {
+            "title": "Ping Castle",
+            "link": "https://github.com/vletoux/pingcastle",
+            "description": "AD scanner script with many checks"
           }
         ]
       },
