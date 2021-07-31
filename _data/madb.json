@@ -126,6 +126,11 @@
                 "title": "AD ACL Scanner",
                 "link": "https://github.com/canix1/ADACLScanner",
                 "description": "ACL scanner in AD"
+              },
+              {
+                "title": "ACLight",
+                "link": "https://github.com/cyberark/ACLight",
+                "description": "Search for admins in AD, even Shadow Admins"
               }
             ]
           },
