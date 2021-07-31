@@ -761,6 +761,11 @@
             "title": "PowerLsassSilentProcessExit",
             "link": "https://github.com/CompassSecurity/PowerLsassSilentProcessExit",
             "description": "Powershell Lsass Silent proc dump"
+          },
+          {
+            "title": "LsassSilentProcessExit",
+            "link": "https://github.com/deepinstinct/LsassSilentProcessExit",
+            "description": "Lsass Silent proc dump"
           }
         ]
       },
