@@ -548,6 +548,11 @@
         "title": "Process Herpaderping",
         "link": "https://github.com/jxy-s/herpaderping",
         "description": "Process Herpaderping"
+      },
+      {
+        "title": "Shellycoat",
+        "link": "https://github.com/slaeryan/AQUARMOURY/tree/master/Shellycoat",
+        "description": "Shellycoat is a utility designed to aid in bypassing User-Mode hooks"
       }
     ]
   },
