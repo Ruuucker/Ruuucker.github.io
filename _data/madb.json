@@ -242,6 +242,11 @@
             "title": "HOOKSHOT",
             "link": "https://github.com/andrew-vii/hookshot",
             "description": "Automate cwarl site for emails and accounts"
+          },
+          {
+            "title": "Description",
+            "link": "https://github.com/act1on3/pywappalyzer",
+            "description": "Python Port of Wappalyzer"
           }
         ]
       },
