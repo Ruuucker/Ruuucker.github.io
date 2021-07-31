@@ -334,6 +334,11 @@
             "title": "Active Directory Integrated DNS dump tool",
             "link": "https://github.com/dirkjanm/adidnsdump",
             "description": "Dump AD dns records"
+          },
+          {
+            "title": "SharpOxidResolver",
+            "link": "https://github.com/S3cur3Th1sSh1t/SharpOxidResolver",
+            "description": "Nextnet of AD, tells network devices via DCOM"
           }
         ]
       },
