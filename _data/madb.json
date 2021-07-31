@@ -162,6 +162,11 @@
             "title": "Microsoft Wont-Fix-List",
             "link": "https://github.com/cfalta/MicrosoftWontFixList",
             "description": "MS wont fix vulners list"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/tokyoneon/CredPhish",
+            "description": "PowerShell script designed to invoke legitimate credential prompts and exfiltrate passwords over DNS"
           }
         ]
       },
