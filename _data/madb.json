@@ -121,6 +121,11 @@
                 "title": "ADCSPwn",
                 "link": "https://github.com/bats3c/ADCSPwn",
                 "description": "A tool to escalate privileges in an active directory network by coercing authenticate from machine accounts and relaying to the certificate service."
+              },
+              {
+                "title": "AD ACL Scanner",
+                "link": "https://github.com/canix1/ADACLScanner",
+                "description": "ACL scanner in AD"
               }
             ]
           },
