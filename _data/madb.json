@@ -386,6 +386,11 @@
         "title": "Recog: A Recognition Framework",
         "link": "https://github.com/rapid7/recog/",
         "description": "Recon everything"
+      },
+      {
+        "title": "NIST CVE Search tool",
+        "link": "https://github.com/stratosphereips/nist-cve-search-tool",
+        "description": "CVE search"
       }
     ]
   },
