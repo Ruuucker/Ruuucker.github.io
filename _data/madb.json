@@ -941,6 +941,11 @@
             "title": "Micro Backdoor for Windows",
             "link": "https://github.com/Cr4sh/MicroBackdoor",
             "description": "c2 for windows"
+          },
+          {
+            "title": "serpentine",
+            "link": "https://github.com/jafarlihi/serpentine",
+            "description": "Win c++ RAT"
           }
         ]
       }
