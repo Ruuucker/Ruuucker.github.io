@@ -548,6 +548,11 @@
         "title": "BugBounty Tips",
         "link": "https://github.com/punishell/bbtips",
         "description": "Bug Bounty tips"
+      },
+      {
+        "title": "SSRF Cheat Sheet & Bypass Techniques",
+        "link": "https://highon.coffee/blog/ssrf-cheat-sheet/",
+        "description": "SSRF cheat sheet bypass"
       }
     ]
   },
