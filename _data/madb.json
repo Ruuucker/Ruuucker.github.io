@@ -610,6 +610,11 @@
                 "title": "HiveNightmare",
                 "link": "https://github.com/GossiTheDog/HiveNightmare",
                 "description": "LPE via incorrect SAM reading permission"
+              },
+              {
+                "title": "BeRoot For Windows",
+                "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Windows",
+                "description": "BeRoot windows"
               }
             ]
           },
