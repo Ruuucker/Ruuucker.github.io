@@ -131,6 +131,11 @@
                 "title": "ACLight",
                 "link": "https://github.com/cyberark/ACLight",
                 "description": "Search for admins in AD, even Shadow Admins"
+              },
+              {
+                "title": "Rubeus",
+                "link": "https://github.com/GhostPack/Rubeus",
+                "description": "Kerberos attacks"
               }
             ]
           },
