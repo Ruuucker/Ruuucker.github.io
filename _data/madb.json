@@ -157,6 +157,11 @@
             "title": "SharpUtils",
             "link": "https://github.com/breakid/SharpUtils",
             "description": "Cobalt Strike sharp extenders"
+          },
+          {
+            "title": "Microsoft Wont-Fix-List",
+            "link": "https://github.com/cfalta/MicrosoftWontFixList",
+            "description": "MS wont fix vulners list"
           }
         ]
       },
