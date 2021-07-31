@@ -725,6 +725,40 @@
         "title": "my-Little-Ransomware",
         "link": "https://github.com/aaaddress1/my-Little-Ransomware",
         "description": "easy ransomware module based on csharp"
+      },
+      {
+        "name": "c2",
+        "subcategory": [
+          {
+            "title": "BlackMamba",
+            "link": "https://github.com/loseys/BlackMamba"
+          },
+          {
+            "title": "Koadic",
+            "link": "https://github.com/zerosum0x0/koadic",
+            "description": "koadic"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/HiwinCN/HTran",
+            "description": "Proxy bouncer for c2 traffic"
+          },
+          {
+            "title": "Koadic",
+            "link": "https://github.com/zerosum0x0/koadic",
+            "description": "Living Off The Land c2"
+          },
+          {
+            "title": "Quasar",
+            "link": "https://github.com/quasar/Quasar",
+            "description": "Remote Admin tool"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/SpiderLabs/DoHC2",
+            "description": "DNS over HTTPS c2"
+          }
+        ]
       }
     ]
   },
@@ -808,40 +842,6 @@
         "title": "GitHub",
         "link": "https://github.com/unode/firefox_decrypt",
         "description": "Passwords from FireFox"
-      },
-      {
-        "name": "c2",
-        "subcategory": [
-          {
-            "title": "BlackMamba",
-            "link": "https://github.com/loseys/BlackMamba"
-          },
-          {
-            "title": "Koadic",
-            "link": "https://github.com/zerosum0x0/koadic",
-            "description": "koadic"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/HiwinCN/HTran",
-            "description": "Proxy bouncer for c2 traffic"
-          },
-          {
-            "title": "Koadic",
-            "link": "https://github.com/zerosum0x0/koadic",
-            "description": "Living Off The Land c2"
-          },
-          {
-            "title": "Quasar",
-            "link": "https://github.com/quasar/Quasar",
-            "description": "Remote Admin tool"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/SpiderLabs/DoHC2",
-            "description": "DNS over HTTPS c2"
-          }
-        ]
       }
     ]
   },
