@@ -538,6 +538,11 @@
         "title": "GitHub",
         "link": "https://github.com/Impact-I/x8-Burp",
         "description": "Burp Plugin search for hidden parameters"
+      },
+      {
+        "title": "BugBounty Tips",
+        "link": "https://github.com/punishell/bbtips",
+        "description": "Bug Bounty tips"
       }
     ]
   },
