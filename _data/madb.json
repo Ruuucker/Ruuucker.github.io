@@ -848,6 +848,11 @@
             "title": "GitHub",
             "link": "https://github.com/pkb1s/SharpRelay",
             "description": "csharp relay tool"
+          },
+          {
+            "title": "Global Socket",
+            "link": "https://github.com/hackerschoice/gsocket",
+            "description": "Connect like there is no firewall. Securely."
           }
         ]
       },
