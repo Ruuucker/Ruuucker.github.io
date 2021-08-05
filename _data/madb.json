@@ -553,6 +553,11 @@
         "title": "Shellycoat",
         "link": "https://github.com/slaeryan/AQUARMOURY/tree/master/Shellycoat",
         "description": "Shellycoat is a utility designed to aid in bypassing User-Mode hooks"
+      },
+      {
+        "title": "pwncat",
+        "link": "https://github.com/cytopia/pwncat",
+        "description": "Firewall, IDS/IPS evasion"
       }
     ]
   },
