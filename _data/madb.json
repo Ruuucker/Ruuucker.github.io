@@ -983,6 +983,16 @@
             "description": "Win c++ RAT"
           }
         ]
+      },
+      {
+        "name": "shell",
+        "subcategory": [
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hanslub42/rlwrap",
+            "description": "Tool for making your nc reverse shell more friendly"
+          }
+        ]
       }
     ]
   },
