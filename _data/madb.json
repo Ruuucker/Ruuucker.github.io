@@ -146,6 +146,11 @@
                 "title": "SharpLAPS",
                 "link": "https://github.com/swisskyrepo/SharpLAPS",
                 "description": "post exploatation LASP password dump via LDAP"
+              },
+              {
+                "title": "GitHub",
+                "link": "https://github.com/optiv/Dent",
+                "description": "creating COM-based bypasses utilizing vulnerabilities in Microsoft's WDAPT"
               }
             ]
           },
