@@ -991,6 +991,11 @@
             "title": "serpentine",
             "link": "https://github.com/jafarlihi/serpentine",
             "description": "Win c++ RAT"
+          },
+          {
+            "title": "Requirements",
+            "link": "https://github.com/JoelGMSec/Invoke-DNSteal",
+            "description": "Another DNS tunnel"
           }
         ]
       },
