@@ -871,6 +871,21 @@
             "title": "SharpHook",
             "link": "https://github.com/IlanKalendarov/SharpHook",
             "description": "OffSec api hooking"
+          },
+          {
+            "name": "ad",
+            "subcategory": [
+              {
+                "name": "persistance",
+                "subcategory": [
+                  {
+                    "title": "ForgeCert",
+                    "link": "https://github.com/GhostPack/ForgeCert",
+                    "description": " Certificate Authority (CA) certificate + private key to forge certificates for arbitrary users capable of authentication to Active Directory"
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
