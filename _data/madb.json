@@ -734,6 +734,11 @@
                 "title": "GitHub",
                 "link": "https://github.com/zcgonvh/EfsPotato",
                 "description": "Petitpotam & Potato exploit"
+              },
+              {
+                "title": "DESCRIPTION",
+                "link": "https://github.com/AonCyberLabs/Windows-Exploit-Suggester",
+                "description": "Win exploit suggester"
               }
             ]
           },
