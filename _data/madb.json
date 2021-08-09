@@ -700,6 +700,10 @@
                 "title": "BeRoot For Windows",
                 "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Windows",
                 "description": "BeRoot windows"
+              },
+              {
+                "link": "https://github.com/zcgonvh/EfsPotato",
+                "description": "Petitpotam & Potato exploit"
               }
             ]
           },
