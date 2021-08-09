@@ -265,6 +265,11 @@
               {
                 "title": "DNS Reconnaissance – DNSRecon",
                 "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
+              },
+              {
+                "title": "Fierce",
+                "link": "https://github.com/mschwager/fierce",
+                "description": "recon IP adresses of the domain"
               }
             ]
           },
