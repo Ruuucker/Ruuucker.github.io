@@ -317,6 +317,11 @@
             "title": "GitHub",
             "link": "https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script",
             "description": "Web content discover script"
+          },
+          {
+            "title": "Woolf",
+            "link": "https://gitlab.com/woolf/RTSPbrute",
+            "description": "Scan/Brute routers"
           }
         ]
       },
