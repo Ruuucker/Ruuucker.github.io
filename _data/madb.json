@@ -141,6 +141,11 @@
                 "title": "ADCSPwn",
                 "link": "https://github.com/bats3c/ADCSPwn",
                 "description": "AD Petitpotam exploit"
+              },
+              {
+                "title": "SharpLAPS",
+                "link": "https://github.com/swisskyrepo/SharpLAPS",
+                "description": "post exploatation LASP password dump via LDAP"
               }
             ]
           },
