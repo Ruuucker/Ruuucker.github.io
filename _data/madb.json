@@ -136,6 +136,11 @@
                 "title": "Rubeus",
                 "link": "https://github.com/GhostPack/Rubeus",
                 "description": "Kerberos attacks"
+              },
+              {
+                "title": "ADCSPwn",
+                "link": "https://github.com/bats3c/ADCSPwn",
+                "description": "AD Petitpotam exploit"
               }
             ]
           },
