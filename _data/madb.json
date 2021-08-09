@@ -182,6 +182,11 @@
             "title": "GitHub",
             "link": "https://github.com/tokyoneon/CredPhish",
             "description": "PowerShell script designed to invoke legitimate credential prompts and exfiltrate passwords over DNS"
+          },
+          {
+            "title": "KnockOutlook",
+            "link": "https://github.com/eksperience/KnockOutlook",
+            "description": "Outlook recon tool, extract mails, contacts"
           }
         ]
       },
