@@ -588,6 +588,11 @@
         "title": "pwncat",
         "link": "https://github.com/cytopia/pwncat",
         "description": "Firewall, IDS/IPS evasion"
+      },
+      {
+        "title": "Invisi-Shell",
+        "link": "https://github.com/OmerYa/Invisi-Shell",
+        "description": "Powershell script invisiable"
       }
     ]
   },
