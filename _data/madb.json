@@ -230,6 +230,11 @@
       {
         "title": "What is ired.team?",
         "link": "https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques"
+      },
+      {
+        "title": "subjack",
+        "link": "https://github.com/haccer/subjack",
+        "description": "DNS Subdomain takeover"
       }
     ]
   },
