@@ -265,6 +265,11 @@
                 "title": "nextnet",
                 "link": "https://github.com/hdm/nextnet",
                 "description": "Scan window's 137 udp to get interfaces and hostname"
+              },
+              {
+                "title": "MAN-SPIDER",
+                "link": "https://github.com/blacklanternsecurity/MANSPIDER",
+                "description": "SMB share file searcher"
               }
             ]
           },
