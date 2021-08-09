@@ -927,6 +927,11 @@
                 "title": "BeRoot For Linux",
                 "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Linux",
                 "description": "BeRoot linux"
+              },
+              {
+                "title": "Traitor",
+                "link": "https://github.com/liamg/traitor",
+                "description": " Linux privesc via exploitation of low-hanging fruit"
               }
             ]
           },
