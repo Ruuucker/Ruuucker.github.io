@@ -336,6 +336,11 @@
             "title": "Stargather",
             "link": "https://github.com/dwisiswant0/stargather",
             "description": "Github repos recon tool"
+          },
+          {
+            "title": "uDork - Google Hacking Tool",
+            "link": "https://github.com/m3n0sd0n4ld/uDork",
+            "description": "Google Dork scanner"
           }
         ]
       },
