@@ -345,6 +345,11 @@
           {
             "title": "PhoneInfoga",
             "link": "https://github.com/sundowndev/PhoneInfoga"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/ThoughtfulDev/EagleEye",
+            "description": "Social Media osint"
           }
         ]
       },
