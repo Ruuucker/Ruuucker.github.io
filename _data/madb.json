@@ -1098,6 +1098,10 @@
             "title": "Requirements",
             "link": "https://github.com/JoelGMSec/Invoke-DNSteal",
             "description": "Another DNS tunnel"
+          },
+          {
+            "title": "Ninja V2.1 Released ( 31/07/2021 ) .",
+            "link": "https://github.com/ahmedkhlief/Ninja/"
           }
         ]
       },
