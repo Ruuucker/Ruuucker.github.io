@@ -215,6 +215,11 @@
           {
             "title": "PhishMailer",
             "link": "https://github.com/BiZken/PhishMailer"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/htr-tech/zphisher",
+            "description": "Phising framework with templates"
           }
         ]
       },
