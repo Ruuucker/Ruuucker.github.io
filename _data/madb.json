@@ -671,6 +671,11 @@
       {
         "title": "GitHub",
         "link": "https://github.com/hahwul/WebHackersWeapons"
+      },
+      {
+        "title": "Bug Bounty Cheat Sheet",
+        "link": "https://github.com/EdOverflow/bugbounty-cheatsheet",
+        "description": "Web BugBounty Cheat Sheet"
       }
     ]
   },
