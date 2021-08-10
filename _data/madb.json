@@ -259,6 +259,11 @@
         "title": "subjack",
         "link": "https://github.com/haccer/subjack",
         "description": "DNS Subdomain takeover"
+      },
+      {
+        "title": "cqtools",
+        "link": "https://github.com/BlackDiverX/cqtools",
+        "description": "Nice toolkit for all things that you need"
       }
     ]
   },
