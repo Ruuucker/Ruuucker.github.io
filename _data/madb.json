@@ -55,6 +55,10 @@
                 "title": "Invoke-TheHash",
                 "link": "https://github.com/Kevin-Robertson/Invoke-TheHash",
                 "description": "Pass the Hash from powershell"
+              },
+              {
+                "title": "RedRabbit",
+                "link": "https://github.com/securethelogs/RedRabbit"
               }
             ]
           },
