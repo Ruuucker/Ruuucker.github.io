@@ -707,6 +707,11 @@
         "title": "Bug Bounty Cheat Sheet",
         "link": "https://github.com/EdOverflow/bugbounty-cheatsheet",
         "description": "Web BugBounty Cheat Sheet"
+      },
+      {
+        "title": "Bypass Cloudflare",
+        "link": "https://github.com/jychp/cloudflare-bypass",
+        "description": "CloudFlare bypass"
       }
     ]
   },
