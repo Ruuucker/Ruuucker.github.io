@@ -506,6 +506,11 @@
         "title": "Harpoon",
         "link": "https://github.com/Te-k/harpoon",
         "description": "CLI tool for open source and threat intelligence "
+      },
+      {
+        "title": "TireFire",
+        "link": "https://github.com/CoolHandSquid/TireFire",
+        "description": "All In One recon tool, great for HTB but maybe cool for pentests too"
       }
     ]
   },
