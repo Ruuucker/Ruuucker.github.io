@@ -211,6 +211,11 @@
             "title": "KnockOutlook",
             "link": "https://github.com/eksperience/KnockOutlook",
             "description": "Outlook recon tool, extract mails, contacts"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/0xthirteen/SharpRDP",
+            "description": "Execute commands on remote machine using rdp without screen, cool stuff"
           }
         ]
       },
