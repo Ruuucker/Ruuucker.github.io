@@ -521,6 +521,11 @@
         "title": "TireFire",
         "link": "https://github.com/CoolHandSquid/TireFire",
         "description": "All In One recon tool, great for HTB but maybe cool for pentests too"
+      },
+      {
+        "title": "CyberChef",
+        "link": "https://github.com/gchq/cyberchef",
+        "description": "Knife - a web app for encryption, encoding, compression and data analysis"
       }
     ]
   },
