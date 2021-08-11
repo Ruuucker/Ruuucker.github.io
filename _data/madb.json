@@ -496,6 +496,11 @@
       {
         "title": "gitjacker",
         "link": "https://github.com/liamg/gitjacker"
+      },
+      {
+        "title": "Harpoon",
+        "link": "https://github.com/Te-k/harpoon",
+        "description": "CLI tool for open source and threat intelligence "
       }
     ]
   },
