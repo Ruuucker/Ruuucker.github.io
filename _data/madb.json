@@ -445,6 +445,11 @@
             "title": "Ping Castle",
             "link": "https://github.com/vletoux/pingcastle",
             "description": "AD scanner script with many checks"
+          },
+          {
+            "title": "AD Explorer",
+            "link": "https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer",
+            "description": "Legit tool for AD recon, nice as a BloodHound replace"
           }
         ]
       },
