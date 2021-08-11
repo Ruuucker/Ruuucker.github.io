@@ -479,6 +479,10 @@
             "description": "Linux IPC inspection tool"
           }
         ]
+      },
+      {
+        "title": "gitjacker",
+        "link": "https://github.com/liamg/gitjacker"
       }
     ]
   },
