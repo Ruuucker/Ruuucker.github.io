@@ -155,6 +155,11 @@
                 "title": "GitHub",
                 "link": "https://github.com/optiv/Dent",
                 "description": "creating COM-based bypasses utilizing vulnerabilities in Microsoft's WDAPT"
+              },
+              {
+                "title": "Windows & Active Directory Exploitation Cheat Sheet and Command Reference",
+                "link": "https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/",
+                "description": "Windows & Ad exploitation Cheat Sheet"
               }
             ]
           },
