@@ -264,6 +264,11 @@
         "title": "cqtools",
         "link": "https://github.com/BlackDiverX/cqtools",
         "description": "Nice toolkit for all things that you need"
+      },
+      {
+        "title": "Generator",
+        "link": "https://github.com/smokeme/payloadGenerator",
+        "description": "Payload Generation"
       }
     ]
   },
