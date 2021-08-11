@@ -614,6 +614,11 @@
         "title": "FalconEye: Real-time detection software for Windows process injections",
         "link": "https://github.com/rajiv2790/FalconEye",
         "description": "Real Time proc injection detection tool, runs as kernel driver and using api hooks"
+      },
+      {
+        "title": "ClamAV",
+        "link": "https://github.com/Cisco-Talos/clamav",
+        "description": "Open Source AV"
       }
     ]
   },
