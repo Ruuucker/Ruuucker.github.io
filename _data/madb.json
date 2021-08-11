@@ -364,6 +364,10 @@
             "title": "GitHub",
             "link": "https://github.com/ThoughtfulDev/EagleEye",
             "description": "Social Media osint"
+          },
+          {
+            "title": "Overview of the tool:",
+            "link": "https://github.com/dvopsway/datasploit"
           }
         ]
       },
