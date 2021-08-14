@@ -612,6 +612,11 @@
             "title": "Installation (Install Script)",
             "link": "https://github.com/fireeye/commando-vm",
             "description": "Making your windows machine more like Kali, contains many useful stuff pre-installed, good thing for researchs and so on"
+          },
+          {
+            "title": "Installation (Install Script)",
+            "link": "https://github.com/fireeye/commando-vm",
+            "description": "Making your windows machine more like Kali, contains many useful stuff pre-installed, good thing for researchs and so on"
           }
         ]
       },
