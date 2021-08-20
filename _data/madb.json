@@ -1193,6 +1193,11 @@
           {
             "title": "Ninja V2.1 Released ( 31/07/2021 ) .",
             "link": "https://github.com/ahmedkhlief/Ninja/"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/n1nj4sec/pupy",
+            "description": "Multi OS RAT"
           }
         ]
       },
