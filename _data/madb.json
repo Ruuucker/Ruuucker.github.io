@@ -1210,6 +1210,11 @@
             "description": "Tool for making your nc reverse shell more friendly"
           }
         ]
+      },
+      {
+        "title": "Khepri",
+        "link": "https://github.com/geemion/Khepri",
+        "description": "Khepri is a Cross-platform agent, the architecture and usage like Cobalt Strike but free and open-source."
       }
     ]
   },
