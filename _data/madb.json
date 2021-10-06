@@ -723,6 +723,11 @@
         "title": "Invisi-Shell",
         "link": "https://github.com/OmerYa/Invisi-Shell",
         "description": "Powershell script invisiable"
+      },
+      {
+        "title": "EXOCET - AV-evading, undetectable, payload delivery tool",
+        "link": "https://github.com/tanc7/EXOCET-AV-Evasion",
+        "description": "AV evading delivery tool"
       }
     ]
   },
