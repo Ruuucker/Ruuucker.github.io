@@ -216,6 +216,11 @@
             "title": "GitHub",
             "link": "https://github.com/0xthirteen/SharpRDP",
             "description": "Execute commands on remote machine using rdp without screen, cool stuff"
+          },
+          {
+            "title": "DonPAPI",
+            "link": "https://github.com/login-securite/DonPAPI",
+            "description": "Dumping DPAPI credz remotely "
           }
         ]
       },
