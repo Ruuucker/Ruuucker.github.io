@@ -1330,6 +1330,11 @@
         "title": "CertStealer",
         "link": "https://github.com/TheWover/CertStealer",
         "description": "Export certs without touching disk"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/nettitude/RunPE",
+        "description": "C# reflective loader"
       }
     ]
   },

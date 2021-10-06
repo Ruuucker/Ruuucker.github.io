@@ -11,7 +11,6 @@ title: Active Directory and Exchange
 {:toc}
 
 # Active Directory
-
 ![1]({{ site.baseurl }}/assets/img/posts/ad-cheat-sheet.gif){:class="img"}
 
 # ACE/ACL
