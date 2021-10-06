@@ -767,6 +767,11 @@
         "title": "Bypass Cloudflare",
         "link": "https://github.com/jychp/cloudflare-bypass",
         "description": "CloudFlare bypass"
+      },
+      {
+        "title": "awesome-apisec",
+        "link": "https://github.com/arainho/awesome-api-security",
+        "description": "API security tools and resources"
       }
     ]
   },
