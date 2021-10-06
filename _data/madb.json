@@ -165,6 +165,11 @@
                 "title": "gMSADumper",
                 "link": "https://github.com/micahvandeusen/gMSADumper",
                 "description": "gMSADumper, if you user have rights to do it"
+              },
+              {
+                "title": "PywerView",
+                "link": "https://github.com/the-useless-one/pywerview",
+                "description": "Powerview but remote and python!"
               }
             ]
           },
