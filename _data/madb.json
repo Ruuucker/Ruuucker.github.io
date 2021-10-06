@@ -677,6 +677,11 @@
             "title": "Serpico",
             "link": "https://github.com/SerpicoProject/Serpico",
             "description": "Note and Report tool"
+          },
+          {
+            "title": "Invuls",
+            "link": "https://gitlab.com/invuls/pentest-projects/pcf",
+            "description": "Book to write your pentest adventure"
           }
         ]
       },
