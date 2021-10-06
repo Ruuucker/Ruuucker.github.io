@@ -1230,6 +1230,11 @@
         "title": "RustSCRunner",
         "link": "https://github.com/memN0ps/RustSCRunner",
         "description": "shellcode runner and injector"
+      },
+      {
+        "title": "Invoke-DLLClone",
+        "link": "https://github.com/jfmaes/Invoke-DLLClone",
+        "description": "Dll into dll inject (or something like that)"
       }
     ]
   },
