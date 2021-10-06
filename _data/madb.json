@@ -1250,6 +1250,11 @@
         "title": "Shellcode Fluctuation PoC",
         "link": "https://github.com/mgeeky/ShellcodeFluctuation",
         "description": "Shellcode in memory evasion"
+      },
+      {
+        "title": "Thread Stack Spoofing / Call Stack Spoofing PoC",
+        "link": "https://github.com/mgeeky/ThreadStackSpoofer",
+        "description": "PoC for an advanced In-Memory evasion"
       }
     ]
   },
