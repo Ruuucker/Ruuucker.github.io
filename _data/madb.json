@@ -221,6 +221,11 @@
             "title": "DonPAPI",
             "link": "https://github.com/login-securite/DonPAPI",
             "description": "Dumping DPAPI credz remotely "
+          },
+          {
+            "title": "PetitPotam",
+            "link": "https://github.com/ollypwn/PetitPotam",
+            "description": "Another Petit Potam PoC, not yet pathed"
           }
         ]
       },
