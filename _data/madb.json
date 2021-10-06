@@ -1153,6 +1153,11 @@
             "title": "MimiPenguin 2.0",
             "link": "https://github.com/huntergregal/mimipenguin",
             "description": "Get creds from current user session"
+          },
+          {
+            "title": "ProcDump",
+            "link": "https://github.com/Sysinternals/ProcDump-for-Linux",
+            "description": "proc dump for Linux"
           }
         ]
       },
