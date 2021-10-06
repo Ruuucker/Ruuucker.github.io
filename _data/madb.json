@@ -411,6 +411,11 @@
           {
             "title": "Find email addresses in seconds",
             "link": "https://hunter.io/"
+          },
+          {
+            "title": "🔍 Mr.Holmes",
+            "link": "https://github.com/Lucksi/Mr.Holmes",
+            "description": "All-in-one OSINT tool for social media, domain, phone number"
           }
         ]
       },
