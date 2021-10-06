@@ -1146,6 +1146,11 @@
             "title": "Global Socket",
             "link": "https://github.com/hackerschoice/gsocket",
             "description": "Connect like there is no firewall. Securely."
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/fatedier/frp",
+            "description": "Reverse shell though NAT and everything"
           }
         ]
       },
