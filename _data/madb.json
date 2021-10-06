@@ -1255,6 +1255,11 @@
         "title": "Thread Stack Spoofing / Call Stack Spoofing PoC",
         "link": "https://github.com/mgeeky/ThreadStackSpoofer",
         "description": "PoC for an advanced In-Memory evasion"
+      },
+      {
+        "title": "CertStealer",
+        "link": "https://github.com/TheWover/CertStealer",
+        "description": "Export certs without touching disk"
       }
     ]
   },
