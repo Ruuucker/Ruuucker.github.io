@@ -566,6 +566,11 @@
         "title": "CyberChef",
         "link": "https://github.com/gchq/cyberchef",
         "description": "Knife - a web app for encryption, encoding, compression and data analysis"
+      },
+      {
+        "title": "bruteforce-lists",
+        "link": "https://github.com/random-robbie/bruteforce-lists",
+        "description": "List for brute web, api, files, etc"
       }
     ]
   },
