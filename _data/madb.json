@@ -236,6 +236,11 @@
             "title": "PetitPotam",
             "link": "https://github.com/ollypwn/PetitPotam",
             "description": "Another Petit Potam PoC, not yet pathed"
+          },
+          {
+            "title": "xlsxPoison",
+            "link": "https://github.com/X-C3LL/xlsxPoison",
+            "description": "turn regular Excel files into Excel file with macro"
           }
         ]
       },
