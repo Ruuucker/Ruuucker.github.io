@@ -728,6 +728,11 @@
         "title": "EXOCET - AV-evading, undetectable, payload delivery tool",
         "link": "https://github.com/tanc7/EXOCET-AV-Evasion",
         "description": "AV evading delivery tool"
+      },
+      {
+        "title": "CopyCat",
+        "link": "https://github.com/mobdk/CopyCat",
+        "description": "Defender bypass mimikatz rapper"
       }
     ]
   },
