@@ -396,6 +396,11 @@
             "title": "uDork - Google Hacking Tool",
             "link": "https://github.com/m3n0sd0n4ld/uDork",
             "description": "Google Dork scanner"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/p0f/p0f",
+            "description": "Passive traffic fingerprinter"
           }
         ]
       },
