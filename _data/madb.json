@@ -480,6 +480,11 @@
             "title": "AD Explorer",
             "link": "https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer",
             "description": "Legit tool for AD recon, nice as a BloodHound replace"
+          },
+          {
+            "title": "Kerbrute",
+            "link": "https://github.com/ropnop/kerbrute",
+            "description": "Bruteforce usernames in AD via kerb pre-auth"
           }
         ]
       },
