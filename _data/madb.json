@@ -160,6 +160,11 @@
                 "title": "Windows & Active Directory Exploitation Cheat Sheet and Command Reference",
                 "link": "https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/",
                 "description": "Windows & Ad exploitation Cheat Sheet"
+              },
+              {
+                "title": "gMSADumper",
+                "link": "https://github.com/micahvandeusen/gMSADumper",
+                "description": "gMSADumper, if you user have rights to do it"
               }
             ]
           },
