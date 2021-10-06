@@ -679,6 +679,11 @@
         "title": "ClamAV",
         "link": "https://github.com/Cisco-Talos/clamav",
         "description": "Open Source AV"
+      },
+      {
+        "title": "🔳 DFIRT (DFIR Tool)",
+        "link": "https://github.com/mamun-sec/dfirt",
+        "description": "Kinda forensic tool, collects event logs, powershell history and more"
       }
     ]
   },
