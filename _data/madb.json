@@ -1245,6 +1245,11 @@
         "title": "Invoke-DLLClone",
         "link": "https://github.com/jfmaes/Invoke-DLLClone",
         "description": "Dll into dll inject (or something like that)"
+      },
+      {
+        "title": "Shellcode Fluctuation PoC",
+        "link": "https://github.com/mgeeky/ShellcodeFluctuation",
+        "description": "Shellcode in memory evasion"
       }
     ]
   },
