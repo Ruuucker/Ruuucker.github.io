@@ -906,6 +906,11 @@
                 "title": "EDRs",
                 "link": "https://github.com/Mr-Un1k0d3r/EDRs",
                 "description": "Info about EDRs"
+              },
+              {
+                "title": "EDRHunt",
+                "link": "https://github.com/FourCoreLabs/EDRHunt",
+                "description": "Recon EDRs and AVs on Windows"
               }
             ]
           },
