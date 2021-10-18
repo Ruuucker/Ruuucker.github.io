@@ -978,6 +978,11 @@
                 "title": "DESCRIPTION",
                 "link": "https://github.com/AonCyberLabs/Windows-Exploit-Suggester",
                 "description": "Win exploit suggester"
+              },
+              {
+                "title": "HandleKatz",
+                "link": "https://github.com/codewhitesec/HandleKatz",
+                "description": "IC lsass dumper using cloned handles"
               }
             ]
           },
