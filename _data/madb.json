@@ -246,6 +246,11 @@
             "title": "SpoolSploit",
             "link": "https://github.com/BeetleChunks/SpoolSploit",
             "description": "A collection of Windows print spooler exploits"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/RUB-NDS/PRET",
+            "description": "Printer Expoit Toolkit"
           }
         ]
       },
