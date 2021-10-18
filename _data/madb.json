@@ -627,6 +627,11 @@
               {
                 "title": "TrustedSec Sysmon Community Guide",
                 "link": "https://github.com/trustedsec/SysmonCommunityGuide"
+              },
+              {
+                "title": "sysmon-modular | A Sysmon configuration repository for everybody to customise",
+                "link": "https://github.com/olafhartong/sysmon-modular",
+                "description": "Sysmon configs modules"
               }
             ]
           },
