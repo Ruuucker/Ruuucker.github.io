@@ -175,6 +175,11 @@
                 "title": "MakeMeEnterpriseAdmin",
                 "link": "https://github.com/vletoux/MakeMeEnterpriseAdmin/blob/master/MakeMeEnterpriseAdmin.ps1",
                 "description": "Elevated Domain Admins to Enterprise Admins"
+              },
+              {
+                "title": "Certipy",
+                "link": "https://github.com/ollypwn/Certipy",
+                "description": "Active Directory Certificate Services to Domain Admin"
               }
             ]
           },
