@@ -714,6 +714,21 @@
         "title": "🔳 DFIRT (DFIR Tool)",
         "link": "https://github.com/mamun-sec/dfirt",
         "description": "Kinda forensic tool, collects event logs, powershell history and more"
+      },
+      {
+        "name": "linux",
+        "subcategory": [
+          {
+            "title": "Sysmon For Linux install and build instructions",
+            "link": "https://github.com/Sysinternals/SysmonForLinux",
+            "description": "Sysmon For Linux!"
+          },
+          {
+            "title": "Sysmon For Linux install and build instructions",
+            "link": "https://github.com/Sysinternals/SysmonForLinux",
+            "description": "Sysmon For Linux!"
+          }
+        ]
       }
     ]
   },
