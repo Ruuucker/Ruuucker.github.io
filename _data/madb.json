@@ -170,6 +170,11 @@
                 "title": "PywerView",
                 "link": "https://github.com/the-useless-one/pywerview",
                 "description": "Powerview but remote and python!"
+              },
+              {
+                "title": "MakeMeEnterpriseAdmin",
+                "link": "https://github.com/vletoux/MakeMeEnterpriseAdmin/blob/master/MakeMeEnterpriseAdmin.ps1",
+                "description": "Elevated Domain Admins to Enterprise Admins"
               }
             ]
           },
