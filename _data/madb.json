@@ -500,6 +500,11 @@
             "title": "Kerbrute",
             "link": "https://github.com/ropnop/kerbrute",
             "description": "Bruteforce usernames in AD via kerb pre-auth"
+          },
+          {
+            "title": "LDAP Monitor",
+            "link": "https://github.com/p0dalirius/LDAPmonitor",
+            "description": "Monitor creation, deletion and changes to LDAP objects live during your pentest."
           }
         ]
       },
