@@ -813,6 +813,11 @@
         "title": "CopyCat",
         "link": "https://github.com/mobdk/CopyCat",
         "description": "Defender bypass mimikatz rapper"
+      },
+      {
+        "title": "PSSW100AVB",
+        "link": "https://github.com/tihanyin/PSSW100AVB",
+        "description": "Powershell scripts with AV bypasses"
       }
     ]
   },
