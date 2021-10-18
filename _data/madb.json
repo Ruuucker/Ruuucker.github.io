@@ -185,6 +185,11 @@
                 "title": "adalanche: Active Directory ACL Visualizer and Explorer",
                 "link": "https://github.com/lkarlslund/adalanche",
                 "description": "Active Directory ACL Visualizer - who's really Domain Admin?"
+              },
+              {
+                "title": "Liquid Snake",
+                "link": "https://github.com/RiccardoAncarani/LiquidSnake",
+                "description": "fileless lateral movement using WMI Event Subscriptions and GadgetToJScript"
               }
             ]
           },
