@@ -1169,6 +1169,11 @@
                 ]
               }
             ]
+          },
+          {
+            "title": "DarkLoadLibrary",
+            "link": "https://github.com/bats3c/DarkLoadLibrary",
+            "description": "LoadLibrary for offensive operations (from disk, memory + don't lint to PEB )"
           }
         ]
       },
