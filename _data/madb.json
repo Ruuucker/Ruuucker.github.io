@@ -1291,6 +1291,11 @@
             "title": "GitHub",
             "link": "https://github.com/fatedier/frp",
             "description": "Reverse shell though NAT and everything"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/fofapro/fapro",
+            "description": "The goal is to support as many protocols as possible, and support as many deep interactions as possible for each protocol. Maybe for spoofing?"
           }
         ]
       },
