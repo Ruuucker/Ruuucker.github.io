@@ -1209,6 +1209,11 @@
             "title": "GitHub",
             "link": "https://github.com/sensepost/offensive-rpc",
             "description": "OffSec RPC, I think its for shells and etc"
+          },
+          {
+            "title": "nosferatu",
+            "link": "https://github.com/kindtime/nosferatu",
+            "description": "Backdoor similar to Skeleton Key but in one single Windows machine via inject DLL into lsass"
           }
         ]
       },
