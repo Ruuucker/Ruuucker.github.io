@@ -853,6 +853,11 @@
         "title": "GitHub",
         "link": "https://github.com/lawndoc/jaws",
         "description": "Jaws is an invisible programming language! Inject invisible code into other languages and files!"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/JavelinNetworks/HoneypotBuster",
+        "description": "Detecting Traps"
       }
     ]
   },
