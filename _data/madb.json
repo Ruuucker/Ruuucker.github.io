@@ -643,10 +643,6 @@
                 "link": "https://github.com/SwiftOnSecurity/sysmon-config/"
               },
               {
-                "title": "sysmon-modular | A Sysmon configuration repository for everybody to customise",
-                "link": "https://github.com/olafhartong/sysmon-modular"
-              },
-              {
                 "title": "Sysmon - DFIR",
                 "link": "https://github.com/MHaggis/sysmon-dfir"
               },
@@ -897,6 +893,7 @@
       {
         "title": "GitHub",
         "link": "https://github.com/hahwul/WebHackersWeapons"
+        "description": "Web Hackers Weapons"
       },
       {
         "title": "Bug Bounty Cheat Sheet",
