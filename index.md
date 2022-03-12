@@ -16,7 +16,7 @@ published: true
 {% if page.url contains 'ru'  %}
 Привет, я делаю в инфобез и это мой блог.
 {% else %}
-Hi, I do some info security shit and this is my blog.
+Hi, I do some info security stuff and this is my blog.
 {% endif %}
 
 # $ cat articles.txt
@@ -109,10 +109,5 @@ Hi, I do some info security shit and this is my blog.
 
 # $ cat contact.txt
 {:id="contact"}
-<!--
-Telegram:
-
-> @
--->
+Telegram: > [https://t.me/ru_cker](https://t.me/ru_cker) <br />
 GitHub: > [https://github.com/Ruuucker](https://github.com/Ruuucker)
-Windows Exploits: > [https://github.com/SecWiki/windows-kernel-exploits](https://github.com/SecWiki/windows-kernel-exploits)
