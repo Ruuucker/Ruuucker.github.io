@@ -700,11 +700,6 @@
             "description": "Making your windows machine more like Kali, contains many useful stuff pre-installed, good thing for researchs and so on"
           },
           {
-            "title": "Installation (Install Script)",
-            "link": "https://github.com/fireeye/commando-vm",
-            "description": "Making your windows machine more like Kali, contains many useful stuff pre-installed, good thing for researchs and so on"
-          },
-          {
             "title": "Red-Team-Infrastructure-Automation",
             "link": "https://github.com/mantvydasb/Red-Team-Infrastructure-Automation",
             "description": "Red Team Infra setup"
@@ -749,11 +744,6 @@
       {
         "name": "linux",
         "subcategory": [
-          {
-            "title": "Sysmon For Linux install and build instructions",
-            "link": "https://github.com/Sysinternals/SysmonForLinux",
-            "description": "Sysmon For Linux!"
-          },
           {
             "title": "Sysmon For Linux install and build instructions",
             "link": "https://github.com/Sysinternals/SysmonForLinux",
