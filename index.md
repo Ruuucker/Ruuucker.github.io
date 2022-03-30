@@ -10,6 +10,14 @@ published: true
 <!-- How you gonna shoot me down -->
 <!-- When I guide the rocket? -->
 
+~~~
+{% if page.url contains 'ru'  %}
+Война в Украине не значит ничего кроме маниакального безумия Путина и не приведёт ни к чему кроме человеческий страданий. Украинцы - герои.
+{% else %}
+The war in Ukraine means nothing but Putin's madness and will result in nothing but human suffering. Ukrainians are heroes.
+{% endif %}  
+~~~
+
 # $ whoami
 {:id="about"}
 
