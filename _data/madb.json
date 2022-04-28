@@ -67,7 +67,7 @@
             "link": "https://github.com/SecureAuthCorp/impacket"
           },
           {
-            "title": "Remote Potato – From Domain User to Enterprise Admin",
+            "title": "Remote Potato \u2013 From Domain User to Enterprise Admin",
             "link": "https://pentestlab.blog/2021/05/04/remote-potato-from-domain-user-to-enterprise-admin/"
           },
           {
@@ -190,6 +190,11 @@
                 "title": "Liquid Snake",
                 "link": "https://github.com/RiccardoAncarani/LiquidSnake",
                 "description": "fileless lateral movement using WMI Event Subscriptions and GadgetToJScript"
+              },
+              {
+                "title": "KrbRelayUp",
+                "link": "https://github.com/Dec0ne/KrbRelayUp",
+                "description": ""
               }
             ]
           },
@@ -362,7 +367,7 @@
             "name": "dns",
             "subcategory": [
               {
-                "title": "DNS Reconnaissance – DNSRecon",
+                "title": "DNS Reconnaissance \u2013 DNSRecon",
                 "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
               },
               {
@@ -378,7 +383,7 @@
             "description": "AD Recon"
           },
           {
-            "title": "🤔 What is this?",
+            "title": "\ud83e\udd14 What is this?",
             "link": "https://github.com/RustScan/RustScan",
             "description": "Nmap but better"
           },
@@ -468,7 +473,7 @@
             "link": "https://hunter.io/"
           },
           {
-            "title": "🔍 Mr.Holmes",
+            "title": "\ud83d\udd0d Mr.Holmes",
             "link": "https://github.com/Lucksi/Mr.Holmes",
             "description": "All-in-one OSINT tool for social media, domain, phone number"
           }
@@ -539,7 +544,7 @@
         ]
       },
       {
-        "title": "🤔 What is this?",
+        "title": "\ud83e\udd14 What is this?",
         "link": "https://github.com/bee-san/pyWhat",
         "description": "Indentify everything, exe\\bin files, hashes, pcap dumps, strings - very useful"
       },
@@ -737,7 +742,7 @@
         "description": "Open Source AV"
       },
       {
-        "title": "🔳 DFIRT (DFIR Tool)",
+        "title": "\ud83d\udd33 DFIRT (DFIR Tool)",
         "link": "https://github.com/mamun-sec/dfirt",
         "description": "Kinda forensic tool, collects event logs, powershell history and more"
       },
@@ -899,6 +904,11 @@
         "title": "awesome-apisec",
         "link": "https://github.com/arainho/awesome-api-security",
         "description": "API security tools and resources"
+      },
+      {
+        "title": "AllAboutBugBounty",
+        "link": "https://github.com/daffainfo/AllAboutBugBounty",
+        "description": ""
       }
     ]
   },
@@ -1206,6 +1216,11 @@
             "title": "nosferatu",
             "link": "https://github.com/kindtime/nosferatu",
             "description": "Backdoor similar to Skeleton Key but in one single Windows machine via inject DLL into lsass"
+          },
+          {
+            "title": "lsassy",
+            "link": "https://github.com/Hackndo/lsassy",
+            "description": "Remote dump lsass"
           }
         ]
       },
@@ -1365,74 +1380,4 @@
           {
             "title": "Requirements",
             "link": "https://github.com/JoelGMSec/Invoke-DNSteal",
-            "description": "Another DNS tunnel"
-          },
-          {
-            "title": "Ninja V2.1 Released ( 31/07/2021 ) .",
-            "link": "https://github.com/ahmedkhlief/Ninja/"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/n1nj4sec/pupy",
-            "description": "Multi OS RAT"
-          }
-        ]
-      },
-      {
-        "name": "shell",
-        "subcategory": [
-          {
-            "title": "GitHub",
-            "link": "https://github.com/hanslub42/rlwrap",
-            "description": "Tool for making your nc reverse shell more friendly"
-          }
-        ]
-      },
-      {
-        "title": "Khepri",
-        "link": "https://github.com/geemion/Khepri",
-        "description": "Khepri is a Cross-platform agent, the architecture and usage like Cobalt Strike but free and open-source."
-      },
-      {
-        "title": "RustSCRunner",
-        "link": "https://github.com/memN0ps/RustSCRunner",
-        "description": "shellcode runner and injector"
-      },
-      {
-        "title": "Invoke-DLLClone",
-        "link": "https://github.com/jfmaes/Invoke-DLLClone",
-        "description": "Dll into dll inject (or something like that)"
-      },
-      {
-        "title": "Shellcode Fluctuation PoC",
-        "link": "https://github.com/mgeeky/ShellcodeFluctuation",
-        "description": "Shellcode in memory evasion"
-      },
-      {
-        "title": "Thread Stack Spoofing / Call Stack Spoofing PoC",
-        "link": "https://github.com/mgeeky/ThreadStackSpoofer",
-        "description": "PoC for an advanced In-Memory evasion"
-      },
-      {
-        "title": "CertStealer",
-        "link": "https://github.com/TheWover/CertStealer",
-        "description": "Export certs without touching disk"
-      },
-      {
-        "title": "GitHub",
-        "link": "https://github.com/nettitude/RunPE",
-        "description": "C# reflective loader"
-      }
-    ]
-  },
-  {
-    "name": "wifi",
-    "subcategory": [
-      {
-        "title": "zizzania",
-        "link": "https://github.com/cyrus-and/zizzania",
-        "description": "Great tool for capturing handshakes and de-auth attacks"
-      }
-    ]
-  }
-]
+            "description": 
