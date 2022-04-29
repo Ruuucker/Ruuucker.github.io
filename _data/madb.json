@@ -210,6 +210,21 @@
                 "title": "LdapRelayScan",
                 "link": "https://github.com/zyn3rgy/LdapRelayScan",
                 "description": ""
+              },
+              {
+                "title": "Snaffler",
+                "link": "https://github.com/SnaffCon/Snaffler",
+                "description": "Find everything on file shares across AD"
+              },
+              {
+                "title": "backup_dc_registry",
+                "link": "https://github.com/horizon3ai/backup_dc_registry",
+                "description": "A simple POC that abuses Backup Operator privileges to remote dump SAM, SYSTEM, and SECURITY"
+              },
+              {
+                "title": "BackupOperatorToDA",
+                "link": "https://github.com/mpgn/BackupOperatorToDA",
+                "description": "From Backup Operator To Domain Admin"
               }
             ]
           },
@@ -306,6 +321,26 @@
             "title": "windows/spooler-splenumforms-iov at main grigoritchy/pocs GitHu",
             "link": "https://github.com/grigoritchy/pocs/tree/main/windows/spooler-splenumforms-iov",
             "description": "spooler PoC exploit"
+          },
+          {
+            "title": "win-brute-logon",
+            "link": "https://github.com/DarkCoderSc/win-brute-logon",
+            "description": "Crack any Microsoft Windows users password without any privilege (Guest account included)"
+          },
+          {
+            "title": "CVE-2022-21971",
+            "link": "https://github.com/0vercl0k/CVE-2022-21971",
+            "description": "PoC for CVE-2022-21971 \"Windows Runtime Remote Code Execution Vulnerability\""
+          },
+          {
+            "title": "LyncSniper",
+            "link": "https://github.com/mdsecresearch/LyncSniper",
+            "description": "LyncSniper: A tool for penetration testing Skype for Business and Lync deployments"
+          },
+          {
+            "title": "pyrdp",
+            "link": "https://github.com/GoSecure/pyrdp",
+            "description": "RDP mitm"
           }
         ]
       },
@@ -379,6 +414,11 @@
             "description": "Lots tools for Apple Mac, written on Objective-C"
           }
         ]
+      },
+      {
+        "title": "PyCk",
+        "link": "https://github.com/Naategh/PyCk",
+        "description": "A collection of useful Python hacking scripts for beginners"
       }
     ]
   },
@@ -471,6 +511,11 @@
             "title": "nmap-formatter",
             "link": "https://github.com/vdjagilev/nmap-formatter",
             "description": "Nmap results to json, md, etc"
+          },
+          {
+            "title": "badKarma",
+            "link": "https://github.com/r3vn/badKarma",
+            "description": "network reconnaissance toolkit"
           }
         ]
       },
@@ -661,6 +706,11 @@
         "title": "bruteforce-lists",
         "link": "https://github.com/random-robbie/bruteforce-lists",
         "description": "List for brute web, api, files, etc"
+      },
+      {
+        "title": "cve",
+        "link": "https://github.com/trickest/cve",
+        "description": "Gather and update all available and newest CVEs with their PoC."
       }
     ]
   },
@@ -795,6 +845,11 @@
         "title": "TallGrass",
         "link": "https://github.com/chdav/TallGrass",
         "description": "AV exclusion enumeration in Python"
+      },
+      {
+        "title": "Winshark",
+        "link": "https://github.com/airbus-cert/Winshark",
+        "description": "A wireshark plugin to instrument ETW"
       }
     ]
   },
@@ -924,6 +979,16 @@
         "title": "VBoxHardenedLoader",
         "link": "https://github.com/hfiref0x/VBoxHardenedLoader/",
         "description": "VirtualBox VM detection mitigation loader"
+      },
+      {
+        "title": "BypassAnti-Virus",
+        "link": "https://github.com/midisec/BypassAnti-Virus",
+        "description": "\u514d\u6740\u59ff\u52bf\u5b66\u4e60\u3001\u8bb0\u5f55\u3001\u590d\u73b0\u3002"
+      },
+      {
+        "title": "OffensivePipeline",
+        "link": "https://github.com/snovvcrash/OffensivePipeline",
+        "description": "Download, compile, and obfuscate C# tools without VS!"
       }
     ]
   },
@@ -989,6 +1054,31 @@
         "title": "socialhunter",
         "link": "https://github.com/utkusen/socialhunter",
         "description": "Nice stuff to search for broken link on site and hijack it"
+      },
+      {
+        "title": "curl-impersonate",
+        "link": "https://github.com/lwthiker/curl-impersonate",
+        "description": "curl-impersonate: A special compilation of curl that makes it impersonate Chrome &amp; Firefox"
+      },
+      {
+        "title": "webb",
+        "link": "https://github.com/hardikvasa/webb",
+        "description": "Python: An all-in-one Web Crawler, Web Parser and Web Scrapping library!"
+      },
+      {
+        "title": "LFISuite",
+        "link": "https://github.com/D35m0nd142/LFISuite",
+        "description": "Totally Automatic LFI Exploiter (+ Reverse Shell) and Scanner "
+      },
+      {
+        "title": "rengine",
+        "link": "https://github.com/yogeshojha/rengine",
+        "description": "The only web application recon tool you will ever need!"
+      },
+      {
+        "title": "second-order",
+        "link": "https://github.com/mhmdiaa/second-order",
+        "description": "Second-order subdomain takeover scanner"
       }
     ]
   },
@@ -1090,6 +1180,11 @@
                 "title": "HandleKatz",
                 "link": "https://github.com/codewhitesec/HandleKatz",
                 "description": "IC lsass dumper using cloned handles"
+              },
+              {
+                "title": "CVE-2022-21882",
+                "link": "https://github.com/KaLendsi/CVE-2022-21882",
+                "description": "win32k LPE "
               }
             ]
           },
@@ -1301,6 +1396,26 @@
             "title": "lsassy",
             "link": "https://github.com/Hackndo/lsassy",
             "description": "Remote dump lsass"
+          },
+          {
+            "title": "HellsGate",
+            "link": "https://github.com/sbasu7241/HellsGate",
+            "description": "Rewrote HellsGate in C# for fun and learning"
+          },
+          {
+            "title": "PrivFu",
+            "link": "https://github.com/daem0nc0re/PrivFu",
+            "description": "Kernel mode WinDbg extension and PoCs for token privilege investigation."
+          },
+          {
+            "title": "SharpGhosting",
+            "link": "https://github.com/Wra7h/SharpGhosting",
+            "description": "Process Ghosting in C#"
+          },
+          {
+            "title": "CreateHiddenAccount",
+            "link": "https://github.com/wgpsec/CreateHiddenAccount",
+            "description": "A tool for creating hidden accounts using the registry || \u4e00\u4e2a\u4f7f\u7528\u6ce8\u518c\u8868\u521b\u5efa\u9690\u85cf\u5e10\u6237\u7684\u5de5\u5177"
           }
         ]
       },
@@ -1355,6 +1470,21 @@
             "title": "casper-fs",
             "link": "https://github.com/CoolerVoid/casper-fs",
             "description": "Custom Hidden Linux Kerbel Module generator"
+          },
+          {
+            "title": "PwnKit",
+            "link": "https://github.com/ly4k/PwnKit",
+            "description": "Self-contained exploit for CVE-2021-4034 - Pkexec Local Privilege Escalation"
+          },
+          {
+            "title": "CVE-2021-4034",
+            "link": "https://github.com/Ayrx/CVE-2021-4034",
+            "description": "Exploit for CVE-2021-4034"
+          },
+          {
+            "title": "HiddenWall",
+            "link": "https://github.com/CoolerVoid/HiddenWall",
+            "description": "Linux Kerbel hidden firewall"
           }
         ]
       },
@@ -1423,6 +1553,11 @@
             "title": "EIGRPWN",
             "link": "https://github.com/C0ldheim/EIGRPWN",
             "description": "This repository contains tools for conducting attacks on the EIGRP routing domain."
+          },
+          {
+            "title": "GoWard",
+            "link": "https://github.com/chdav/GoWard",
+            "description": "A robust Red Team proxy written in Go."
           }
         ]
       },
@@ -1542,6 +1677,31 @@
         "title": "<title>GitHub \u00b7 Where software is buil",
         "link": "https://github.com/Cybernite-Technologies/trickbot-leak",
         "description": "Trickbot leak"
+      },
+      {
+        "title": "hcre",
+        "link": "https://github.com/KMikeeU/hcre",
+        "description": "modify wordlists over CLI on the fly using hashcat rules"
+      },
+      {
+        "title": "OffensiveRust",
+        "link": "https://github.com/trickster0/OffensiveRust",
+        "description": "Rust Weaponization for Red Team Engagements."
+      },
+      {
+        "title": "Advanced-Process-Injection-Worksho",
+        "link": "https://github.com/RedTeamOperations/Advanced-Process-Injection-Workshop",
+        "description": ""
+      },
+      {
+        "title": "command-line-quick-reference",
+        "link": "https://github.com/vastutsav/command-line-quick-reference",
+        "description": "quick reference on command line tools and techniques for the people with limited time"
+      },
+      {
+        "title": "pegasus_spyware",
+        "link": "https://github.com/jonathandata1/pegasus_spyware",
+        "description": "decompiled pegasus_spyware"
       }
     ]
   },
