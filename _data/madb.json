@@ -67,7 +67,7 @@
             "link": "https://github.com/SecureAuthCorp/impacket"
           },
           {
-            "title": "Remote Potato \u2013 From Domain User to Enterprise Admin",
+            "title": "Remote Potato From Domain User to Enterprise Admin",
             "link": "https://pentestlab.blog/2021/05/04/remote-potato-from-domain-user-to-enterprise-admin/"
           },
           {
@@ -298,7 +298,7 @@
             "description": "Fake certs for windows binaries"
           },
           {
-            "title": "windows/spooler-splenumforms-iov at main \u00b7 grigoritchy/pocs \u00b7 GitHu",
+            "title": "windows/spooler-splenumforms-iov at main grigoritchy/pocs GitHu",
             "link": "https://github.com/grigoritchy/pocs/tree/main/windows/spooler-splenumforms-iov",
             "description": "spooler PoC exploit"
           }
@@ -387,7 +387,7 @@
             "name": "dns",
             "subcategory": [
               {
-                "title": "DNS Reconnaissance \u2013 DNSRecon",
+                "title": "DNS Reconnaissance DNSRecon",
                 "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
               },
               {
@@ -403,7 +403,7 @@
             "description": "AD Recon"
           },
           {
-            "title": "\ud83e\udd14 What is this?",
+            "title": "What is this?",
             "link": "https://github.com/RustScan/RustScan",
             "description": "Nmap but better"
           },
@@ -498,7 +498,7 @@
             "link": "https://hunter.io/"
           },
           {
-            "title": "\ud83d\udd0d Mr.Holmes",
+            "title": "Mr.Holmes",
             "link": "https://github.com/Lucksi/Mr.Holmes",
             "description": "All-in-one OSINT tool for social media, domain, phone number"
           }
@@ -569,7 +569,7 @@
         ]
       },
       {
-        "title": "\ud83e\udd14 What is this?",
+        "title": "What is this?",
         "link": "https://github.com/bee-san/pyWhat",
         "description": "Indentify everything, exe\\bin files, hashes, pcap dumps, strings - very useful"
       },
@@ -772,7 +772,7 @@
         "description": "Open Source AV"
       },
       {
-        "title": "\ud83d\udd33 DFIRT (DFIR Tool)",
+        "title": "DFIRT (DFIR Tool)",
         "link": "https://github.com/mamun-sec/dfirt",
         "description": "Kinda forensic tool, collects event logs, powershell history and more"
       },
