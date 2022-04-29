@@ -296,6 +296,11 @@
             "title": "LazySign",
             "link": "https://github.com/jfmaes/LazySign",
             "description": "Fake certs for windows binaries"
+          },
+          {
+            "title": "windows/spooler-splenumforms-iov at main \u00b7 grigoritchy/pocs \u00b7 GitHu",
+            "link": "https://github.com/grigoritchy/pocs/tree/main/windows/spooler-splenumforms-iov",
+            "description": "spooler PoC exploit"
           }
         ]
       },
@@ -954,6 +959,11 @@
         "title": "AllAboutBugBounty",
         "link": "https://github.com/daffainfo/AllAboutBugBounty",
         "description": ""
+      },
+      {
+        "title": "socialhunter",
+        "link": "https://github.com/utkusen/socialhunter",
+        "description": "Nice stuff to search for broken link on site and hijack it"
       }
     ]
   },
@@ -1482,6 +1492,11 @@
         "title": "GitHub",
         "link": "https://github.com/nettitude/RunPE",
         "description": "C# reflective loader"
+      },
+      {
+        "title": "MalwareSourceCode",
+        "link": "https://github.com/vxunderground/MalwareSourceCode",
+        "description": "MalwareSourceCode"
       }
     ]
   },
