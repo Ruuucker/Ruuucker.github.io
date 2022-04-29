@@ -909,6 +909,16 @@
         "title": "NimHollow",
         "link": "https://github.com/snovvcrash/NimHollow",
         "description": "Process Hollowing using syscalls"
+      },
+      {
+        "title": "SysWhispers3",
+        "link": "https://github.com/klezVirus/SysWhispers3",
+        "description": "SysWhispers on Steroids - AV/EDR evasion via direct system calls. "
+      },
+      {
+        "title": "anti-anti-vm-detection-dll-",
+        "link": "https://github.com/ExpLife0011/anti-anti-vm-detection-dll-1",
+        "description": ""
       }
     ]
   },
@@ -1393,6 +1403,11 @@
             "title": "GitHub",
             "link": "https://github.com/fofapro/fapro",
             "description": "The goal is to support as many protocols as possible, and support as many deep interactions as possible for each protocol. Maybe for spoofing?"
+          },
+          {
+            "title": "EIGRPWN",
+            "link": "https://github.com/C0ldheim/EIGRPWN",
+            "description": "This repository contains tools for conducting attacks on the EIGRP routing domain."
           }
         ]
       },
