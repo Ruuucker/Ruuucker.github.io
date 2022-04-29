@@ -790,6 +790,11 @@
             "description": "Sysmon For Linux!"
           }
         ]
+      },
+      {
+        "title": "TallGrass",
+        "link": "https://github.com/chdav/TallGrass",
+        "description": "AV exclusion enumeration in Python"
       }
     ]
   },
