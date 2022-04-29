@@ -205,6 +205,11 @@
                 "title": "ldap_shell",
                 "link": "https://github.com/PShlyundin/ldap_shell",
                 "description": "AD ACL abuse"
+              },
+              {
+                "title": "LdapRelayScan",
+                "link": "https://github.com/zyn3rgy/LdapRelayScan",
+                "description": ""
               }
             ]
           },
