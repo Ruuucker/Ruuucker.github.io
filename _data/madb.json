@@ -195,6 +195,16 @@
                 "title": "KrbRelayUp",
                 "link": "https://github.com/Dec0ne/KrbRelayUp",
                 "description": ""
+              },
+              {
+                "title": "Active-Directory-Wordlists",
+                "link": "https://github.com/Cryilllic/Active-Directory-Wordlists",
+                "description": "Active Directory Wordlists"
+              },
+              {
+                "title": "ldap_shell",
+                "link": "https://github.com/PShlyundin/ldap_shell",
+                "description": "AD ACL abuse"
               }
             ]
           },
@@ -281,6 +291,11 @@
             "title": "WADComs",
             "link": "https://wadcoms.github.io/",
             "description": "WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments."
+          },
+          {
+            "title": "LazySign",
+            "link": "https://github.com/jfmaes/LazySign",
+            "description": "Fake certs for windows binaries"
           }
         ]
       },
@@ -864,6 +879,21 @@
         "title": "RefleXXion",
         "link": "https://github.com/hlldz/RefleXXion",
         "description": "EDR api hooks bypass via syscalls"
+      },
+      {
+        "title": "mortar",
+        "link": "https://github.com/0xsp-SRD/mortar",
+        "description": ""
+      },
+      {
+        "title": "SyscallPack",
+        "link": "https://github.com/cube0x0/SyscallPack",
+        "description": "BOF and Shellcode for full DLL unhooking using dynamic syscalls"
+      },
+      {
+        "title": "NimHollow",
+        "link": "https://github.com/snovvcrash/NimHollow",
+        "description": "Process Hollowing using syscalls"
       }
     ]
   },
