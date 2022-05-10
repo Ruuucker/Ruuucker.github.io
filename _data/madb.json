@@ -245,6 +245,26 @@
                 "title": "Active-Directory-Exploitation-Cheat-Sheet",
                 "link": "https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet",
                 "description": "A cheat sheet that contains common enumeration and attack methods for Windows Active Directory."
+              },
+              {
+                "title": "noPac",
+                "link": "https://github.com/Ridter/noPac",
+                "description": "Exploiting CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard domain user "
+              },
+              {
+                "title": "adPEAS",
+                "link": "https://github.com/61106960/adPEAS",
+                "description": "Powershell tool to automate Active Directory enumeration."
+              },
+              {
+                "title": "noPac",
+                "link": "https://github.com/cube0x0/noPac",
+                "description": "CVE-2021-42287/CVE-2021-42278 Scanner &amp; Exploiter."
+              },
+              {
+                "title": "sam-the-admin",
+                "link": "https://github.com/WazeHell/sam-the-admin",
+                "description": "Exploiting CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard domain user "
               }
             ]
           },
@@ -386,6 +406,36 @@
             "title": "Proxy-Attackchain",
             "link": "https://github.com/FDlucifer/Proxy-Attackchain",
             "description": "proxylogon, proxyshell, proxyoracle and proxytoken full chain exploit tool"
+          },
+          {
+            "title": "NTLMRelay2Self",
+            "link": "https://github.com/med0x2e/NTLMRelay2Self",
+            "description": "An other No-Fix LPE, NTLMRelay2Self over HTTP (Webdav)."
+          },
+          {
+            "title": "CVE-2021-1732 at master \u00b7 Al1ex/WindowsElevation \u00b7 GitHu",
+            "link": "https://github.com/Al1ex/WindowsElevation/tree/master/CVE-2021-1732",
+            "description": 0
+          },
+          {
+            "title": "CVE-2021-42321",
+            "link": "https://github.com/DarkSprings/CVE-2021-42321",
+            "description": "Microsoft Exchange Server Poc"
+          },
+          {
+            "title": "InstallerFileTakeOve",
+            "link": "https://github.com/klinix5/InstallerFileTakeOver",
+            "description": "LPE"
+          },
+          {
+            "title": "MultiPotat",
+            "link": "https://github.com/S3cur3Th1sSh1t/MultiPotato",
+            "description": "MultiPotatooo"
+          },
+          {
+            "title": "lsarelayx",
+            "link": "https://github.com/CCob/lsarelayx",
+            "description": "NTLM relaying for Windows made easy"
           }
         ]
       },
@@ -404,6 +454,11 @@
             "title": "GitHub",
             "link": "https://github.com/htr-tech/zphisher",
             "description": "Phising framework with templates"
+          },
+          {
+            "title": "malicious-pdf",
+            "link": "https://github.com/jonaslejon/malicious-pdf",
+            "description": ""
           }
         ]
       },
@@ -566,6 +621,11 @@
             "title": "badKarma",
             "link": "https://github.com/r3vn/badKarma",
             "description": "network reconnaissance toolkit"
+          },
+          {
+            "title": "STEWS",
+            "link": "https://github.com/PalindromeLabs/STEWS",
+            "description": "A Security Tool for Enumerating WebSockets"
           }
         ]
       },
@@ -611,6 +671,11 @@
             "title": "gitleaks",
             "link": "https://github.com/zricethezav/gitleaks",
             "description": "Scan git repos (or files) for secrets using regex and entropy "
+          },
+          {
+            "title": "API-s-for-OSINT",
+            "link": "https://github.com/cipher387/API-s-for-OSINT",
+            "description": "List of API's for gathering information about phone numbers, addresses, domains etc"
           }
         ]
       },
@@ -771,6 +836,16 @@
         "title": "cve",
         "link": "https://github.com/trickest/cve",
         "description": "Gather and update all available and newest CVEs with their PoC."
+      },
+      {
+        "title": "feroxbuster",
+        "link": "https://github.com/epi052/feroxbuster",
+        "description": "A fast, simple, recursive content discovery tool written in Rust."
+      },
+      {
+        "title": "crawpy",
+        "link": "https://github.com/morph3/crawpy",
+        "description": "Yet another content discovery tool"
       }
     ]
   },
@@ -1069,6 +1144,31 @@
         "title": "OffensivePipeline",
         "link": "https://github.com/snovvcrash/OffensivePipeline",
         "description": "Download, compile, and obfuscate C# tools without VS!"
+      },
+      {
+        "title": "DefenderCheck",
+        "link": "https://github.com/matterpreter/DefenderCheck",
+        "description": "Identifies the bytes that Microsoft Defender flags on."
+      },
+      {
+        "title": "EDRSandblas",
+        "link": "https://github.com/wavestone-cdt/EdrSandblast",
+        "description": ""
+      },
+      {
+        "title": "EDR",
+        "link": "https://github.com/Mr-Un1k0d3r/EDRs/",
+        "description": ""
+      },
+      {
+        "title": "toriptables3",
+        "link": "https://github.com/ruped24/toriptables3",
+        "description": "Forward all traffic through Tor network easy"
+      },
+      {
+        "title": "InvisibilityCloak",
+        "link": "https://github.com/xforcered/InvisibilityCloak",
+        "description": "Proof-of-concept obfuscation toolkit for C# post-exploitation tools"
       }
     ]
   },
@@ -1194,6 +1294,16 @@
         "title": "4-ZERO-3",
         "link": "https://github.com/Dheerajmadhukar/4-ZERO-3",
         "description": "403/401 Bypass Methods + Bash Automation + Your Support ;)"
+      },
+      {
+        "title": "smuggler",
+        "link": "https://github.com/defparam/smuggler",
+        "description": "Smuggler - An HTTP Request Smuggling / Desync testing tool written in Python 3"
+      },
+      {
+        "title": "webdiscover",
+        "link": "https://github.com/V1n1v131r4/webdiscover",
+        "description": "The purpose of this script is to automate the web enumeration process and search for exploits"
       }
     ]
   },
@@ -1556,6 +1666,21 @@
             "title": "nanodump",
             "link": "https://github.com/helpsystems/nanodump",
             "description": "lsass dump"
+          },
+          {
+            "title": "MalSeclogon",
+            "link": "https://github.com/antonioCoco/MalSeclogon",
+            "description": "Dump creds via fancy stuff"
+          },
+          {
+            "title": "VX-API",
+            "link": "https://github.com/vxunderground/WinAPI-Tricks",
+            "description": "Collection of various WINAPI tricks / features used or abused by Malware"
+          },
+          {
+            "title": "pth at master \u00b7 EddieIvan01/win32api-practice \u00b7 GitHu",
+            "link": "https://github.com/EddieIvan01/win32api-practice/tree/master/pth",
+            "description": ""
           }
         ]
       },
@@ -1703,6 +1828,16 @@
             "title": "vortex",
             "link": "https://github.com/klezVirus/vortex",
             "description": "VPN Overall Reconnaissance, Testing, Enumeration and eXploitation Toolkit"
+          },
+          {
+            "title": "http-proxy-ipv6-pool",
+            "link": "https://github.com/zu1k/http-proxy-ipv6-pool",
+            "description": "Make every request from a separate IPv6 address."
+          },
+          {
+            "title": "Notionion",
+            "link": "https://github.com/ariary/Notionion",
+            "description": "Notion as an HTTP proxy"
           }
         ]
       },
@@ -1765,6 +1900,11 @@
             "title": "GitHub",
             "link": "https://github.com/n1nj4sec/pupy",
             "description": "Multi OS RAT"
+          },
+          {
+            "title": "awesome-command-control",
+            "link": "https://github.com/tcostam/awesome-command-control",
+            "description": ""
           }
         ]
       },
@@ -1862,6 +2002,46 @@
         "title": "awesome-executable-packing",
         "link": "https://github.com/dhondta/awesome-executable-packing",
         "description": "A curated list of awesome resources related to executable packing"
+      },
+      {
+        "title": "pe_to_shellcode",
+        "link": "https://github.com/hasherezade/pe_to_shellcode",
+        "description": "Converts PE into a shellcode"
+      },
+      {
+        "title": "DET",
+        "link": "https://github.com/sensepost/DET",
+        "description": "(extensible) Data Exfiltration Toolkit (DET)"
+      },
+      {
+        "title": "PasswordStealing/NPPSpy at master \u00b7 gtworek/PSBits \u00b7 GitHu",
+        "link": "https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy",
+        "description": ""
+      },
+      {
+        "title": "InlineWhispers2",
+        "link": "https://github.com/Sh0ckFR/InlineWhispers2",
+        "description": ""
+      },
+      {
+        "title": "process_ghosting",
+        "link": "https://github.com/hasherezade/process_ghosting",
+        "description": ""
+      },
+      {
+        "title": "aDL",
+        "link": "https://github.com/ideaslocas/aDLL",
+        "description": ""
+      },
+      {
+        "title": "veeam-creds",
+        "link": "https://github.com/sadshade/veeam-creds",
+        "description": "Collection of scripts to retrieve stored passwords from Veeam Backup "
+      },
+      {
+        "title": "SharpSelfDelete",
+        "link": "https://github.com/klezVirus/SharpSelfDelete",
+        "description": "idk"
       }
     ]
   },
