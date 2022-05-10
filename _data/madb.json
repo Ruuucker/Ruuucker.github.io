@@ -74,6 +74,11 @@
                 "title": "HatVenom",
                 "link": "https://github.com/EntySec/HatVenom",
                 "description": "HatVenom is a HatSploit native powerful payload generation tool that provides support for all common platforms and architectures. "
+              },
+              {
+                "title": "PowerShellArmoury",
+                "link": "https://github.com/cfalta/PowerShellArmoury",
+                "description": "A PowerShell armoury for security guys and girls"
               }
             ]
           },
@@ -265,6 +270,11 @@
                 "title": "sam-the-admin",
                 "link": "https://github.com/WazeHell/sam-the-admin",
                 "description": "Exploiting CVE-2021-42278 and CVE-2021-42287 to impersonate DA from standard domain user "
+              },
+              {
+                "title": "targetedKerberoast",
+                "link": "https://github.com/ShutdownRepo/targetedKerberoast",
+                "description": "Kerberoast with ACL abuse capabilities"
               }
             ]
           },
@@ -456,6 +466,16 @@
             "title": "Firewall_Walker_BOF",
             "link": "https://github.com/EspressoCake/Firewall_Walker_BOF",
             "description": "A BOF to interact with COM objects associated with the Windows software firewall."
+          },
+          {
+            "title": "ProxyVulns",
+            "link": "https://github.com/hosch3n/ProxyVulns",
+            "description": "ProxyLogon/ProxyShell/ProxyOracle"
+          },
+          {
+            "title": "ProxyShell",
+            "link": "https://github.com/ktecv2000/ProxyShell",
+            "description": "ProxyShell POC Exploit : Exchange Server RCE (ACL Bypass + EoP + Arbitrary File Write)"
           }
         ]
       },
@@ -544,6 +564,11 @@
         "title": "noPac",
         "link": "https://github.com/z-Riocool/noPac",
         "description": "noPac with compilen biraries"
+      },
+      {
+        "title": "whatsapp-mitd-mitm",
+        "link": "https://github.com/CENSUS/whatsapp-mitd-mitm",
+        "description": "PoC and tools for exploiting CVE-2020-6516 (Chrome) and CVE-2021-24027 (WhatsApp)"
       }
     ]
   },
@@ -564,6 +589,11 @@
                 "title": "Fierce",
                 "link": "https://github.com/mschwager/fierce",
                 "description": "recon IP adresses of the domain"
+              },
+              {
+                "title": "sonarbyte",
+                "link": "https://github.com/channyein1337/sonarbyte",
+                "description": "DNS subdomain scanner with a few tricks"
               }
             ]
           },
@@ -760,6 +790,16 @@
             "title": "LDAP Monitor",
             "link": "https://github.com/p0dalirius/LDAPmonitor",
             "description": "Monitor creation, deletion and changes to LDAP objects live during your pentest."
+          },
+          {
+            "title": "PlumHound",
+            "link": "https://github.com/PlumHound/PlumHound",
+            "description": "Bloodhound for Blue and Purple Teams"
+          },
+          {
+            "title": "DSInternals",
+            "link": "https://github.com/MichaelGrafnetter/DSInternals",
+            "description": " Directory Services Internals (DSInternals) PowerShell Module and Framework"
           }
         ]
       },
@@ -1025,6 +1065,16 @@
         "title": "pwnspoo",
         "link": "https://github.com/punk-security/pwnspoof",
         "description": "for ctf making"
+      },
+      {
+        "title": "chainsaw",
+        "link": "https://github.com/Countercept/chainsaw",
+        "description": " Rapidly Search and Hunt through Windows Event Logs "
+      },
+      {
+        "title": "Awesome-CobaltStrike-Defence",
+        "link": "https://github.com/MichaelKoczwara/Awesome-CobaltStrike-Defence",
+        "description": "Defences against Cobalt Strike"
       }
     ]
   },
@@ -1194,6 +1244,16 @@
         "title": "OffensiveVBA",
         "link": "https://github.com/S3cur3Th1sSh1t/OffensiveVBA",
         "description": "This repo covers some code execution and AV Evasion methods for Macros in Office documents"
+      },
+      {
+        "title": "Ghost-In-The-Logs",
+        "link": "https://github.com/bats3c/ghost-in-the-logs/",
+        "description": "Evade sysmon and windows event logging"
+      },
+      {
+        "title": "Huan",
+        "link": "https://github.com/frkngksl/Huan",
+        "description": "Encrypted PE Loader Generator"
       }
     ]
   },
@@ -1329,6 +1389,16 @@
         "title": "webdiscover",
         "link": "https://github.com/V1n1v131r4/webdiscover",
         "description": "The purpose of this script is to automate the web enumeration process and search for exploits"
+      },
+      {
+        "title": "mindmaps",
+        "link": "https://github.com/xmpf/mindmaps",
+        "description": "Mindmaps allow to organize and understand information faster and better."
+      },
+      {
+        "title": "DeepfakeHTTP",
+        "link": "https://github.com/xnbox/DeepfakeHTTP",
+        "description": "DeepfakeHTTP is a web server that uses HTTP dumps as a source for responses."
       }
     ]
   },
@@ -1629,6 +1699,11 @@
                     "description": " Certificate Authority (CA) certificate + private key to forge certificates for arbitrary users capable of authentication to Active Directory"
                   }
                 ]
+              },
+              {
+                "title": "PowerShx",
+                "link": "https://github.com/iomoath/PowerShx",
+                "description": "Run Powershell without software restrictions."
               }
             ]
           },
@@ -1726,6 +1801,36 @@
             "title": "SharpBeacon",
             "link": "https://github.com/mai1zhi2/SharpBeacon",
             "description": ""
+          },
+          {
+            "title": "Backstab",
+            "link": "https://github.com/Yaxser/Backstab",
+            "description": "A tool to kill antimalware protected processes"
+          },
+          {
+            "title": "lateral",
+            "link": "https://github.com/s0i37/lateral",
+            "description": "Port forwarding via MSRPC (445/tcp) [WIP]"
+          },
+          {
+            "title": "BokuLoader",
+            "link": "https://github.com/boku7/CobaltStrikeReflectiveLoader",
+            "description": "CobaltReflectiveLoader"
+          },
+          {
+            "title": "backdoorme",
+            "link": "https://github.com/Kkevsterrr/backdoorme",
+            "description": "powerful auto-backdooring utility"
+          },
+          {
+            "title": "wmkick",
+            "link": "https://github.com/KoreLogicSecurity/wmkick",
+            "description": "MITM tool that targets NTLM authentication message flows in WMI"
+          },
+          {
+            "title": "WindowsPermsPoC",
+            "link": "https://github.com/Maff1t/WindowsPermsPoC",
+            "description": "A simple PoC to demonstrate that is possible to write Non writable memory and execute Non executable memory on Windows"
           }
         ]
       },
@@ -1883,6 +1988,16 @@
             "title": "Notionion",
             "link": "https://github.com/ariary/Notionion",
             "description": "Notion as an HTTP proxy"
+          },
+          {
+            "title": "packetsifterTool",
+            "link": "https://github.com/packetsifter/packetsifterTool",
+            "description": ""
+          },
+          {
+            "title": "StreamDivert",
+            "link": "https://github.com/jellever/StreamDivert",
+            "description": "Redirecting (specific) TCP, UDP and ICMP traffic to another destination."
           }
         ]
       },
@@ -1950,6 +2065,16 @@
             "title": "awesome-command-control",
             "link": "https://github.com/tcostam/awesome-command-control",
             "description": ""
+          },
+          {
+            "title": "Covenant",
+            "link": "https://github.com/cobbr/Covenant",
+            "description": "Covenant is a collaborative .NET C2 framework for red teamers."
+          },
+          {
+            "title": "reverse-ssh",
+            "link": "https://github.com/Fahrj/reverse-ssh",
+            "description": "Statically-linked ssh server with reverse shell functionality for CTFs and such"
           }
         ]
       },
@@ -2102,6 +2227,11 @@
         "title": "zizzania",
         "link": "https://github.com/cyrus-and/zizzania",
         "description": "Great tool for capturing handshakes and de-auth attacks"
+      },
+      {
+        "title": "airgeddon",
+        "link": "https://github.com/v1s1t0r1sh3r3/airgeddon",
+        "description": "This is a multi-use bash script for Linux systems to audit wireless networks."
       }
     ]
   }
