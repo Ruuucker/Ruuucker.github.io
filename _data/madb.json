@@ -436,6 +436,26 @@
             "title": "lsarelayx",
             "link": "https://github.com/CCob/lsarelayx",
             "description": "NTLM relaying for Windows made easy"
+          },
+          {
+            "title": "CallbackHell",
+            "link": "https://github.com/ly4k/CallbackHell",
+            "description": "Exploit for CVE-2021-40449 - Win32k Elevation of Privilege Vulnerability (LPE)"
+          },
+          {
+            "title": "SharpSystemTriggers",
+            "link": "https://github.com/cube0x0/SharpSystemTriggers",
+            "description": "Collection of remote authentication triggers in C# "
+          },
+          {
+            "title": "Windows-auditing-mindmap",
+            "link": "https://github.com/mdecrevoisier/Windows-auditing-mindmap",
+            "description": ""
+          },
+          {
+            "title": "Firewall_Walker_BOF",
+            "link": "https://github.com/EspressoCake/Firewall_Walker_BOF",
+            "description": "A BOF to interact with COM objects associated with the Windows software firewall."
           }
         ]
       },
@@ -1169,6 +1189,11 @@
         "title": "InvisibilityCloak",
         "link": "https://github.com/xforcered/InvisibilityCloak",
         "description": "Proof-of-concept obfuscation toolkit for C# post-exploitation tools"
+      },
+      {
+        "title": "OffensiveVBA",
+        "link": "https://github.com/S3cur3Th1sSh1t/OffensiveVBA",
+        "description": "This repo covers some code execution and AV Evasion methods for Macros in Office documents"
       }
     ]
   },
@@ -1681,6 +1706,26 @@
             "title": "pth at master \u00b7 EddieIvan01/win32api-practice \u00b7 GitHu",
             "link": "https://github.com/EddieIvan01/win32api-practice/tree/master/pth",
             "description": ""
+          },
+          {
+            "title": "ZipExec",
+            "link": "https://github.com/Tylous/ZipExec",
+            "description": "A unique technique to execute binaries from a password protected zip"
+          },
+          {
+            "title": "Shellcode-Injection-Techniques",
+            "link": "https://github.com/plackyhacker/Shellcode-Injection-Techniques",
+            "description": 0
+          },
+          {
+            "title": "Registry-Recon",
+            "link": "https://github.com/optiv/Registry-Recon",
+            "description": "Cobalt Strike Aggressor Script that Performs System/AV/EDR Recon"
+          },
+          {
+            "title": "SharpBeacon",
+            "link": "https://github.com/mai1zhi2/SharpBeacon",
+            "description": ""
           }
         ]
       },
@@ -2042,6 +2087,11 @@
         "title": "SharpSelfDelete",
         "link": "https://github.com/klezVirus/SharpSelfDelete",
         "description": "idk"
+      },
+      {
+        "title": "heaptrace",
+        "link": "https://github.com/Arinerron/heaptrace",
+        "description": "helps visualize heap operations for pwn and debugging"
       }
     ]
   },
