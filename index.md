@@ -104,6 +104,7 @@ Hi, I do some info security stuff and this is my blog.
   
 </ul>
 
+<!--
 # $ cat tools.txt
 {:id="tools"}
 
@@ -112,8 +113,8 @@ Hi, I do some info security stuff and this is my blog.
 <li><a href="{{ tool.link }}">{{ tool.title }}</a> - {{ tool.description }}</li>
 {% endfor %}
 </ul>
+-->
 
 # $ cat contact.txt
 {:id="contact"}
 Telegram: > [https://t.me/ru_cker](https://t.me/ru_cker) <br />
-GitHub: > [https://github.com/Ruuucker](https://github.com/Ruuucker)
