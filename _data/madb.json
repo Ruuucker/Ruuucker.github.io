@@ -7,6 +7,18 @@
         "subcategory": []
         },
         {
+        "name": "lateral",
+        "subcategory": []
+        },
+        {
+        "name": "local",
+        "subcategory": []
+        },
+        {
+        "name": "lpe",
+        "subcategory": []
+        },
+        {
         "name": "recon",
         "subcategory": []
         }
@@ -14,11 +26,28 @@
   },
   {
     "name": "linux",
-    "subcategory": []
-  },
-  {
-    "name": "net",
-    "subcategory": []
+    "subcategory": [
+        {
+        "name": "exploit",
+        "subcategory": []
+        },
+        {
+        "name": "lateral",
+        "subcategory": []
+        },
+        {
+        "name": "local",
+        "subcategory": []
+        },
+        {
+        "name": "lpe",
+        "subcategory": []
+        },
+        {
+        "name": "recon",
+        "subcategory": []
+        }
+    ]
   },
     {
     "name": "exploit",
