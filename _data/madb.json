@@ -1,5 +1,26 @@
 [
   {
+    "name": "windows",
+    "subcategory": [
+        {
+        "name": "exploit",
+        "subcategory": []
+        },
+        {
+        "name": "recon",
+        "subcategory": []
+        }
+    ]
+  },
+  {
+    "name": "linux",
+    "subcategory": []
+  },
+  {
+    "name": "net",
+    "subcategory": []
+  },
+    {
     "name": "exploit",
     "subcategory": [
       {
