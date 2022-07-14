@@ -16,6 +16,16 @@
             "description": "Exploits"
           },
           {
+            "title": "noPac",
+            "link": "https://github.com/z-Riocool/noPac",
+            "description": "noPac with compilen biraries"
+          },
+          {
+            "title": "whatsapp-mitd-mitm",
+            "link": "https://github.com/CENSUS/whatsapp-mitd-mitm",
+            "description": "PoC and tools for exploiting CVE-2020-6516 (Chrome) and CVE-2021-24027 (WhatsApp)"
+          }
+          {
             "title": "Introduction",
             "link": "https://github.com/sensepost/ruler",
             "description": "Exchange pwn tool"
@@ -51,9 +61,8 @@
             "description": "Windows Common Log File System Driver POC"
           },
           {
-            "title": "Invoke-noPa",
-            "link": "https://github.com/ricardojba/Invoke-noPac",
-            "description": 0
+            "title": "Invoke-noPac",
+            "link": "https://github.com/ricardojba/Invoke-noPac"
           },
           {
             "title": "Proxy-Attackchain",
@@ -66,7 +75,7 @@
             "description": "RDP mitm"
           },
           {
-            "title": "windows/spooler-splenumforms-iov at main grigoritchy/pocs GitHu",
+            "title": "spooler-splenumforms-iov",
             "link": "https://github.com/grigoritchy/pocs/tree/main/windows/spooler-splenumforms-iov",
             "description": "spooler PoC exploit"
           },
@@ -78,7 +87,7 @@
           {
             "title": "CVE-2022-21971",
             "link": "https://github.com/0vercl0k/CVE-2022-21971",
-            "description": "PoC for CVE-2022-21971 \"Windows Runtime Remote Code Execution Vulnerability\""
+            "description": "PoC for CVE-2022-21971 Windows Runtime Remote Code Execution Vulnerability"
           },
           {
             "title": "LyncSniper",
@@ -263,9 +272,388 @@
             "description": "Cobalt Strike sharp extenders"
           },
           {
+            "title": "aDLL",
+            "link": "https://github.com/ideaslocas/aDLL"
+          },
+          {
+            "title": "Advanced-Process-Injection-Worksho",
+            "link": "https://github.com/RedTeamOperations/Advanced-Process-Injection-Workshop"
+          },
+          {
+            "title": "Embuche",
+            "link": "https://github.com/magnussen7/Embuche",
+            "description": "Anti-reverse Compilation"
+          },
+          {
+            "title": "NPPSpy",
+            "link": "https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy"
+          },
+          {
+            "title": "pe_to_shellcode",
+            "link": "https://github.com/hasherezade/pe_to_shellcode",
+            "description": "Converts PE into a shellcode"
+          },
+          {
+            "title": "DET",
+            "link": "https://github.com/sensepost/DET",
+            "description": "(extensible) Data Exfiltration Toolkit (DET)"
+          },
+          {
+            "title": "SharpSelfDelete",
+            "link": "https://github.com/klezVirus/SharpSelfDelete",
+            "description": "idk"
+          },
+          {
+            "title": "heaptrace",
+            "link": "https://github.com/Arinerron/heaptrace",
+            "description": "helps visualize heap operations for pwn and debugging"
+          },
+          {
+            "title": "RustSCRunner",
+            "link": "https://github.com/ASkyeye/RustSCRunner",
+            "description": "shellcode runner and injector"
+          },
+          {
+            "title": "Invoke-DLLClone",
+            "link": "https://github.com/jfmaes/Invoke-DLLClone",
+            "description": "Dll into dll inject (or something like that)"
+          },
+          {
+            "title": "Khepri",
+            "link": "https://github.com/geemion/Khepri",
+            "description": "Khepri is a Cross-platform agent, the architecture and usage like Cobalt Strike but free and open-source."
+          },
+          {
+            "title": "CertStealer",
+            "link": "https://github.com/TheWover/CertStealer",
+            "description": "Export certs without touching disk"
+          },
+          {
+            "title": "my-Little-Ransomware",
+            "link": "https://github.com/aaaddress1/my-Little-Ransomware",
+            "description": "easy ransomware module based on csharp"
+          },
+          {
+            "title": "DarkLoadLibrary",
+            "link": "https://github.com/bats3c/DarkLoadLibrary",
+            "description": "LoadLibrary for offensive operations (from disk, memory + don't lint to PEB )"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/sensepost/offensive-rpc",
+            "description": "OffSec RPC, I think its for shells and etc"
+          },
+          {
+            "title": "nosferatu",
+            "link": "https://github.com/kindtime/nosferatu",
+            "description": "Backdoor similar to Skeleton Key but in one single Windows machine via inject DLL into lsass"
+          },
+          {
+            "title": "lsassy",
+            "link": "https://github.com/Hackndo/lsassy",
+            "description": "Remote dump lsass"
+          },
+          {
+            "title": "HellsGate",
+            "link": "https://github.com/sbasu7241/HellsGate",
+            "description": "Rewrote HellsGate in C# for fun and learning"
+          },
+          {
+            "title": "PrivFu",
+            "link": "https://github.com/daem0nc0re/PrivFu",
+            "description": "Kernel mode WinDbg extension and PoCs for token privilege investigation."
+          },
+          {
+            "title": "SharpGhosting",
+            "link": "https://github.com/Wra7h/SharpGhosting",
+            "description": "Process Ghosting in C#"
+          },
+          {
+            "title": "CreateHiddenAccount",
+            "link": "https://github.com/wgpsec/CreateHiddenAccount",
+            "description": "A tool for creating hidden accounts using the registry"
+          },
+          {
+            "title": "MirrorDump",
+            "link": "https://github.com/snovvcrash/MirrorDump",
+            "description": "Dump Lsass dump stealty"
+          },
+          {
+            "title": "trufflehog",
+            "link": "https://github.com/trufflesecurity/truffleHog",
+            "description": "Find credentials all over the place"
+          },
+          {
+            "title": "DumpNParse",
+            "link": "https://github.com/icyguider/DumpNParse",
+            "description": "lsass dumper lsass parser"
+          },
+          {
+            "title": "nanodump",
+            "link": "https://github.com/helpsystems/nanodump",
+            "description": "lsass dump"
+          },
+          {
+            "title": "MalSeclogon",
+            "link": "https://github.com/antonioCoco/MalSeclogon",
+            "description": "Dump creds via fancy stuff"
+          },
+          {
+            "title": "VX-API",
+            "link": "https://github.com/vxunderground/WinAPI-Tricks",
+            "description": "Collection of various WINAPI tricks / features used or abused by Malware"
+          },
+          {
+            "title": "pth at master \u00b7 EddieIvan01/win32api-practice \u00b7 GitHu",
+            "link": "https://github.com/EddieIvan01/win32api-practice/tree/master/pth",
+            "description": ""
+          },
+          {
+            "title": "ZipExec",
+            "link": "https://github.com/Tylous/ZipExec",
+            "description": "A unique technique to execute binaries from a password protected zip"
+          },
+          {
+            "title": "Shellcode-Injection-Techniques",
+            "link": "https://github.com/plackyhacker/Shellcode-Injection-Techniques"
+          },
+          {
+            "title": "Registry-Recon",
+            "link": "https://github.com/optiv/Registry-Recon",
+            "description": "Cobalt Strike Aggressor Script that Performs System/AV/EDR Recon"
+          },
+          {
+            "title": "SharpBeacon",
+            "link": "https://github.com/mai1zhi2/SharpBeacon"
+          },
+          {
+            "title": "Backstab",
+            "link": "https://github.com/Yaxser/Backstab",
+            "description": "A tool to kill antimalware protected processes"
+          },
+          {
+            "title": "lateral",
+            "link": "https://github.com/s0i37/lateral",
+            "description": "Port forwarding via MSRPC (445/tcp) [WIP]"
+          },
+          {
+            "title": "BokuLoader",
+            "link": "https://github.com/boku7/CobaltStrikeReflectiveLoader",
+            "description": "CobaltReflectiveLoader"
+          },
+          {
+            "title": "backdoorme",
+            "link": "https://github.com/Kkevsterrr/backdoorme",
+            "description": "powerful auto-backdooring utility"
+          },
+          {
+            "title": "wmkick",
+            "link": "https://github.com/KoreLogicSecurity/wmkick",
+            "description": "MITM tool that targets NTLM authentication message flows in WMI"
+          },
+          {
+            "title": "WindowsPermsPoC",
+            "link": "https://github.com/Maff1t/WindowsPermsPoC",
+            "description": "A simple PoC to demonstrate that is possible to write Non writable memory and execute Non executable memory on Windows"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/unode/firefox_decrypt",
+            "description": "Passwords from FireFox"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/nettitude/RunPE",
+            "description": "C# reflective loader"
+          },
+          {
+            "title": "Invoke-Vnc - a powershell VNC injector",
+            "link": "https://github.com/klsecservices/Invoke-Vnc",
+            "description": "powershell VNC in memory inject"
+          },
+          {
+            "title": "Injector",
+            "link": "https://github.com/0xDivyanshu/Injector",
+            "description": "process injection tech things"
+          },
+          {
+            "title": "minhook",
+            "link": "https://github.com/TsudaKageyu/minhook",
+            "description": "API hooking library"
+          },
+          {
+            "title": "mimikittenz",
+            "link": "https://github.com/orlyjamie/mimikittenz",
+            "description": "Get info from memory"
+          },
+          {
+            "title": "RID Hijacking: Maintaining Access on Windows Machines",
+            "link": "https://github.com/r4wd3r/RID-Hijacking",
+            "description": "RID persistance"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hfiref0x/VMDE",
+            "description": "Virtual Machine Detection"
+          },
+          {
+            "title": "offensiveph",
+            "link": "https://github.com/RedSection/OffensivePH",
+            "description": "User-Mode Bypass via driver install"
+          },
+          {
+            "title": "veeam-creds",
+            "link": "https://github.com/sadshade/veeam-creds",
+            "description": "Collection of scripts to retrieve stored passwords from Veeam Backup "
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hfiref0x/UACME",
+            "description": "Bypass UAC"
+          },
+          {
+            "title": "NetRipper",
+            "link": "https://github.com/NytroRST/NetRipper"
+          },
+          {
+            "title": "DoUCMe",
+            "link": "https://github.com/ben0xa/doucme",
+            "description": "Invisible user"
+          },
+          {
+            "title": "Spraykatz",
+            "link": "https://github.com/aas-n/spraykatz",
+            "description": "Retrieve credentials on Windows"
+          },
+          {
+            "title": "RdpThief",
+            "link": "https://github.com/0x09AL/RdpThief",
+            "description": "Retrieve credentials from RDP"
+          },
+          {
+            "title": "Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS",
+            "link": "https://github.com/eladshamir/Internal-Monologue",
+            "description": "Get hashes without lsass.exe"
+          },
+          {
+            "title": "forkatz",
+            "link": "https://github.com/Barbarisch/forkatz",
+            "description": "Creds dump with SeTrustedCredmanAccessPrivilege"
+          },
+          {
+            "title": "community experiment. Dont use this for now unless it is for testing or submitting a PR.",
+            "link": "https://github.com/jfmaes/SharpRDPDump",
+            "description": "RDP creds dump"
+          },
+          {
+            "title": "SharpSploit",
+            "link": "https://github.com/cobbr/SharpSploit",
+            "description": "SharpSploit"
+          },
+          {
+            "title": "Invoker",
+            "link": "https://github.com/ivan-sincek/invoker",
+            "description": "Red Team injection and process and other things tool"
+          },
+          {
+            "title": "SharpImpersonation",
+            "link": "https://github.com/S3cur3Th1sSh1t/SharpImpersonation",
+            "description": "A User Impersonation tool - via Token or Shellcode injection"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/outflanknl/Dumpert",
+            "description": "Dump lsass with direct WinAPI calls bypassing EDR and API hooking"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/stephenfewer/ReflectiveDLLInjection",
+            "description": "Reflect DLL injection"
+          },
+          {
+            "title": "MemoryModule",
+            "link": "https://github.com/fancycode/MemoryModule",
+            "description": "Memory DLL loading"
+          },
+          {
+            "title": "Blackbone",
+            "link": "https://github.com/DarthTon/Blackbone",
+            "description": "Memory Hijack lib"
+          },
+          {
+            "title": "Mapping-Injection",
+            "link": "https://github.com/antonioCoco/Mapping-Injection",
+            "description": "another windows process injection"
+          },
+          {
+            "title": "BypassUAC",
+            "link": "https://github.com/diegslva/BypassUAC",
+            "description": "UAC bypass"
+          },
+          {
+            "title": "Empire",
+            "link": "https://github.com/BC-SECURITY/Empire",
+            "description": "Post Exp Framework, agents on pure powershell"
+          },
+          {
+            "title": "SafetyKatz",
+            "link": "https://github.com/GhostPack/SafetyKatz",
+            "description": "A bit modified mimikatz"
+          },
+          {
+            "title": "DueDLLigence",
+            "link": "https://github.com/fireeye/DueDLLigence",
+            "description": "DLL side loading"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/TheWover/donut",
+            "description": "ShellCode generation"
+          },
+          {
+            "title": "RuralBishop",
+            "link": "https://github.com/rasta-mouse/RuralBishop",
+            "description": "ShellCode generation"
+          },
+          {
+            "title": "Seatbelt",
+            "link": "https://github.com/GhostPack/Seatbelt",
+            "description": "C# sec checks"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/med0x2e/GadgetToJScript",
+            "description": "A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS/VBA scripts"
+          },
+          {
+            "title": "PowerLsassSilentProcessExit",
+            "link": "https://github.com/CompassSecurity/PowerLsassSilentProcessExit",
+            "description": "Powershell Lsass Silent proc dump"
+          },
+          {
+            "title": "LsassSilentProcessExit",
+            "link": "https://github.com/deepinstinct/LsassSilentProcessExit",
+            "description": "Lsass Silent proc dump"
+          },
+          {
+            "title": "SharpHook",
+            "link": "https://github.com/IlanKalendarov/SharpHook",
+            "description": "OffSec api hooking"
+          },
+          {
+            "title": "EDRHunt",
+            "link": "https://github.com/FourCoreLabs/EDRHunt",
+            "description": "Recon EDRs and AVs on Windows"
+          },
+          {
             "title": "GitHub",
             "link": "https://github.com/med0x2e/NET-Assembly-Inject-Remote",
             "description": "Process Inject .NET"
+          },
+          {
+            "title": "EDRs",
+            "link": "https://github.com/Mr-Un1k0d3r/EDRs",
+            "description": "Where EDRs puts hooks"
           },
           {
             "title": "Beaconator",
@@ -293,13 +681,64 @@
             "description": "An other No-Fix LPE, NTLMRelay2Self over HTTP (Webdav)."
           },
           {
+            "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
+            "link": "https://github.com/carlospolop/PEASS-ng",
+            "description": "WinPEAS"
+          },
+          {
+            "title": "HiveNightmare",
+            "link": "https://github.com/GossiTheDog/HiveNightmare",
+            "description": "LPE via incorrect SAM reading permission"
+          },
+          {
+            "title": "BeRoot For Windows",
+            "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Windows",
+            "description": "BeRoot windows"
+          },
+          {
+            "link": "https://github.com/zcgonvh/EfsPotato",
+            "description": "Petitpotam & Potato exploit"
+          },
+          {
+            "title": "DESCRIPTION",
+            "link": "https://github.com/AonCyberLabs/Windows-Exploit-Suggester",
+            "description": "Win exploit suggester"
+          },
+          {
+            "title": "HandleKatz",
+            "link": "https://github.com/codewhitesec/HandleKatz",
+            "description": "IC lsass dumper using cloned handles"
+          },
+          {
+            "title": "CVE-2022-21882",
+            "link": "https://github.com/KaLendsi/CVE-2022-21882",
+            "description": "win32k LPE "
+          },
+          {
+            "title": "Auto-Elevate",
+            "link": "https://github.com/FULLSHADE/Auto-Elevate",
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/rootm0s/WinPwnage",
+            "description": "UAC bypass, Elevate, Persistence methods "
+          },
+          {
+            "title": "RoguePotato",
+            "link": "https://github.com/antonioCoco/RoguePotato",
+            "description": "Another Potato"
+          },
+          {
+            "title": "JuicyPotato",
+            "link": "https://github.com/ohpe/juicy-potato"
+          },
+          {
             "title": "MultiPotato",
             "link": "https://github.com/S3cur3Th1sSh1t/MultiPotato"
           },
           {
             "title": "CVE-2021-1732 at master \u00b7 Al1ex/WindowsElevation \u00b7 GitHub",
-            "link": "https://github.com/Al1ex/WindowsElevation/tree/master/CVE-2021-1732",
-            "description": 0
+            "link": "https://github.com/Al1ex/WindowsElevation/tree/master/CVE-2021-1732"
           },
           {
             "title": "InstallerFileTakeOver",
@@ -315,6 +754,71 @@
             "title": "KnockOutlook",
             "link": "https://github.com/eksperience/KnockOutlook",
             "description": "Outlook recon tool, extract mails, contacts"
+          },
+          {
+            "title": "SharpSniper",
+            "link": "https://github.com/HunnicCyber/SharpSniper",
+            "description": "Get IP from creds"
+          },
+          {
+            "title": "nextnet",
+            "link": "https://github.com/hdm/nextnet",
+            "description": "Scan window's 137 udp to get interfaces and hostname"
+          },
+          {
+            "title": "NtdsAudit",
+            "link": "https://github.com/Dionach/NtdsAudit",
+            "description": "Show statistic about accounts and passwords"
+          },
+          {
+            "title": "Invoke-ACLpwn",
+            "link": "https://github.com/fox-it/Invoke-ACLPwn",
+            "description": "ACL attack in AD"
+          },
+          {
+            "title": "Active Directory Integrated DNS dump tool",
+            "link": "https://github.com/dirkjanm/adidnsdump",
+            "description": "Dump AD dns records"
+          },
+          {
+            "title": "SharpOxidResolver",
+            "link": "https://github.com/S3cur3Th1sSh1t/SharpOxidResolver",
+            "description": "Nextnet of AD, tells network devices via DCOM"
+          },
+          {
+            "title": "Ping Castle",
+            "link": "https://github.com/vletoux/pingcastle",
+            "description": "AD scanner script with many checks"
+          },
+          {
+            "title": "AD Explorer",
+            "link": "https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer",
+            "description": "Legit tool for AD recon, nice as a BloodHound replace"
+          },
+          {
+            "title": "Kerbrute",
+            "link": "https://github.com/ropnop/kerbrute",
+            "description": "Bruteforce usernames in AD via kerb pre-auth"
+          },
+          {
+            "title": "LDAP Monitor",
+            "link": "https://github.com/p0dalirius/LDAPmonitor",
+            "description": "Monitor creation, deletion and changes to LDAP objects live during your pentest."
+          },
+          {
+            "title": "PlumHound",
+            "link": "https://github.com/PlumHound/PlumHound",
+            "description": "Bloodhound for Blue and Purple Teams"
+          },
+          {
+            "title": "MAN-SPIDER",
+            "link": "https://github.com/blacklanternsecurity/MANSPIDER",
+            "description": "SMB share file searcher"
+          },
+          {
+            "title": "Download from https://github.com/adrecon/ADRecon",
+            "link": "https://github.com/sense-of-security/ADRecon",
+            "description": "AD Recon"
           },
           {
             "title": "adPEAS",
@@ -410,6 +914,11 @@
           "description": "Nice tools"
         },
         {
+          "title": "DSInternals",
+          "link": "https://github.com/MichaelGrafnetter/DSInternals",
+          "description": " Directory Services Internals (DSInternals) PowerShell Module and Framework"
+        },
+        {
           "title": "Sharp-Suite",
           "link": "https://github.com/FuzzySecurity/Sharp-Suite"
         },
@@ -439,6 +948,26 @@
           "description": "A BOF to interact with COM objects associated with the Windows software firewall."
         },
         {
+          "title": "cqtools",
+          "link": "https://github.com/BlackDiverX/cqtools",
+          "description": "Nice toolkit for all things that you need"
+        },
+        {
+          "title": "LOLBAS",
+          "link": "https://lolbas-project.github.io/",
+          "description": "Everyfind you need when u live off the land"
+        },
+        {
+          "title": "powercat",
+          "link": "https://github.com/besimorhino/powercat",
+          "description": "NetCat for windows"
+        },
+        {
+          "title": "Generator",
+          "link": "https://github.com/smokeme/payloadGenerator",
+          "description": "Payload Generation"
+        },
+        {
           "title": "GoFetch",
           "link": "https://github.com/GoFetchAD/GoFetch",
           "description": "Nice stuff to automate post-bloodhound activity"
@@ -454,9 +983,23 @@
           "description": "BloodHound"
         },
         {
+          "title": "PowerShx",
+          "link": "https://github.com/iomoath/PowerShx",
+          "description": "Run Powershell without software restrictions."
+        },
+        {
+          "title": "ForgeCert",
+          "link": "https://github.com/GhostPack/ForgeCert",
+          "description": " Certificate Authority (CA) certificate + private key to forge certificates for arbitrary users capable of authentication to Active Directory"
+        },
+        {
           "title": "Windows & Active Directory Exploitation Cheat Sheet and Command Reference",
           "link": "https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/",
           "description": "Windows & Ad exploitation Cheat Sheet"
+        },
+        {
+          "title": "WinPwn",
+          "link": "https://github.com/S3cur3Th1sSh1t/WinPwn"
         },
         {
           "title": "Microsoft Wont-Fix-List",
@@ -475,24 +1018,103 @@
     "subcategory": [
         {
         "name": "exploit",
-        "subcategory": []
-        },
-        {
-        "name": "lateral",
-        "subcategory": []
+        "subcategory": [
+          {
+            "title": "PwnKit",
+            "link": "https://github.com/ly4k/PwnKit",
+            "description": "Self-contained exploit for CVE-2021-4034 - Pkexec Local Privilege Escalation"
+          },
+          {
+            "title": "CVE-2021-4034",
+            "link": "https://github.com/Ayrx/CVE-2021-4034",
+            "description": "Exploit for CVE-2021-4034"
+          }
+        ]
         },
         {
         "name": "local",
-        "subcategory": []
+        "subcategory": [
+          {
+            "title": "MimiPenguin 2.0",
+            "link": "https://github.com/huntergregal/mimipenguin",
+            "description": "Get creds from current user session"
+          },
+          {
+            "title": "ProcDump",
+            "link": "https://github.com/Sysinternals/ProcDump-for-Linux",
+            "description": "proc dump for Linux"
+          },
+          {
+            "title": "ssh-backdoo",
+            "link": "https://github.com/NinjaJc01/ssh-backdoor",
+            "description": "ssh-bachdoor"
+          },
+          {
+            "title": "casper-fs",
+            "link": "https://github.com/CoolerVoid/casper-fs",
+            "description": "Custom Hidden Linux Kerbel Module generator"
+          },
+          {
+            "title": "HiddenWall",
+            "link": "https://github.com/CoolerVoid/HiddenWall",
+            "description": "Linux Kerbel hidden firewall"
+          },
+          {
+            "title": "GitHub",
+            "link": "https://github.com/hanslub42/rlwrap",
+            "description": "Tool for making your nc reverse shell more friendly"
+          },
+          {
+            "title": "GTFOBins",
+            "link": "https://gtfobins.github.io/",
+            "description": "LPE and usefull stuff"
+          }
+        ]
         },
         {
         "name": "lpe",
-        "subcategory": []
+        "subcategory": [
+          {
+            "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
+            "link": "https://github.com/carlospolop/PEASS-ng",
+            "description": "LinPEAS"
+          },
+          {
+            "title": "emp3r0r",
+            "link": "https://github.com/jm33-m0/emp3r0r"
+          },
+          {
+            "title": "BeRoot For Linux",
+            "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Linux",
+            "description": "BeRoot linux"
+          },
+          {
+            "title": "Traitor",
+            "link": "https://github.com/liamg/traitor",
+            "description": " Linux privesc via exploitation of low-hanging fruit"
+          }
+        ]
         },
         {
         "name": "recon",
-        "subcategory": []
+        "subcategory": [
+          {
+            "title": "ipcdump",
+            "link": "https://github.com/guardicore/ipcdump",
+            "description": "Linux IPC inspection tool"
+          }
+        ]
         }
+    ]
+  },
+  {
+    "name": "mac",
+    "subcategory": [
+      {
+        "title": "objective",
+        "link": "https://github.com/objective-see",
+        "description": "Lots tools for Apple Mac, written on Objective-C"
+      }
     ]
   },
   {
@@ -528,428 +1150,14 @@
       }
     ]
   },
-    {
-    "name": "exploit",
-    "subcategory": [
-      {
-        "name": "windows",
-        "subcategory": [
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        ]
-      },
-
-
-
-      {
-        "title": "subjack",
-        "link": "https://github.com/haccer/subjack",
-        "description": "DNS Subdomain takeover"
-      },
-      {
-        "title": "cqtools",
-        "link": "https://github.com/BlackDiverX/cqtools",
-        "description": "Nice toolkit for all things that you need"
-      },
-      {
-        "title": "Generator",
-        "link": "https://github.com/smokeme/payloadGenerator",
-        "description": "Payload Generation"
-      },
-      {
-        "name": "mac",
-        "subcategory": [
-          {
-            "title": "objective",
-            "link": "https://github.com/objective-see",
-            "description": "Lots tools for Apple Mac, written on Objective-C"
-          }
-        ]
-      },
-      {
-        "title": "PyCk",
-        "link": "https://github.com/Naategh/PyCk",
-        "description": "A collection of useful Python hacking scripts for beginners"
-      },
-      {
-        "title": "noPac",
-        "link": "https://github.com/z-Riocool/noPac",
-        "description": "noPac with compilen biraries"
-      },
-      {
-        "title": "whatsapp-mitd-mitm",
-        "link": "https://github.com/CENSUS/whatsapp-mitd-mitm",
-        "description": "PoC and tools for exploiting CVE-2020-6516 (Chrome) and CVE-2021-24027 (WhatsApp)"
-      }
-    ]
-  },
   {
-    "name": "recon",
+    "name": "detection",
     "subcategory": [
-      {
-        "name": "net",
-        "subcategory": [
-          {
-            "name": "dns",
-            "subcategory": [
-              {
-                "title": "DNS Reconnaissance DNSRecon",
-                "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
-              },
-              {
-                "title": "Fierce",
-                "link": "https://github.com/mschwager/fierce",
-                "description": "recon IP adresses of the domain"
-              },
-              {
-                "title": "sonarbyte",
-                "link": "https://github.com/channyein1337/sonarbyte",
-                "description": "DNS subdomain scanner with a few tricks"
-              }
-            ]
-          },
-          {
-            "title": "Download from https://github.com/adrecon/ADRecon",
-            "link": "https://github.com/sense-of-security/ADRecon",
-            "description": "AD Recon"
-          },
-          {
-            "title": "What is this?",
-            "link": "https://github.com/RustScan/RustScan",
-            "description": "Nmap but better"
-          },
-          {
-            "name": "windows",
-            "subcategory": [
-              {
-                "title": "nextnet",
-                "link": "https://github.com/hdm/nextnet",
-                "description": "Scan window's 137 udp to get interfaces and hostname"
-              },
-              {
-                "title": "MAN-SPIDER",
-                "link": "https://github.com/blacklanternsecurity/MANSPIDER",
-                "description": "SMB share file searcher"
-              }
-            ]
-          },
-          {
-            "title": "HOOKSHOT",
-            "link": "https://github.com/andrew-vii/hookshot",
-            "description": "Automate cwarl site for emails and accounts"
-          },
-          {
-            "title": "Description",
-            "link": "https://github.com/act1on3/pywappalyzer",
-            "description": "Python Port of Wappalyzer"
-          },
-          {
-            "title": "webanalyze",
-            "link": "https://github.com/rverton/webanalyze",
-            "description": "Go port of Wappalyzer"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script",
-            "description": "Web content discover script"
-          },
-          {
-            "title": "Woolf",
-            "link": "https://gitlab.com/woolf/RTSPbrute",
-            "description": "Scan/Brute routers"
-          },
-          {
-            "title": "Stargather",
-            "link": "https://github.com/dwisiswant0/stargather",
-            "description": "Github repos recon tool"
-          },
-          {
-            "title": "uDork - Google Hacking Tool",
-            "link": "https://github.com/m3n0sd0n4ld/uDork",
-            "description": "Google Dork scanner"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/p0f/p0f",
-            "description": "Passive traffic fingerprinter"
-          },
-          {
-            "title": "nmap-formatter",
-            "link": "https://github.com/vdjagilev/nmap-formatter",
-            "description": "Nmap results to json, md, etc"
-          },
-          {
-            "title": "badKarma",
-            "link": "https://github.com/r3vn/badKarma",
-            "description": "network reconnaissance toolkit"
-          },
-          {
-            "title": "STEWS",
-            "link": "https://github.com/PalindromeLabs/STEWS",
-            "description": "A Security Tool for Enumerating WebSockets"
-          }
-        ]
-      },
-      {
-        "name": "osint",
-        "subcategory": [
-          {
-            "title": "The Recon-ng Framework",
-            "link": "https://github.com/lanmaster53/recon-ng"
-          },
-          {
-            "title": "PhoneInfoga",
-            "link": "https://github.com/sundowndev/PhoneInfoga"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/ThoughtfulDev/EagleEye",
-            "description": "Social Media osint"
-          },
-          {
-            "title": "Overview of the tool:",
-            "link": "https://github.com/dvopsway/datasploit"
-          },
-          {
-            "title": "Skylens",
-            "link": "https://app.skylens.io/"
-          },
-          {
-            "title": "Find email addresses in seconds",
-            "link": "https://hunter.io/"
-          },
-          {
-            "title": "Mr.Holmes",
-            "link": "https://github.com/Lucksi/Mr.Holmes",
-            "description": "All-in-one OSINT tool for social media, domain, phone number"
-          },
-          {
-            "title": "ShonyDanza",
-            "link": "https://github.com/fierceoj/ShonyDanza",
-            "description": "power of Shodan"
-          },
-          {
-            "title": "gitleaks",
-            "link": "https://github.com/zricethezav/gitleaks",
-            "description": "Scan git repos (or files) for secrets using regex and entropy "
-          },
-          {
-            "title": "API-s-for-OSINT",
-            "link": "https://github.com/cipher387/API-s-for-OSINT",
-            "description": "List of API's for gathering information about phone numbers, addresses, domains etc"
-          }
-        ]
-      },
-      {
-        "name": "all-in-one",
-        "subcategory": [
-          {
-            "title": "DivideAndScan",
-            "link": "https://github.com/snovvcrash/DivideAndScan"
-          }
-        ]
-      },
-      {
-        "title": "Recon Tools",
-        "link": "https://github.com/nahberry/Recon-Tools",
-        "description": "Recon everything"
-      },
-      {
-        "name": "ad",
-        "subcategory": [
-          {
-            "title": "NtdsAudit",
-            "link": "https://github.com/Dionach/NtdsAudit",
-            "description": "Show statistic about accounts and passwords"
-          },
-          {
-            "title": "About BloodHound",
-            "link": "https://github.com/BloodHoundAD/BloodHound",
-            "description": "BloodHound"
-          },
-          {
-            "title": "Invoke-ACLpwn",
-            "link": "https://github.com/fox-it/Invoke-ACLPwn",
-            "description": "ACL attack in AD"
-          },
-          {
-            "title": "Active Directory Integrated DNS dump tool",
-            "link": "https://github.com/dirkjanm/adidnsdump",
-            "description": "Dump AD dns records"
-          },
-          {
-            "title": "SharpOxidResolver",
-            "link": "https://github.com/S3cur3Th1sSh1t/SharpOxidResolver",
-            "description": "Nextnet of AD, tells network devices via DCOM"
-          },
-          {
-            "title": "Ping Castle",
-            "link": "https://github.com/vletoux/pingcastle",
-            "description": "AD scanner script with many checks"
-          },
-          {
-            "title": "AD Explorer",
-            "link": "https://docs.microsoft.com/en-us/sysinternals/downloads/adexplorer",
-            "description": "Legit tool for AD recon, nice as a BloodHound replace"
-          },
-          {
-            "title": "Kerbrute",
-            "link": "https://github.com/ropnop/kerbrute",
-            "description": "Bruteforce usernames in AD via kerb pre-auth"
-          },
-          {
-            "title": "LDAP Monitor",
-            "link": "https://github.com/p0dalirius/LDAPmonitor",
-            "description": "Monitor creation, deletion and changes to LDAP objects live during your pentest."
-          },
-          {
-            "title": "PlumHound",
-            "link": "https://github.com/PlumHound/PlumHound",
-            "description": "Bloodhound for Blue and Purple Teams"
-          },
-          {
-            "title": "DSInternals",
-            "link": "https://github.com/MichaelGrafnetter/DSInternals",
-            "description": " Directory Services Internals (DSInternals) PowerShell Module and Framework"
-          }
-        ]
-      },
       {
         "title": "What is this?",
         "link": "https://github.com/bee-san/pyWhat",
         "description": "Indentify everything, exe\\bin files, hashes, pcap dumps, strings - very useful"
       },
-      {
-        "name": "scanners",
-        "subcategory": [
-          {
-            "title": "LEGION - Automatic Enumeration Tool",
-            "link": "https://github.com/carlospolop/legion.git",
-            "description": "Auto port based scanner to find vulners from hacktricks"
-          },
-          {
-            "title": "nesca",
-            "link": "https://github.com/pantyusha/nesca",
-            "description": "Scan Internet"
-          },
-          {
-            "title": "capsulecorp-pentest",
-            "link": "https://github.com/R3dy/capsulecorp-pentest",
-            "description": "Docket, Kubernetes and other contenters scanner"
-          },
-          {
-            "title": "ppfuzz",
-            "link": "https://github.com/dwisiswant0/ppfuzz",
-            "description": "Prototype Pollution scan"
-          },
-          {
-            "title": "protoscan",
-            "link": "https://github.com/KathanP19/protoscan",
-            "description": "Prototype pollution scanner"
-          },
-          {
-            "title": "trivy",
-            "link": "https://github.com/aquasecurity/trivy",
-            "description": "Scanner for vulnerabilities in container images, file systems, and Git repositories"
-          }
-        ]
-      },
-      {
-        "title": "BruteShark",
-        "link": "https://github.com/odedshimon/BruteShark",
-        "description": "writes network diagrams and extract NTLM\\Kerberos tickets from pcap"
-      },
-      {
-        "title": "Recog: A Recognition Framework",
-        "link": "https://github.com/rapid7/recog/",
-        "description": "Recon everything"
-      },
-      {
-        "title": "NIST CVE Search tool",
-        "link": "https://github.com/stratosphereips/nist-cve-search-tool",
-        "description": "CVE search"
-      },
-      {
-        "name": "linux",
-        "subcategory": [
-          {
-            "title": "ipcdump",
-            "link": "https://github.com/guardicore/ipcdump",
-            "description": "Linux IPC inspection tool"
-          }
-        ]
-      },
-      {
-        "title": "gitjacker",
-        "link": "https://github.com/liamg/gitjacker"
-      },
-      {
-        "title": "Harpoon",
-        "link": "https://github.com/Te-k/harpoon",
-        "description": "CLI tool for open source and threat intelligence "
-      },
-      {
-        "title": "TireFire",
-        "link": "https://github.com/CoolHandSquid/TireFire",
-        "description": "All In One recon tool, great for HTB but maybe cool for pentests too"
-      },
-      {
-        "title": "CyberChef",
-        "link": "https://github.com/gchq/cyberchef",
-        "description": "Knife - a web app for encryption, encoding, compression and data analysis"
-      },
-      {
-        "title": "bruteforce-lists",
-        "link": "https://github.com/random-robbie/bruteforce-lists",
-        "description": "List for brute web, api, files, etc"
-      },
-      {
-        "title": "cve",
-        "link": "https://github.com/trickest/cve",
-        "description": "Gather and update all available and newest CVEs with their PoC."
-      },
-      {
-        "title": "feroxbuster",
-        "link": "https://github.com/epi052/feroxbuster",
-        "description": "A fast, simple, recursive content discovery tool written in Rust."
-      },
-      {
-        "title": "crawpy",
-        "link": "https://github.com/morph3/crawpy",
-        "description": "Yet another content discovery tool"
-      }
-    ]
-  },
-  {
-    "name": "detection",
-    "subcategory": [
       {
         "name": "windows",
         "subcategory": [
@@ -992,22 +1200,8 @@
           {
             "title": "Detecting Dll Unhooking",
             "link": "https://makosecblog.com/malware-dev/detecting-dll-unhooking/"
-          },
-          {
-            "name": "post",
-            "subcategory": [
-              {
-                "title": "SharpSniper",
-                "link": "https://github.com/HunnicCyber/SharpSniper",
-                "description": "Get IP from creds"
-              }
-            ]
           }
         ]
-      },
-      {
-        "title": "Vindicate",
-        "link": "https://github.com/Rushyo/VindicateTool"
       },
       {
         "name": "other",
@@ -1055,9 +1249,23 @@
         ]
       },
       {
+        "name": "linux",
+        "subcategory": [
+          {
+            "title": "Sysmon For Linux install and build instructions",
+            "link": "https://github.com/Sysinternals/SysmonForLinux",
+            "description": "Sysmon For Linux!"
+          }
+        ]
+      },
+      {
         "title": "FalconEye: Real-time detection software for Windows process injections",
         "link": "https://github.com/rajiv2790/FalconEye",
         "description": "Real Time proc injection detection tool, runs as kernel driver and using api hooks"
+      },
+      {
+        "title": "Vindicate",
+        "link": "https://github.com/Rushyo/VindicateTool"
       },
       {
         "title": "ClamAV",
@@ -1070,16 +1278,6 @@
         "description": "Kinda forensic tool, collects event logs, powershell history and more"
       },
       {
-        "name": "linux",
-        "subcategory": [
-          {
-            "title": "Sysmon For Linux install and build instructions",
-            "link": "https://github.com/Sysinternals/SysmonForLinux",
-            "description": "Sysmon For Linux!"
-          }
-        ]
-      },
-      {
         "title": "TallGrass",
         "link": "https://github.com/chdav/TallGrass",
         "description": "AV exclusion enumeration in Python"
@@ -1090,7 +1288,7 @@
         "description": "A wireshark plugin to instrument ETW"
       },
       {
-        "title": "process_creation_dumpstack_log_evasion.yml at 7b08986f4bc257aba4ae2c5a53d5112ef48af9e3 \u00b7 SigmaHQ/sigma \u00b7 GitHu",
+        "title": "process_creation_dumpstack_log_evasion.yml at 7b08986f4bc257aba4ae2c5a53d5112ef48af9e3 \u00b7 SigmaHQ/sigma \u00b7 GitHub",
         "link": "https://github.com/SigmaHQ/sigma/blob/7b08986f4bc257aba4ae2c5a53d5112ef48af9e3/rules/windows/process_creation/process_creation_dumpstack_log_evasion.yml",
         "description": "Sigma rules"
       },
@@ -1102,7 +1300,7 @@
       {
         "title": "WELA",
         "link": "https://github.com/Yamato-Security/WELA/",
-        "description": "WELA (Windows Event Log Analyzer): The Swiss Army knife for Windows Event Logs! \u3091\u7f85\uff08\u30a6\u30a7\u30e9\uff09"
+        "description": "WELA (Windows Event Log Analyzer): The Swiss Army knife for Windows Event Logs!"
       },
       {
         "title": "pwnspoo",
@@ -1128,6 +1326,24 @@
         "title": "charlotte",
         "link": "https://github.com/9emin1/charlotte",
         "description": "Undetected shellcode, could use with meterpreter"
+      },
+      {
+        "title": "InlineWhispers2",
+        "link": "https://github.com/Sh0ckFR/InlineWhispers2"
+      },
+      {
+        "title": "process_ghosting",
+        "link": "https://github.com/hasherezade/process_ghosting"
+      },
+      {
+        "title": "Thread Stack Spoofing / Call Stack Spoofing PoC",
+        "link": "https://github.com/mgeeky/ThreadStackSpoofer",
+        "description": "PoC for an advanced In-Memory evasion"
+      },
+      {
+        "title": "Shellcode Fluctuation PoC",
+        "link": "https://github.com/mgeeky/ShellcodeFluctuation",
+        "description": "Shellcode in memory evasion"
       },
       {
         "title": "How to bypass Defender in a few easy steps",
@@ -1309,9 +1525,29 @@
         "description": "Checklist from Frogy"
       },
       {
+        "title": "uDork - Google Hacking Tool",
+        "link": "https://github.com/m3n0sd0n4ld/uDork",
+        "description": "Google Dork scanner"
+      },
+      {
         "title": "A skidalicious cheat sheet of webapp exploitation techniques",
         "link": "https://blog.oxagast.org/posts/skidalicious-webapp-exploit-cheat-sheet/",
         "description": "Web Checklist"
+      },
+      {
+        "title": "gitjacker",
+        "link": "https://github.com/liamg/gitjacker"
+      },
+      {
+        "title": "Harpoon",
+        "link": "https://github.com/Te-k/harpoon",
+        "description": "CLI tool for open source and threat intelligence "
+      },
+
+      {
+        "title": "CyberChef",
+        "link": "https://github.com/gchq/cyberchef",
+        "description": "Knife - a web app for encryption, encoding, compression and data analysis"
       },
       {
         "title": "GitHub",
@@ -1324,9 +1560,39 @@
         "description": "Bug Bounty tips"
       },
       {
+        "title": "feroxbuster",
+        "link": "https://github.com/epi052/feroxbuster",
+        "description": "A fast, simple, recursive content discovery tool written in Rust."
+      },
+      {
+        "title": "crawpy",
+        "link": "https://github.com/morph3/crawpy",
+        "description": "Yet another content discovery tool"
+      }
+      {
         "title": "SSRF Cheat Sheet & Bypass Techniques",
         "link": "https://highon.coffee/blog/ssrf-cheat-sheet/",
         "description": "SSRF cheat sheet bypass"
+      },
+      {
+        "title": "HOOKSHOT",
+        "link": "https://github.com/andrew-vii/hookshot",
+        "description": "Automate cwarl site for emails and accounts"
+      },
+      {
+        "title": "Description",
+        "link": "https://github.com/act1on3/pywappalyzer",
+        "description": "Python Port of Wappalyzer"
+      },
+      {
+        "title": "webanalyze",
+        "link": "https://github.com/rverton/webanalyze",
+        "description": "Go port of Wappalyzer"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/ShivamRai2003/Reconky-Automated_Bash_Script",
+        "description": "Web content discover script"
       },
       {
         "title": "GitHub",
@@ -1446,673 +1712,100 @@
     ]
   },
   {
-    "name": "local",
+    "name": "net",
     "subcategory": [
-      {
-        "title": "vxunderground",
-        "link": "https://github.com/vxunderground"
+	    {
+        "title": "subjack",
+        "link": "https://github.com/haccer/subjack",
+        "description": "DNS Subdomain takeover"
       },
       {
-        "title": "tmp.0ut",
-        "link": "https://tmpout.sh/1/"
-      },
-      {
-        "name": "windows",
-        "subcategory": [
-          {
-            "title": "LOLBAS",
-            "link": "https://lolbas-project.github.io/",
-            "description": "Everyfind you need when u live off the land"
-          },
-          {
-            "title": "powercat",
-            "link": "https://github.com/besimorhino/powercat",
-            "description": "NetCat for windows"
-          },
-          {
-            "name": "edr",
-            "subcategory": [
-              {
-                "title": "EDRs",
-                "link": "https://github.com/Mr-Un1k0d3r/EDRs",
-                "description": "Info about EDRs"
-              },
-              {
-                "title": "EDRHunt",
-                "link": "https://github.com/FourCoreLabs/EDRHunt",
-                "description": "Recon EDRs and AVs on Windows"
-              }
-            ]
-          },
-          {
-            "name": "lpe",
-            "subcategory": [
-              {
-                "name": "potatos",
-                "subcategory": [
-                  {
-                    "title": "RoguePotato",
-                    "link": "https://github.com/antonioCoco/RoguePotato",
-                    "description": "Another Potato"
-                  },
-                  {
-                    "title": "JuicyPotato",
-                    "link": "https://github.com/ohpe/juicy-potato"
-                  }
-                ]
-              },
-              {
-                "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
-                "link": "https://github.com/carlospolop/PEASS-ng",
-                "description": "WinPEAS"
-              },
-              {
-                "title": "WinPwn",
-                "link": "https://github.com/S3cur3Th1sSh1t/WinPwn"
-              },
-              {
-                "title": "GitHub",
-                "link": "https://github.com/rootm0s/WinPwnage",
-                "description": "UAC bypass, Elevate, Persistence methods "
-              },
-              {
-                "title": "HiveNightmare",
-                "link": "https://github.com/GossiTheDog/HiveNightmare",
-                "description": "LPE via incorrect SAM reading permission"
-              },
-              {
-                "title": "BeRoot For Windows",
-                "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Windows",
-                "description": "BeRoot windows"
-              },
-              {
-                "link": "https://github.com/zcgonvh/EfsPotato",
-                "description": "Petitpotam & Potato exploit"
-              },
-              {
-                "title": "GitHub",
-                "link": "https://github.com/zcgonvh/EfsPotato",
-                "description": "Petitpotam & Potato exploit"
-              },
-              {
-                "title": "DESCRIPTION",
-                "link": "https://github.com/AonCyberLabs/Windows-Exploit-Suggester",
-                "description": "Win exploit suggester"
-              },
-              {
-                "title": "HandleKatz",
-                "link": "https://github.com/codewhitesec/HandleKatz",
-                "description": "IC lsass dumper using cloned handles"
-              },
-              {
-                "title": "CVE-2022-21882",
-                "link": "https://github.com/KaLendsi/CVE-2022-21882",
-                "description": "win32k LPE "
-              },
-              {
-                "title": "Auto-Elevate",
-                "link": "https://github.com/FULLSHADE/Auto-Elevate",
-                "description": ""
-              }
-            ]
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/unode/firefox_decrypt",
-            "description": "Passwords from FireFox"
-          },
-          {
-            "title": "Invoke-Vnc - a powershell VNC injector",
-            "link": "https://github.com/klsecservices/Invoke-Vnc",
-            "description": "powershell VNC in memory inject"
-          },
-          {
-            "title": "Injector",
-            "link": "https://github.com/0xDivyanshu/Injector",
-            "description": "process injection tech things"
-          },
-          {
-            "title": "minhook",
-            "link": "https://github.com/TsudaKageyu/minhook",
-            "description": "API hooking library"
-          },
-          {
-            "title": "mimikittenz",
-            "link": "https://github.com/orlyjamie/mimikittenz",
-            "description": "Get info from memory"
-          },
-          {
-            "title": "RID Hijacking: Maintaining Access on Windows Machines",
-            "link": "https://github.com/r4wd3r/RID-Hijacking",
-            "description": "RID persistance"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/hfiref0x/VMDE",
-            "description": "Virtual Machine Detection"
-          },
-          {
-            "title": "offensiveph",
-            "link": "https://github.com/RedSection/OffensivePH",
-            "description": "User-Mode Bypass via driver install"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/hfiref0x/UACME",
-            "description": "Bypass UAC"
-          },
-          {
-            "title": "NetRipper",
-            "link": "https://github.com/NytroRST/NetRipper"
-          },
-          {
-            "title": "DoUCMe",
-            "link": "https://github.com/ben0xa/doucme",
-            "description": "Invisible user"
-          },
-          {
-            "title": "Spraykatz",
-            "link": "https://github.com/aas-n/spraykatz",
-            "description": "Retrieve credentials on Windows"
-          },
-          {
-            "title": "RdpThief",
-            "link": "https://github.com/0x09AL/RdpThief",
-            "description": "Retrieve credentials from RDP"
-          },
-          {
-            "title": "Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS",
-            "link": "https://github.com/eladshamir/Internal-Monologue",
-            "description": "Get hashes without lsass.exe"
-          },
-          {
-            "title": "forkatz",
-            "link": "https://github.com/Barbarisch/forkatz",
-            "description": "Creds dump with SeTrustedCredmanAccessPrivilege"
-          },
-          {
-            "title": "community experiment. Dont use this for now unless it is for testing or submitting a PR.",
-            "link": "https://github.com/jfmaes/SharpRDPDump",
-            "description": "RDP creds dump"
-          },
-          {
-            "title": "SharpSploit",
-            "link": "https://github.com/cobbr/SharpSploit",
-            "description": "SharpSploit"
-          },
-          {
-            "title": "Invoker",
-            "link": "https://github.com/ivan-sincek/invoker",
-            "description": "Red Team injection and process and other things tool"
-          },
-          {
-            "title": "SharpImpersonation",
-            "link": "https://github.com/S3cur3Th1sSh1t/SharpImpersonation",
-            "description": "A User Impersonation tool - via Token or Shellcode injection"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/outflanknl/Dumpert",
-            "description": "Dump lsass with direct WinAPI calls bypassing EDR and API hooking"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/stephenfewer/ReflectiveDLLInjection",
-            "description": "Reflect DLL injection"
-          },
-          {
-            "title": "MemoryModule",
-            "link": "https://github.com/fancycode/MemoryModule",
-            "description": "Memory DLL loading"
-          },
-          {
-            "title": "Blackbone",
-            "link": "https://github.com/DarthTon/Blackbone",
-            "description": "Memory Hijack lib"
-          },
-          {
-            "title": "Mapping-Injection",
-            "link": "https://github.com/antonioCoco/Mapping-Injection",
-            "description": "another windows process injection"
-          },
-          {
-            "title": "BypassUAC",
-            "link": "https://github.com/diegslva/BypassUAC",
-            "description": "UAC bypass"
-          },
-          {
-            "title": "Empire",
-            "link": "https://github.com/BC-SECURITY/Empire",
-            "description": "Post Exp Framework, agents on pure powershell"
-          },
-          {
-            "title": "SafetyKatz",
-            "link": "https://github.com/GhostPack/SafetyKatz",
-            "description": "A bit modified mimikatz"
-          },
-          {
-            "title": "DueDLLigence",
-            "link": "https://github.com/fireeye/DueDLLigence",
-            "description": "DLL side loading"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/TheWover/donut",
-            "description": "ShellCode generation"
-          },
-          {
-            "title": "RuralBishop",
-            "link": "https://github.com/rasta-mouse/RuralBishop",
-            "description": "ShellCode generation"
-          },
-          {
-            "title": "Seatbelt",
-            "link": "https://github.com/GhostPack/Seatbelt",
-            "description": "C# sec checks"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/med0x2e/GadgetToJScript",
-            "description": "A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS/VBA scripts"
-          },
-          {
-            "title": "PowerLsassSilentProcessExit",
-            "link": "https://github.com/CompassSecurity/PowerLsassSilentProcessExit",
-            "description": "Powershell Lsass Silent proc dump"
-          },
-          {
-            "title": "LsassSilentProcessExit",
-            "link": "https://github.com/deepinstinct/LsassSilentProcessExit",
-            "description": "Lsass Silent proc dump"
-          },
-          {
-            "title": "SharpHook",
-            "link": "https://github.com/IlanKalendarov/SharpHook",
-            "description": "OffSec api hooking"
-          },
-          {
-            "name": "ad",
-            "subcategory": [
-              {
-                "name": "persistance",
-                "subcategory": [
-                  {
-                    "title": "ForgeCert",
-                    "link": "https://github.com/GhostPack/ForgeCert",
-                    "description": " Certificate Authority (CA) certificate + private key to forge certificates for arbitrary users capable of authentication to Active Directory"
-                  }
-                ]
-              },
-              {
-                "title": "PowerShx",
-                "link": "https://github.com/iomoath/PowerShx",
-                "description": "Run Powershell without software restrictions."
-              }
-            ]
-          },
-          {
-            "title": "DarkLoadLibrary",
-            "link": "https://github.com/bats3c/DarkLoadLibrary",
-            "description": "LoadLibrary for offensive operations (from disk, memory + don't lint to PEB )"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/sensepost/offensive-rpc",
-            "description": "OffSec RPC, I think its for shells and etc"
-          },
-          {
-            "title": "nosferatu",
-            "link": "https://github.com/kindtime/nosferatu",
-            "description": "Backdoor similar to Skeleton Key but in one single Windows machine via inject DLL into lsass"
-          },
-          {
-            "title": "lsassy",
-            "link": "https://github.com/Hackndo/lsassy",
-            "description": "Remote dump lsass"
-          },
-          {
-            "title": "HellsGate",
-            "link": "https://github.com/sbasu7241/HellsGate",
-            "description": "Rewrote HellsGate in C# for fun and learning"
-          },
-          {
-            "title": "PrivFu",
-            "link": "https://github.com/daem0nc0re/PrivFu",
-            "description": "Kernel mode WinDbg extension and PoCs for token privilege investigation."
-          },
-          {
-            "title": "SharpGhosting",
-            "link": "https://github.com/Wra7h/SharpGhosting",
-            "description": "Process Ghosting in C#"
-          },
-          {
-            "title": "CreateHiddenAccount",
-            "link": "https://github.com/wgpsec/CreateHiddenAccount",
-            "description": "A tool for creating hidden accounts using the registry || \u4e00\u4e2a\u4f7f\u7528\u6ce8\u518c\u8868\u521b\u5efa\u9690\u85cf\u5e10\u6237\u7684\u5de5\u5177"
-          },
-          {
-            "title": "MirrorDump",
-            "link": "https://github.com/snovvcrash/MirrorDump",
-            "description": "Dump Lsass dump stealty"
-          },
-          {
-            "title": "trufflehog",
-            "link": "https://github.com/trufflesecurity/truffleHog",
-            "description": "Find credentials all over the place"
-          },
-          {
-            "title": "DumpNParse",
-            "link": "https://github.com/icyguider/DumpNParse",
-            "description": "lsass dumper lsass parser"
-          },
-          {
-            "title": "nanodump",
-            "link": "https://github.com/helpsystems/nanodump",
-            "description": "lsass dump"
-          },
-          {
-            "title": "MalSeclogon",
-            "link": "https://github.com/antonioCoco/MalSeclogon",
-            "description": "Dump creds via fancy stuff"
-          },
-          {
-            "title": "VX-API",
-            "link": "https://github.com/vxunderground/WinAPI-Tricks",
-            "description": "Collection of various WINAPI tricks / features used or abused by Malware"
-          },
-          {
-            "title": "pth at master \u00b7 EddieIvan01/win32api-practice \u00b7 GitHu",
-            "link": "https://github.com/EddieIvan01/win32api-practice/tree/master/pth",
-            "description": ""
-          },
-          {
-            "title": "ZipExec",
-            "link": "https://github.com/Tylous/ZipExec",
-            "description": "A unique technique to execute binaries from a password protected zip"
-          },
-          {
-            "title": "Shellcode-Injection-Techniques",
-            "link": "https://github.com/plackyhacker/Shellcode-Injection-Techniques",
-            "description": 0
-          },
-          {
-            "title": "Registry-Recon",
-            "link": "https://github.com/optiv/Registry-Recon",
-            "description": "Cobalt Strike Aggressor Script that Performs System/AV/EDR Recon"
-          },
-          {
-            "title": "SharpBeacon",
-            "link": "https://github.com/mai1zhi2/SharpBeacon",
-            "description": ""
-          },
-          {
-            "title": "Backstab",
-            "link": "https://github.com/Yaxser/Backstab",
-            "description": "A tool to kill antimalware protected processes"
-          },
-          {
-            "title": "lateral",
-            "link": "https://github.com/s0i37/lateral",
-            "description": "Port forwarding via MSRPC (445/tcp) [WIP]"
-          },
-          {
-            "title": "BokuLoader",
-            "link": "https://github.com/boku7/CobaltStrikeReflectiveLoader",
-            "description": "CobaltReflectiveLoader"
-          },
-          {
-            "title": "backdoorme",
-            "link": "https://github.com/Kkevsterrr/backdoorme",
-            "description": "powerful auto-backdooring utility"
-          },
-          {
-            "title": "wmkick",
-            "link": "https://github.com/KoreLogicSecurity/wmkick",
-            "description": "MITM tool that targets NTLM authentication message flows in WMI"
-          },
-          {
-            "title": "WindowsPermsPoC",
-            "link": "https://github.com/Maff1t/WindowsPermsPoC",
-            "description": "A simple PoC to demonstrate that is possible to write Non writable memory and execute Non executable memory on Windows"
-          }
-        ]
-      },
-      {
-        "name": "linux",
-        "subcategory": [
-          {
-            "title": "GTFOBins",
-            "link": "https://gtfobins.github.io/",
-            "description": "LPE and usefull stuff"
-          },
-          {
-            "name": "lpe",
-            "subcategory": [
-              {
-                "title": "PEASS-ng - Privilege Escalation Awesome Scripts SUITE new generation",
-                "link": "https://github.com/carlospolop/PEASS-ng",
-                "description": "LinPEAS"
-              },
-              {
-                "title": "emp3r0r",
-                "link": "https://github.com/jm33-m0/emp3r0r"
-              },
-              {
-                "title": "BeRoot For Linux",
-                "link": "https://github.com/AlessandroZ/BeRoot/tree/master/Linux",
-                "description": "BeRoot linux"
-              },
-              {
-                "title": "Traitor",
-                "link": "https://github.com/liamg/traitor",
-                "description": " Linux privesc via exploitation of low-hanging fruit"
-              }
-            ]
-          },
-          {
-            "title": "MimiPenguin 2.0",
-            "link": "https://github.com/huntergregal/mimipenguin",
-            "description": "Get creds from current user session"
-          },
-          {
-            "title": "ProcDump",
-            "link": "https://github.com/Sysinternals/ProcDump-for-Linux",
-            "description": "proc dump for Linux"
-          },
-          {
-            "title": "ssh-backdoo",
-            "link": "https://github.com/NinjaJc01/ssh-backdoor",
-            "description": "ssh-bachdoor"
-          },
-          {
-            "title": "casper-fs",
-            "link": "https://github.com/CoolerVoid/casper-fs",
-            "description": "Custom Hidden Linux Kerbel Module generator"
-          },
-          {
-            "title": "PwnKit",
-            "link": "https://github.com/ly4k/PwnKit",
-            "description": "Self-contained exploit for CVE-2021-4034 - Pkexec Local Privilege Escalation"
-          },
-          {
-            "title": "CVE-2021-4034",
-            "link": "https://github.com/Ayrx/CVE-2021-4034",
-            "description": "Exploit for CVE-2021-4034"
-          },
-          {
-            "title": "HiddenWall",
-            "link": "https://github.com/CoolerVoid/HiddenWall",
-            "description": "Linux Kerbel hidden firewall"
-          }
-        ]
-      },
-      {
-        "title": "my-Little-Ransomware",
-        "link": "https://github.com/aaaddress1/my-Little-Ransomware",
-        "description": "easy ransomware module based on csharp"
-      },
-      {
-        "name": "shell",
-        "subcategory": [
-          {
-            "title": "GitHub",
-            "link": "https://github.com/hanslub42/rlwrap",
-            "description": "Tool for making your nc reverse shell more friendly"
-          }
-        ]
-      },
-      {
-        "title": "Khepri",
-        "link": "https://github.com/geemion/Khepri",
-        "description": "Khepri is a Cross-platform agent, the architecture and usage like Cobalt Strike but free and open-source."
-      },
-      {
-        "title": "RustSCRunner",
-        "link": "https://github.com/ASkyeye/RustSCRunner",
-        "description": "shellcode runner and injector"
-      },
-      {
-        "title": "Invoke-DLLClone",
-        "link": "https://github.com/jfmaes/Invoke-DLLClone",
-        "description": "Dll into dll inject (or something like that)"
-      },
-      {
-        "title": "Shellcode Fluctuation PoC",
-        "link": "https://github.com/mgeeky/ShellcodeFluctuation",
-        "description": "Shellcode in memory evasion"
-      },
-      {
-        "title": "Thread Stack Spoofing / Call Stack Spoofing PoC",
-        "link": "https://github.com/mgeeky/ThreadStackSpoofer",
-        "description": "PoC for an advanced In-Memory evasion"
-      },
-      {
-        "title": "CertStealer",
-        "link": "https://github.com/TheWover/CertStealer",
-        "description": "Export certs without touching disk"
+        "title": "TireFire",
+        "link": "https://github.com/CoolHandSquid/TireFire",
+        "description": "All In One recon tool, great for HTB but maybe cool for pentests too"
       },
       {
         "title": "GitHub",
-        "link": "https://github.com/nettitude/RunPE",
-        "description": "C# reflective loader"
+        "link": "https://github.com/Dliv3/Venom",
+        "description": "Nice thing to pivoting"
       },
       {
-        "title": "MalwareSourceCode",
-        "link": "https://github.com/vxunderground/MalwareSourceCode",
-        "description": "MalwareSourceCode"
-      },
-      {
-        "title": "Trickbot leak",
-        "link": "https://github.com/Cybernite-Technologies/trickbot-leak",
-        "description": ""
-      },
-      {
-        "title": "hcre",
-        "link": "https://github.com/KMikeeU/hcre",
-        "description": "modify wordlists over CLI on the fly using hashcat rules"
-      },
-      {
-        "title": "OffensiveRust",
-        "link": "https://github.com/trickster0/OffensiveRust",
-        "description": "Rust Weaponization for Red Team Engagements."
-      },
-      {
-        "title": "Advanced-Process-Injection-Worksho",
-        "link": "https://github.com/RedTeamOperations/Advanced-Process-Injection-Workshop",
-        "description": ""
-      },
-      {
-        "title": "command-line-quick-reference",
-        "link": "https://github.com/vastutsav/command-line-quick-reference",
-        "description": "quick reference on command line tools and techniques for the people with limited time"
-      },
-      {
-        "title": "pegasus_spyware",
-        "link": "https://github.com/jonathandata1/pegasus_spyware",
-        "description": "decompiled pegasus_spyware"
-      },
-      {
-        "title": "Embuche",
-        "link": "https://github.com/magnussen7/Embuche",
-        "description": "Anti-reverse Compilation"
-      },
-      {
-        "title": "bootkit-samples",
-        "link": "https://github.com/hardenedvault/bootkit-samples",
-        "description": "Bootkit sample for firmware attack"
-      },
-      {
-        "title": "awesome-executable-packing",
-        "link": "https://github.com/dhondta/awesome-executable-packing",
-        "description": "A curated list of awesome resources related to executable packing"
-      },
-      {
-        "title": "pe_to_shellcode",
-        "link": "https://github.com/hasherezade/pe_to_shellcode",
-        "description": "Converts PE into a shellcode"
-      },
-      {
-        "title": "DET",
-        "link": "https://github.com/sensepost/DET",
-        "description": "(extensible) Data Exfiltration Toolkit (DET)"
-      },
-      {
-        "title": "PasswordStealing/NPPSpy at master \u00b7 gtworek/PSBits \u00b7 GitHu",
-        "link": "https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy",
-        "description": ""
-      },
-      {
-        "title": "InlineWhispers2",
-        "link": "https://github.com/Sh0ckFR/InlineWhispers2",
-        "description": ""
-      },
-      {
-        "title": "process_ghosting",
-        "link": "https://github.com/hasherezade/process_ghosting",
-        "description": ""
-      },
-      {
-        "title": "aDLL",
-        "link": "https://github.com/ideaslocas/aDLL",
-        "description": ""
-      },
-      {
-        "title": "veeam-creds",
-        "link": "https://github.com/sadshade/veeam-creds",
-        "description": "Collection of scripts to retrieve stored passwords from Veeam Backup "
-      },
-      {
-        "title": "SharpSelfDelete",
-        "link": "https://github.com/klezVirus/SharpSelfDelete",
-        "description": "idk"
-      },
-      {
-        "title": "heaptrace",
-        "link": "https://github.com/Arinerron/heaptrace",
-        "description": "helps visualize heap operations for pwn and debugging"
-      }
-    ]
-  },
-  {
-    "name": "net",
-    "subcategory": [
-      {
-        "name": "pivoting",
-        "subcategory": [
-          {
-            "title": "GitHub",
-            "link": "https://github.com/Dliv3/Venom",
-            "description": "Nice thing to pivoting"
-          }
-        ]
+        "title": "BruteShark",
+        "link": "https://github.com/odedshimon/BruteShark",
+        "description": "writes network diagrams and extract NTLM\\Kerberos tickets from pcap"
       },
       {
         "title": "Responder/MultiRelay",
         "link": "https://github.com/lgandx/Responder"
       },
       {
+        "title": "LEGION - Automatic Enumeration Tool",
+        "link": "https://github.com/carlospolop/legion.git",
+        "description": "Auto port based scanner to find vulners from hacktricks"
+      },
+      {
+        "title": "nesca",
+        "link": "https://github.com/pantyusha/nesca",
+        "description": "Scan Internet"
+      },
+      {
+        "title": "capsulecorp-pentest",
+        "link": "https://github.com/R3dy/capsulecorp-pentest",
+        "description": "Docket, Kubernetes and other contenters scanner"
+      },
+      {
+        "title": "ppfuzz",
+        "link": "https://github.com/dwisiswant0/ppfuzz",
+        "description": "Prototype Pollution scan"
+      },
+      {
+        "title": "protoscan",
+        "link": "https://github.com/KathanP19/protoscan",
+        "description": "Prototype pollution scanner"
+      },
+      {
+        "title": "trivy",
+        "link": "https://github.com/aquasecurity/trivy",
+        "description": "Scanner for vulnerabilities in container images, file systems, and Git repositories"
+      },
+      {
+        "title": "DivideAndScan",
+        "link": "https://github.com/snovvcrash/DivideAndScan"
+      },
+      {
         "title": "HoneyCreds",
         "link": "https://github.com/ben0xa/honeycreds"
+      },
+      {
+        "title": "Woolf",
+        "link": "https://gitlab.com/woolf/RTSPbrute",
+        "description": "Scan/Brute routers"
+      },
+      {
+        "title": "Stargather",
+        "link": "https://github.com/dwisiswant0/stargather",
+        "description": "Github repos recon tool"
+      },
+
+      {
+        "title": "GitHub",
+        "link": "https://github.com/p0f/p0f",
+        "description": "Passive traffic fingerprinter"
+      },
+      {
+        "title": "nmap-formatter",
+        "link": "https://github.com/vdjagilev/nmap-formatter",
+        "description": "Nmap results to json, md, etc"
+      },
+      {
+        "title": "badKarma",
+        "link": "https://github.com/r3vn/badKarma",
+        "description": "network reconnaissance toolkit"
+      },
+      {
+        "title": "STEWS",
+        "link": "https://github.com/PalindromeLabs/STEWS",
+        "description": "A Security Tool for Enumerating WebSockets"
       },
       {
         "title": "DomainBorrowing",
@@ -2123,6 +1816,11 @@
         "title": "bettercap",
         "link": "https://github.com/bettercap/bettercap",
         "description": "bettercap spoofing"
+      },
+      {
+        "title": "What is this?",
+        "link": "https://github.com/RustScan/RustScan",
+        "description": "Nmap but better"
       },
       {
         "title": "mitm6",
@@ -2155,6 +1853,11 @@
         "description": "The goal is to support as many protocols as possible, and support as many deep interactions as possible for each protocol. Maybe for spoofing?"
       },
       {
+        "title": "Recon Tools",
+        "link": "https://github.com/nahberry/Recon-Tools",
+        "description": "Recon everything"
+      },
+      {
         "title": "EIGRPWN",
         "link": "https://github.com/C0ldheim/EIGRPWN",
         "description": "This repository contains tools for conducting attacks on the EIGRP routing domain."
@@ -2183,6 +1886,20 @@
         "title": "packetsifterTool",
         "link": "https://github.com/packetsifter/packetsifterTool",
         "description": ""
+      },
+      {
+        "title": "DNS Reconnaissance DNSRecon",
+        "link": "https://pentestlab.blog/2012/11/13/dns-reconnaissance-dnsrecon/"
+      },
+      {
+        "title": "Fierce",
+        "link": "https://github.com/mschwager/fierce",
+        "description": "recon IP adresses of the domain"
+      },
+      {
+        "title": "sonarbyte",
+        "link": "https://github.com/channyein1337/sonarbyte",
+        "description": "DNS subdomain scanner with a few tricks"
       },
       {
         "title": "StreamDivert",
@@ -2279,6 +1996,45 @@
     ]
   },
   {
+    "name": "other",
+    "subcategory": [
+      {
+        "title": "hcre",
+        "link": "https://github.com/KMikeeU/hcre",
+        "description": "modify wordlists over CLI on the fly using hashcat rules"
+      },
+      {
+        "title": "bootkit-samples",
+        "link": "https://github.com/hardenedvault/bootkit-samples",
+        "description": "Bootkit sample for firmware attack"
+      },
+      {
+        "title": "OffensiveRust",
+        "link": "https://github.com/trickster0/OffensiveRust",
+        "description": "Rust Weaponization for Red Team Engagements."
+      },
+      {
+        "title": "pegasus_spyware",
+        "link": "https://github.com/jonathandata1/pegasus_spyware",
+        "description": "decompiled pegasus_spyware"
+      },
+      {
+        "title": "MalwareSourceCode",
+        "link": "https://github.com/vxunderground/MalwareSourceCode",
+        "description": "MalwareSourceCode"
+      },
+      {
+        "title": "Trickbot leak",
+        "link": "https://github.com/Cybernite-Technologies/trickbot-leak"
+      },
+      {
+        "title": "bruteforce-lists",
+        "link": "https://github.com/random-robbie/bruteforce-lists",
+        "description": "List for brute web, api, files, etc"
+      }
+    ]
+  },
+  {
     "name": "multilinks",
     "subcategory": [
       {
@@ -2293,6 +2049,34 @@
       {
         "title": "What is ired.team?",
         "link": "https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques"
+      },
+      {
+        "title": "awesome-executable-packing",
+        "link": "https://github.com/dhondta/awesome-executable-packing",
+        "description": "A curated list of awesome resources related to executable packing"
+      },
+      {
+        "title": "NIST CVE Search tool",
+        "link": "https://github.com/stratosphereips/nist-cve-search-tool",
+        "description": "CVE search"
+      },
+      {
+        "title": "cve",
+        "link": "https://github.com/trickest/cve",
+        "description": "Gather and update all available and newest CVEs with their PoC."
+      },
+      {
+        "title": "vxunderground",
+        "link": "https://github.com/vxunderground"
+      },
+      {
+        "title": "command-line-quick-reference",
+        "link": "https://github.com/vastutsav/command-line-quick-reference",
+        "description": "quick reference on command line tools and techniques for the people with limited time"
+      },
+      {
+        "title": "tmp.0ut",
+        "link": "https://tmpout.sh/1/"
       },
       {
         "title": "WADComs",
