@@ -1953,180 +1953,108 @@
           }
         ]
       },
-      {
-        "name": "net",
-        "subcategory": [
-          {
-            "name": "pivoting",
-            "subcategory": [
-              {
-                "title": "GitHub",
-                "link": "https://github.com/Dliv3/Venom",
-                "description": "Nice thing to pivoting"
-              }
-            ]
-          },
-          {
-            "title": "Responder/MultiRelay",
-            "link": "https://github.com/lgandx/Responder"
-          },
-          {
-            "title": "HoneyCreds",
-            "link": "https://github.com/ben0xa/honeycreds"
-          },
-          {
-            "title": "DomainBorrowing",
-            "link": "https://github.com/Dliv3/DomainBorrowing",
-            "description": "DomainBorrowing"
-          },
-          {
-            "title": "bettercap",
-            "link": "https://github.com/bettercap/bettercap",
-            "description": "bettercap spoofing"
-          },
-          {
-            "title": "mitm6",
-            "link": "https://github.com/fox-it/mitm6",
-            "description": "IPv6 spoofing"
-          },
-          {
-            "title": "Inveigh",
-            "link": "https://github.com/Kevin-Robertson/Inveigh",
-            "description": "csharp responder for spoofing and mitm"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/pkb1s/SharpRelay",
-            "description": "csharp relay tool"
-          },
-          {
-            "title": "Global Socket",
-            "link": "https://github.com/hackerschoice/gsocket",
-            "description": "Connect like there is no firewall. Securely."
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/fatedier/frp",
-            "description": "Reverse shell though NAT and everything"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/fofapro/fapro",
-            "description": "The goal is to support as many protocols as possible, and support as many deep interactions as possible for each protocol. Maybe for spoofing?"
-          },
-          {
-            "title": "EIGRPWN",
-            "link": "https://github.com/C0ldheim/EIGRPWN",
-            "description": "This repository contains tools for conducting attacks on the EIGRP routing domain."
-          },
-          {
-            "title": "GoWard",
-            "link": "https://github.com/chdav/GoWard",
-            "description": "A robust Red Team proxy written in Go."
-          },
-          {
-            "title": "vortex",
-            "link": "https://github.com/klezVirus/vortex",
-            "description": "VPN Overall Reconnaissance, Testing, Enumeration and eXploitation Toolkit"
-          },
-          {
-            "title": "http-proxy-ipv6-pool",
-            "link": "https://github.com/zu1k/http-proxy-ipv6-pool",
-            "description": "Make every request from a separate IPv6 address."
-          },
-          {
-            "title": "Notionion",
-            "link": "https://github.com/ariary/Notionion",
-            "description": "Notion as an HTTP proxy"
-          },
-          {
-            "title": "packetsifterTool",
-            "link": "https://github.com/packetsifter/packetsifterTool",
-            "description": ""
-          },
-          {
-            "title": "StreamDivert",
-            "link": "https://github.com/jellever/StreamDivert",
-            "description": "Redirecting (specific) TCP, UDP and ICMP traffic to another destination."
-          }
-        ]
-      },
+    {
+      "name": "net",
+      "subcategory": [
+        {
+          "name": "pivoting",
+          "subcategory": [
+            {
+              "title": "GitHub",
+              "link": "https://github.com/Dliv3/Venom",
+              "description": "Nice thing to pivoting"
+            }
+          ]
+        },
+        {
+          "title": "Responder/MultiRelay",
+          "link": "https://github.com/lgandx/Responder"
+        },
+        {
+          "title": "HoneyCreds",
+          "link": "https://github.com/ben0xa/honeycreds"
+        },
+        {
+          "title": "DomainBorrowing",
+          "link": "https://github.com/Dliv3/DomainBorrowing",
+          "description": "DomainBorrowing"
+        },
+        {
+          "title": "bettercap",
+          "link": "https://github.com/bettercap/bettercap",
+          "description": "bettercap spoofing"
+        },
+        {
+          "title": "mitm6",
+          "link": "https://github.com/fox-it/mitm6",
+          "description": "IPv6 spoofing"
+        },
+        {
+          "title": "Inveigh",
+          "link": "https://github.com/Kevin-Robertson/Inveigh",
+          "description": "csharp responder for spoofing and mitm"
+        },
+        {
+          "title": "GitHub",
+          "link": "https://github.com/pkb1s/SharpRelay",
+          "description": "csharp relay tool"
+        },
+        {
+          "title": "Global Socket",
+          "link": "https://github.com/hackerschoice/gsocket",
+          "description": "Connect like there is no firewall. Securely."
+        },
+        {
+          "title": "GitHub",
+          "link": "https://github.com/fatedier/frp",
+          "description": "Reverse shell though NAT and everything"
+        },
+        {
+          "title": "GitHub",
+          "link": "https://github.com/fofapro/fapro",
+          "description": "The goal is to support as many protocols as possible, and support as many deep interactions as possible for each protocol. Maybe for spoofing?"
+        },
+        {
+          "title": "EIGRPWN",
+          "link": "https://github.com/C0ldheim/EIGRPWN",
+          "description": "This repository contains tools for conducting attacks on the EIGRP routing domain."
+        },
+        {
+          "title": "GoWard",
+          "link": "https://github.com/chdav/GoWard",
+          "description": "A robust Red Team proxy written in Go."
+        },
+        {
+          "title": "vortex",
+          "link": "https://github.com/klezVirus/vortex",
+          "description": "VPN Overall Reconnaissance, Testing, Enumeration and eXploitation Toolkit"
+        },
+        {
+          "title": "http-proxy-ipv6-pool",
+          "link": "https://github.com/zu1k/http-proxy-ipv6-pool",
+          "description": "Make every request from a separate IPv6 address."
+        },
+        {
+          "title": "Notionion",
+          "link": "https://github.com/ariary/Notionion",
+          "description": "Notion as an HTTP proxy"
+        },
+        {
+          "title": "packetsifterTool",
+          "link": "https://github.com/packetsifter/packetsifterTool",
+          "description": ""
+        },
+        {
+          "title": "StreamDivert",
+          "link": "https://github.com/jellever/StreamDivert",
+          "description": "Redirecting (specific) TCP, UDP and ICMP traffic to another destination."
+        }
+      ]
+    },
       {
         "title": "my-Little-Ransomware",
         "link": "https://github.com/aaaddress1/my-Little-Ransomware",
         "description": "easy ransomware module based on csharp"
-      },
-      {
-        "name": "c2",
-        "subcategory": [
-          {
-            "title": "BlackMamba",
-            "link": "https://github.com/loseys/BlackMamba"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/HiwinCN/HTran",
-            "description": "Proxy bouncer for c2 traffic"
-          },
-          {
-            "title": "Koadic",
-            "link": "https://github.com/zerosum0x0/koadic",
-            "description": "Living Off The Land c2"
-          },
-          {
-            "title": "Quasar",
-            "link": "https://github.com/quasar/Quasar",
-            "description": "Remote Admin tool"
-          },
-          {
-            "title": "DoHC2",
-            "link": "https://github.com/SpiderLabs/DoHC2",
-            "description": "DNS over HTTPS c2"
-          },
-          {
-            "title": "Mythic",
-            "link": "https://github.com/its-a-feature/Mythic"
-          },
-          {
-            "title": "Micro Backdoor for Windows",
-            "link": "https://github.com/Cr4sh/MicroBackdoor",
-            "description": "c2 for windows"
-          },
-          {
-            "title": "serpentine",
-            "link": "https://github.com/jafarlihi/serpentine",
-            "description": "Win c++ RAT"
-          },
-          {
-            "title": "Requirements",
-            "link": "https://github.com/JoelGMSec/Invoke-DNSteal",
-            "description": "Another DNS tunnel"
-          },
-          {
-            "title": "Ninja V2.1 Released ( 31/07/2021 ) .",
-            "link": "https://github.com/ahmedkhlief/Ninja/"
-          },
-          {
-            "title": "GitHub",
-            "link": "https://github.com/n1nj4sec/pupy",
-            "description": "Multi OS RAT"
-          },
-          {
-            "title": "awesome-command-control",
-            "link": "https://github.com/tcostam/awesome-command-control",
-            "description": ""
-          },
-          {
-            "title": "Covenant",
-            "link": "https://github.com/cobbr/Covenant",
-            "description": "Covenant is a collaborative .NET C2 framework for red teamers."
-          },
-          {
-            "title": "reverse-ssh",
-            "link": "https://github.com/Fahrj/reverse-ssh",
-            "description": "Statically-linked ssh server with reverse shell functionality for CTFs and such"
-          }
-        ]
       },
       {
         "name": "shell",
@@ -2267,6 +2195,78 @@
         "title": "heaptrace",
         "link": "https://github.com/Arinerron/heaptrace",
         "description": "helps visualize heap operations for pwn and debugging"
+      }
+    ]
+  },
+  {
+    "name": "c2",
+    "subcategory": [
+      {
+        "title": "BlackMamba",
+        "link": "https://github.com/loseys/BlackMamba"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/HiwinCN/HTran",
+        "description": "Proxy bouncer for c2 traffic"
+      },
+      {
+        "title": "Koadic",
+        "link": "https://github.com/zerosum0x0/koadic",
+        "description": "Living Off The Land c2"
+      },
+      {
+        "title": "Quasar",
+        "link": "https://github.com/quasar/Quasar",
+        "description": "Remote Admin tool"
+      },
+      {
+        "title": "DoHC2",
+        "link": "https://github.com/SpiderLabs/DoHC2",
+        "description": "DNS over HTTPS c2"
+      },
+      {
+        "title": "Mythic",
+        "link": "https://github.com/its-a-feature/Mythic"
+      },
+      {
+        "title": "Micro Backdoor for Windows",
+        "link": "https://github.com/Cr4sh/MicroBackdoor",
+        "description": "c2 for windows"
+      },
+      {
+        "title": "serpentine",
+        "link": "https://github.com/jafarlihi/serpentine",
+        "description": "Win c++ RAT"
+      },
+      {
+        "title": "Requirements",
+        "link": "https://github.com/JoelGMSec/Invoke-DNSteal",
+        "description": "Another DNS tunnel"
+      },
+      {
+        "title": "Ninja V2.1 Released ( 31/07/2021 ) .",
+        "link": "https://github.com/ahmedkhlief/Ninja/"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/n1nj4sec/pupy",
+        "description": "Multi OS RAT"
+      },
+      {
+        "title": "awesome-command-control",
+        "link": "https://github.com/tcostam/awesome-command-control",
+        "description": ""
+      },
+      {
+        "title": "Covenant",
+        "link": "https://github.com/cobbr/Covenant",
+        "description": "Covenant is a collaborative .NET C2 framework for red teamers."
+      },
+      {
+        "title": "reverse-ssh",
+        "link": "https://github.com/Fahrj/reverse-ssh",
+        "description": "Statically-linked ssh server with reverse shell functionality for CTFs and such"
       }
     ]
   },
