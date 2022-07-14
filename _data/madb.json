@@ -24,7 +24,7 @@
             "title": "whatsapp-mitd-mitm",
             "link": "https://github.com/CENSUS/whatsapp-mitd-mitm",
             "description": "PoC and tools for exploiting CVE-2020-6516 (Chrome) and CVE-2021-24027 (WhatsApp)"
-          }
+          },
           {
             "title": "Introduction",
             "link": "https://github.com/sensepost/ruler",
@@ -116,7 +116,7 @@
           },
           {
             "title": "PetitPotam",
-            "link": "https://github.com/topotam/PetitPotam",
+            "link": "https://github.com/topotam/PetitPotam"
           },
           {
             "title": "noPac",
@@ -716,7 +716,7 @@
           },
           {
             "title": "Auto-Elevate",
-            "link": "https://github.com/FULLSHADE/Auto-Elevate",
+            "link": "https://github.com/FULLSHADE/Auto-Elevate"
           },
           {
             "title": "GitHub",
@@ -1568,7 +1568,7 @@
         "title": "crawpy",
         "link": "https://github.com/morph3/crawpy",
         "description": "Yet another content discovery tool"
-      }
+      },
       {
         "title": "SSRF Cheat Sheet & Bypass Techniques",
         "link": "https://highon.coffee/blog/ssrf-cheat-sheet/",
