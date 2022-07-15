@@ -225,6 +225,11 @@
             "title": "SessionGopher",
             "link": "https://github.com/Arvanaghi/SessionGopher",
             "description": "Powershell script extracts saved session remote or localy"
+          },
+          {
+            "title": "tokenduplicator",
+            "link": "https://github.com/magnusstubman/tokenduplicator",
+            "description": "Tool to start processes as SYSTEM using token duplication"
           }
         ]
       },
@@ -1020,6 +1025,11 @@
         "title": "GitHub",
         "link": "https://github.com/PowerShellMafia/PowerSploit",
         "description": "PowerSploit"
+      },
+      {
+        "title": "microsoft-rpc-fuzzing-tools",
+        "link": "https://github.com/p0dalirius/microsoft-rpc-fuzzing-tools",
+        "description": ""
       }
     ]
   },
@@ -2044,6 +2054,11 @@
         "title": "browsh",
         "link": "https://github.com/browsh-org/browsh",
         "description": "A fully-modern text-based browser, rendering to TTY and browsers"
+      },
+      {
+        "title": "p2p",
+        "link": "https://github.com/miroslavpejic85/p2p",
+        "description": ""
       }
     ]
   },
@@ -2100,6 +2115,11 @@
         "title": "awesome-hacking-lists",
         "link": "https://github.com/taielab/awesome-hacking-lists",
         "description": "Another hacking lists, now from chinese guys"
+      },
+      {
+        "title": "Penetration-Testing-Tools",
+        "link": "https://github.com/mgeeky/Penetration-Testing-Tools",
+        "description": ""
       }
     ]
   }
