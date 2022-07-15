@@ -230,6 +230,11 @@
             "title": "tokenduplicator",
             "link": "https://github.com/magnusstubman/tokenduplicator",
             "description": "Tool to start processes as SYSTEM using token duplication"
+          },
+          {
+            "title": "DFSCoerce",
+            "link": "https://github.com/Wh04m1001/DFSCoerce",
+            "description": ""
           }
         ]
       },
@@ -679,6 +684,11 @@
             "title": "README.md",
             "link": "https://github.com/GhostPack/Koh/blob/main/README.md#mitigations",
             "description": "C# and Beacon Object File to capture creds"
+          },
+          {
+            "title": "CallStackSpoofer",
+            "link": "https://github.com/countercept/CallStackSpoofer",
+            "description": ""
           }
         ]
       },
@@ -874,6 +884,11 @@
             "title": "powerview.py",
             "link": "https://github.com/aniqfakhrul/PywerView",
             "description": "PowerView alternative"
+          },
+          {
+            "title": "ldeep",
+            "link": "https://github.com/franc-pentest/ldeep",
+            "description": "In-depth ldap enumeration utility"
           }
         ]
       },
@@ -1573,6 +1588,21 @@
         "title": "SysmonQuiet",
         "link": "https://github.com/ScriptIdiot/SysmonQuiet",
         "description": "RDLL for Cobalt Strike beacon to silence sysmon process"
+      },
+      {
+        "title": "BokuLoader",
+        "link": "https://github.com/boku7/BokuLoader",
+        "description": ""
+      },
+      {
+        "title": "Shelltropy",
+        "link": "https://github.com/kleiton0x00/Shelltropy",
+        "description": "A technique of hiding malicious shellcode via Shannon encoding. "
+      },
+      {
+        "title": "nim-loader",
+        "link": "https://github.com/adamsvoboda/nim-loader",
+        "description": "WIP shellcode loader in nim with EDR evasion techniques"
       }
     ]
   },
@@ -1772,6 +1802,16 @@
         "title": "bypass-url-parser",
         "link": "https://github.com/laluka/bypass-url-parser",
         "description": "bypass-url-parser"
+      },
+      {
+        "title": "OneListForAll",
+        "link": "https://github.com/six2dez/OneListForAll",
+        "description": "Rockyou for web fuzzing"
+      },
+      {
+        "title": "Awesome-RCE-techniques",
+        "link": "https://github.com/p0dalirius/Awesome-RCE-techniques",
+        "description": "Awesome list of step by step techniques to achieve Remote Code Execution on various apps!"
       }
     ]
   },
@@ -1968,6 +2008,11 @@
         "title": "StreamDivert",
         "link": "https://github.com/jellever/StreamDivert",
         "description": "Redirecting (specific) TCP, UDP and ICMP traffic to another destination."
+      },
+      {
+        "title": "DrawNmap",
+        "link": "https://github.com/jor6PS/DrawNmap",
+        "description": "Friendly graphical output of the nmap tool that allows filtering by open ports"
       }
     ]
   },
@@ -2050,6 +2095,11 @@
         "title": "Brute-Ratel-C4-Community-Kit",
         "link": "https://github.com/paranoidninja/Brute-Ratel-C4-Community-Kit",
         "description": ""
+      },
+      {
+        "title": "sliver",
+        "link": "https://github.com/BishopFox/sliver",
+        "description": "Adversary Emulation Framework"
       }
     ]
   },
