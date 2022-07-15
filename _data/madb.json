@@ -235,6 +235,11 @@
             "title": "DFSCoerce",
             "link": "https://github.com/Wh04m1001/DFSCoerce",
             "description": ""
+          },
+          {
+            "title": "AutoPWN-Suite",
+            "link": "https://github.com/GamehunterKaan/AutoPWN-Suite",
+            "description": "AutoPWN Suite is a project for scanning vulnerabilities and exploiting systems automatically."
           }
         ]
       },
@@ -270,6 +275,11 @@
             "title": "Liquid Snake",
             "link": "https://github.com/RiccardoAncarani/LiquidSnake",
             "description": "fileless lateral movement using WMI Event Subscriptions and GadgetToJScript"
+          },
+          {
+            "title": "SharpWSUS",
+            "link": "https://github.com/nettitude/SharpWSUS",
+            "description": ""
           }
         ]
       },
@@ -689,6 +699,21 @@
             "title": "CallStackSpoofer",
             "link": "https://github.com/countercept/CallStackSpoofer",
             "description": ""
+          },
+          {
+            "title": "Dumpy",
+            "link": "https://github.com/Kudaes/Dumpy",
+            "description": "Reuse opened handles to dynamically dump LSASS using Dinvoke_rs."
+          },
+          {
+            "title": "NlsCodeInjectionThroughRegistry",
+            "link": "https://github.com/NtQuerySystemInformation/NlsCodeInjectionThroughRegistry",
+            "description": "Dll injection through code page id modification in registry. Based on jonas lykk research"
+          },
+          {
+            "title": "PPLdump",
+            "link": "https://github.com/itm4n/PPLdump",
+            "description": "Dump the memory of a PPL with a userland exploit"
           }
         ]
       },
@@ -764,6 +789,16 @@
             "title": "InstallerFileTakeOver",
             "link": "https://github.com/klinix5/InstallerFileTakeOver",
             "description": "LPE"
+          },
+          {
+            "title": "RogueWinRM",
+            "link": "https://github.com/antonioCoco/RogueWinRM",
+            "description": "Windows Local Privilege Escalation from Service Account to System"
+          },
+          {
+            "title": "PrintSpoofer",
+            "link": "https://github.com/itm4n/PrintSpoofer",
+            "description": "Abusing Impersonation Privileges on Windows 10 and Server 2019"
           }
         ]
       },
@@ -889,6 +924,11 @@
             "title": "ldeep",
             "link": "https://github.com/franc-pentest/ldeep",
             "description": "In-depth ldap enumeration utility"
+          },
+          {
+            "title": "aced",
+            "link": "https://github.com/garrettfoster13/aced",
+            "description": "Aced is a tool to parse and resolve a single targeted Active Directory principal's DACL"
           }
         ]
       },
@@ -1603,6 +1643,11 @@
         "title": "nim-loader",
         "link": "https://github.com/adamsvoboda/nim-loader",
         "description": "WIP shellcode loader in nim with EDR evasion techniques"
+      },
+      {
+        "title": "Mangle",
+        "link": "https://github.com/optiv/Mangle",
+        "description": ""
       }
     ]
   },
@@ -2174,6 +2219,11 @@
         "title": "Exercises",
         "link": "https://github.com/chvancooten/maldev-for-dummies/tree/main/Exercises",
         "description": ""
+      },
+      {
+        "title": "adeleg",
+        "link": "https://github.com/mtth-bfft/adeleg",
+        "description": "Active Directory delegation management tool"
       }
     ]
   },
@@ -2235,6 +2285,26 @@
         "title": "Penetration-Testing-Tools",
         "link": "https://github.com/mgeeky/Penetration-Testing-Tools",
         "description": ""
+      },
+      {
+        "title": "Experienced-Pentester-OSEP",
+        "link": "https://github.com/nullg0re/Experienced-Pentester-OSEP",
+        "description": ""
+      },
+      {
+        "title": "Pentest",
+        "link": "https://github.com/Ridter/Pentest",
+        "description": "tools"
+      },
+      {
+        "title": "VX-API",
+        "link": "https://github.com/vxunderground/VX-API",
+        "description": "Collection of various malicious functionality to aid in malware development"
+      },
+      {
+        "title": "Awesome-RedTeam-Cheatsheet",
+        "link": "https://github.com/RistBS/Awesome-RedTeam-Cheatsheet",
+        "description": "Active Directory &amp; Red-Team Cheat-Sheet in constant expansion."
       }
     ]
   }
