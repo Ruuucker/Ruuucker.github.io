@@ -240,6 +240,21 @@
             "title": "AutoPWN-Suite",
             "link": "https://github.com/GamehunterKaan/AutoPWN-Suite",
             "description": "AutoPWN Suite is a project for scanning vulnerabilities and exploiting systems automatically."
+          },
+          {
+            "title": "msdt-follina",
+            "link": "https://github.com/JohnHammond/msdt-follina",
+            "description": "Codebase to generate an msdt-follina payload"
+          },
+          {
+            "title": "follina.py",
+            "link": "https://github.com/chvancooten/follina.py",
+            "description": "POC to replicate the full 'Follina' Office RCE vulnerability for testing purposes"
+          },
+          {
+            "title": "<title>CVE-2022\u201326923.ps1",
+            "link": "https://gist.github.com/Wh04m1001/355c0f697bfaaf6546e3b698295d1aa1",
+            "description": ""
           }
         ]
       },
@@ -280,6 +295,11 @@
             "title": "SharpWSUS",
             "link": "https://github.com/nettitude/SharpWSUS",
             "description": ""
+          },
+          {
+            "title": "SharpRDPHijack",
+            "link": "https://github.com/bohops/SharpRDPHijack",
+            "description": "A POC Remote Desktop (RDP) session hijack utility for disconnected sessions"
           }
         ]
       },
@@ -714,6 +734,36 @@
             "title": "PPLdump",
             "link": "https://github.com/itm4n/PPLdump",
             "description": "Dump the memory of a PPL with a userland exploit"
+          },
+          {
+            "title": "revbshell",
+            "link": "https://github.com/bitsadmin/ReVBShell",
+            "description": "ReVBShell - Reverse VBS Shell"
+          },
+          {
+            "title": "Nidhogg",
+            "link": "https://github.com/Idov31/Nidhogg",
+            "description": "Nidhogg is an all-in-one simple to use rootkit for red teams."
+          },
+          {
+            "title": "SharpEventPersist",
+            "link": "https://github.com/improsec/SharpEventPersist",
+            "description": "Persistence by writing/reading shellcode from Event Log"
+          },
+          {
+            "title": "PrivFu",
+            "link": "https://github.com/daem0nc0re/PrivFu#",
+            "description": "Kernel mode WinDbg extension and PoCs for token privilege investigation."
+          },
+          {
+            "title": "hygieia",
+            "link": "https://github.com/Deputation/hygieia",
+            "description": "Hygieia, a vulnerable driver traces scanner written in C++ as an x64 Windows kernel driver."
+          },
+          {
+            "title": "ICMP-TransferTools",
+            "link": "https://github.com/icyguider/ICMP-TransferTools",
+            "description": "Transfer files to and from a Windows host via ICMP in restricted network environments."
           }
         ]
       },
@@ -799,6 +849,21 @@
             "title": "PrintSpoofer",
             "link": "https://github.com/itm4n/PrintSpoofer",
             "description": "Abusing Impersonation Privileges on Windows 10 and Server 2019"
+          },
+          {
+            "title": "LeakedHandlesFinder",
+            "link": "https://github.com/lab52io/LeakedHandlesFinder",
+            "description": "Leaked Windows processes handles identification tool"
+          },
+          {
+            "title": "CdpSvcLPE",
+            "link": "https://github.com/sailay1996/CdpSvcLPE",
+            "description": "Windows Local Privilege Escalation via CdpSvc service (Writeable SYSTEM path Dll Hijacking)"
+          },
+          {
+            "title": "UACHooker",
+            "link": "https://github.com/TheKevinWang/UACHooker",
+            "description": ""
           }
         ]
       },
@@ -929,6 +994,21 @@
             "title": "aced",
             "link": "https://github.com/garrettfoster13/aced",
             "description": "Aced is a tool to parse and resolve a single targeted Active Directory principal's DACL"
+          },
+          {
+            "title": "SauronEye",
+            "link": "https://github.com/vivami/SauronEye",
+            "description": "Search tool to find specific files containing specific words, i.e. files containing passwords.."
+          },
+          {
+            "title": "Max",
+            "link": "https://github.com/knavesec/Max",
+            "description": "Maximizing BloodHound. Max is a good boy."
+          },
+          {
+            "title": "FindUncommonShares",
+            "link": "https://github.com/p0dalirius/FindUncommonShares",
+            "description": ""
           }
         ]
       },
@@ -1090,6 +1170,16 @@
         "title": "Coercer",
         "link": "https://github.com/p0dalirius/Coercer",
         "description": ""
+      },
+      {
+        "title": "<title>Privilege",
+        "link": "https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9",
+        "description": ""
+      },
+      {
+        "title": "PowerShell-Red-Team",
+        "link": "https://github.com/tobor88/PowerShell-Red-Team",
+        "description": "Collection of PowerShell functions a Red Teamer may use in an engagement"
       }
     ]
   },
@@ -1158,6 +1248,11 @@
             "title": "TripleCross",
             "link": "https://github.com/h3xduck/TripleCross",
             "description": ""
+          },
+          {
+            "title": "certificate-ripper",
+            "link": "https://github.com/Hakky54/certificate-ripper",
+            "description": "Cross platform cert ripper"
           }
         ]
       },
@@ -1406,6 +1501,21 @@
         "title": "Awesome-CobaltStrike-Defence",
         "link": "https://github.com/MichaelKoczwara/Awesome-CobaltStrike-Defence",
         "description": "Defences against Cobalt Strike"
+      },
+      {
+        "title": "SilkETW",
+        "link": "https://github.com/mandiant/SilkETW",
+        "description": "Service or tool for managing ETW logs and transport them"
+      },
+      {
+        "title": "pipe-intercept",
+        "link": "https://github.com/gabriel-sztejnworcel/pipe-intercept",
+        "description": "Intercept Windows Named Pipes communication using Burp or similar HTTP proxy tools"
+      },
+      {
+        "title": "kubescape",
+        "link": "https://github.com/armosec/kubescape",
+        "description": ""
       }
     ]
   },
@@ -1648,6 +1758,26 @@
         "title": "Mangle",
         "link": "https://github.com/optiv/Mangle",
         "description": ""
+      },
+      {
+        "title": "FunctionStomping",
+        "link": "https://github.com/Idov31/FunctionStomping",
+        "description": "A new shellcode injection technique. Given as C++ header, standalone Rust program or library."
+      },
+      {
+        "title": "ev",
+        "link": "https://github.com/TomAPU/ev",
+        "description": "EV: IDS Evasion via Packet Manipulation"
+      },
+      {
+        "title": "Nimcrypt2",
+        "link": "https://github.com/icyguider/Nimcrypt2",
+        "description": ".NET, PE, &amp; Raw Shellcode Packer/Loader Written in Nim"
+      },
+      {
+        "title": "PerunsFart",
+        "link": "https://github.com/dosxuz/PerunsFart",
+        "description": "This is my own implementation of the Perun's Fart technique by Sektor7"
       }
     ]
   },
@@ -1857,6 +1987,16 @@
         "title": "Awesome-RCE-techniques",
         "link": "https://github.com/p0dalirius/Awesome-RCE-techniques",
         "description": "Awesome list of step by step techniques to achieve Remote Code Execution on various apps!"
+      },
+      {
+        "title": "nuclei",
+        "link": "https://github.com/projectdiscovery/nuclei",
+        "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL."
+      },
+      {
+        "title": "cats",
+        "link": "https://github.com/Endava/cats",
+        "description": "REST API Fuzzer"
       }
     ]
   },
@@ -2058,6 +2198,16 @@
         "title": "DrawNmap",
         "link": "https://github.com/jor6PS/DrawNmap",
         "description": "Friendly graphical output of the nmap tool that allows filtering by open ports"
+      },
+      {
+        "title": "dog-tunnel",
+        "link": "https://github.com/vzex/dog-tunnel",
+        "description": ""
+      },
+      {
+        "title": "Smap",
+        "link": "https://github.com/s0md3v/Smap",
+        "description": "a drop-in replacement for Nmap powered by shodan.io"
       }
     ]
   },
@@ -2224,6 +2374,51 @@
         "title": "adeleg",
         "link": "https://github.com/mtth-bfft/adeleg",
         "description": "Active Directory delegation management tool"
+      },
+      {
+        "title": "nps",
+        "link": "https://github.com/Ben0xA/nps",
+        "description": "Not PowerShell"
+      },
+      {
+        "title": "RedTeam-Physical-Tools",
+        "link": "https://github.com/0xOverflow/RedTeam-Physical-Tools",
+        "description": ""
+      },
+      {
+        "title": "findwall",
+        "link": "https://github.com/Peco602/findwall",
+        "description": "Check if your provider is blocking you!"
+      },
+      {
+        "title": "powerlevel10k",
+        "link": "https://github.com/romkatv/powerlevel10k",
+        "description": "A Zsh theme"
+      },
+      {
+        "title": "connmap",
+        "link": "https://github.com/jafarlihi/connmap",
+        "description": ""
+      },
+      {
+        "title": "curlconverter",
+        "link": "https://github.com/curlconverter/curlconverter",
+        "description": "Generate code from cURL commands"
+      },
+      {
+        "title": "InsecureShop",
+        "link": "https://github.com/optiv/InsecureShop",
+        "description": "An Intentionally designed Vulnerable Android Application built in Kotlin."
+      },
+      {
+        "title": "hat",
+        "link": "https://github.com/sp00ks-git/hat",
+        "description": "hashcat automation tool"
+      },
+      {
+        "title": "CTO",
+        "link": "https://github.com/herosi/CTO",
+        "description": "IDA Plugin "
       }
     ]
   },
@@ -2305,6 +2500,36 @@
         "title": "Awesome-RedTeam-Cheatsheet",
         "link": "https://github.com/RistBS/Awesome-RedTeam-Cheatsheet",
         "description": "Active Directory &amp; Red-Team Cheat-Sheet in constant expansion."
+      },
+      {
+        "title": "hacks",
+        "link": "https://github.com/tomnomnom/hacks",
+        "description": "A collection of hacks and one-off scripts"
+      },
+      {
+        "title": "KB",
+        "link": "https://github.com/Frosne/KB",
+        "description": "\u0411\u0430\u0437\u0430 \u0437\u043d\u0430\u043d\u0438\u0439 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 DC7499"
+      },
+      {
+        "title": "beginners.md",
+        "link": "https://github.com/0x3301/kb/blob/master/beginners.md",
+        "description": ""
+      },
+      {
+        "title": "awesome-pentest-cheat-sheets",
+        "link": "https://github.com/coreb1t/awesome-pentest-cheat-sheets",
+        "description": "Collection of the cheat sheets useful for pentesting"
+      },
+      {
+        "title": "Awesome-Red-Teaming",
+        "link": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming",
+        "description": "List of Awesome Red Teaming Resources"
+      },
+      {
+        "title": "Red-Teaming-Toolkit",
+        "link": "https://github.com/infosecn1nja/Red-Teaming-Toolkit",
+        "description": ""
       }
     ]
   }
