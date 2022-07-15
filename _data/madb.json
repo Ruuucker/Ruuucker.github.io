@@ -1030,6 +1030,11 @@
         "title": "microsoft-rpc-fuzzing-tools",
         "link": "https://github.com/p0dalirius/microsoft-rpc-fuzzing-tools",
         "description": ""
+      },
+      {
+        "title": "Coercer",
+        "link": "https://github.com/p0dalirius/Coercer",
+        "description": ""
       }
     ]
   },
@@ -1088,6 +1093,16 @@
             "title": "GTFOBins",
             "link": "https://gtfobins.github.io/",
             "description": "LPE and usefull stuff"
+          },
+          {
+            "title": "dismember",
+            "link": "https://github.com/liamg/dismember",
+            "description": "Memory search and dump"
+          },
+          {
+            "title": "TripleCross",
+            "link": "https://github.com/h3xduck/TripleCross",
+            "description": ""
           }
         ]
       },
@@ -1533,6 +1548,31 @@
         "title": "Huan",
         "link": "https://github.com/frkngksl/Huan",
         "description": "Encrypted PE Loader Generator"
+      },
+      {
+        "title": "Bypass_AV",
+        "link": "https://github.com/Avienma/Bypass_AV",
+        "description": ""
+      },
+      {
+        "title": "bypassAVNote",
+        "link": "https://github.com/a1phaboy/bypassAVNote",
+        "description": ""
+      },
+      {
+        "title": "TartarusGate",
+        "link": "https://github.com/trickster0/TartarusGate",
+        "description": "TartarusGate, Bypassing EDRs"
+      },
+      {
+        "title": "Payload-Download-Cradles",
+        "link": "https://github.com/VirtualAlllocEx/Payload-Download-Cradles",
+        "description": ""
+      },
+      {
+        "title": "SysmonQuiet",
+        "link": "https://github.com/ScriptIdiot/SysmonQuiet",
+        "description": "RDLL for Cobalt Strike beacon to silence sysmon process"
       }
     ]
   },
@@ -1727,6 +1767,11 @@
         "title": "DeepfakeHTTP",
         "link": "https://github.com/xnbox/DeepfakeHTTP",
         "description": "DeepfakeHTTP is a web server that uses HTTP dumps as a source for responses."
+      },
+      {
+        "title": "bypass-url-parser",
+        "link": "https://github.com/laluka/bypass-url-parser",
+        "description": "bypass-url-parser"
       }
     ]
   },
@@ -1995,6 +2040,16 @@
         "title": "reverse-ssh",
         "link": "https://github.com/Fahrj/reverse-ssh",
         "description": "Statically-linked ssh server with reverse shell functionality for CTFs and such"
+      },
+      {
+        "title": "brute-ratel",
+        "link": "https://github.com/green-parrot-sec/brute-ratel",
+        "description": "Docker Container for Brute Ratel"
+      },
+      {
+        "title": "Brute-Ratel-C4-Community-Kit",
+        "link": "https://github.com/paranoidninja/Brute-Ratel-C4-Community-Kit",
+        "description": ""
       }
     ]
   },
@@ -2058,6 +2113,16 @@
       {
         "title": "p2p",
         "link": "https://github.com/miroslavpejic85/p2p",
+        "description": ""
+      },
+      {
+        "title": "Slides",
+        "link": "https://github.com/chvancooten/maldev-for-dummies/tree/main/Slides",
+        "description": ""
+      },
+      {
+        "title": "Exercises",
+        "link": "https://github.com/chvancooten/maldev-for-dummies/tree/main/Exercises",
         "description": ""
       }
     ]
