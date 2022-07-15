@@ -252,7 +252,7 @@
             "description": "POC to replicate the full 'Follina' Office RCE vulnerability for testing purposes"
           },
           {
-            "title": "<title>CVE-2022\u201326923.ps1",
+            "title": "CVE-2022.ps1",
             "link": "https://gist.github.com/Wh04m1001/355c0f697bfaaf6546e3b698295d1aa1",
             "description": ""
           }
@@ -1177,7 +1177,7 @@
         "description": ""
       },
       {
-        "title": "<title>Privilege",
+        "title": "Privilege",
         "link": "https://gist.github.com/tothi/bf6c59d6de5d0c9710f23dae5750c4b9",
         "description": ""
       },
