@@ -2,7 +2,7 @@
   {
     "name": "windows",
     "subcategory": [
-        {
+      {
         "name": "exploit",
         "subcategory": [
           {
@@ -227,8 +227,8 @@
             "description": "Powershell script extracts saved session remote or localy"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "lateral",
         "subcategory": [
           {
@@ -262,8 +262,8 @@
             "description": "fileless lateral movement using WMI Event Subscriptions and GadgetToJScript"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "local",
         "subcategory": [
           {
@@ -669,10 +669,15 @@
             "title": "PowerRemoteDesktop",
             "link": "https://github.com/DarkCoderSc/PowerRemoteDesktop",
             "description": "Remote Desktop entirely coded in PowerShell."
+          },
+          {
+            "title": "README.md",
+            "link": "https://github.com/GhostPack/Koh/blob/main/README.md#mitigations",
+            "description": "C# and Beacon Object File to capture creds"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "lpe",
         "subcategory": [
           {
@@ -746,8 +751,8 @@
             "description": "LPE"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "recon",
         "subcategory": [
           {
@@ -859,164 +864,169 @@
             "title": "SharpView",
             "link": "https://github.com/tevora-threat/SharpView",
             "description": "PowerView but Sharp"
+          },
+          {
+            "title": "powerview.py",
+            "link": "https://github.com/aniqfakhrul/PywerView",
+            "description": "PowerView alternative"
           }
         ]
-        },
-        {
-          "title": "What is Impacket?",
-          "link": "https://github.com/SecureAuthCorp/impacket"
-        },
-        {
-          "title": "LazySign",
-          "link": "https://github.com/jfmaes/LazySign",
-          "description": "Fake certs for windows binaries"
-        },
-        {
-          "title": "RandomPS-Scripts",
-          "link": "https://github.com/xorrior/RandomPS-Scripts"
-        },
-        {
-          "title": "Active-Directory-Exploitation-Cheat-Sheet",
-          "link": "https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet",
-          "description": "A cheat sheet that contains common enumeration and attack methods for Windows Active Directory."
-        },
-        {
-          "title": "Active-Directory-Wordlists",
-          "link": "https://github.com/Cryilllic/Active-Directory-Wordlists",
-          "description": "Active Directory Wordlists"
-        },
-        {
-          "title": "malicious-pdf",
-          "link": "https://github.com/jonaslejon/malicious-pdf",
-          "description": ""
-        },
-        {
-          "title": "Nishang",
-          "link": "https://github.com/samratashok/nishang",
-          "description": "All in one tool for everything in powershell"
-        },
-        {
-          "title": "Weaponry",
-          "link": "https://github.com/jeffjbowie/Weaponry"
-        },
-        {
-          "title": "RedRabbit",
-          "link": "https://github.com/securethelogs/RedRabbit"
-        },
-        {
-          "title": "CredPhish",
-          "link": "https://github.com/tokyoneon/CredPhish",
-          "description": "PowerShell script designed to invoke legitimate credential prompts and exfiltrate passwords over DNS"
-        },
-        {
-          "title": "Misc-PowerShell",
-          "link": "https://github.com/jnqpblc/Misc-PowerShell",
-          "description": "Nice tools"
-        },
-        {
-          "title": "DSInternals",
-          "link": "https://github.com/MichaelGrafnetter/DSInternals",
-          "description": " Directory Services Internals (DSInternals) PowerShell Module and Framework"
-        },
-        {
-          "title": "Sharp-Suite",
-          "link": "https://github.com/FuzzySecurity/Sharp-Suite"
-        },
-        {
-          "title": "CrackMapExec",
-          "link": "https://github.com/byt3bl33d3r/CrackMapExec/",
-          "description": "crackmapexec"
-        },
-        {
-          "title": "PowerShellArmoury",
-          "link": "https://github.com/cfalta/PowerShellArmoury",
-          "description": "A PowerShell armoury for security guys and girls"
-        },
-        {
-          "title": "0 to 0.9",
-          "link": "https://zer1t0.gitlab.io/posts/attacking_ad/",
-          "description": "EVERYTHING you need to pwn AD"
-        },
-        {
-          "title": "Lucifer",
-          "link": "https://github.com/Skiller9090/Lucifer",
-          "description": "Multi-tool"
-        },
-        {
-          "title": "Firewall_Walker_BOF",
-          "link": "https://github.com/EspressoCake/Firewall_Walker_BOF",
-          "description": "A BOF to interact with COM objects associated with the Windows software firewall."
-        },
-        {
-          "title": "cqtools",
-          "link": "https://github.com/BlackDiverX/cqtools",
-          "description": "Nice toolkit for all things that you need"
-        },
-        {
-          "title": "LOLBAS",
-          "link": "https://lolbas-project.github.io/",
-          "description": "Everyfind you need when u live off the land"
-        },
-        {
-          "title": "powercat",
-          "link": "https://github.com/besimorhino/powercat",
-          "description": "NetCat for windows"
-        },
-        {
-          "title": "Generator",
-          "link": "https://github.com/smokeme/payloadGenerator",
-          "description": "Payload Generation"
-        },
-        {
-          "title": "GoFetch",
-          "link": "https://github.com/GoFetchAD/GoFetch",
-          "description": "Nice stuff to automate post-bloodhound activity"
-        },
-        {
-          "title": "SharpSystemTriggers",
-          "link": "https://github.com/cube0x0/SharpSystemTriggers",
-          "description": "Collection of remote authentication triggers in C# "
-        },
-        {
-          "title": "About BloodHound",
-          "link": "https://github.com/BloodHoundAD/BloodHound",
-          "description": "BloodHound"
-        },
-        {
-          "title": "PowerShx",
-          "link": "https://github.com/iomoath/PowerShx",
-          "description": "Run Powershell without software restrictions."
-        },
-        {
-          "title": "ForgeCert",
-          "link": "https://github.com/GhostPack/ForgeCert",
-          "description": " Certificate Authority (CA) certificate + private key to forge certificates for arbitrary users capable of authentication to Active Directory"
-        },
-        {
-          "title": "Windows & Active Directory Exploitation Cheat Sheet and Command Reference",
-          "link": "https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/",
-          "description": "Windows & Ad exploitation Cheat Sheet"
-        },
-        {
-          "title": "WinPwn",
-          "link": "https://github.com/S3cur3Th1sSh1t/WinPwn"
-        },
-        {
-          "title": "Microsoft Wont-Fix-List",
-          "link": "https://github.com/cfalta/MicrosoftWontFixList",
-          "description": "MS wont fix vulners list"
-        },
-        {
-          "title": "GitHub",
-          "link": "https://github.com/PowerShellMafia/PowerSploit",
-          "description": "PowerSploit"
-        }
+      },
+      {
+        "title": "What is Impacket?",
+        "link": "https://github.com/SecureAuthCorp/impacket"
+      },
+      {
+        "title": "LazySign",
+        "link": "https://github.com/jfmaes/LazySign",
+        "description": "Fake certs for windows binaries"
+      },
+      {
+        "title": "RandomPS-Scripts",
+        "link": "https://github.com/xorrior/RandomPS-Scripts"
+      },
+      {
+        "title": "Active-Directory-Exploitation-Cheat-Sheet",
+        "link": "https://github.com/S1ckB0y1337/Active-Directory-Exploitation-Cheat-Sheet",
+        "description": "A cheat sheet that contains common enumeration and attack methods for Windows Active Directory."
+      },
+      {
+        "title": "Active-Directory-Wordlists",
+        "link": "https://github.com/Cryilllic/Active-Directory-Wordlists",
+        "description": "Active Directory Wordlists"
+      },
+      {
+        "title": "malicious-pdf",
+        "link": "https://github.com/jonaslejon/malicious-pdf",
+        "description": ""
+      },
+      {
+        "title": "Nishang",
+        "link": "https://github.com/samratashok/nishang",
+        "description": "All in one tool for everything in powershell"
+      },
+      {
+        "title": "Weaponry",
+        "link": "https://github.com/jeffjbowie/Weaponry"
+      },
+      {
+        "title": "RedRabbit",
+        "link": "https://github.com/securethelogs/RedRabbit"
+      },
+      {
+        "title": "CredPhish",
+        "link": "https://github.com/tokyoneon/CredPhish",
+        "description": "PowerShell script designed to invoke legitimate credential prompts and exfiltrate passwords over DNS"
+      },
+      {
+        "title": "Misc-PowerShell",
+        "link": "https://github.com/jnqpblc/Misc-PowerShell",
+        "description": "Nice tools"
+      },
+      {
+        "title": "DSInternals",
+        "link": "https://github.com/MichaelGrafnetter/DSInternals",
+        "description": " Directory Services Internals (DSInternals) PowerShell Module and Framework"
+      },
+      {
+        "title": "Sharp-Suite",
+        "link": "https://github.com/FuzzySecurity/Sharp-Suite"
+      },
+      {
+        "title": "CrackMapExec",
+        "link": "https://github.com/byt3bl33d3r/CrackMapExec/",
+        "description": "crackmapexec"
+      },
+      {
+        "title": "PowerShellArmoury",
+        "link": "https://github.com/cfalta/PowerShellArmoury",
+        "description": "A PowerShell armoury for security guys and girls"
+      },
+      {
+        "title": "0 to 0.9",
+        "link": "https://zer1t0.gitlab.io/posts/attacking_ad/",
+        "description": "EVERYTHING you need to pwn AD"
+      },
+      {
+        "title": "Lucifer",
+        "link": "https://github.com/Skiller9090/Lucifer",
+        "description": "Multi-tool"
+      },
+      {
+        "title": "Firewall_Walker_BOF",
+        "link": "https://github.com/EspressoCake/Firewall_Walker_BOF",
+        "description": "A BOF to interact with COM objects associated with the Windows software firewall."
+      },
+      {
+        "title": "cqtools",
+        "link": "https://github.com/BlackDiverX/cqtools",
+        "description": "Nice toolkit for all things that you need"
+      },
+      {
+        "title": "LOLBAS",
+        "link": "https://lolbas-project.github.io/",
+        "description": "Everyfind you need when u live off the land"
+      },
+      {
+        "title": "powercat",
+        "link": "https://github.com/besimorhino/powercat",
+        "description": "NetCat for windows"
+      },
+      {
+        "title": "Generator",
+        "link": "https://github.com/smokeme/payloadGenerator",
+        "description": "Payload Generation"
+      },
+      {
+        "title": "GoFetch",
+        "link": "https://github.com/GoFetchAD/GoFetch",
+        "description": "Nice stuff to automate post-bloodhound activity"
+      },
+      {
+        "title": "SharpSystemTriggers",
+        "link": "https://github.com/cube0x0/SharpSystemTriggers",
+        "description": "Collection of remote authentication triggers in C# "
+      },
+      {
+        "title": "About BloodHound",
+        "link": "https://github.com/BloodHoundAD/BloodHound",
+        "description": "BloodHound"
+      },
+      {
+        "title": "PowerShx",
+        "link": "https://github.com/iomoath/PowerShx",
+        "description": "Run Powershell without software restrictions."
+      },
+      {
+        "title": "ForgeCert",
+        "link": "https://github.com/GhostPack/ForgeCert",
+        "description": " Certificate Authority (CA) certificate + private key to forge certificates for arbitrary users capable of authentication to Active Directory"
+      },
+      {
+        "title": "Windows & Active Directory Exploitation Cheat Sheet and Command Reference",
+        "link": "https://casvancooten.com/posts/2020/11/windows-active-directory-exploitation-cheat-sheet-and-command-reference/",
+        "description": "Windows & Ad exploitation Cheat Sheet"
+      },
+      {
+        "title": "WinPwn",
+        "link": "https://github.com/S3cur3Th1sSh1t/WinPwn"
+      },
+      {
+        "title": "Microsoft Wont-Fix-List",
+        "link": "https://github.com/cfalta/MicrosoftWontFixList",
+        "description": "MS wont fix vulners list"
+      },
+      {
+        "title": "GitHub",
+        "link": "https://github.com/PowerShellMafia/PowerSploit",
+        "description": "PowerSploit"
+      }
     ]
   },
   {
     "name": "linux",
     "subcategory": [
-        {
+      {
         "name": "exploit",
         "subcategory": [
           {
@@ -1030,8 +1040,8 @@
             "description": "Exploit for CVE-2021-4034"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "local",
         "subcategory": [
           {
@@ -1070,8 +1080,8 @@
             "description": "LPE and usefull stuff"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "lpe",
         "subcategory": [
           {
@@ -1094,8 +1104,8 @@
             "description": " Linux privesc via exploitation of low-hanging fruit"
           }
         ]
-        },
-        {
+      },
+      {
         "name": "recon",
         "subcategory": [
           {
@@ -1104,7 +1114,7 @@
             "description": "Linux IPC inspection tool"
           }
         ]
-        }
+      }
     ]
   },
   {
@@ -1543,7 +1553,6 @@
         "link": "https://github.com/Te-k/harpoon",
         "description": "CLI tool for open source and threat intelligence "
       },
-
       {
         "title": "CyberChef",
         "link": "https://github.com/gchq/cyberchef",
@@ -1714,7 +1723,7 @@
   {
     "name": "net",
     "subcategory": [
-	    {
+      {
         "title": "subjack",
         "link": "https://github.com/haccer/subjack",
         "description": "DNS Subdomain takeover"
@@ -1786,7 +1795,6 @@
         "link": "https://github.com/dwisiswant0/stargather",
         "description": "Github repos recon tool"
       },
-
       {
         "title": "GitHub",
         "link": "https://github.com/p0f/p0f",
@@ -2031,6 +2039,11 @@
         "title": "bruteforce-lists",
         "link": "https://github.com/random-robbie/bruteforce-lists",
         "description": "List for brute web, api, files, etc"
+      },
+      {
+        "title": "browsh",
+        "link": "https://github.com/browsh-org/browsh",
+        "description": "A fully-modern text-based browser, rendering to TTY and browsers"
       }
     ]
   },
@@ -2082,6 +2095,11 @@
         "title": "WADComs",
         "link": "https://wadcoms.github.io/",
         "description": "WADComs is an interactive cheat sheet, containing a curated list of offensive security tools and their respective commands, to be used against Windows/AD environments."
+      },
+      {
+        "title": "awesome-hacking-lists",
+        "link": "https://github.com/taielab/awesome-hacking-lists",
+        "description": "Another hacking lists, now from chinese guys"
       }
     ]
   }
