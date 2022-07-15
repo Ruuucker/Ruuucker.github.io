@@ -1185,11 +1185,6 @@
         "title": "PowerShell-Red-Team",
         "link": "https://github.com/tobor88/PowerShell-Red-Team",
         "description": "Collection of PowerShell functions a Red Teamer may use in an engagement"
-      },
-      {
-        "title": "AwesomeScript",
-        "link": "https://github.com/AntSwordProject/AwesomeScript",
-        "description": "Shells"
       }
     ]
   },
