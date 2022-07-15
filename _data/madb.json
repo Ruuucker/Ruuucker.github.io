@@ -1009,6 +1009,11 @@
             "title": "FindUncommonShares",
             "link": "https://github.com/p0dalirius/FindUncommonShares",
             "description": ""
+          },
+          {
+            "title": "smb2os",
+            "link": "https://github.com/w1u0u1/smb2os",
+            "description": "Use smb2 protocol to detect remote computer os version, support win7/server2008-win10/server2019"
           }
         ]
       },
@@ -1180,6 +1185,11 @@
         "title": "PowerShell-Red-Team",
         "link": "https://github.com/tobor88/PowerShell-Red-Team",
         "description": "Collection of PowerShell functions a Red Teamer may use in an engagement"
+      },
+      {
+        "title": "AwesomeScript",
+        "link": "https://github.com/AntSwordProject/AwesomeScript",
+        "description": "Shells"
       }
     ]
   },
@@ -1997,6 +2007,11 @@
         "title": "cats",
         "link": "https://github.com/Endava/cats",
         "description": "REST API Fuzzer"
+      },
+      {
+        "title": "supercookie",
+        "link": "https://github.com/jonasstrehle/supercookie/",
+        "description": "Fingerprint"
       }
     ]
   },
@@ -2208,6 +2223,16 @@
         "title": "Smap",
         "link": "https://github.com/s0md3v/Smap",
         "description": "a drop-in replacement for Nmap powered by shodan.io"
+      },
+      {
+        "title": "dnstake",
+        "link": "https://github.com/pwnesia/dnstake",
+        "description": "DNSTake \u2014 A fast tool to check missing hosted DNS zones that can lead to subdomain takeover"
+      },
+      {
+        "title": "dit",
+        "link": "https://www.github.com/CountablyInfinite/dit",
+        "description": "DIT is a DTLS MitM proxy implemented in Python 3"
       }
     ]
   },
@@ -2419,6 +2444,26 @@
         "title": "CTO",
         "link": "https://github.com/herosi/CTO",
         "description": "IDA Plugin "
+      },
+      {
+        "title": "gitoops",
+        "link": "https://github.com/ovotech/gitoops",
+        "description": "CI\\CD pipelines abuse"
+      },
+      {
+        "title": "elpscrk",
+        "link": "https://github.com/D4Vinci/elpscrk",
+        "description": "An Intelligent wordlist generator based on user profiling, permutations, and statistics"
+      },
+      {
+        "title": "antSword",
+        "link": "https://github.com/AntSwordProject/antSword",
+        "description": "\u4e2d\u56fd\u8681\u5251\u662f\u4e00\u6b3e\u8de8\u5e73\u53f0\u7684\u5f00\u6e90\u7f51\u7ad9\u7ba1\u7406\u5de5\u5177\u3002AntSword is a cross-platform website management toolkit."
+      },
+      {
+        "title": "hackthebox-1",
+        "link": "https://github.com/Xh4H/hackthebox-1",
+        "description": "HTB VS Code theme"
       }
     ]
   },
@@ -2529,6 +2574,11 @@
       {
         "title": "Red-Teaming-Toolkit",
         "link": "https://github.com/infosecn1nja/Red-Teaming-Toolkit",
+        "description": ""
+      },
+      {
+        "title": "Pentest-Tools",
+        "link": "https://github.com/S3cur3Th1sSh1t/Pentest-Tools",
         "description": ""
       }
     ]
