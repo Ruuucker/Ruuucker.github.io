@@ -10,6 +10,10 @@
             "link": "https://github.com/login-securite/DonPAPI",
             "description": "Dumping DPAPI credz remotely "
           },
+	  {
+            "title": "Windows Exploits",
+            "link": "https://github.com/SecWiki/windows-kernel-exploits"
+          },
           {
             "title": "PoC in GitHub",
             "link": "https://github.com/nomi-sec/PoC-in-GitHub",
@@ -2570,6 +2574,11 @@
         "title": "Red-Teaming-Toolkit",
         "link": "https://github.com/infosecn1nja/Red-Teaming-Toolkit",
         "description": ""
+      },
+      {
+        "title": "Pentesting-Notes",
+        "link": "https://github.com/CyberJunnkie/Pentesting-Notes",
+        "description": "Collection of different commands and techniques in Hacking"
       },
       {
         "title": "Pentest-Tools",
