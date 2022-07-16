@@ -1262,6 +1262,11 @@
             "title": "certificate-ripper",
             "link": "https://github.com/Hakky54/certificate-ripper",
             "description": "Cross platform cert ripper"
+          },
+          {
+            "title": "zapret",
+            "link": "https://github.com/bol-van/zapret",
+            "description": "\u041e\u0431\u0445\u043e\u0434 DPI \u0432 linux"
           }
         ]
       },
@@ -2016,6 +2021,11 @@
         "title": "awesome-crawler",
         "link": "https://github.com/BruceDone/awesome-crawler",
         "description": "A collection of awesome web crawler,spider in different languages"
+      },
+      {
+        "title": "haptyc",
+        "link": "https://github.com/defparam/haptyc",
+        "description": "Build payloads"
       }
     ]
   },
