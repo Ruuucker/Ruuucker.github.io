@@ -2237,6 +2237,11 @@
         "title": "dit",
         "link": "https://www.github.com/CountablyInfinite/dit",
         "description": "DIT is a DTLS MitM proxy implemented in Python 3"
+      },
+      {
+        "title": "gost",
+        "link": "https://github.com/ginuerzh/gost",
+        "description": "GO Simple Tunnel - a simple tunnel written in golang"
       }
     ]
   },
@@ -2614,6 +2619,11 @@
         "title": "h4cker",
         "link": "https://github.com/The-Art-of-Hacking/h4cker",
         "description": ""
+      },
+      {
+        "title": "Azure-Red-Team",
+        "link": "https://github.com/rootsecdev/Azure-Red-Team",
+        "description": "Azure Security Resources and Notes"
       }
     ]
   }
