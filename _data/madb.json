@@ -1814,6 +1814,16 @@
         "description": "Web Checklist"
       },
       {
+        "title": "ppfuzz",
+        "link": "https://github.com/dwisiswant0/ppfuzz",
+        "description": "Prototype Pollution scan"
+      },
+      {
+        "title": "protoscan",
+        "link": "https://github.com/KathanP19/protoscan",
+        "description": "Prototype pollution scanner"
+      },
+      {
         "title": "gitjacker",
         "link": "https://github.com/liamg/gitjacker"
       },
@@ -2070,16 +2080,6 @@
         "title": "capsulecorp-pentest",
         "link": "https://github.com/R3dy/capsulecorp-pentest",
         "description": "Docket, Kubernetes and other contenters scanner"
-      },
-      {
-        "title": "ppfuzz",
-        "link": "https://github.com/dwisiswant0/ppfuzz",
-        "description": "Prototype Pollution scan"
-      },
-      {
-        "title": "protoscan",
-        "link": "https://github.com/KathanP19/protoscan",
-        "description": "Prototype pollution scanner"
       },
       {
         "title": "trivy",
