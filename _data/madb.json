@@ -755,11 +755,6 @@
             "description": "Persistence by writing/reading shellcode from Event Log"
           },
           {
-            "title": "PrivFu",
-            "link": "https://github.com/daem0nc0re/PrivFu#",
-            "description": "Kernel mode WinDbg extension and PoCs for token privilege investigation."
-          },
-          {
             "title": "hygieia",
             "link": "https://github.com/Deputation/hygieia",
             "description": "Hygieia, a vulnerable driver traces scanner written in C++ as an x64 Windows kernel driver."
