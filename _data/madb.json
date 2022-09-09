@@ -259,6 +259,26 @@
             "title": "CVE-2022.ps1",
             "link": "https://gist.github.com/Wh04m1001/355c0f697bfaaf6546e3b698295d1aa1",
             "description": ""
+          },
+          {
+            "title": "NoFaxGiven",
+            "link": "https://github.com/hackerhouse-opensource/NoFaxGiven",
+            "description": "Code Execution &amp; Persistence in NETWORK SERVICE FAX Service"
+          },
+          {
+            "title": "CVE-2021-34527",
+            "link": "https://github.com/m8sec/CVE-2021-34527",
+            "description": "PrintNightmare (CVE-2021-34527) PoC Exploit"
+          },
+          {
+            "title": "NegoExRelay",
+            "link": "https://github.com/morRubin/NegoExRelay",
+            "description": "This tool allows you to relay NegoEx (with PKU2U) authentication to other copmuter and authenticate without knowing the credentials"
+          },
+          {
+            "title": "lnkbomb",
+            "link": "https://github.com/dievus/lnkbomb",
+            "description": "Malicious shortcut generator for collecting NTLM hashes from insecure file shares."
           }
         ]
       },
@@ -304,6 +324,11 @@
             "title": "SharpRDPHijack",
             "link": "https://github.com/bohops/SharpRDPHijack",
             "description": "A POC Remote Desktop (RDP) session hijack utility for disconnected sessions"
+          },
+          {
+            "title": "SCShell",
+            "link": "https://github.com/Mr-Un1k0d3r/SCShell",
+            "description": "Fileless lateral movement tool that relies on ChangeServiceConfigA to run command"
           }
         ]
       },
@@ -763,6 +788,46 @@
             "title": "ICMP-TransferTools",
             "link": "https://github.com/icyguider/ICMP-TransferTools",
             "description": "Transfer files to and from a Windows host via ICMP in restricted network environments."
+          },
+          {
+            "title": "WindowsExploitationResources",
+            "link": "https://github.com/FULLSHADE/WindowsExploitationResources",
+            "description": "Resources for Windows exploit development"
+          },
+          {
+            "title": "siofra",
+            "link": "https://github.com/Cybereason/siofra",
+            "description": "DLL Hijacking vuln searcher and exploiter"
+          },
+          {
+            "title": "FlavorTown",
+            "link": "https://github.com/Wra7h/FlavorTown",
+            "description": "Various ways to execute shellcode "
+          },
+          {
+            "title": "RPC-Backdoor",
+            "link": "https://github.com/eladshamir/RPC-Backdoor",
+            "description": "A basic emulation of an \"RPC Backdoor\""
+          },
+          {
+            "title": "Suborner",
+            "link": "https://github.com/r4wd3r/Suborner",
+            "description": "Invisible account"
+          },
+          {
+            "title": "RIPPL",
+            "link": "https://github.com/last-byte/RIPPL/",
+            "description": "RIPPL is a tool that abuses a usermode only exploit to manipulate PPL processes on Windows"
+          },
+          {
+            "title": "PSAsyncShell",
+            "link": "https://github.com/JoelGMSec/PSAsyncShell",
+            "description": "PowerShell Asynchronous TCP Reverse Shell"
+          },
+          {
+            "title": "hoaxshell",
+            "link": "https://github.com/t3l3machus/hoaxshell",
+            "description": "Rev shell with https and MS WD evasion"
           }
         ]
       },
@@ -863,6 +928,11 @@
             "title": "UACHooker",
             "link": "https://github.com/TheKevinWang/UACHooker",
             "description": ""
+          },
+          {
+            "title": "RunAsWinTcb",
+            "link": "https://github.com/tastypepperoni/RunAsWinTcb",
+            "description": "Search and inject DLL into higher processes"
           }
         ]
       },
@@ -1013,6 +1083,21 @@
             "title": "smb2os",
             "link": "https://github.com/w1u0u1/smb2os",
             "description": "Use smb2 protocol to detect remote computer os version, support win7/server2008-win10/server2019"
+          },
+          {
+            "title": "ExchangeFinder",
+            "link": "https://github.com/mhaskar/ExchangeFinder",
+            "description": "Find Microsoft Exchange instance for a given domain and identify the exact version"
+          },
+          {
+            "title": "VulnerabilitiesDataImport",
+            "link": "https://github.com/zeronetworks/BloodHound-Tools/tree/main/VulnerabilitiesDataImport",
+            "description": "BloodHound extension"
+          },
+          {
+            "title": "windapsearch",
+            "link": "https://github.com/ropnop/windapsearch",
+            "description": "Python script to enumerate users, groups and computers from a Windows domain through LDAP queries"
           }
         ]
       },
@@ -1184,6 +1269,26 @@
         "title": "PowerShell-Red-Team",
         "link": "https://github.com/tobor88/PowerShell-Red-Team",
         "description": "Collection of PowerShell functions a Red Teamer may use in an engagement"
+      },
+      {
+        "title": "SilentHound",
+        "link": "https://github.com/layer8secure/SilentHound",
+        "description": "BloodHound but only with LDAP options?"
+      },
+      {
+        "title": "Masky",
+        "link": "https://github.com/Z4kSec/Masky",
+        "description": "Dump user credentials using only ADCS! No lsass.exe is needed anymore"
+      },
+      {
+        "title": "krbrelayx",
+        "link": "https://github.com/dirkjanm/krbrelayx",
+        "description": "Kerberos unconstrained delegation abuse toolkit"
+      },
+      {
+        "title": "Certipy",
+        "link": "https://github.com/ly4k/Certipy",
+        "description": "Tool for Active Directory Certificate Services enumeration and abuse"
       }
     ]
   },
@@ -1262,6 +1367,11 @@
             "title": "zapret",
             "link": "https://github.com/bol-van/zapret",
             "description": "\u041e\u0431\u0445\u043e\u0434 DPI \u0432 linux"
+          },
+          {
+            "title": "Sandman",
+            "link": "https://github.com/Idov31/Sandman",
+            "description": "Sandman is a NTP based backdoor for red team engagements in hardened networks."
           }
         ]
       },
@@ -1296,6 +1406,11 @@
             "title": "ipcdump",
             "link": "https://github.com/guardicore/ipcdump",
             "description": "Linux IPC inspection tool"
+          },
+          {
+            "title": "ApacheTomcatScanner",
+            "link": "https://github.com/p0dalirius/ApacheTomcatScanner/",
+            "description": "A python script to scan for Apache Tomcat server vulnerabilities. "
           }
         ]
       }
@@ -1787,6 +1902,56 @@
         "title": "PerunsFart",
         "link": "https://github.com/dosxuz/PerunsFart",
         "description": "This is my own implementation of the Perun's Fart technique by Sektor7"
+      },
+      {
+        "title": "SysmonEnte",
+        "link": "https://github.com/codewhitesec/SysmonEnte",
+        "description": "Cover your tracks by manipulating Sysmon events itself"
+      },
+      {
+        "title": "APIHashReplace",
+        "link": "https://github.com/matthewB-huntress/APIHashReplace",
+        "description": "Repository for API Hashing script detailed in the Huntress Blog"
+      },
+      {
+        "title": "EtwSessionHijacking",
+        "link": "https://github.com/ORCx41/EtwSessionHijacking",
+        "description": "A Poc on blocking Procmon from monitoring network events"
+      },
+      {
+        "title": "EDRSandblast at DefCon30Release",
+        "link": "https://github.com/wavestone-cdt/EDRSandblast/tree/DefCon30Release",
+        "description": ""
+      },
+      {
+        "title": "AceLdr",
+        "link": "https://github.com/kyleavery/AceLdr",
+        "description": "Cobalt Strike UDRL for memory scanner evasion."
+      },
+      {
+        "title": "Shhhloader",
+        "link": "https://github.com/icyguider/Shhhloader",
+        "description": "Syscall Shellcode Loader (Work in Progress)"
+      },
+      {
+        "title": "TamperingSyscalls",
+        "link": "https://github.com/rad9800/TamperingSyscalls",
+        "description": ""
+      },
+      {
+        "title": "ADVobfuscator",
+        "link": "https://github.com/andrivet/ADVobfuscator",
+        "description": "Obfuscation library based on C++11/14 and metaprogramming"
+      },
+      {
+        "title": "DeathSleep",
+        "link": "https://github.com/janoglezcampos/DeathSleep",
+        "description": ""
+      },
+      {
+        "title": "Pesidious",
+        "link": "https://github.com/CyberForce/Pesidious",
+        "description": "Malware Mutation Using Reinforcement Learning and Generative Adversarial Networks"
       }
     ]
   },
@@ -2031,6 +2196,41 @@
         "title": "haptyc",
         "link": "https://github.com/defparam/haptyc",
         "description": "Build payloads"
+      },
+      {
+        "title": "mentalist",
+        "link": "https://github.com/sc0tfree/mentalist",
+        "description": "GUI worklist generation"
+      },
+      {
+        "title": "sublazerwlst",
+        "link": "https://github.com/sharsi1/sublazerwlst",
+        "description": "Bundle of wordlists for brute-forcing subdomains (World + RUSSIA based)."
+      },
+      {
+        "title": "intelligence-wordlist-generator",
+        "link": "https://github.com/zzztor/intelligence-wordlist-generator",
+        "description": ""
+      },
+      {
+        "title": "Probable-Wordlists",
+        "link": "https://github.com/berzerk0/Probable-Wordlists",
+        "description": ""
+      },
+      {
+        "title": "wordlists/language-specifics",
+        "link": "https://github.com/ignis-sec/Pwdb-Public/tree/master/wordlists/language-specifics",
+        "description": ""
+      },
+      {
+        "title": "gorilla",
+        "link": "https://github.com/d4rckh/gorilla",
+        "description": "tool for generating wordlists or extending an existing one using mutations."
+      },
+      {
+        "title": "scan4all",
+        "link": "https://github.com/hktalent/scan4all",
+        "description": "15000+PoCs; 23 kinds of application password crack; 7000+Web fingerprints; 146 protocols and 90000+ rules Port scanning"
       }
     ]
   },
@@ -2247,6 +2447,16 @@
         "title": "gost",
         "link": "https://github.com/ginuerzh/gost",
         "description": "GO Simple Tunnel - a simple tunnel written in golang"
+      },
+      {
+        "title": "xc",
+        "link": "https://github.com/xct/xc",
+        "description": "A small reverse shell for Linux &amp; Windows"
+      },
+      {
+        "title": "commix",
+        "link": "https://github.com/commixproject/commix",
+        "description": "Automated All-in-One OS Command Injection Exploitation Tool."
       }
     ]
   },
@@ -2478,6 +2688,26 @@
         "title": "hackthebox-1",
         "link": "https://github.com/Xh4H/hackthebox-1",
         "description": "HTB VS Code theme"
+      },
+      {
+        "title": "Ventoy",
+        "link": "https://github.com/ventoy/Ventoy",
+        "description": "A new bootable USB solution."
+      },
+      {
+        "title": "ofrak",
+        "link": "https://github.com/redballoonsecurity/ofrak",
+        "description": "OFRAK: unpack, modify, and repack binaries."
+      },
+      {
+        "title": "updog",
+        "link": "https://github.com/sc0tfree/updog",
+        "description": "python -m http.server on max settings. Can use TLS and basic auth"
+      },
+      {
+        "title": "gofetch",
+        "link": "https://github.com/tr3ss/gofetch",
+        "description": "CVE fetcher"
       }
     ]
   },
@@ -2629,6 +2859,16 @@
         "title": "Azure-Red-Team",
         "link": "https://github.com/rootsecdev/Azure-Red-Team",
         "description": "Azure Security Resources and Notes"
+      },
+      {
+        "title": "Win32_Offensive_Cheatsheet",
+        "link": "https://github.com/matthieu-hackwitharts/Win32_Offensive_Cheatsheet",
+        "description": "Win32 and Kernel abusing techniques for pentesters"
+      },
+      {
+        "title": "Awesome-CobaltStrike",
+        "link": "https://github.com/zer0yu/Awesome-CobaltStrike",
+        "description": "cobaltstrike\u7684\u76f8\u5173\u8d44\u6e90\u6c47\u603b / List of Awesome CobaltStrike Resources"
       }
     ]
   }
