@@ -1,0 +1,84 @@
+---
+published: true
+layout: post
+tags:
+  - windows
+  - persistance
+---
+# Summary
+{:.no_toc}
+
+* toc
+{:toc}
+
+# Disclaimer
+This information was fully presented on TryHackMe https://tryhackme.com/room/windowslocalpersistence. If you find that usefull, go to TryHackMe and find something more.
+
+# Intro
+I was really impressed by the room from TryHackMe, I didnt know a half of this tricks, thats why I want to save this information primary for myself.
+
+# Basics and well known tricks
+Well, the most obvious:
+```
+net localgroup administrators user /add
+```
+
+Not so obvious is `Backup Operators` group. It allows any user to read/write any file in OS, which is cool.
+```
+net localgroup "Backup Operators" user /add
+```
+Be aware, no RDP nor WinRM will be allowed for that user only from `Backup Operators` group. And also keep in mind UAC which will be in your way, so you will need to disable it.
+```
+C:\> reg add HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /t REG_DWORD /v LocalAccountTokenFilterPolicy /d 1
+```
+
+And apply DACL for WinRM by this command.
+```
+Set-PSSessionConfiguration -Name Microsoft.PowerShell -showSecurityDescriptorUI
+```
+
+Also, we could do a little trick here and add `$` at the end of user name. Since Windows use `$` at the end by the computer accounts, it now thinks that our user is now "computer account" (actually, it doesnt, but heard me out). Computer accounts doesnt shown by `net users` command. Why? Dont ask me. And so, our user have `$` at the end, which means he is a computer account, which means he wouldn't be shown by `net users`.
+
+
+# Something cool
+Not so known stuff (at least for me) is `secedit` which config and store which accounts and SID holds which privilege. So we could edit it!
+
+First, export:
+```
+secedit /export /cfg config.inf
+```
+
+1.png
+
+After editing, (just add your user at the right side of the privilege, separated by comma) we could convert and import in back.
+
+```
+secedit /import /cfg config.inf /db config.sdb
+secedit /configure /db config.sdb /cfg config.inf
+```
+And no user at `net users`, nice.
+
+
+# Something really cool
+We also could do RID Hijacking. RID is actually holds by registry, and we could edit registry. 
+Note: RID is just the last digits of SID, but RID actually responsible for rights.
+Here is how we could see RID's:
+```
+wmic useraccount get name,sid
+```
+
+And here how we could edit RID in registry, note that this values could be edited only by NT AUTHORITY\SYSTEM, so wee need to use PsExec or other tools.
+We need this path `HKLM\SAM\SAM\Domains\Account\Users\`
+There will be a key for each user in the machine. Since we want to modify thmuser3, we need to search for a key with its RID in hex (1010 = 0x3F2). Under the corresponding key, there will be a value called F, which holds the user's effective RID at position 0x30:
+2.png
+
+Notice the RID is stored using little-endian notation, so its bytes appear reversed.
+We will now replace those two bytes with the RID of Administrator in hex (500 = 0x01F4), switching around the bytes (F401):
+
+The next time user logs in, LSASS will associate it with the same RID as Administrator and grant them the same privileges.
+
+Note: since lsass is responsible for this trick, I think you need to login with interacive methods, such as RDP or phisical input.
+
+## File Associations
+
+
