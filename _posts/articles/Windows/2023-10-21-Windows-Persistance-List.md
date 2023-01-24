@@ -108,7 +108,7 @@ First, export:
 secedit /export /cfg config.inf
 ```
 
-1.png
+![1]({{ site.baseurl }}/assets/img/posts/config-inf.png){:class="imghalf"}
 
 After editing, (just add your user at the right side of the privilege, separated by comma) we could convert and import in back.
 
@@ -144,7 +144,8 @@ wmic useraccount get name,sid
 And here how we could edit RID in registry, note that this values could be edited only by NT AUTHORITY\SYSTEM, so wee need to use PsExec or other tools.
 We need this path `HKLM\SAM\SAM\Domains\Account\Users\`
 There will be a key for each user in the machine. Since we want to modify thmuser3, we need to search for a key with its RID in hex (1010 = 0x3F2). Under the corresponding key, there will be a value called F, which holds the user's effective RID at position 0x30:
-2.png
+
+![1]({{ site.baseurl }}/assets/img/posts/2-persistance.png){:class="imghalf"}
 
 Notice the RID is stored using little-endian notation, so its bytes appear reversed.
 We will now replace those two bytes with the RID of Administrator in hex (500 = 0x01F4), switching around the bytes (F401):
@@ -156,12 +157,13 @@ Note: since lsass is responsible for this trick, I think you need to login with 
 ## File Associations & Extension
 In Windows, file extensions accociatied with programms what will launch file as a parameter. And we could change that accociation to launch our executable, which launch our payload and after that open a real executable that supposed to be launched.
 Its stored in registry `HKLM\Software\Classes\`
-4.png
+
+![1]({{ site.baseurl }}/assets/img/posts/4-persistance.png){:class="imghalf"}
 
 There is file extension and its ProgID.
 That ProgID needs to be search in `HKLM\Software\Classes\{YOUR_PROGID}\shell\open\command`
 
-5.png
+![1]({{ site.baseurl }}/assets/img/posts/5-persistance.png){:class="imghalf"}
 
 And there you will find executable. Change it like `powershell -windowstyle hidden C:\windows\backdoor.ps1 %1` and write in ps1 script to launch first argument with notepad or something, since `%1` is a path to file, which has to be launched with that application we are hijacking.
 
