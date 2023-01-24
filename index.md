@@ -117,4 +117,4 @@ Hi, I do some info security stuff and this is my blog.
 
 # $ cat contact.txt
 {:id="contact"}
-Telegram: > [https://t.me/ru_cker](https://t.me/ru_cker) <br />
+Telegram: > [https://t.me/CyberRucker](https://t.me/CyberRucker) <br />
