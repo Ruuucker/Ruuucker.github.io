@@ -1,10 +1,10 @@
 ---
 published: true
 layout: post
-title: Windows Persistance List
 tags:
   - windows
   - persistance
+title: Windows Persistance List
 ---
 # Summary
 {:.no_toc}
